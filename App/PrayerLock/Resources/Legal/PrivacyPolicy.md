@@ -7,7 +7,7 @@ Beloved helps you pause before the apps you choose and turn that moment into pra
 ## The short version
 
 - Beloved has no account and no sign-in.
-- Everything Beloved stores stays on your iPhone. The app does not send your data to us or to anyone else.
+- Everything Beloved stores stays on your iPhone. The only exception: if you subscribe to Premium and use the Companion, your messages are sent to Beloved's server and Google Gemini to write replies.
 - Beloved contains no analytics, advertising, tracking or crash-reporting code, and no third-party software libraries.
 - You can delete everything at any time in Settings → Delete all my data, or by deleting the app.
 
@@ -17,7 +17,7 @@ Beloved helps you pause before the apps you choose and turn that moment into pra
 
 **Your reading.** Where you left off in your scripture (book and chapter), how you like to read it (translation, original or both), and, if you turn it on, the time for the daily verse notification. The scriptures themselves are built into the app; reading them makes no network request.
 
-**Conversations with the companion.** What you ask in the Companion tab and the answers, kept on your iPhone so you can return to them. "Start over" or Delete all my data removes them. In this version the companion answers from Beloved's verified library on your iPhone; nothing you write is sent anywhere.
+**Conversations with the companion.** What you ask in the Companion tab and the answers, kept on your iPhone so you can return to them. "Start over" or Delete all my data removes them. Free users get answers from Beloved's verified library on your iPhone; nothing they write is sent anywhere. For Premium subscribers, messages in the Companion tab (with your faith and tradition, but never your name, history or intentions) are sent to Beloved's server and to Google's Gemini model to write a reply. Google may use this content to improve its services under its terms. Beloved's server stores no conversations, only a daily message count per subscription, kept for 48 hours.
 
 **Daily check-ins.** If you choose a mood, it is used to pick fitting words for that day's moments. It is saved only if "Remember daily check-ins" is turned on in Settings; otherwise it is discarded at the end of the day.
 
