@@ -174,15 +174,16 @@ Purchases controls exist in code but are not shown while nothing is for sale.
 | Screen Time selection (opaque tokens), protection settings, current grant, pending shield requests, shield text, event log (100 events, no app names) | App Group `UserDefaults` | no (read by the app's own extensions) |
 | App names | only inside the Shield Configuration extension's Apple sandbox, for display | no (never stored or logged) |
 | Notifications | local only | no server |
+| Premium Companion messages | sent from the Companion tab after subscription | yes: Beloved Cloudflare Worker + Google Gemini, for the real-time reply |
 
-There are no networking APIs, analytics, crash-reporting or ad SDKs, and no third-party
-packages. Privacy manifests are present in the app and all three extensions (UserDefaults
+There are no analytics, crash-reporting or ad SDKs, and no third-party app
+packages. The only app network path is the Premium Companion endpoint. Privacy manifests are present in the app and all three extensions (UserDefaults
 reasons CA92.1 and 1C8F.1; no tracking; no collected data types). All four are included in
 the built bundle (VERIFIED).
 
-**App Store Connect → App Privacy: "Data Not Collected."** Apple defines "collect" as
-transmitting data off the device, and "data that is processed only on device is not
-collected" (DOC, App Privacy Details page). Answers: docs/20.
+**App Store Connect → App Privacy:** see docs/20. With the current server design, Premium
+Companion messages are processed for the real-time reply and not retained as conversations;
+the server keeps only a 48-hour daily message count per subscription. Re-answer if that changes.
 
 **Privacy policy:**
 - Written from the inventory above: `App/PrayerLock/Resources/Legal/PrivacyPolicy.md`.

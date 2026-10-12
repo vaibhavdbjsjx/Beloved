@@ -81,9 +81,9 @@ private func details(expires: TimeInterval?, grace: TimeInterval? = nil, trial: 
 }
 
 @Suite struct MonetizationConfigurationTests {
-    @Test func bundledConfigurationHasNoPricesAndPaywallIsOff() throws {
+    @Test func bundledConfigurationHasNoPricesAndPaywallIsOn() throws {
         let bundled = try MonetizationConfiguration.bundled()
-        #expect(!bundled.isPaywallEnabled, "No purchase UI until products exist in App Store Connect")
+        #expect(bundled.isPaywallEnabled, "Premium Companion products are configured in App Store Connect")
         #expect(Set(bundled.products.map(\.plan)) == [.monthly, .annual])
         #expect(Set(bundled.productIDs).count == bundled.productIDs.count)
 

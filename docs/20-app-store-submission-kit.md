@@ -66,14 +66,18 @@ build doesn't have (2.3).
 
 ## 3. App Privacy (App Store Connect → App Privacy)
 
-- **Data collection: "No, we do not collect data from this app."** → label "Data Not Collected".
-- Basis: Apple defines "collect" as transmitting data off the device beyond servicing the
-  request in real time. "Data that is processed only on device is not 'collected'."
-  ([App privacy details](https://developer.apple.com/app-store/app-privacy-details/))
-- Beloved has no networking code, no analytics, crash-reporting or ad SDKs, and no
-  third-party packages (docs/19 §7).
-- **Re-answer** before shipping any version that adds a server, AI, accounts, analytics or
-  purchases.
+- **Data collection: "No, we do not collect data from this app."** → label "Data Not Collected",
+  if the Cloudflare Worker and Google Gemini continue to process Premium Companion messages only
+  to service the request in real time and do not retain them. Apple defines "collect" as
+  transmitting data off the device in a way that lets the developer or third-party partner access
+  it longer than needed to service the real-time request; it also says immediately discarded server
+  requests do not need to be disclosed in App Privacy answers.
+- Disclose clearly in the privacy policy, review notes and in-app copy that Premium Companion
+  messages are sent to Beloved's Cloudflare Worker and Google Gemini. The server keeps only a
+  daily message count per subscription for 48 hours.
+- No tracking, ads, analytics SDKs, crash-reporting SDKs or third-party app libraries are present.
+- **Re-answer** before shipping any version that stores server-side conversations, uses messages
+  for analytics/training under Beloved's control, adds accounts, or changes the AI provider terms.
 
 ## 4. Accessibility (Accessibility Nutrition Labels)
 
@@ -90,7 +94,7 @@ VoiceOver. Captions and Audio Descriptions don't apply (no video or audio).
   the repository).
 - **Notes** (paste; about 2,100 characters). Before pasting, confirm step 4 on a device (docs/13 assumption A2):
 
-> Beloved is a personal device-usage management app (Family Controls, individual authorization). The user chooses apps to use more intentionally; opening one shows a Screen Time shield that invites a short prayer or reflection before the apps are opened for a chosen time. There is no account, no server and no in-app purchase in this version.
+> Beloved is a personal device-usage management app (Family Controls, individual authorization). The user chooses apps to use more intentionally; opening one shows a Screen Time shield that invites a short prayer or reflection before the apps are opened for a chosen time. There is no account. Beloved Premium is an auto-renewable subscription for the optional AI Companion; free Screen Time pauses, scripture, daily verse and the verified prayer library remain free.
 >
 > Please test on a physical iPhone (Screen Time shields don't appear in Simulator).
 >
@@ -103,7 +107,8 @@ VoiceOver. Captions and Audio Descriptions don't apply (no video or audio).
 > 5. Complete the moment (the finish button becomes available after a few seconds), choose an intention or Skip, then tap Done. The protected app is now open for the duration set under Protection → After a moment (default shown there). After that time Beloved re-applies the pause.
 > 6. "Not now" on the shield closes the protected app.
 > 7. You can also start a moment any time from Today → Begin a moment.
-> 8. Settings → Delete all my data removes everything stored on the device and all pauses. Settings → Privacy Policy shows the full policy offline.
+> 8. Companion: free users receive on-device library answers. Premium subscribers can send messages to the cloud Companion; those messages go to Beloved's Cloudflare Worker and Google Gemini for the reply. The app and privacy policy disclose this before use. Beloved's server stores no conversations, only a daily message count per subscription for 48 hours.
+> 9. Settings → Delete all my data removes everything stored on the device and all pauses. Settings → Privacy Policy shows the full policy offline.
 >
 > Limitations stated in the app: iOS doesn't allow apps to block calls, silence notifications or enable Focus, and Beloved doesn't claim to. iOS can't schedule re-locks shorter than 15 minutes, so very short unlocks end after the chosen minutes of use or 15 minutes at most (explained on the Protection screen). Screen Time access can be revoked in the Settings app at any time; Beloved then shows "Protection is paused".
 

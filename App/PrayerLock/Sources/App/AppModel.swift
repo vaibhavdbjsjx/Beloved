@@ -489,6 +489,30 @@ final class AppModel {
         }
     }
 
+    func purchase(_ product: StoreProduct) async -> PurchaseOutcome? {
+        do {
+            let outcome = try await env.purchases.purchase(productID: product.id)
+            switch outcome {
+            case let .purchased(state):
+                subscriptionState = state
+            case .pending:
+                alert = AppAlert(
+                    title: String(localized: "Purchase pending"),
+                    message: String(localized: "The App Store is still processing this purchase. Premium will unlock automatically when it is approved.")
+                )
+            case .cancelled:
+                break
+            }
+            return outcome
+        } catch {
+            alert = AppAlert(
+                title: String(localized: "Purchase couldn't be completed"),
+                message: String(localized: "Check your connection and try again. You were not charged by Beloved.")
+            )
+            return nil
+        }
+    }
+
     // MARK: - Data
 
     /// Permanently deletes everything the app stored on this device and removes

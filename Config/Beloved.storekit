@@ -1,0 +1,100 @@
+{
+  "identifier" : "Beloved",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "",
+    "_developerTeamID" : "",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "22466898",
+      "localizations" : [
+        {
+          "description" : "Beloved Premium",
+          "displayName" : "Beloved Premium",
+          "locale" : "en_US"
+        }
+      ],
+      "name" : "Beloved Premium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "5.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "beloved.premium.monthly",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Monthly access to the Beloved AI Companion.",
+              "displayName" : "Beloved Premium Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "beloved.premium.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Beloved Premium Monthly",
+          "subscriptionGroupID" : "22466898",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "34.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "beloved.premium.annual",
+          "introductoryOffer" : {
+            "duration" : "P7D",
+            "internalID" : "beloved.premium.annual.trial",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "free",
+            "subscriptionStartPolicy" : "immediately"
+          },
+          "localizations" : [
+            {
+              "description" : "Annual access to the Beloved AI Companion.",
+              "displayName" : "Beloved Premium Annual",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "beloved.premium.annual",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Beloved Premium Annual",
+          "subscriptionGroupID" : "22466898",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

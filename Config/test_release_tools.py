@@ -139,10 +139,10 @@ class ReleaseGateTests(unittest.TestCase):
 
     def test_release_configuration_problems_are_reported(self):
         code, out = self.run_gate(ACTION="install", CONFIGURATION="Release", PL_ENVIRONMENT="development",
-                                  PL_ASSISTANT_ENDPOINT="https://api.invalid", PL_SUPPORT_URL="http://site.invalid",
+                                  PL_ASSISTANT_ENDPOINT="http://api.invalid", PL_SUPPORT_URL="http://site.invalid",
                                   PL_PRIVACY_POLICY_URL="https://your-domain/privacy.html")
         self.assertEqual(code, 1)
-        for text in ("PL_ENVIRONMENT = production", "PL_ASSISTANT_ENDPOINT is set",
+        for text in ("PL_ENVIRONMENT = production", "PL_ASSISTANT_ENDPOINT must be an https:// URL",
                      "PL_SUPPORT_URL must be an https:// URL", "PL_PRIVACY_POLICY_URL is a placeholder"):
             self.assertIn(text, out)
 

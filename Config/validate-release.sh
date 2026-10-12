@@ -37,10 +37,10 @@ if [ "${CONFIGURATION}" = "Release" ] && [ "${PL_ENVIRONMENT}" != "production" ]
   fail_or_warn "Release builds must use PL_ENVIRONMENT = production (got '${PL_ENVIRONMENT}')."
 fi
 
-# The privacy policy and App Privacy answers say the app makes no network requests.
-if [ -n "${PL_ASSISTANT_ENDPOINT}" ]; then
-  fail_or_warn "PL_ASSISTANT_ENDPOINT is set, but this release has no networking and the privacy policy says so. Clear it, or update the policy and App Privacy answers first."
-fi
+case "${PL_ASSISTANT_ENDPOINT}" in
+  ""|https://*) ;;
+  *) fail_or_warn "PL_ASSISTANT_ENDPOINT must be an https:// URL when set (got '${PL_ASSISTANT_ENDPOINT}')." ;;
+esac
 
 for key in PL_SUPPORT_URL PL_PRIVACY_POLICY_URL; do
   eval "url=\${${key}}"

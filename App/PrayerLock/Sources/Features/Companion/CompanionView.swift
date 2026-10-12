@@ -12,6 +12,7 @@ struct CompanionView: View {
     @State private var companion = CompanionModel()
     @State private var draft = ""
     @State private var confirmingNew = false
+    @State private var showingPaywall = false
     @FocusState private var composing: Bool
 
     var body: some View {
@@ -21,6 +22,9 @@ struct CompanionView: View {
                     LazyVStack(alignment: .leading, spacing: PLSpacing.l) {
                         if companion.conversation.messages.isEmpty {
                             welcome
+                        }
+                        if model.env.monetization.isPaywallEnabled && model.accessLevel != .premium {
+                            premiumPrompt
                         }
                         ForEach(companion.conversation.messages) { message in
                             CompanionMessageRow(message: message)
@@ -76,6 +80,10 @@ struct CompanionView: View {
             }
         }
         .onAppear { companion.attach(model) }
+        .sheet(isPresented: $showingPaywall) {
+            NavigationStack { PaywallView() }
+                .environment(model)
+        }
     }
 
     // MARK: - Welcome
@@ -94,7 +102,7 @@ struct CompanionView: View {
                     .fixedSize(horizontal: false, vertical: true)
                     .accessibilityAddTraits(.isHeader)
                 Text(companion.usesCloud
-                     ? String(localized: "Talk about prayer, scripture, or whatever today holds. Every verse and prayer I share is quoted from a verified source; my own words are AI and say so.")
+                     ? String(localized: "Talk about prayer, scripture, or whatever today holds. Premium messages are sent to Beloved's server and Google Gemini for the reply; every verse and prayer I share is quoted from a verified source.")
                      : String(localized: "Ask for a prayer, a verse, or words for how you feel. Answers come from Beloved's verified library on this iPhone."))
                     .font(.plCallout)
                     .foregroundStyle(Color.plInkSecondary)
@@ -120,6 +128,31 @@ struct CompanionView: View {
                 }
             }
         }
+    }
+
+    private var premiumPrompt: some View {
+        VStack(alignment: .leading, spacing: PLSpacing.m) {
+            HStack(alignment: .top, spacing: PLSpacing.m) {
+                Image(systemName: "sparkles")
+                    .font(.headline)
+                    .foregroundStyle(Color.plGilt)
+                    .frame(width: 28, height: 28)
+                    .accessibilityHidden(true)
+                VStack(alignment: .leading, spacing: PLSpacing.xxs) {
+                    Text("Unlock the AI Companion")
+                        .font(.plHeadline)
+                        .foregroundStyle(Color.plInk)
+                    Text("Free answers use Beloved's verified library on this iPhone. Premium adds a cloud companion for deeper conversation.")
+                        .font(.plCaption)
+                        .foregroundStyle(Color.plInkSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            Button("See Premium") { showingPaywall = true }
+                .buttonStyle(.plSecondary)
+                .accessibilityIdentifier("companion.paywall")
+        }
+        .plPaper()
     }
 
     private var greeting: String {

@@ -244,6 +244,8 @@ struct SettingsView: View {
         if model.env.monetization.isPaywallEnabled {
             Section {
                 LabeledContent("Status", value: model.accessLevel == .premium ? String(localized: "Premium") : String(localized: "Free"))
+                NavigationLink("Beloved Premium") { PaywallView() }
+                    .accessibilityIdentifier("settings.paywall")
                 Button("Restore purchases") {
                     Task { await model.restorePurchases() }
                 }
@@ -345,8 +347,8 @@ struct PrivacyDetailView: View {
             Section("Never collected") {
                 Text("Which apps you use or for how long. Screen Time gives \(AppBrand.displayName) anonymous tokens only, and app usage data never leaves Apple's frameworks.")
             }
-            Section("Not sent anywhere") {
-                Text("\(AppBrand.displayName) makes no network requests with your data. There's no account, no analytics, no advertising, and no tracking.")
+            Section("Sent only when you use Premium Companion") {
+                Text("Free answers stay on this iPhone. If you subscribe and use the cloud Companion, your message and faith context are sent to Beloved's server and Google Gemini for the reply. Beloved stores only a short-lived daily message count.")
             }
             Section("Shared with the app's own extensions") {
                 Text("To show the pause screen, the app's Screen Time extensions read your protection settings and the pause-screen text. They never read your prayer history.")

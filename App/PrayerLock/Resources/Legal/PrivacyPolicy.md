@@ -41,11 +41,11 @@ If you allow notifications, Beloved shows a local notification when you tap Begi
 
 ## What Beloved does not do
 
-- It does not collect, sell or share personal data.
-- It does not send your faith, moods, prayer history or app choices off your iPhone.
+- It does not sell personal data or use it for advertising.
+- It does not send your moods, prayer history or app choices off your iPhone.
 - It does not use advertising identifiers or track you across apps and websites.
-- It does not include an AI assistant, and it makes no network requests with your data.
-- It does not offer in-app purchases in this version.
+- It does not send anything to the AI Companion unless you subscribe to Premium and write a message in the Companion tab.
+- It does not put AI provider API keys in the app.
 
 ## Information Apple may provide to developers
 
@@ -58,7 +58,7 @@ Your data stays on your iPhone until you delete it.
 - **Delete all my data** (Settings in Beloved) permanently removes your profile, check-ins and prayer history, removes all pauses and schedules, and returns the app to its first-launch state.
 - **Deleting the app** removes everything the app stored on your iPhone.
 
-Because nothing is stored on our servers, there is nothing else for us to delete.
+Beloved's server does not store Companion conversations. Its daily message counts expire after 48 hours.
 
 ## Children
 

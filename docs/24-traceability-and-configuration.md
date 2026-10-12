@@ -102,7 +102,7 @@ website values are published. Never put API keys in either.
 | `PL_SUPPORT_URL` | In-app "Help & support" | no | app | public | `https:/$()/<domain>/support.html` | `Shared.xcconfig` or `Secrets.xcconfig` | gate: https, not placeholder; app ignores non-https | link hidden |
 | `PL_PRIVACY_POLICY_URL` | Web copy of the policy | no (policy is bundled) | app | public | `https:/$()/<domain>/privacy.html` | same | same | in-app policy still shown |
 | `PL_SUBSCRIPTION_GROUP_ID` | StoreKit status lookups | no (paywall off) | `StoreKitPurchaseService` | public | App Store Connect group ID | `Secrets.xcconfig` | — | unused in v1 |
-| `PL_ASSISTANT_ENDPOINT` | Future assistant proxy | **must be empty** | not used by the app | public | — | — | gate fails if set | — |
+| `PL_ASSISTANT_ENDPOINT` | Premium Companion proxy | no, but required for cloud Companion | app | public | `https:/$()/beloved-companion.beloved-app.workers.dev` | `Shared.xcconfig` or `Secrets.xcconfig` | gate requires https when set | free library answers only |
 | `MARKETING_VERSION` / `CURRENT_PROJECT_VERSION` | 1.0.0 / 1 | yes | all targets | public | increment build per upload | `Shared.xcconfig` | Xcode | — |
 | website `domain` | Canonical URLs, sitemap | prod: yes | `build.py` | public | `https://<host>` | `website/site.json` | https host, no example | build refused |
 | website `support_email` | Support page, policy, terms | prod: yes | `build.py` | public | your real mailbox | `site.json` | e-mail format, no example | build refused |
