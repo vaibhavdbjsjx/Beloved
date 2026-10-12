@@ -1,0 +1,156 @@
+{
+  "themes": [
+    {
+      "id": "gratitude",
+      "name": "Gratitude"
+    },
+    {
+      "id": "forgiveness",
+      "name": "Forgiveness"
+    },
+    {
+      "id": "guidance",
+      "name": "Guidance"
+    },
+    {
+      "id": "protection",
+      "name": "Protection"
+    },
+    {
+      "id": "strength",
+      "name": "Strength"
+    },
+    {
+      "id": "peace",
+      "name": "Peace"
+    },
+    {
+      "id": "comfort",
+      "name": "Comfort"
+    },
+    {
+      "id": "hope",
+      "name": "Hope"
+    },
+    {
+      "id": "trust",
+      "name": "Trust"
+    },
+    {
+      "id": "patience",
+      "name": "Patience"
+    },
+    {
+      "id": "joy",
+      "name": "Joy"
+    },
+    {
+      "id": "celebration",
+      "name": "Celebration"
+    },
+    {
+      "id": "presence",
+      "name": "Presence"
+    },
+    {
+      "id": "self-control",
+      "name": "Self-control"
+    },
+    {
+      "id": "family",
+      "name": "Family"
+    },
+    {
+      "id": "work",
+      "name": "Work"
+    },
+    {
+      "id": "study",
+      "name": "Study"
+    },
+    {
+      "id": "relationships",
+      "name": "Relationships"
+    },
+    {
+      "id": "difficult-times",
+      "name": "Difficult times"
+    },
+    {
+      "id": "children",
+      "name": "Children and pregnancy"
+    },
+    {
+      "id": "health",
+      "name": "Health and healing"
+    },
+    {
+      "id": "courage",
+      "name": "Courage"
+    }
+  ],
+  "moodThemes": {
+    "grateful": [
+      "gratitude",
+      "joy"
+    ],
+    "anxious": [
+      "peace",
+      "trust",
+      "comfort"
+    ],
+    "stressed": [
+      "peace",
+      "patience",
+      "strength"
+    ],
+    "sad": [
+      "comfort",
+      "hope"
+    ],
+    "angry": [
+      "patience",
+      "self-control",
+      "forgiveness",
+      "peace"
+    ],
+    "lonely": [
+      "comfort",
+      "presence",
+      "relationships"
+    ],
+    "hopeful": [
+      "hope",
+      "trust",
+      "gratitude"
+    ],
+    "happy": [
+      "joy",
+      "gratitude",
+      "celebration"
+    ],
+    "seekingGuidance": [
+      "guidance",
+      "trust"
+    ],
+    "seekingForgiveness": [
+      "forgiveness"
+    ],
+    "needStrength": [
+      "strength",
+      "difficult-times"
+    ],
+    "needPeace": [
+      "peace",
+      "presence"
+    ],
+    "celebrating": [
+      "celebration",
+      "joy",
+      "gratitude"
+    ],
+    "justWantToPray": [
+      "presence"
+    ]
+  }
+}

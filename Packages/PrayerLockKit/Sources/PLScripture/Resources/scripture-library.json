@@ -1,0 +1,2164 @@
+{
+ "version": 1,
+ "works": [
+  {
+   "id": "bible",
+   "faith": "christianity",
+   "title": {
+    "en": "The Bible"
+   },
+   "shortTitle": {
+    "en": "Bible"
+   },
+   "translation": "bible.web",
+   "originals": [
+    "bible.hbo",
+    "bible.grc"
+   ],
+   "transliteration": null,
+   "parallel": false,
+   "books": [
+    {
+     "id": "GEN",
+     "title": {
+      "en": "Genesis"
+     },
+     "group": "oldTestament",
+     "chapterCount": 50
+    },
+    {
+     "id": "EXO",
+     "title": {
+      "en": "Exodus"
+     },
+     "group": "oldTestament",
+     "chapterCount": 40
+    },
+    {
+     "id": "LEV",
+     "title": {
+      "en": "Leviticus"
+     },
+     "group": "oldTestament",
+     "chapterCount": 27
+    },
+    {
+     "id": "NUM",
+     "title": {
+      "en": "Numbers"
+     },
+     "group": "oldTestament",
+     "chapterCount": 36
+    },
+    {
+     "id": "DEU",
+     "title": {
+      "en": "Deuteronomy"
+     },
+     "group": "oldTestament",
+     "chapterCount": 34
+    },
+    {
+     "id": "JOS",
+     "title": {
+      "en": "Joshua"
+     },
+     "group": "oldTestament",
+     "chapterCount": 24
+    },
+    {
+     "id": "JDG",
+     "title": {
+      "en": "Judges"
+     },
+     "group": "oldTestament",
+     "chapterCount": 21
+    },
+    {
+     "id": "RUT",
+     "title": {
+      "en": "Ruth"
+     },
+     "group": "oldTestament",
+     "chapterCount": 4
+    },
+    {
+     "id": "1SA",
+     "title": {
+      "en": "1 Samuel"
+     },
+     "group": "oldTestament",
+     "chapterCount": 31
+    },
+    {
+     "id": "2SA",
+     "title": {
+      "en": "2 Samuel"
+     },
+     "group": "oldTestament",
+     "chapterCount": 24
+    },
+    {
+     "id": "1KI",
+     "title": {
+      "en": "1 Kings"
+     },
+     "group": "oldTestament",
+     "chapterCount": 22
+    },
+    {
+     "id": "2KI",
+     "title": {
+      "en": "2 Kings"
+     },
+     "group": "oldTestament",
+     "chapterCount": 25
+    },
+    {
+     "id": "1CH",
+     "title": {
+      "en": "1 Chronicles"
+     },
+     "group": "oldTestament",
+     "chapterCount": 29
+    },
+    {
+     "id": "2CH",
+     "title": {
+      "en": "2 Chronicles"
+     },
+     "group": "oldTestament",
+     "chapterCount": 36
+    },
+    {
+     "id": "EZR",
+     "title": {
+      "en": "Ezra"
+     },
+     "group": "oldTestament",
+     "chapterCount": 10
+    },
+    {
+     "id": "NEH",
+     "title": {
+      "en": "Nehemiah"
+     },
+     "group": "oldTestament",
+     "chapterCount": 13
+    },
+    {
+     "id": "EST",
+     "title": {
+      "en": "Esther"
+     },
+     "group": "oldTestament",
+     "chapterCount": 10
+    },
+    {
+     "id": "JOB",
+     "title": {
+      "en": "Job"
+     },
+     "group": "oldTestament",
+     "chapterCount": 42
+    },
+    {
+     "id": "PSA",
+     "title": {
+      "en": "Psalms"
+     },
+     "group": "oldTestament",
+     "chapterCount": 150,
+     "referenceTitle": {
+      "en": "Psalm"
+     }
+    },
+    {
+     "id": "PRO",
+     "title": {
+      "en": "Proverbs"
+     },
+     "group": "oldTestament",
+     "chapterCount": 31
+    },
+    {
+     "id": "ECC",
+     "title": {
+      "en": "Ecclesiastes"
+     },
+     "group": "oldTestament",
+     "chapterCount": 12
+    },
+    {
+     "id": "SOL",
+     "title": {
+      "en": "Song of Songs"
+     },
+     "group": "oldTestament",
+     "chapterCount": 8
+    },
+    {
+     "id": "ISA",
+     "title": {
+      "en": "Isaiah"
+     },
+     "group": "oldTestament",
+     "chapterCount": 66
+    },
+    {
+     "id": "JER",
+     "title": {
+      "en": "Jeremiah"
+     },
+     "group": "oldTestament",
+     "chapterCount": 52
+    },
+    {
+     "id": "LAM",
+     "title": {
+      "en": "Lamentations"
+     },
+     "group": "oldTestament",
+     "chapterCount": 5
+    },
+    {
+     "id": "EZE",
+     "title": {
+      "en": "Ezekiel"
+     },
+     "group": "oldTestament",
+     "chapterCount": 48
+    },
+    {
+     "id": "DAN",
+     "title": {
+      "en": "Daniel"
+     },
+     "group": "oldTestament",
+     "chapterCount": 12
+    },
+    {
+     "id": "HOS",
+     "title": {
+      "en": "Hosea"
+     },
+     "group": "oldTestament",
+     "chapterCount": 14
+    },
+    {
+     "id": "JOE",
+     "title": {
+      "en": "Joel"
+     },
+     "group": "oldTestament",
+     "chapterCount": 3
+    },
+    {
+     "id": "AMO",
+     "title": {
+      "en": "Amos"
+     },
+     "group": "oldTestament",
+     "chapterCount": 9
+    },
+    {
+     "id": "OBA",
+     "title": {
+      "en": "Obadiah"
+     },
+     "group": "oldTestament",
+     "chapterCount": 1
+    },
+    {
+     "id": "JON",
+     "title": {
+      "en": "Jonah"
+     },
+     "group": "oldTestament",
+     "chapterCount": 4
+    },
+    {
+     "id": "MIC",
+     "title": {
+      "en": "Micah"
+     },
+     "group": "oldTestament",
+     "chapterCount": 7
+    },
+    {
+     "id": "NAH",
+     "title": {
+      "en": "Nahum"
+     },
+     "group": "oldTestament",
+     "chapterCount": 3
+    },
+    {
+     "id": "HAB",
+     "title": {
+      "en": "Habakkuk"
+     },
+     "group": "oldTestament",
+     "chapterCount": 3
+    },
+    {
+     "id": "ZEP",
+     "title": {
+      "en": "Zephaniah"
+     },
+     "group": "oldTestament",
+     "chapterCount": 3
+    },
+    {
+     "id": "HAG",
+     "title": {
+      "en": "Haggai"
+     },
+     "group": "oldTestament",
+     "chapterCount": 2
+    },
+    {
+     "id": "ZEC",
+     "title": {
+      "en": "Zechariah"
+     },
+     "group": "oldTestament",
+     "chapterCount": 14
+    },
+    {
+     "id": "MAL",
+     "title": {
+      "en": "Malachi"
+     },
+     "group": "oldTestament",
+     "chapterCount": 4
+    },
+    {
+     "id": "MAT",
+     "title": {
+      "en": "Matthew"
+     },
+     "group": "newTestament",
+     "chapterCount": 28
+    },
+    {
+     "id": "MAR",
+     "title": {
+      "en": "Mark"
+     },
+     "group": "newTestament",
+     "chapterCount": 16
+    },
+    {
+     "id": "LUK",
+     "title": {
+      "en": "Luke"
+     },
+     "group": "newTestament",
+     "chapterCount": 24
+    },
+    {
+     "id": "JOH",
+     "title": {
+      "en": "John"
+     },
+     "group": "newTestament",
+     "chapterCount": 21
+    },
+    {
+     "id": "ACT",
+     "title": {
+      "en": "Acts"
+     },
+     "group": "newTestament",
+     "chapterCount": 28
+    },
+    {
+     "id": "ROM",
+     "title": {
+      "en": "Romans"
+     },
+     "group": "newTestament",
+     "chapterCount": 16
+    },
+    {
+     "id": "1CO",
+     "title": {
+      "en": "1 Corinthians"
+     },
+     "group": "newTestament",
+     "chapterCount": 16
+    },
+    {
+     "id": "2CO",
+     "title": {
+      "en": "2 Corinthians"
+     },
+     "group": "newTestament",
+     "chapterCount": 13
+    },
+    {
+     "id": "GAL",
+     "title": {
+      "en": "Galatians"
+     },
+     "group": "newTestament",
+     "chapterCount": 6
+    },
+    {
+     "id": "EPH",
+     "title": {
+      "en": "Ephesians"
+     },
+     "group": "newTestament",
+     "chapterCount": 6
+    },
+    {
+     "id": "PHI",
+     "title": {
+      "en": "Philippians"
+     },
+     "group": "newTestament",
+     "chapterCount": 4
+    },
+    {
+     "id": "COL",
+     "title": {
+      "en": "Colossians"
+     },
+     "group": "newTestament",
+     "chapterCount": 4
+    },
+    {
+     "id": "1TH",
+     "title": {
+      "en": "1 Thessalonians"
+     },
+     "group": "newTestament",
+     "chapterCount": 5
+    },
+    {
+     "id": "2TH",
+     "title": {
+      "en": "2 Thessalonians"
+     },
+     "group": "newTestament",
+     "chapterCount": 3
+    },
+    {
+     "id": "1TI",
+     "title": {
+      "en": "1 Timothy"
+     },
+     "group": "newTestament",
+     "chapterCount": 6
+    },
+    {
+     "id": "2TI",
+     "title": {
+      "en": "2 Timothy"
+     },
+     "group": "newTestament",
+     "chapterCount": 4
+    },
+    {
+     "id": "TIT",
+     "title": {
+      "en": "Titus"
+     },
+     "group": "newTestament",
+     "chapterCount": 3
+    },
+    {
+     "id": "PHM",
+     "title": {
+      "en": "Philemon"
+     },
+     "group": "newTestament",
+     "chapterCount": 1
+    },
+    {
+     "id": "HEB",
+     "title": {
+      "en": "Hebrews"
+     },
+     "group": "newTestament",
+     "chapterCount": 13
+    },
+    {
+     "id": "JAM",
+     "title": {
+      "en": "James"
+     },
+     "group": "newTestament",
+     "chapterCount": 5
+    },
+    {
+     "id": "1PE",
+     "title": {
+      "en": "1 Peter"
+     },
+     "group": "newTestament",
+     "chapterCount": 5
+    },
+    {
+     "id": "2PE",
+     "title": {
+      "en": "2 Peter"
+     },
+     "group": "newTestament",
+     "chapterCount": 3
+    },
+    {
+     "id": "1JO",
+     "title": {
+      "en": "1 John"
+     },
+     "group": "newTestament",
+     "chapterCount": 5
+    },
+    {
+     "id": "2JO",
+     "title": {
+      "en": "2 John"
+     },
+     "group": "newTestament",
+     "chapterCount": 1
+    },
+    {
+     "id": "3JO",
+     "title": {
+      "en": "3 John"
+     },
+     "group": "newTestament",
+     "chapterCount": 1
+    },
+    {
+     "id": "JUD",
+     "title": {
+      "en": "Jude"
+     },
+     "group": "newTestament",
+     "chapterCount": 1
+    },
+    {
+     "id": "REV",
+     "title": {
+      "en": "Revelation"
+     },
+     "group": "newTestament",
+     "chapterCount": 22
+    }
+   ]
+  },
+  {
+   "id": "quran",
+   "faith": "islam",
+   "title": {
+    "en": "The Quran"
+   },
+   "shortTitle": {
+    "en": "Quran"
+   },
+   "translation": "quran.en",
+   "originals": [
+    "quran.ar"
+   ],
+   "transliteration": null,
+   "parallel": true,
+   "books": [
+    {
+     "id": "QUR",
+     "title": {
+      "en": "The Quran"
+     },
+     "chapterCount": 114,
+     "chapters": [
+      {
+       "title": {
+        "en": "The Opening"
+       },
+       "originalTitle": "الفاتحة",
+       "transliteratedTitle": "Al-Faatiha",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Cow"
+       },
+       "originalTitle": "البقرة",
+       "transliteratedTitle": "Al-Baqara",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Family of Imraan"
+       },
+       "originalTitle": "آل عمران",
+       "transliteratedTitle": "Aal-i-Imraan",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Women"
+       },
+       "originalTitle": "النساء",
+       "transliteratedTitle": "An-Nisaa",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Table"
+       },
+       "originalTitle": "المائدة",
+       "transliteratedTitle": "Al-Maaida",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Cattle"
+       },
+       "originalTitle": "الأنعام",
+       "transliteratedTitle": "Al-An'aam",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Heights"
+       },
+       "originalTitle": "الأعراف",
+       "transliteratedTitle": "Al-A'raaf",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Spoils of War"
+       },
+       "originalTitle": "الأنفال",
+       "transliteratedTitle": "Al-Anfaal",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Repentance"
+       },
+       "originalTitle": "التوبة",
+       "transliteratedTitle": "At-Tawba",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "Jonas"
+       },
+       "originalTitle": "يونس",
+       "transliteratedTitle": "Yunus",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Hud"
+       },
+       "originalTitle": "هود",
+       "transliteratedTitle": "Hud",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Joseph"
+       },
+       "originalTitle": "يوسف",
+       "transliteratedTitle": "Yusuf",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Thunder"
+       },
+       "originalTitle": "الرعد",
+       "transliteratedTitle": "Ar-Ra'd",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "Abraham"
+       },
+       "originalTitle": "ابراهيم",
+       "transliteratedTitle": "Ibrahim",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Rock"
+       },
+       "originalTitle": "الحجر",
+       "transliteratedTitle": "Al-Hijr",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Bee"
+       },
+       "originalTitle": "النحل",
+       "transliteratedTitle": "An-Nahl",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Night Journey"
+       },
+       "originalTitle": "الإسراء",
+       "transliteratedTitle": "Al-Israa",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Cave"
+       },
+       "originalTitle": "الكهف",
+       "transliteratedTitle": "Al-Kahf",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Mary"
+       },
+       "originalTitle": "مريم",
+       "transliteratedTitle": "Maryam",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Taa-Haa"
+       },
+       "originalTitle": "طه",
+       "transliteratedTitle": "Taa-Haa",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Prophets"
+       },
+       "originalTitle": "الأنبياء",
+       "transliteratedTitle": "Al-Anbiyaa",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Pilgrimage"
+       },
+       "originalTitle": "الحج",
+       "transliteratedTitle": "Al-Hajj",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Believers"
+       },
+       "originalTitle": "المؤمنون",
+       "transliteratedTitle": "Al-Muminoon",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Light"
+       },
+       "originalTitle": "النور",
+       "transliteratedTitle": "An-Noor",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Criterion"
+       },
+       "originalTitle": "الفرقان",
+       "transliteratedTitle": "Al-Furqaan",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Poets"
+       },
+       "originalTitle": "الشعراء",
+       "transliteratedTitle": "Ash-Shu'araa",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Ant"
+       },
+       "originalTitle": "النمل",
+       "transliteratedTitle": "An-Naml",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Stories"
+       },
+       "originalTitle": "القصص",
+       "transliteratedTitle": "Al-Qasas",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Spider"
+       },
+       "originalTitle": "العنكبوت",
+       "transliteratedTitle": "Al-Ankaboot",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Romans"
+       },
+       "originalTitle": "الروم",
+       "transliteratedTitle": "Ar-Room",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Luqman"
+       },
+       "originalTitle": "لقمان",
+       "transliteratedTitle": "Luqman",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Prostration"
+       },
+       "originalTitle": "السجدة",
+       "transliteratedTitle": "As-Sajda",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Clans"
+       },
+       "originalTitle": "الأحزاب",
+       "transliteratedTitle": "Al-Ahzaab",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "Sheba"
+       },
+       "originalTitle": "سبإ",
+       "transliteratedTitle": "Saba",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Originator"
+       },
+       "originalTitle": "فاطر",
+       "transliteratedTitle": "Faatir",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Yaseen"
+       },
+       "originalTitle": "يس",
+       "transliteratedTitle": "Yaseen",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Those drawn up in Ranks"
+       },
+       "originalTitle": "الصافات",
+       "transliteratedTitle": "As-Saaffaat",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The letter Saad"
+       },
+       "originalTitle": "ص",
+       "transliteratedTitle": "Saad",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Groups"
+       },
+       "originalTitle": "الزمر",
+       "transliteratedTitle": "Az-Zumar",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Forgiver"
+       },
+       "originalTitle": "غافر",
+       "transliteratedTitle": "Al-Ghaafir",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Explained in detail"
+       },
+       "originalTitle": "فصلت",
+       "transliteratedTitle": "Fussilat",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Consultation"
+       },
+       "originalTitle": "الشورى",
+       "transliteratedTitle": "Ash-Shura",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Ornaments of gold"
+       },
+       "originalTitle": "الزخرف",
+       "transliteratedTitle": "Az-Zukhruf",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Smoke"
+       },
+       "originalTitle": "الدخان",
+       "transliteratedTitle": "Ad-Dukhaan",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Crouching"
+       },
+       "originalTitle": "الجاثية",
+       "transliteratedTitle": "Al-Jaathiya",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Dunes"
+       },
+       "originalTitle": "الأحقاف",
+       "transliteratedTitle": "Al-Ahqaf",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Muhammad"
+       },
+       "originalTitle": "محمد",
+       "transliteratedTitle": "Muhammad",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Victory"
+       },
+       "originalTitle": "الفتح",
+       "transliteratedTitle": "Al-Fath",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Inner Apartments"
+       },
+       "originalTitle": "الحجرات",
+       "transliteratedTitle": "Al-Hujuraat",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The letter Qaaf"
+       },
+       "originalTitle": "ق",
+       "transliteratedTitle": "Qaaf",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Winnowing Winds"
+       },
+       "originalTitle": "الذاريات",
+       "transliteratedTitle": "Adh-Dhaariyat",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Mount"
+       },
+       "originalTitle": "الطور",
+       "transliteratedTitle": "At-Tur",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Star"
+       },
+       "originalTitle": "النجم",
+       "transliteratedTitle": "An-Najm",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Moon"
+       },
+       "originalTitle": "القمر",
+       "transliteratedTitle": "Al-Qamar",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Beneficent"
+       },
+       "originalTitle": "الرحمن",
+       "transliteratedTitle": "Ar-Rahmaan",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Inevitable"
+       },
+       "originalTitle": "الواقعة",
+       "transliteratedTitle": "Al-Waaqia",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Iron"
+       },
+       "originalTitle": "الحديد",
+       "transliteratedTitle": "Al-Hadid",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Pleading Woman"
+       },
+       "originalTitle": "المجادلة",
+       "transliteratedTitle": "Al-Mujaadila",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Exile"
+       },
+       "originalTitle": "الحشر",
+       "transliteratedTitle": "Al-Hashr",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "She that is to be examined"
+       },
+       "originalTitle": "الممتحنة",
+       "transliteratedTitle": "Al-Mumtahana",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Ranks"
+       },
+       "originalTitle": "الصف",
+       "transliteratedTitle": "As-Saff",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "Friday"
+       },
+       "originalTitle": "الجمعة",
+       "transliteratedTitle": "Al-Jumu'a",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Hypocrites"
+       },
+       "originalTitle": "المنافقون",
+       "transliteratedTitle": "Al-Munaafiqoon",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "Mutual Disillusion"
+       },
+       "originalTitle": "التغابن",
+       "transliteratedTitle": "At-Taghaabun",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "Divorce"
+       },
+       "originalTitle": "الطلاق",
+       "transliteratedTitle": "At-Talaaq",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Prohibition"
+       },
+       "originalTitle": "التحريم",
+       "transliteratedTitle": "At-Tahrim",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Sovereignty"
+       },
+       "originalTitle": "الملك",
+       "transliteratedTitle": "Al-Mulk",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Pen"
+       },
+       "originalTitle": "القلم",
+       "transliteratedTitle": "Al-Qalam",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Reality"
+       },
+       "originalTitle": "الحاقة",
+       "transliteratedTitle": "Al-Haaqqa",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Ascending Stairways"
+       },
+       "originalTitle": "المعارج",
+       "transliteratedTitle": "Al-Ma'aarij",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Noah"
+       },
+       "originalTitle": "نوح",
+       "transliteratedTitle": "Nooh",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Jinn"
+       },
+       "originalTitle": "الجن",
+       "transliteratedTitle": "Al-Jinn",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Enshrouded One"
+       },
+       "originalTitle": "المزمل",
+       "transliteratedTitle": "Al-Muzzammil",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Cloaked One"
+       },
+       "originalTitle": "المدثر",
+       "transliteratedTitle": "Al-Muddaththir",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Resurrection"
+       },
+       "originalTitle": "القيامة",
+       "transliteratedTitle": "Al-Qiyaama",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Man"
+       },
+       "originalTitle": "الانسان",
+       "transliteratedTitle": "Al-Insaan",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Emissaries"
+       },
+       "originalTitle": "المرسلات",
+       "transliteratedTitle": "Al-Mursalaat",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Announcement"
+       },
+       "originalTitle": "النبإ",
+       "transliteratedTitle": "An-Naba",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Those who drag forth"
+       },
+       "originalTitle": "النازعات",
+       "transliteratedTitle": "An-Naazi'aat",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "He frowned"
+       },
+       "originalTitle": "عبس",
+       "transliteratedTitle": "Abasa",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Overthrowing"
+       },
+       "originalTitle": "التكوير",
+       "transliteratedTitle": "At-Takwir",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Cleaving"
+       },
+       "originalTitle": "الإنفطار",
+       "transliteratedTitle": "Al-Infitaar",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Defrauding"
+       },
+       "originalTitle": "المطففين",
+       "transliteratedTitle": "Al-Mutaffifin",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Splitting Open"
+       },
+       "originalTitle": "الإنشقاق",
+       "transliteratedTitle": "Al-Inshiqaaq",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Constellations"
+       },
+       "originalTitle": "البروج",
+       "transliteratedTitle": "Al-Burooj",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Morning Star"
+       },
+       "originalTitle": "الطارق",
+       "transliteratedTitle": "At-Taariq",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Most High"
+       },
+       "originalTitle": "الأعلى",
+       "transliteratedTitle": "Al-A'laa",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Overwhelming"
+       },
+       "originalTitle": "الغاشية",
+       "transliteratedTitle": "Al-Ghaashiya",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Dawn"
+       },
+       "originalTitle": "الفجر",
+       "transliteratedTitle": "Al-Fajr",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The City"
+       },
+       "originalTitle": "البلد",
+       "transliteratedTitle": "Al-Balad",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Sun"
+       },
+       "originalTitle": "الشمس",
+       "transliteratedTitle": "Ash-Shams",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Night"
+       },
+       "originalTitle": "الليل",
+       "transliteratedTitle": "Al-Lail",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Morning Hours"
+       },
+       "originalTitle": "الضحى",
+       "transliteratedTitle": "Ad-Dhuhaa",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Consolation"
+       },
+       "originalTitle": "الشرح",
+       "transliteratedTitle": "Ash-Sharh",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Fig"
+       },
+       "originalTitle": "التين",
+       "transliteratedTitle": "At-Tin",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Clot"
+       },
+       "originalTitle": "العلق",
+       "transliteratedTitle": "Al-Alaq",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Power, Fate"
+       },
+       "originalTitle": "القدر",
+       "transliteratedTitle": "Al-Qadr",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Evidence"
+       },
+       "originalTitle": "البينة",
+       "transliteratedTitle": "Al-Bayyina",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Earthquake"
+       },
+       "originalTitle": "الزلزلة",
+       "transliteratedTitle": "Az-Zalzala",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Chargers"
+       },
+       "originalTitle": "العاديات",
+       "transliteratedTitle": "Al-Aadiyaat",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Calamity"
+       },
+       "originalTitle": "القارعة",
+       "transliteratedTitle": "Al-Qaari'a",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Competition"
+       },
+       "originalTitle": "التكاثر",
+       "transliteratedTitle": "At-Takaathur",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Declining Day, Epoch"
+       },
+       "originalTitle": "العصر",
+       "transliteratedTitle": "Al-Asr",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Traducer"
+       },
+       "originalTitle": "الهمزة",
+       "transliteratedTitle": "Al-Humaza",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Elephant"
+       },
+       "originalTitle": "الفيل",
+       "transliteratedTitle": "Al-Fil",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Quraysh"
+       },
+       "originalTitle": "قريش",
+       "transliteratedTitle": "Quraish",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Almsgiving"
+       },
+       "originalTitle": "الماعون",
+       "transliteratedTitle": "Al-Maa'un",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Abundance"
+       },
+       "originalTitle": "الكوثر",
+       "transliteratedTitle": "Al-Kawthar",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Disbelievers"
+       },
+       "originalTitle": "الكافرون",
+       "transliteratedTitle": "Al-Kaafiroon",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Divine Support"
+       },
+       "originalTitle": "النصر",
+       "transliteratedTitle": "An-Nasr",
+       "detail": "medinan"
+      },
+      {
+       "title": {
+        "en": "The Palm Fibre"
+       },
+       "originalTitle": "المسد",
+       "transliteratedTitle": "Al-Masad",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Sincerity"
+       },
+       "originalTitle": "الإخلاص",
+       "transliteratedTitle": "Al-Ikhlaas",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "The Dawn"
+       },
+       "originalTitle": "الفلق",
+       "transliteratedTitle": "Al-Falaq",
+       "detail": "meccan"
+      },
+      {
+       "title": {
+        "en": "Mankind"
+       },
+       "originalTitle": "الناس",
+       "transliteratedTitle": "An-Naas",
+       "detail": "meccan"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bhagavad-gita",
+   "faith": "hinduism",
+   "title": {
+    "en": "Bhagavad Gita"
+   },
+   "shortTitle": {
+    "en": "Gita"
+   },
+   "translation": "bhagavad-gita.en",
+   "originals": [
+    "bhagavad-gita.sa"
+   ],
+   "transliteration": "bhagavad-gita.sa-Latn",
+   "parallel": false,
+   "books": [
+    {
+     "id": "BG",
+     "title": {
+      "en": "Bhagavad Gita"
+     },
+     "chapterCount": 18,
+     "chapters": [
+      {
+       "title": {
+        "en": "The Book of the Distress of Arjuna"
+       },
+       "originalTitle": "अर्जुनविषादयोग",
+       "transliteratedTitle": "arjunaviṣādayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Doctrines"
+       },
+       "originalTitle": "सांख्ययोग",
+       "transliteratedTitle": "sāṃkhyayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Virtue in Work"
+       },
+       "originalTitle": "कर्मयोग",
+       "transliteratedTitle": "karmayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of the Religion of Knowledge"
+       },
+       "originalTitle": "ज्ञानकर्मसंन्यासयोग",
+       "transliteratedTitle": "jñānakarmasaṃnyāsayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Religion by Renouncing Fruit of Works"
+       },
+       "originalTitle": "कर्मसंन्यासयोग",
+       "transliteratedTitle": "karmasaṃnyāsayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Religion by Self-Restraint"
+       },
+       "originalTitle": "ध्यानयोग",
+       "transliteratedTitle": "dhyānayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Religion by Discernment"
+       },
+       "originalTitle": "ज्ञानविज्ञानयोग",
+       "transliteratedTitle": "jñānavijñānayoga"
+      },
+      {
+       "title": {
+        "en": "The book of Religion by Devotion to the One Supreme God"
+       },
+       "originalTitle": "अक्षरब्रह्मयोग",
+       "transliteratedTitle": "akṣarabrahmayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Religion by the Kingly Knowledge and the Kingly Mystery"
+       },
+       "originalTitle": "राजविद्याराजगुह्ययोग",
+       "transliteratedTitle": "rājavidyārājaguhyayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Religion by the Heavenly Perfections"
+       },
+       "originalTitle": "विभूतियोग",
+       "transliteratedTitle": "vibhūtiyoga"
+      },
+      {
+       "title": {
+        "en": "The Book of the Manifesting of the One and Manifold"
+       },
+       "originalTitle": "विश्वरूपदर्शनयोग",
+       "transliteratedTitle": "viśvarūpadarśanayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of the Religion of Faith"
+       },
+       "originalTitle": "भक्तियोग",
+       "transliteratedTitle": "bhaktiyoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Religion by Separation of Matter and Spirit"
+       },
+       "originalTitle": "क्षेत्र-क्षेत्रज्ञविभागयोग",
+       "transliteratedTitle": "kṣetra-kṣetrajñavibhāgayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Religion by Separation from the Qualities"
+       },
+       "originalTitle": "गुणत्रयविभागयोग",
+       "transliteratedTitle": "guṇatrayavibhāgayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Religion by attaining the Supreme"
+       },
+       "originalTitle": "पुरुषोत्तमयोग",
+       "transliteratedTitle": "puruṣottamayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of the Separateness of the Divine and Undivine"
+       },
+       "originalTitle": "दैवासुरसम्पद्विभागयोग",
+       "transliteratedTitle": "daivāsurasampadvibhāgayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Religion by the Threefold Kinds of Faith"
+       },
+       "originalTitle": "श्रद्धात्रयविभागयोग",
+       "transliteratedTitle": "śraddhātrayavibhāgayoga"
+      },
+      {
+       "title": {
+        "en": "The Book of Religion by Deliverance and Renunciation"
+       },
+       "originalTitle": "मोक्षसंन्यासयोग",
+       "transliteratedTitle": "mokṣasaṃnyāsayoga"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "editions": [
+  {
+   "id": "bible.web",
+   "work": "bible",
+   "role": "translation",
+   "title": {
+    "en": "World English Bible"
+   },
+   "shortTitle": "WEB",
+   "language": "en",
+   "script": "Latn",
+   "direction": "ltr",
+   "versification": "english",
+   "unit": "verse",
+   "books": [
+    "GEN",
+    "EXO",
+    "LEV",
+    "NUM",
+    "DEU",
+    "JOS",
+    "JDG",
+    "RUT",
+    "1SA",
+    "2SA",
+    "1KI",
+    "2KI",
+    "1CH",
+    "2CH",
+    "EZR",
+    "NEH",
+    "EST",
+    "JOB",
+    "PSA",
+    "PRO",
+    "ECC",
+    "SOL",
+    "ISA",
+    "JER",
+    "LAM",
+    "EZE",
+    "DAN",
+    "HOS",
+    "JOE",
+    "AMO",
+    "OBA",
+    "JON",
+    "MIC",
+    "NAH",
+    "HAB",
+    "ZEP",
+    "HAG",
+    "ZEC",
+    "MAL",
+    "MAT",
+    "MAR",
+    "LUK",
+    "JOH",
+    "ACT",
+    "ROM",
+    "1CO",
+    "2CO",
+    "GAL",
+    "EPH",
+    "PHI",
+    "COL",
+    "1TH",
+    "2TH",
+    "1TI",
+    "2TI",
+    "TIT",
+    "PHM",
+    "HEB",
+    "JAM",
+    "1PE",
+    "2PE",
+    "1JO",
+    "2JO",
+    "3JO",
+    "JUD",
+    "REV"
+   ],
+   "attribution": "World English Bible (WEB), 2020 stable text edition. Public domain. “World English Bible” is a trademark of eBible.org.",
+   "attributionURL": "https://worldenglish.bible",
+   "modifications": "None — verbatim verse text from eBible.org.",
+   "source": {
+    "url": "https://ebible.org/Scriptures/engwebp_vpl.zip",
+    "sha256": "552e5a3e6dec9bfda4f95c2b1e86a2add1ba50b6f727609dff925de61e36e74b",
+    "retrieved": "2026-10-11"
+   },
+   "review": {
+    "status": "draft",
+    "notes": "Spot-check the text against eBible.org before approval."
+   },
+   "chapterCounts": {
+    "GEN": 50,
+    "EXO": 40,
+    "LEV": 27,
+    "NUM": 36,
+    "DEU": 34,
+    "JOS": 24,
+    "JDG": 21,
+    "RUT": 4,
+    "1SA": 31,
+    "2SA": 24,
+    "1KI": 22,
+    "2KI": 25,
+    "1CH": 29,
+    "2CH": 36,
+    "EZR": 10,
+    "NEH": 13,
+    "EST": 10,
+    "JOB": 42,
+    "PSA": 150,
+    "PRO": 31,
+    "ECC": 12,
+    "SOL": 8,
+    "ISA": 66,
+    "JER": 52,
+    "LAM": 5,
+    "EZE": 48,
+    "DAN": 12,
+    "HOS": 14,
+    "JOE": 3,
+    "AMO": 9,
+    "OBA": 1,
+    "JON": 4,
+    "MIC": 7,
+    "NAH": 3,
+    "HAB": 3,
+    "ZEP": 3,
+    "HAG": 2,
+    "ZEC": 14,
+    "MAL": 4,
+    "MAT": 28,
+    "MAR": 16,
+    "LUK": 24,
+    "JOH": 21,
+    "ACT": 28,
+    "ROM": 16,
+    "1CO": 16,
+    "2CO": 13,
+    "GAL": 6,
+    "EPH": 6,
+    "PHI": 4,
+    "COL": 4,
+    "1TH": 5,
+    "2TH": 3,
+    "1TI": 6,
+    "2TI": 4,
+    "TIT": 3,
+    "PHM": 1,
+    "HEB": 13,
+    "JAM": 5,
+    "1PE": 5,
+    "2PE": 3,
+    "1JO": 5,
+    "2JO": 1,
+    "3JO": 1,
+    "JUD": 1,
+    "REV": 22
+   }
+  },
+  {
+   "id": "bible.hbo",
+   "work": "bible",
+   "role": "original",
+   "title": {
+    "en": "Hebrew Old Testament (Masoretic Text)"
+   },
+   "shortTitle": "Hebrew",
+   "language": "hbo",
+   "script": "Hebr",
+   "direction": "rtl",
+   "versification": "masoretic",
+   "unit": "verse",
+   "books": [
+    "GEN",
+    "EXO",
+    "LEV",
+    "NUM",
+    "DEU",
+    "JOS",
+    "JDG",
+    "RUT",
+    "1SA",
+    "2SA",
+    "1KI",
+    "2KI",
+    "1CH",
+    "2CH",
+    "EZR",
+    "NEH",
+    "EST",
+    "JOB",
+    "PSA",
+    "PRO",
+    "ECC",
+    "SOL",
+    "ISA",
+    "JER",
+    "LAM",
+    "EZE",
+    "DAN",
+    "HOS",
+    "JOE",
+    "AMO",
+    "OBA",
+    "JON",
+    "MIC",
+    "NAH",
+    "HAB",
+    "ZEP",
+    "HAG",
+    "ZEC",
+    "MAL"
+   ],
+   "attribution": "The Old Testament in ancient Hebrew, following the Masoretic Text (Westminster Leningrad Codex), via eBible.org. Public domain.",
+   "attributionURL": "https://ebible.org/find/details.php?id=hbo",
+   "modifications": "None — verbatim. Hebrew chapter and verse numbers follow the Masoretic Text and sometimes differ from English Bibles.",
+   "source": {
+    "url": "https://ebible.org/Scriptures/hbo_vpl.zip",
+    "sha256": "70e381a744f5eb50cb4901db902b95088acfadba005aba0b8bee822e4ac34b63",
+    "retrieved": "2026-10-11"
+   },
+   "review": {
+    "status": "draft",
+    "notes": "Confirm the Hebrew rendering (vowels and cantillation) displays correctly on device."
+   },
+   "chapterCounts": {
+    "GEN": 50,
+    "EXO": 40,
+    "LEV": 27,
+    "NUM": 36,
+    "DEU": 34,
+    "JOS": 24,
+    "JDG": 21,
+    "RUT": 4,
+    "1SA": 31,
+    "2SA": 24,
+    "1KI": 22,
+    "2KI": 25,
+    "1CH": 29,
+    "2CH": 36,
+    "EZR": 10,
+    "NEH": 13,
+    "EST": 10,
+    "JOB": 42,
+    "PSA": 150,
+    "PRO": 31,
+    "ECC": 12,
+    "SOL": 8,
+    "ISA": 66,
+    "JER": 52,
+    "LAM": 5,
+    "EZE": 48,
+    "DAN": 12,
+    "HOS": 14,
+    "JOE": 4,
+    "AMO": 9,
+    "OBA": 1,
+    "JON": 4,
+    "MIC": 7,
+    "NAH": 3,
+    "HAB": 3,
+    "ZEP": 3,
+    "HAG": 2,
+    "ZEC": 14,
+    "MAL": 3
+   }
+  },
+  {
+   "id": "bible.grc",
+   "work": "bible",
+   "role": "original",
+   "title": {
+    "en": "Greek New Testament (Patriarchal Text, 1904)"
+   },
+   "shortTitle": "Greek",
+   "language": "grc",
+   "script": "Grek",
+   "direction": "ltr",
+   "versification": "byzantine",
+   "unit": "verse",
+   "books": [
+    "MAT",
+    "MAR",
+    "LUK",
+    "JOH",
+    "ACT",
+    "ROM",
+    "1CO",
+    "2CO",
+    "GAL",
+    "EPH",
+    "PHI",
+    "COL",
+    "1TH",
+    "2TH",
+    "1TI",
+    "2TI",
+    "TIT",
+    "PHM",
+    "HEB",
+    "JAM",
+    "1PE",
+    "2PE",
+    "1JO",
+    "2JO",
+    "3JO",
+    "JUD",
+    "REV"
+   ],
+   "attribution": "1904 Patriarchal Greek New Testament, via eBible.org. Public domain.",
+   "attributionURL": "https://ebible.org/find/details.php?id=grcbyz",
+   "modifications": "None — verbatim.",
+   "source": {
+    "url": "https://ebible.org/Scriptures/grcbyz_vpl.zip",
+    "sha256": "539e0ae1297da1310c49ad4fa60057e989c749484bf5919f64e4b1be90122af8",
+    "retrieved": "2026-10-11"
+   },
+   "review": {
+    "status": "draft",
+    "notes": "Spot-check against the eBible.org edition."
+   },
+   "chapterCounts": {
+    "MAT": 28,
+    "MAR": 16,
+    "LUK": 24,
+    "JOH": 21,
+    "ACT": 28,
+    "ROM": 16,
+    "1CO": 16,
+    "2CO": 13,
+    "GAL": 6,
+    "EPH": 6,
+    "PHI": 4,
+    "COL": 4,
+    "1TH": 5,
+    "2TH": 3,
+    "1TI": 6,
+    "2TI": 4,
+    "TIT": 3,
+    "PHM": 1,
+    "HEB": 13,
+    "JAM": 5,
+    "1PE": 5,
+    "2PE": 3,
+    "1JO": 5,
+    "2JO": 1,
+    "3JO": 1,
+    "JUD": 1,
+    "REV": 22
+   }
+  },
+  {
+   "id": "quran.ar",
+   "work": "quran",
+   "role": "original",
+   "title": {
+    "en": "Tanzil Quran Text (Uthmani)"
+   },
+   "shortTitle": "Arabic",
+   "language": "ar",
+   "script": "Arab",
+   "direction": "rtl",
+   "versification": "tanzil",
+   "unit": "verse",
+   "books": [
+    "QUR"
+   ],
+   "attribution": "Tanzil Quran Text (Uthmani, Version 1.1). Copyright © 2007–2026 Tanzil Project. License: Creative Commons Attribution 3.0.",
+   "attributionURL": "https://tanzil.net",
+   "notice": "# PLEASE DO NOT REMOVE OR CHANGE THIS COPYRIGHT BLOCK\n#====================================================================\n#\n#  Tanzil Quran Text (Uthmani, Version 1.1)\n#  Copyright (C) 2007-2026 Tanzil Project\n#  License: Creative Commons Attribution 3.0\n#\n#  This copy of the Quran text is carefully produced, highly \n#  verified and continuously monitored by a group of specialists \n#  at Tanzil Project.\n#\n#  TERMS OF USE:\n#\n#  - Permission is granted to copy and distribute verbatim copies \n#    of this text, but CHANGING IT IS NOT ALLOWED.\n#\n#  - This Quran text can be used in any website or application, \n#    provided that its source (Tanzil Project) is clearly indicated, \n#    and a link is made to tanzil.net to enable users to keep\n#    track of changes.\n#\n#  - This copyright notice shall be included in all verbatim copies \n#    of the text, and shall be reproduced appropriately in all files \n#    derived from or containing substantial portion of this text.\n#\n#  Please check updates at: http://tanzil.net/updates/\n#\n#====================================================================",
+   "modifications": "None. The Tanzil licence permits verbatim copies only; Beloved never alters this text.",
+   "source": {
+    "url": "https://tanzil.net/pub/download/index.php?quranType=uthmani&outType=txt-2&agree=true",
+    "sha256": "bf4f57b968d03f4131c070b1e285da9be0e0a108a21c910e872801ca273312c8",
+    "retrieved": "2026-10-11"
+   },
+   "review": {
+    "status": "draft",
+    "notes": "Scholarly reviewer to confirm the text and its display (font, ligatures, pause marks) on device."
+   },
+   "chapterCounts": {
+    "QUR": 114
+   }
+  },
+  {
+   "id": "quran.en",
+   "work": "quran",
+   "role": "translation",
+   "title": {
+    "en": "The Meaning of the Glorious Koran — Pickthall"
+   },
+   "shortTitle": "Pickthall",
+   "language": "en",
+   "script": "Latn",
+   "direction": "ltr",
+   "versification": "tanzil",
+   "unit": "verse",
+   "books": [
+    "QUR"
+   ],
+   "attribution": "English translation of the meanings by Mohammed Marmaduke Pickthall (1930). Public domain. Digital text from Tanzil.net.",
+   "attributionURL": "https://tanzil.net/trans/",
+   "modifications": "None — verbatim.",
+   "source": {
+    "url": "https://tanzil.net/trans/?transID=en.pickthall&type=txt-2",
+    "sha256": "4aabbfa9d96796f5a6b0217d2c39dce1a3084f772bf6f2650e37082a774e3cc7",
+    "retrieved": "2026-10-11"
+   },
+   "review": {
+    "status": "draft",
+    "notes": "Tanzil offers its translations for non-commercial use; Beloved is free. Re-check before any paid offering."
+   },
+   "chapterCounts": {
+    "QUR": 114
+   }
+  },
+  {
+   "id": "bhagavad-gita.sa",
+   "work": "bhagavad-gita",
+   "role": "original",
+   "title": {
+    "en": "Bhagavad Gita — Sanskrit"
+   },
+   "shortTitle": "Sanskrit",
+   "language": "sa",
+   "script": "Deva",
+   "direction": "ltr",
+   "versification": "gita-701",
+   "unit": "verse",
+   "books": [
+    "BG"
+   ],
+   "attribution": "Sanskrit text from the gita/gita open dataset (github.com/gita/gita), released under The Unlicense.",
+   "attributionURL": "https://github.com/gita/gita",
+   "modifications": "Formatting only: legacy vowel-sign order fixed to standard Unicode (26 places, e.g. ‘निश्िचत’ → ‘निश्चित’); verse numbers and the speaker line (e.g. “arjuna uvāca”) are shown separately, ‘।।’ is written ‘॥’, and line breaks after ‘।’ are restored. Numbering follows the 701-verse recension (chapter 13 has 35 verses).",
+   "source": {
+    "url": "https://raw.githubusercontent.com/gita/gita/main/data/verse.json",
+    "sha256": "bb599e666e552bd65080f1f8da6d488f067237f64091ab265978861cf3fadec7",
+    "retrieved": "2026-10-11"
+   },
+   "review": {
+    "status": "draft",
+    "notes": "Sanskrit reviewer to verify against a printed edition."
+   },
+   "chapterCounts": {
+    "BG": 18
+   }
+  },
+  {
+   "id": "bhagavad-gita.sa-Latn",
+   "work": "bhagavad-gita",
+   "role": "transliteration",
+   "title": {
+    "en": "Bhagavad Gita — transliteration (IAST)"
+   },
+   "shortTitle": "IAST",
+   "language": "sa",
+   "script": "Latn",
+   "direction": "ltr",
+   "versification": "gita-701",
+   "unit": "verse",
+   "books": [
+    "BG"
+   ],
+   "attribution": "Transliteration generated by Beloved from the Sanskrit text (IAST).",
+   "attributionURL": null,
+   "modifications": "Machine transliteration of the Sanskrit edition; words follow the Devanagari spacing (sandhi kept).",
+   "source": {
+    "url": "https://raw.githubusercontent.com/gita/gita/main/data/verse.json",
+    "sha256": "bb599e666e552bd65080f1f8da6d488f067237f64091ab265978861cf3fadec7",
+    "retrieved": "2026-10-11"
+   },
+   "review": {
+    "status": "draft",
+    "notes": "Sanskrit reviewer to spot-check the transliteration."
+   },
+   "chapterCounts": {
+    "BG": 18
+   }
+  },
+  {
+   "id": "bhagavad-gita.en",
+   "work": "bhagavad-gita",
+   "role": "translation",
+   "title": {
+    "en": "The Song Celestial — Sir Edwin Arnold (1885)"
+   },
+   "shortTitle": "Arnold",
+   "language": "en",
+   "script": "Latn",
+   "direction": "ltr",
+   "versification": "arnold-passages",
+   "unit": "passage",
+   "books": [
+    "BG"
+   ],
+   "attribution": "The Song Celestial, translated by Sir Edwin Arnold (1885). Public domain. Text from Project Gutenberg eBook #2388.",
+   "attributionURL": "https://www.gutenberg.org/ebooks/2388",
+   "modifications": "Project Gutenberg header, licence and footnotes removed; ‘--’ set as em dashes; line indentation removed. Arnold’s poem follows the chapters, not individual verses.",
+   "source": {
+    "url": "https://www.gutenberg.org/cache/epub/2388/pg2388.txt",
+    "sha256": "85b22401a9d256179f9a2e407215eb516da9b8213f23c32e03d66709d839a9e0",
+    "retrieved": "2026-10-11"
+   },
+   "review": {
+    "status": "draft",
+    "notes": "Reviewer to confirm the Gutenberg text and chapter titles."
+   },
+   "chapterCounts": {
+    "BG": 18
+   }
+  }
+ ]
+}

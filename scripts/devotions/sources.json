@@ -1,0 +1,238 @@
+{
+  "_comment": "Pinned Wikisource revisions. Refresh pins only after reviewing upstream changes: python3 -I scripts/import_devotions.py --pin",
+  "sources": {
+    "bcp1979": {
+      "site": "en.wikisource.org",
+      "work": "The Book of Common Prayer (1979), Prayers and Thanksgivings — The Episcopal Church; public domain",
+      "titles": [
+        "Page:Book of common prayer (TEC, 1979).pdf/814",
+        "Page:Book of common prayer (TEC, 1979).pdf/815",
+        "Page:Book of common prayer (TEC, 1979).pdf/816",
+        "Page:Book of common prayer (TEC, 1979).pdf/817",
+        "Page:Book of common prayer (TEC, 1979).pdf/818",
+        "Page:Book of common prayer (TEC, 1979).pdf/819",
+        "Page:Book of common prayer (TEC, 1979).pdf/820",
+        "Page:Book of common prayer (TEC, 1979).pdf/821",
+        "Page:Book of common prayer (TEC, 1979).pdf/822",
+        "Page:Book of common prayer (TEC, 1979).pdf/823",
+        "Page:Book of common prayer (TEC, 1979).pdf/824",
+        "Page:Book of common prayer (TEC, 1979).pdf/825",
+        "Page:Book of common prayer (TEC, 1979).pdf/826",
+        "Page:Book of common prayer (TEC, 1979).pdf/827",
+        "Page:Book of common prayer (TEC, 1979).pdf/828",
+        "Page:Book of common prayer (TEC, 1979).pdf/829",
+        "Page:Book of common prayer (TEC, 1979).pdf/830",
+        "Page:Book of common prayer (TEC, 1979).pdf/831",
+        "Page:Book of common prayer (TEC, 1979).pdf/832",
+        "Page:Book of common prayer (TEC, 1979).pdf/833",
+        "Page:Book of common prayer (TEC, 1979).pdf/834",
+        "Page:Book of common prayer (TEC, 1979).pdf/835",
+        "Page:Book of common prayer (TEC, 1979).pdf/836",
+        "Page:Book of common prayer (TEC, 1979).pdf/837",
+        "Page:Book of common prayer (TEC, 1979).pdf/838",
+        "Page:Book of common prayer (TEC, 1979).pdf/839",
+        "Page:Book of common prayer (TEC, 1979).pdf/840",
+        "Page:Book of common prayer (TEC, 1979).pdf/841"
+      ],
+      "pages": [
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/814",
+          "revid": 7867465,
+          "sha256": "e47839e2a54d70d073e4448df5cb5985bfa96c3ac2c31c28d0e0a73240b5b9fb"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/815",
+          "revid": 7867466,
+          "sha256": "635cc449c190b2ec3f1cf9a14184b9da576d718fa6e292657ef394a86cad485a"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/816",
+          "revid": 7867467,
+          "sha256": "49e45cbbfb457866bf104fc7433c742a83a61d949702a2ff293210fb2e967b36"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/817",
+          "revid": 7867468,
+          "sha256": "b6672c7747577181024bad909799dc5c53a3780275bc5b14ffca54d749c96d14"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/818",
+          "revid": 7867470,
+          "sha256": "2d580a85a40eabfe79b7aa7b38bac78a56162357cfedeea6c636314a11f81dd1"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/819",
+          "revid": 7867471,
+          "sha256": "60adbbac2ff38292b460e3948b334cfce12dbb52d97b036871f5944b4c390678"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/820",
+          "revid": 7867473,
+          "sha256": "14b2a87b875a8a2dc52079dc686e08b0a1062fb597c5b60dcad6f4f3129c10b4"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/821",
+          "revid": 7867474,
+          "sha256": "01293668d69f9048308b3ecd3f69a2fbc7c456a0a7e8d030c8f564643dc0ef53"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/822",
+          "revid": 7867476,
+          "sha256": "ec06e52dea67fd1008f3e9cf8ffaf174ceff9cb1dcc691067889055d56cbff57"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/823",
+          "revid": 7867477,
+          "sha256": "efcdf6123685ca4b10da628d579174e39204496ad4d0c3c5d54a77b9d4771722"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/824",
+          "revid": 7867478,
+          "sha256": "50eb75b61b971198c6a3ae06ea26dcdd4edaf2f6c21f981f024932e02357d2e5"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/825",
+          "revid": 10330037,
+          "sha256": "a494e3cd9af5a128f5e9975d5c8ea1e3f615a9b88e8f0925f7cb7912fa6b541a"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/826",
+          "revid": 7867480,
+          "sha256": "1b2c7f5e16ef7c62bbe8576964460738f8ab2295ed1e814c624a2f9a5cbdfc9e"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/827",
+          "revid": 7867482,
+          "sha256": "809da6e06966fa923d08eae7cbe4eb909cb0c4efd26306b5e3c9cc8cacf8c7bc"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/828",
+          "revid": 7867483,
+          "sha256": "ce80c8da595989dc9798214434adeddc3fbc7bec9317149ecdc509df83e4838f"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/829",
+          "revid": 7867484,
+          "sha256": "0b02a6fe344f8534d242a8243f7d9a8edd31e92d58338076b8fd048d51783624"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/830",
+          "revid": 7867487,
+          "sha256": "a70c0166de77bbf886d4d227d09c7c64fb248faabad48769a920b164e3b22a14"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/831",
+          "revid": 7867489,
+          "sha256": "f00f655792aa4ccb7ea40d5f3a0e9f96922ae39240950553514c3a1cd970f045"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/832",
+          "revid": 7867491,
+          "sha256": "58c626d82f1b556b565e8b578b9c649e47bb2b0881313511ed428e32419ddaa7"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/833",
+          "revid": 7867492,
+          "sha256": "7a126f528e39fe0000c5048f1c07fe65438f4f7fbd42af2fb11b4128bc8d60fc"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/834",
+          "revid": 7867493,
+          "sha256": "060df690db2608df66f219f1c188fbd90427c309b41abe5dda72a53914e029f1"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/835",
+          "revid": 7867494,
+          "sha256": "4c6f1dc3d54df5c49cda118d65ac940efb8204426fb41a34a45b34474b6eb551"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/836",
+          "revid": 9721863,
+          "sha256": "fac3ef47decd2f3c7577c0c74f06b38bb46430a41e0089dfa5387bc88ee1a655"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/837",
+          "revid": 7867497,
+          "sha256": "b3606e37d8661c2d862d41fcf3420edb4d10718fc3d877106e3b40947d756f58"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/838",
+          "revid": 7867498,
+          "sha256": "292f87c9950203cc196bcd4fa90fa8c715d3b6b00c224d61d1c74f2f3cb855b4"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/839",
+          "revid": 7867499,
+          "sha256": "2e854f22b23177999c935e0e816dbd00a6913ca60fd3d6015d3f6b3743e5a6a8"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/840",
+          "revid": 7867503,
+          "sha256": "7f8839ec5de2d3c62e971a3e2c120559f69a344661bd39d829c1080333c9fb8d"
+        },
+        {
+          "title": "Page:Book of common prayer (TEC, 1979).pdf/841",
+          "revid": 7867504,
+          "sha256": "8c2e1abbefe8e03f1ed3856b88ec4557b045f1203d3f0406fa964154783b8846"
+        }
+      ]
+    },
+    "rv-3-62": {
+      "site": "sa.wikisource.org",
+      "work": "Rigveda 3.62",
+      "titles": [
+        "ऋग्वेदः सूक्तं ३.६२"
+      ],
+      "pages": [
+        {
+          "title": "ऋग्वेदः सूक्तं ३.६२",
+          "revid": 330443,
+          "sha256": "adcfe8603eb4dec02cc0086ce0f91e92fccee3e777f21b5cf7be06aed37738bd"
+        }
+      ]
+    },
+    "rv-7-59": {
+      "site": "sa.wikisource.org",
+      "work": "Rigveda 7.59",
+      "titles": [
+        "ऋग्वेदः सूक्तं ७.५९"
+      ],
+      "pages": [
+        {
+          "title": "ऋग्वेदः सूक्तं ७.५९",
+          "revid": 403390,
+          "sha256": "1395f3af59ddb09327928597b6612bff179ba751b538e1fe1809b1686e50082b"
+        }
+      ]
+    },
+    "santana-gopala": {
+      "site": "sa.wikisource.org",
+      "work": "Santāna Gopāla Stotram",
+      "titles": [
+        "सन्तानगोपालस्तोत्रम्"
+      ],
+      "pages": [
+        {
+          "title": "सन्तानगोपालस्तोत्रम्",
+          "revid": 32413,
+          "sha256": "cb2909c1983714d03a8680f44c6e48138d1f2e2fbf9aa2facf10e9c7d0ca9059"
+        }
+      ]
+    }
+  },
+  "files": {
+    "hanuman-chalisa": {
+      "work": "Hanuman Chalisa — Goswami Tulsidas (16th century, public domain); transcription provided by the owner",
+      "hi": {
+        "url": "https://chalisahanuman.co.in/hindi/",
+        "file": "chalisa-hi.html",
+        "sha256": "5664ca28bc054ae0621c0effb99c6936f8c30e3602877b16c529dad9de9a2222"
+      },
+      "en": {
+        "url": "https://chalisahanuman.co.in/english/",
+        "file": "chalisa-en.html",
+        "sha256": "c9126cb7de9489698a95b329b7a5267b7911f73e7fbee663fd1660853e61348c"
+      }
+    }
+  }
+}

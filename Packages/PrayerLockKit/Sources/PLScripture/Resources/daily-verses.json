@@ -1,0 +1,642 @@
+{
+ "version": 1,
+ "faiths": {
+  "christianity": {
+   "work": "bible",
+   "entries": [
+    {
+     "book": "PSA",
+     "chapter": 46,
+     "firstVerse": 10,
+     "lastVerse": 10
+    },
+    {
+     "book": "MAT",
+     "chapter": 11,
+     "firstVerse": 28,
+     "lastVerse": 30
+    },
+    {
+     "book": "PHI",
+     "chapter": 4,
+     "firstVerse": 6,
+     "lastVerse": 7
+    },
+    {
+     "book": "ISA",
+     "chapter": 40,
+     "firstVerse": 31,
+     "lastVerse": 31
+    },
+    {
+     "book": "JOH",
+     "chapter": 14,
+     "firstVerse": 27,
+     "lastVerse": 27
+    },
+    {
+     "book": "PSA",
+     "chapter": 121,
+     "firstVerse": 1,
+     "lastVerse": 2
+    },
+    {
+     "book": "LAM",
+     "chapter": 3,
+     "firstVerse": 22,
+     "lastVerse": 23
+    },
+    {
+     "book": "ROM",
+     "chapter": 8,
+     "firstVerse": 38,
+     "lastVerse": 39
+    },
+    {
+     "book": "PRO",
+     "chapter": 3,
+     "firstVerse": 5,
+     "lastVerse": 6
+    },
+    {
+     "book": "1CO",
+     "chapter": 13,
+     "firstVerse": 4,
+     "lastVerse": 7
+    },
+    {
+     "book": "PSA",
+     "chapter": 37,
+     "firstVerse": 7,
+     "lastVerse": 7
+    },
+    {
+     "book": "ISA",
+     "chapter": 26,
+     "firstVerse": 3,
+     "lastVerse": 3
+    },
+    {
+     "book": "MAT",
+     "chapter": 6,
+     "firstVerse": 34,
+     "lastVerse": 34
+    },
+    {
+     "book": "PSA",
+     "chapter": 62,
+     "firstVerse": 1,
+     "lastVerse": 1
+    },
+    {
+     "book": "PSA",
+     "chapter": 139,
+     "firstVerse": 23,
+     "lastVerse": 24
+    },
+    {
+     "book": "MIC",
+     "chapter": 6,
+     "firstVerse": 8,
+     "lastVerse": 8
+    },
+    {
+     "book": "JOS",
+     "chapter": 1,
+     "firstVerse": 9,
+     "lastVerse": 9
+    },
+    {
+     "book": "2CO",
+     "chapter": 12,
+     "firstVerse": 9,
+     "lastVerse": 9
+    },
+    {
+     "book": "PSA",
+     "chapter": 34,
+     "firstVerse": 18,
+     "lastVerse": 18
+    },
+    {
+     "book": "PSA",
+     "chapter": 16,
+     "firstVerse": 11,
+     "lastVerse": 11
+    },
+    {
+     "book": "COL",
+     "chapter": 3,
+     "firstVerse": 15,
+     "lastVerse": 15
+    },
+    {
+     "book": "PSA",
+     "chapter": 90,
+     "firstVerse": 12,
+     "lastVerse": 12
+    },
+    {
+     "book": "ECC",
+     "chapter": 3,
+     "firstVerse": 1,
+     "lastVerse": 1
+    },
+    {
+     "book": "JAM",
+     "chapter": 1,
+     "firstVerse": 5,
+     "lastVerse": 5
+    },
+    {
+     "book": "GAL",
+     "chapter": 5,
+     "firstVerse": 22,
+     "lastVerse": 23
+    },
+    {
+     "book": "PSA",
+     "chapter": 118,
+     "firstVerse": 24,
+     "lastVerse": 24
+    },
+    {
+     "book": "ROM",
+     "chapter": 12,
+     "firstVerse": 2,
+     "lastVerse": 2
+    },
+    {
+     "book": "ISA",
+     "chapter": 30,
+     "firstVerse": 15,
+     "lastVerse": 15
+    },
+    {
+     "book": "PSA",
+     "chapter": 131,
+     "firstVerse": 2,
+     "lastVerse": 2
+    },
+    {
+     "book": "1PE",
+     "chapter": 5,
+     "firstVerse": 7,
+     "lastVerse": 7
+    },
+    {
+     "book": "PSA",
+     "chapter": 19,
+     "firstVerse": 14,
+     "lastVerse": 14
+    },
+    {
+     "book": "MAT",
+     "chapter": 5,
+     "firstVerse": 9,
+     "lastVerse": 9
+    },
+    {
+     "book": "PHI",
+     "chapter": 4,
+     "firstVerse": 8,
+     "lastVerse": 8
+    },
+    {
+     "book": "PSA",
+     "chapter": 51,
+     "firstVerse": 10,
+     "lastVerse": 10
+    },
+    {
+     "book": "JOH",
+     "chapter": 15,
+     "firstVerse": 5,
+     "lastVerse": 5
+    },
+    {
+     "book": "PSA",
+     "chapter": 27,
+     "firstVerse": 14,
+     "lastVerse": 14
+    },
+    {
+     "book": "PSA",
+     "chapter": 4,
+     "firstVerse": 8,
+     "lastVerse": 8
+    },
+    {
+     "book": "1JO",
+     "chapter": 4,
+     "firstVerse": 18,
+     "lastVerse": 18
+    },
+    {
+     "book": "MAT",
+     "chapter": 6,
+     "firstVerse": 6,
+     "lastVerse": 6
+    },
+    {
+     "book": "PSA",
+     "chapter": 23,
+     "firstVerse": 1,
+     "lastVerse": 3
+    }
+   ],
+   "review": {
+    "status": "draft",
+    "notes": "Selection of passages needs a faith reviewer."
+   }
+  },
+  "islam": {
+   "work": "quran",
+   "entries": [
+    {
+     "book": "QUR",
+     "chapter": 94,
+     "firstVerse": 5,
+     "lastVerse": 6
+    },
+    {
+     "book": "QUR",
+     "chapter": 13,
+     "firstVerse": 28,
+     "lastVerse": 28
+    },
+    {
+     "book": "QUR",
+     "chapter": 2,
+     "firstVerse": 152,
+     "lastVerse": 152
+    },
+    {
+     "book": "QUR",
+     "chapter": 2,
+     "firstVerse": 153,
+     "lastVerse": 153
+    },
+    {
+     "book": "QUR",
+     "chapter": 39,
+     "firstVerse": 53,
+     "lastVerse": 53
+    },
+    {
+     "book": "QUR",
+     "chapter": 2,
+     "firstVerse": 186,
+     "lastVerse": 186
+    },
+    {
+     "book": "QUR",
+     "chapter": 3,
+     "firstVerse": 139,
+     "lastVerse": 139
+    },
+    {
+     "book": "QUR",
+     "chapter": 29,
+     "firstVerse": 69,
+     "lastVerse": 69
+    },
+    {
+     "book": "QUR",
+     "chapter": 40,
+     "firstVerse": 60,
+     "lastVerse": 60
+    },
+    {
+     "book": "QUR",
+     "chapter": 50,
+     "firstVerse": 16,
+     "lastVerse": 16
+    },
+    {
+     "book": "QUR",
+     "chapter": 93,
+     "firstVerse": 3,
+     "lastVerse": 5
+    },
+    {
+     "book": "QUR",
+     "chapter": 20,
+     "firstVerse": 25,
+     "lastVerse": 28
+    },
+    {
+     "book": "QUR",
+     "chapter": 25,
+     "firstVerse": 63,
+     "lastVerse": 63
+    },
+    {
+     "book": "QUR",
+     "chapter": 17,
+     "firstVerse": 80,
+     "lastVerse": 80
+    },
+    {
+     "book": "QUR",
+     "chapter": 2,
+     "firstVerse": 45,
+     "lastVerse": 45
+    },
+    {
+     "book": "QUR",
+     "chapter": 64,
+     "firstVerse": 11,
+     "lastVerse": 11
+    },
+    {
+     "book": "QUR",
+     "chapter": 2,
+     "firstVerse": 255,
+     "lastVerse": 255
+    },
+    {
+     "book": "QUR",
+     "chapter": 1,
+     "firstVerse": 1,
+     "lastVerse": 7
+    },
+    {
+     "book": "QUR",
+     "chapter": 112,
+     "firstVerse": 1,
+     "lastVerse": 4
+    },
+    {
+     "book": "QUR",
+     "chapter": 33,
+     "firstVerse": 41,
+     "lastVerse": 42
+    },
+    {
+     "book": "QUR",
+     "chapter": 7,
+     "firstVerse": 55,
+     "lastVerse": 55
+    },
+    {
+     "book": "QUR",
+     "chapter": 7,
+     "firstVerse": 205,
+     "lastVerse": 205
+    },
+    {
+     "book": "QUR",
+     "chapter": 49,
+     "firstVerse": 13,
+     "lastVerse": 13
+    },
+    {
+     "book": "QUR",
+     "chapter": 103,
+     "firstVerse": 1,
+     "lastVerse": 3
+    },
+    {
+     "book": "QUR",
+     "chapter": 9,
+     "firstVerse": 51,
+     "lastVerse": 51
+    },
+    {
+     "book": "QUR",
+     "chapter": 17,
+     "firstVerse": 23,
+     "lastVerse": 24
+    },
+    {
+     "book": "QUR",
+     "chapter": 2,
+     "firstVerse": 201,
+     "lastVerse": 201
+    },
+    {
+     "book": "QUR",
+     "chapter": 3,
+     "firstVerse": 8,
+     "lastVerse": 8
+    },
+    {
+     "book": "QUR",
+     "chapter": 25,
+     "firstVerse": 74,
+     "lastVerse": 74
+    },
+    {
+     "book": "QUR",
+     "chapter": 14,
+     "firstVerse": 7,
+     "lastVerse": 7
+    },
+    {
+     "book": "QUR",
+     "chapter": 89,
+     "firstVerse": 27,
+     "lastVerse": 30
+    },
+    {
+     "book": "QUR",
+     "chapter": 6,
+     "firstVerse": 162,
+     "lastVerse": 162
+    },
+    {
+     "book": "QUR",
+     "chapter": 4,
+     "firstVerse": 28,
+     "lastVerse": 28
+    },
+    {
+     "book": "QUR",
+     "chapter": 21,
+     "firstVerse": 83,
+     "lastVerse": 83
+    },
+    {
+     "book": "QUR",
+     "chapter": 2,
+     "firstVerse": 286,
+     "lastVerse": 286
+    },
+    {
+     "book": "QUR",
+     "chapter": 21,
+     "firstVerse": 87,
+     "lastVerse": 87
+    }
+   ],
+   "review": {
+    "status": "draft",
+    "notes": "Selection of passages needs a faith reviewer."
+   }
+  },
+  "hinduism": {
+   "work": "bhagavad-gita",
+   "entries": [
+    {
+     "book": "BG",
+     "chapter": 2,
+     "firstVerse": 14,
+     "lastVerse": 14,
+     "translationExcerpt": "This that irks—\nThy sense-life, thrilling to the elements—\nBringing thee heat and cold, sorrows and joys,\n'Tis brief and mutable! Bear with it, Prince!\nAs the wise bear."
+    },
+    {
+     "book": "BG",
+     "chapter": 2,
+     "firstVerse": 15,
+     "lastVerse": 15,
+     "translationExcerpt": "The soul which is not moved,\nThe soul that with a strong and constant calm\nTakes sorrow and takes joy indifferently,\nLives in the life undying!"
+    },
+    {
+     "book": "BG",
+     "chapter": 2,
+     "firstVerse": 20,
+     "lastVerse": 20,
+     "translationExcerpt": "Never the spirit was born; the spirit shall cease to be never;\nNever was time it was not; End and Beginning are dreams!\nBirthless and deathless and changeless remaineth the spirit for ever;\nDeath hath not touched it at all, dead though the house of it seems!"
+    },
+    {
+     "book": "BG",
+     "chapter": 2,
+     "firstVerse": 23,
+     "lastVerse": 23,
+     "translationExcerpt": "I say to thee weapons reach not the Life;\nFlame burns it not, waters cannot o'erwhelm,\nNor dry winds wither it."
+    },
+    {
+     "book": "BG",
+     "chapter": 2,
+     "firstVerse": 47,
+     "lastVerse": 47,
+     "translationExcerpt": "Let right deeds be\nThy motive, not the fruit which comes from them."
+    },
+    {
+     "book": "BG",
+     "chapter": 2,
+     "firstVerse": 48,
+     "lastVerse": 48,
+     "translationExcerpt": "And live in action! Labour! Make thine acts\nThy piety, casting all self aside,\nContemning gain and merit; equable\nIn good or evil: equability\nIs Yog, is piety!"
+    },
+    {
+     "book": "BG",
+     "chapter": 2,
+     "firstVerse": 55,
+     "lastVerse": 55,
+     "translationExcerpt": "When one, O Pritha's Son!\nAbandoning desires which shake the mind—\nFinds in his soul full comfort for his soul,\nHe hath attained the Yog—that man is such!"
+    },
+    {
+     "book": "BG",
+     "chapter": 2,
+     "firstVerse": 70,
+     "lastVerse": 70,
+     "translationExcerpt": "So is the perfect one! to his soul's ocean\nThe world of sense pours streams of witchery;\nThey leave him as they find, without commotion,\nTaking their tribute, but remaining sea."
+    },
+    {
+     "book": "BG",
+     "chapter": 4,
+     "firstVerse": 7,
+     "lastVerse": 8,
+     "translationExcerpt": "When Righteousness\nDeclines, O Bharata! when Wickedness\nIs strong, I rise, from age to age, and take\nVisible shape, and move a man with men,\nSuccouring the good, thrusting the evil back,\nAnd setting Virtue on her seat again."
+    },
+    {
+     "book": "BG",
+     "chapter": 5,
+     "firstVerse": 10,
+     "lastVerse": 10,
+     "translationExcerpt": "He that acts in thought of Brahm,\nDetaching end from act, with act content,\nThe world of sense can no more stain his soul\nThan waters mar th' enamelled lotus-leaf."
+    },
+    {
+     "book": "BG",
+     "chapter": 6,
+     "firstVerse": 5,
+     "lastVerse": 6,
+     "translationExcerpt": "Let each man raise\nThe Self by Soul, not trample down his Self,\nSince Soul that is Self's friend may grow Self's foe.\nSoul is Self's friend when Self doth rule o'er Self,\nBut Self turns enemy if Soul's own self\nHates Self as not itself."
+    },
+    {
+     "book": "BG",
+     "chapter": 6,
+     "firstVerse": 16,
+     "lastVerse": 17,
+     "translationExcerpt": "Religion is not his who too much fasts\nOr too much feasts, nor his who sleeps away\nAn idle mind; nor his who wears to waste\nHis strength in vigils. Nay, Arjuna! call\nThat the true piety which most removes\nEarth-aches and ills, where one is moderate\nIn eating and in resting, and in sport;\nMeasured in wish and act; sleeping betimes,\nWaking betimes for duty."
+    },
+    {
+     "book": "BG",
+     "chapter": 6,
+     "firstVerse": 19,
+     "lastVerse": 19,
+     "translationExcerpt": "Steadfast a lamp burns sheltered from the wind;\nSuch is the likeness of the Yogi's mind\nShut from sense-storms and burning bright to Heaven."
+    },
+    {
+     "book": "BG",
+     "chapter": 6,
+     "firstVerse": 35,
+     "lastVerse": 35,
+     "translationExcerpt": "Hero long-armed! beyond denial, hard\nMan's heart is to restrain, and wavering;\nYet may it grow restrained by habit, Prince!\nBy wont of self-command."
+    },
+    {
+     "book": "BG",
+     "chapter": 9,
+     "firstVerse": 26,
+     "lastVerse": 26,
+     "translationExcerpt": "Whoso shall offer Me in faith and love\nA leaf, a flower, a fruit, water poured forth,\nThat offering I accept, lovingly made\nWith pious will."
+    },
+    {
+     "book": "BG",
+     "chapter": 9,
+     "firstVerse": 27,
+     "lastVerse": 27,
+     "translationExcerpt": "Whate'er thou doest, Prince!\nEating or sacrificing, giving gifts,\nPraying or fasting, let it all be done\nFor Me, as Mine."
+    },
+    {
+     "book": "BG",
+     "chapter": 10,
+     "firstVerse": 20,
+     "lastVerse": 20,
+     "translationExcerpt": "I am the Spirit seated deep in every creature's heart;\nFrom Me they come; by Me they live; at My word they depart!"
+    },
+    {
+     "book": "BG",
+     "chapter": 12,
+     "firstVerse": 13,
+     "lastVerse": 14,
+     "translationExcerpt": "Who hateth nought\nOf all which lives, living himself benign,\nCompassionate, from arrogance exempt,\nExempt from love of self, unchangeable\nBy good or ill; patient, contented, firm\nIn faith, mastering himself, true to his word,\nSeeking Me, heart and soul; vowed unto Me,—\nThat man I love!"
+    },
+    {
+     "book": "BG",
+     "chapter": 12,
+     "firstVerse": 15,
+     "lastVerse": 15,
+     "translationExcerpt": "Who troubleth not his kind,\nAnd is not troubled by them; clear of wrath,\nLiving too high for gladness, grief, or fear,\nThat man I love!"
+    },
+    {
+     "book": "BG",
+     "chapter": 12,
+     "firstVerse": 18,
+     "lastVerse": 19,
+     "translationExcerpt": "Who, unto friend and foe\nKeeping an equal heart, with equal mind\nBears shame and glory; with an equal peace\nTakes heat and cold, pleasure and pain; abides\nQuit of desires, hears praise or calumny\nIn passionless restraint, unmoved by each;\nLinked by no ties to earth, steadfast in Me,\nThat man I love!"
+    },
+    {
+     "book": "BG",
+     "chapter": 18,
+     "firstVerse": 61,
+     "lastVerse": 62,
+     "translationExcerpt": "There lives a Master in the hearts of men\nMaketh their deeds, by subtle pulling—strings,\nDance to what tune HE will. With all thy soul\nTrust Him, and take Him for thy succour, Prince!\nSo—only so, Arjuna!—shalt thou gain—\nBy grace of Him—the uttermost repose,\nThe Eternal Place!"
+    },
+    {
+     "book": "BG",
+     "chapter": 18,
+     "firstVerse": 66,
+     "lastVerse": 66,
+     "translationExcerpt": "And let go those—\nRites and writ duties! Fly to Me alone!\nMake Me thy single refuge! I will free\nThy soul from all its sins! Be of good cheer!"
+    }
+   ],
+   "review": {
+    "status": "draft",
+    "notes": "Selection of passages needs a faith reviewer. Each Arnold excerpt's pairing with its verse needs confirmation."
+   }
+  }
+ }
+}

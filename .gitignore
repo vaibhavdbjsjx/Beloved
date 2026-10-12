@@ -1,0 +1,34 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/*/.build/
+Packages/*/.swiftpm/
+Package.resolved.orig
+
+# Secrets — NEVER commit. Copy Config/Secrets.example.xcconfig to Config/Secrets.xcconfig.
+Config/Secrets.xcconfig
+*.p8
+*.p12
+*.mobileprovision
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Local tooling
+*.log
+
+# Generated web pages (website/build.py)
+website/public/
+
+# Downloaded scripture sources (fetched + checksum-verified by scripts/import_scripture.py)
+Vendor/

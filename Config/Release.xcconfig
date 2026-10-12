@@ -1,0 +1,4 @@
+#include "Shared.xcconfig"
+
+// Production builds only show approved, rights-cleared content.
+PL_ENVIRONMENT = production

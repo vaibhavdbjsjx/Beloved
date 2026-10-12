@@ -1,0 +1,10 @@
+/* Provenance labels shown above every content segment. */
+"Scripture" = "Scripture";
+"Traditional" = "Traditional";
+"Paraphrase" = "Paraphrase";
+"Prayer" = "Prayer";
+"AI-generated prayer" = "AI-generated prayer";
+"Meaning" = "Meaning";
+"Reflection" = "Reflection";
+/* Badge on content that has not passed editorial review (development builds only). */
+"Unreviewed draft" = "Unreviewed draft";

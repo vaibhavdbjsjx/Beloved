@@ -1,0 +1,716 @@
+{
+  "_comment": "Curated devotional library. Text is never written here: BCP prayers come from the pinned Wikisource pages, Sanskrit verses from pinned Sanskrit Wikisource pages, duas from the bundled Tanzil Qur'an. Only titles for Hindu/Islamic items, tags and the short 'traditionally recited' explanations are editorial — and every item starts as draft for a faith reviewer.",
+  "christianity": {
+    "source": "bcp-1979",
+    "edition": "bcp-1979.en",
+    "prayers": [
+      {
+        "n": 1,
+        "themes": [
+          "gratitude",
+          "joy"
+        ],
+        "moods": [
+          "grateful",
+          "happy"
+        ]
+      },
+      {
+        "n": 3,
+        "themes": [
+          "peace",
+          "relationships"
+        ],
+        "moods": [
+          "needPeace"
+        ]
+      },
+      {
+        "n": 4,
+        "themes": [
+          "peace"
+        ],
+        "moods": [
+          "needPeace",
+          "anxious"
+        ]
+      },
+      {
+        "n": 6,
+        "themes": [
+          "forgiveness",
+          "relationships"
+        ],
+        "moods": [
+          "angry",
+          "seekingForgiveness"
+        ]
+      },
+      {
+        "n": 30,
+        "themes": [
+          "work",
+          "difficult-times"
+        ],
+        "moods": [
+          "stressed",
+          "anxious",
+          "needStrength"
+        ]
+      },
+      {
+        "n": 32,
+        "themes": [
+          "presence",
+          "self-control"
+        ],
+        "moods": [
+          "stressed",
+          "justWantToPray"
+        ]
+      },
+      {
+        "n": 35,
+        "themes": [
+          "comfort"
+        ],
+        "moods": [
+          "justWantToPray"
+        ]
+      },
+      {
+        "n": 45,
+        "themes": [
+          "family"
+        ],
+        "moods": [
+          "grateful",
+          "justWantToPray"
+        ]
+      },
+      {
+        "n": 46,
+        "themes": [
+          "family",
+          "children"
+        ],
+        "moods": [
+          "anxious",
+          "hopeful"
+        ]
+      },
+      {
+        "n": 47,
+        "themes": [
+          "family",
+          "guidance"
+        ],
+        "moods": [
+          "anxious",
+          "hopeful"
+        ]
+      },
+      {
+        "n": 48,
+        "themes": [
+          "comfort",
+          "presence"
+        ],
+        "moods": [
+          "lonely",
+          "sad"
+        ]
+      },
+      {
+        "n": 49,
+        "themes": [
+          "comfort",
+          "family"
+        ],
+        "moods": [
+          "lonely"
+        ]
+      },
+      {
+        "n": 50,
+        "themes": [
+          "celebration",
+          "gratitude"
+        ],
+        "moods": [
+          "celebrating",
+          "grateful"
+        ]
+      },
+      {
+        "n": 52,
+        "themes": [
+          "family",
+          "protection"
+        ],
+        "moods": [
+          "lonely",
+          "anxious"
+        ]
+      },
+      {
+        "n": 53,
+        "themes": [
+          "protection"
+        ],
+        "moods": [
+          "anxious"
+        ]
+      },
+      {
+        "n": 54,
+        "themes": [
+          "family",
+          "relationships"
+        ],
+        "moods": [
+          "grateful",
+          "justWantToPray"
+        ]
+      },
+      {
+        "n": 55,
+        "themes": [
+          "comfort",
+          "difficult-times"
+        ],
+        "moods": [
+          "sad",
+          "lonely",
+          "needStrength"
+        ]
+      },
+      {
+        "n": 56,
+        "themes": [
+          "self-control",
+          "health",
+          "hope"
+        ],
+        "moods": [
+          "needStrength",
+          "seekingGuidance"
+        ]
+      },
+      {
+        "n": 57,
+        "themes": [
+          "guidance"
+        ],
+        "moods": [
+          "seekingGuidance"
+        ]
+      },
+      {
+        "n": 58,
+        "themes": [
+          "guidance",
+          "study"
+        ],
+        "moods": [
+          "seekingGuidance",
+          "stressed"
+        ]
+      },
+      {
+        "n": 59,
+        "themes": [
+          "peace",
+          "trust"
+        ],
+        "moods": [
+          "anxious",
+          "stressed",
+          "needPeace"
+        ]
+      },
+      {
+        "n": 60,
+        "themes": [
+          "protection",
+          "trust"
+        ],
+        "moods": [
+          "anxious"
+        ]
+      },
+      {
+        "n": 61,
+        "themes": [
+          "presence",
+          "guidance"
+        ],
+        "moods": [
+          "justWantToPray",
+          "seekingGuidance"
+        ]
+      },
+      {
+        "n": 62,
+        "themes": [
+          "peace",
+          "relationships",
+          "forgiveness"
+        ],
+        "moods": [
+          "needPeace",
+          "angry",
+          "justWantToPray"
+        ]
+      },
+      {
+        "n": 63,
+        "themes": [
+          "peace",
+          "protection"
+        ],
+        "moods": [
+          "needPeace"
+        ],
+        "times": [
+          "evening",
+          "night"
+        ]
+      },
+      {
+        "n": 65,
+        "themes": [
+          "trust",
+          "hope"
+        ],
+        "moods": [
+          "hopeful",
+          "justWantToPray"
+        ]
+      },
+      {
+        "n": 69,
+        "themes": [
+          "joy",
+          "presence"
+        ],
+        "moods": [
+          "grateful",
+          "happy"
+        ]
+      },
+      {
+        "n": 70,
+        "themes": [
+          "gratitude"
+        ],
+        "moods": [
+          "grateful"
+        ],
+        "times": [
+          "midday",
+          "evening"
+        ]
+      }
+    ],
+    "thanksgivings": [
+      {
+        "n": 1,
+        "themes": [
+          "gratitude"
+        ],
+        "moods": [
+          "grateful",
+          "happy",
+          "celebrating"
+        ]
+      },
+      {
+        "n": 8,
+        "themes": [
+          "gratitude",
+          "joy"
+        ],
+        "moods": [
+          "grateful",
+          "happy"
+        ]
+      },
+      {
+        "n": 10,
+        "themes": [
+          "children",
+          "gratitude",
+          "family"
+        ],
+        "moods": [
+          "grateful",
+          "celebrating"
+        ]
+      },
+      {
+        "n": 11,
+        "themes": [
+          "health",
+          "gratitude"
+        ],
+        "moods": [
+          "grateful",
+          "hopeful"
+        ]
+      }
+    ]
+  },
+  "hinduism": [
+    {
+      "id": "hinduism.mantra.gayatri",
+      "title": "Gayatri Mantra",
+      "kind": "mantra",
+      "focuses": [],
+      "themes": [
+        "guidance",
+        "study",
+        "presence"
+      ],
+      "moods": [
+        "seekingGuidance",
+        "justWantToPray"
+      ],
+      "times": [
+        "morning"
+      ],
+      "length": "brief",
+      "verse": {
+        "page": "rv-3-62",
+        "verse": 10,
+        "source": "rigveda",
+        "edition": "rigveda.sa-wikisource",
+        "reference": "3.62.10"
+      },
+      "explanation": "Rigveda 3.62.10, addressed to Savitṛ, the divine light. Traditionally recited at dawn and at the junctures of the day, asking that our understanding be inspired; it is commonly chanted after the opening syllables oṃ bhūr bhuvaḥ svaḥ."
+    },
+    {
+      "id": "hinduism.mantra.mahamrityunjaya",
+      "title": "Mahamrityunjaya Mantra",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.shiva"
+      ],
+      "themes": [
+        "health",
+        "protection",
+        "comfort"
+      ],
+      "moods": [
+        "anxious",
+        "needStrength",
+        "sad"
+      ],
+      "length": "brief",
+      "verse": {
+        "page": "rv-7-59",
+        "verse": 12,
+        "source": "rigveda",
+        "edition": "rigveda.sa-wikisource",
+        "reference": "7.59.12"
+      },
+      "explanation": "Rigveda 7.59.12, to Tryambaka (Shiva). Traditionally recited for healing, protection and freedom from fear, often 108 times. It is a prayer, not a treatment — keep your doctor close."
+    },
+    {
+      "id": "hinduism.mantra.santana-gopala",
+      "title": "Santana Gopala Mantra",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.krishna"
+      ],
+      "themes": [
+        "children",
+        "family",
+        "hope"
+      ],
+      "moods": [
+        "hopeful",
+        "anxious"
+      ],
+      "length": "brief",
+      "stotra": {
+        "page": "santana-gopala",
+        "part": "mula",
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Santāna Gopāla mūla mantra"
+      },
+      "explanation": "A prayer to Krishna as the child Gopala, traditionally recited by those hoping for a child and during pregnancy for the child's well-being. It is devotion alongside medical care, never instead of it."
+    },
+    {
+      "id": "hinduism.stotra.santana-gopala",
+      "title": "Santana Gopala Stotram",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.krishna"
+      ],
+      "themes": [
+        "children",
+        "family"
+      ],
+      "moods": [
+        "hopeful",
+        "justWantToPray"
+      ],
+      "length": "extended",
+      "stotra": {
+        "page": "santana-gopala",
+        "part": "stotra",
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Santāna Gopāla Stotram"
+      },
+      "explanation": "The full hymn to Krishna as Gopala, traditionally recited for the blessing of children and for an expecting mother and child."
+    },
+    {
+      "id": "hinduism.stotra.hanuman-chalisa",
+      "title": "Hanuman Chalisa",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.hanuman"
+      ],
+      "themes": [
+        "courage",
+        "protection",
+        "strength"
+      ],
+      "moods": [
+        "needStrength",
+        "anxious"
+      ],
+      "length": "extended",
+      "chalisa": {
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.hi-chalisa",
+        "reference": "Hanumān Cālīsā (Tulsidas)"
+      },
+      "explanation": "Forty verses by Goswami Tulsidas in praise of Hanuman. Traditionally recited for courage, protection and strength, often on Tuesdays and Saturdays."
+    }
+  ],
+  "islam": [
+    {
+      "id": "islam.dua.quran-3-8",
+      "title": "Keep our hearts steady",
+      "ref": "3:8",
+      "themes": [
+        "guidance",
+        "trust"
+      ],
+      "moods": [
+        "seekingGuidance",
+        "anxious"
+      ],
+      "explanation": "A dua of those firm in knowledge: that Allah keep our hearts from straying after guidance, and grant mercy."
+    },
+    {
+      "id": "islam.dua.quran-7-23",
+      "title": "The dua of Adam",
+      "ref": "7:23",
+      "themes": [
+        "forgiveness"
+      ],
+      "moods": [
+        "seekingForgiveness",
+        "sad"
+      ],
+      "explanation": "The words of repentance of Adam and Hawwa: acknowledging wrong and asking for forgiveness and mercy."
+    },
+    {
+      "id": "islam.dua.quran-20-25-28",
+      "title": "The dua of Musa for ease",
+      "ref": "20:25-28",
+      "from": "رَبِّ",
+      "translationFrom": "My Lord!",
+      "themes": [
+        "strength",
+        "study",
+        "guidance"
+      ],
+      "moods": [
+        "stressed",
+        "anxious",
+        "needStrength"
+      ],
+      "explanation": "Musa's prayer before a daunting task: for an open heart, an easy path and clear speech. Many recite it before exams, interviews and difficult conversations."
+    },
+    {
+      "id": "islam.dua.quran-20-114",
+      "title": "Increase me in knowledge",
+      "ref": "20:114",
+      "from": "رَّبِّ",
+      "translationFrom": "My Lord!",
+      "themes": [
+        "study",
+        "guidance"
+      ],
+      "moods": [
+        "seekingGuidance",
+        "stressed"
+      ],
+      "explanation": "A short dua for knowledge, often said before study."
+    },
+    {
+      "id": "islam.dua.quran-21-87",
+      "title": "The dua of Yunus",
+      "ref": "21:87",
+      "from": "لَّآ",
+      "translationFrom": "There is no Allah save Thee",
+      "themes": [
+        "comfort",
+        "forgiveness",
+        "difficult-times"
+      ],
+      "moods": [
+        "sad",
+        "anxious",
+        "needStrength"
+      ],
+      "explanation": "The prayer of Yunus from the darkness: affirming Allah's oneness and admitting wrong. Traditionally recited in distress."
+    },
+    {
+      "id": "islam.dua.quran-3-38",
+      "title": "The dua of Zakariya for a child",
+      "ref": "3:38",
+      "from": "رَبِّ",
+      "translationFrom": "My Lord!",
+      "themes": [
+        "children",
+        "family",
+        "hope"
+      ],
+      "moods": [
+        "hopeful"
+      ],
+      "explanation": "Zakariya's prayer for righteous offspring. Many recite it when hoping for a child and during pregnancy — alongside medical care, never instead of it."
+    },
+    {
+      "id": "islam.dua.quran-25-74",
+      "title": "Comfort of our eyes",
+      "ref": "25:74",
+      "from": "رَبَّنَا",
+      "translationFrom": "Our Lord!",
+      "themes": [
+        "family",
+        "children"
+      ],
+      "moods": [
+        "hopeful",
+        "grateful"
+      ],
+      "explanation": "A dua for one's spouse and children to be a comfort, and to lead in goodness."
+    },
+    {
+      "id": "islam.dua.quran-17-24",
+      "title": "Mercy for my parents",
+      "ref": "17:24",
+      "from": "رَّبِّ",
+      "translationFrom": "My Lord!",
+      "themes": [
+        "family"
+      ],
+      "moods": [
+        "grateful",
+        "justWantToPray"
+      ],
+      "explanation": "The dua for one's parents, asking mercy for them as they cared for us when we were small."
+    },
+    {
+      "id": "islam.dua.quran-23-118",
+      "title": "Forgive and have mercy",
+      "ref": "23:118",
+      "from": "رَّبِّ",
+      "translationFrom": "My Lord!",
+      "themes": [
+        "forgiveness"
+      ],
+      "moods": [
+        "seekingForgiveness"
+      ],
+      "explanation": "A short dua for forgiveness and mercy."
+    },
+    {
+      "id": "islam.dua.quran-9-129",
+      "title": "Allah is sufficient for me",
+      "ref": "9:129",
+      "from": "حَسْبِىَ",
+      "translationFrom": "Allah sufficeth me",
+      "themes": [
+        "trust",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "needPeace"
+      ],
+      "explanation": "Words of trust in Allah, traditionally repeated in worry."
+    },
+    {
+      "id": "islam.quran.ayat-al-kursi",
+      "title": "Ayat al-Kursi",
+      "ref": "2:255",
+      "themes": [
+        "protection",
+        "peace",
+        "trust"
+      ],
+      "moods": [
+        "anxious",
+        "needPeace"
+      ],
+      "times": [
+        "night"
+      ],
+      "explanation": "The Verse of the Throne, on Allah's majesty and care. Traditionally recited for protection, after prayers and before sleep."
+    },
+    {
+      "id": "islam.quran.al-ikhlas",
+      "title": "Surah Al-Ikhlas",
+      "ref": "112:1-4",
+      "themes": [
+        "presence",
+        "trust"
+      ],
+      "moods": [
+        "justWantToPray"
+      ],
+      "explanation": "The surah of sincere faith in Allah's oneness."
+    },
+    {
+      "id": "islam.quran.al-falaq",
+      "title": "Surah Al-Falaq",
+      "ref": "113:1-5",
+      "themes": [
+        "protection"
+      ],
+      "moods": [
+        "anxious"
+      ],
+      "times": [
+        "night"
+      ],
+      "explanation": "Seeking refuge in the Lord of the daybreak. With Al-Ikhlas and An-Nas, traditionally recited morning and evening and before sleep."
+    },
+    {
+      "id": "islam.quran.an-nas",
+      "title": "Surah An-Nas",
+      "ref": "114:1-6",
+      "themes": [
+        "protection",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "needPeace"
+      ],
+      "times": [
+        "night"
+      ],
+      "explanation": "Seeking refuge in the Lord of mankind from whispered harm."
+    }
+  ]
+}

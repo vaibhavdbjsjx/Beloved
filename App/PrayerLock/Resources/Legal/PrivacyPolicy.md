@@ -1,0 +1,73 @@
+# Beloved Privacy Policy
+
+Last updated: 11 October 2026
+
+Beloved helps you pause before the apps you choose and turn that moment into prayer, a mantra, a dua or a short reflection. This policy describes the data the app handles, where it is kept, and how you can delete it. It applies to this version of the Beloved app for iPhone.
+
+## The short version
+
+- Beloved has no account and no sign-in.
+- Everything Beloved stores stays on your iPhone. The app does not send your data to us or to anyone else.
+- Beloved contains no analytics, advertising, tracking or crash-reporting code, and no third-party software libraries.
+- You can delete everything at any time in Settings → Delete all my data, or by deleting the app.
+
+## What Beloved stores on your iPhone
+
+**Your choices and preferences.** The faith or tradition you choose (or that you prefer not to say), any focus you select, an optional first name used only for greetings, and display preferences such as length, original script and transliteration.
+
+**Your reading.** Where you left off in your scripture (book and chapter), how you like to read it (translation, original or both), and, if you turn it on, the time for the daily verse notification. The scriptures themselves are built into the app; reading them makes no network request.
+
+**Conversations with the companion.** What you ask in the Companion tab and the answers, kept on your iPhone so you can return to them. "Start over" or Delete all my data removes them. In this version the companion answers from Beloved's verified library on your iPhone; nothing you write is sent anywhere.
+
+**Daily check-ins.** If you choose a mood, it is used to pick fitting words for that day's moments. It is saved only if "Remember daily check-ins" is turned on in Settings; otherwise it is discarded at the end of the day.
+
+**Your prayer history.** For each completed moment: when it started and ended, whether it began from a paused app or from the app itself, which piece of content was shown, its themes, the check-in mood (only if you chose to remember check-ins), and whether your apps were opened afterwards. This powers the Journey screen.
+
+**Protection settings.** The apps, categories and websites you chose to pause before, whether protection is on, how long apps stay open after a moment, and a short log of protection events (for example "protection turned on" or "apps closed again"). This is shared only with Beloved's own Screen Time extensions, which run on your iPhone.
+
+Your choices, reading position, conversations, check-ins and prayer history are stored using iOS Data Protection, which keeps them unreadable while your iPhone is locked. Like other app data, they can be included in your own iCloud or computer backups, which are controlled by you and Apple.
+
+## Screen Time
+
+Beloved uses Apple's Screen Time frameworks (Family Controls, Managed Settings and Device Activity) with your permission, which iOS asks you to confirm with Face ID, Touch ID or your passcode.
+
+- iOS gives Beloved anonymous tokens for the apps, categories and websites you choose. Beloved never learns which apps you use, their names, or how long you use them.
+- The pause screen that appears over a protected app is drawn by Beloved's extension inside Apple's Screen Time sandbox. It can display the app's name on that screen, but it cannot save or send it anywhere.
+- You can turn off Beloved's Screen Time access at any time in the Settings app under Screen Time. When access is off, Beloved stops pausing your apps.
+
+## Notifications
+
+If you allow notifications, Beloved shows a local notification when you tap Begin on a paused app, so you can go straight to your moment. If you turn on the daily verse, Beloved also schedules one notification a day containing that day's verse; like any notification, it can appear on your Lock Screen according to your iPhone's notification settings. Notifications are created on your iPhone; Beloved has no notification server.
+
+## What Beloved does not do
+
+- It does not collect, sell or share personal data.
+- It does not send your faith, moods, prayer history or app choices off your iPhone.
+- It does not use advertising identifiers or track you across apps and websites.
+- It does not include an AI assistant, and it makes no network requests with your data.
+- It does not offer in-app purchases in this version.
+
+## Information Apple may provide to developers
+
+If you have turned on "Share With App Developers" in your iPhone's analytics settings, Apple may share crash reports and usage statistics about Beloved with its developer. This is controlled by Apple and by your settings, not by the app, and it does not include your prayer history, moods or app choices.
+
+## Keeping and deleting your data
+
+Your data stays on your iPhone until you delete it.
+
+- **Delete all my data** (Settings in Beloved) permanently removes your profile, check-ins and prayer history, removes all pauses and schedules, and returns the app to its first-launch state.
+- **Deleting the app** removes everything the app stored on your iPhone.
+
+Because nothing is stored on our servers, there is nothing else for us to delete.
+
+## Children
+
+Beloved is not directed at children, and it does not collect personal information from anyone, including children.
+
+## Changes to this policy
+
+If Beloved's handling of data changes — for example, if a future version adds an optional feature that needs an internet connection — this policy will be updated before that version is released, and the date at the top will change.
+
+## Contact
+
+You can contact the developer through the support link on Beloved's App Store page.

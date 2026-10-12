@@ -1,0 +1,4 @@
+#include "Shared.xcconfig"
+
+// Development builds show unreviewed content (badged) and verbose logging.
+PL_ENVIRONMENT = development

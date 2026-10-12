@@ -1,0 +1,56 @@
+{
+  "_comment": "Curated daily verses: references only. Text always comes from the bundled editions (scripts/import_scripture.py resolves and validates every reference). Gita entries pair a verse with Arnold's verbatim lines (from/to phrases in the normalised Arnold text); the pairing itself needs reviewer confirmation.",
+  "christianity": {
+    "work": "bible",
+    "references": [
+      "PSA 46:10", "MAT 11:28-30", "PHI 4:6-7", "ISA 40:31", "JOH 14:27",
+      "PSA 121:1-2", "LAM 3:22-23", "ROM 8:38-39", "PRO 3:5-6", "1CO 13:4-7",
+      "PSA 37:7", "ISA 26:3", "MAT 6:34", "PSA 62:1", "PSA 139:23-24",
+      "MIC 6:8", "JOS 1:9", "2CO 12:9", "PSA 34:18", "PSA 16:11",
+      "COL 3:15", "PSA 90:12", "ECC 3:1", "JAM 1:5", "GAL 5:22-23",
+      "PSA 118:24", "ROM 12:2", "ISA 30:15", "PSA 131:2", "1PE 5:7",
+      "PSA 19:14", "MAT 5:9", "PHI 4:8", "PSA 51:10", "JOH 15:5",
+      "PSA 27:14", "PSA 4:8", "1JO 4:18", "MAT 6:6", "PSA 23:1-3"
+    ]
+  },
+  "islam": {
+    "work": "quran",
+    "references": [
+      "QUR 94:5-6", "QUR 13:28", "QUR 2:152", "QUR 2:153", "QUR 39:53",
+      "QUR 2:186", "QUR 3:139", "QUR 29:69", "QUR 40:60", "QUR 50:16",
+      "QUR 93:3-5", "QUR 20:25-28", "QUR 25:63", "QUR 17:80", "QUR 2:45",
+      "QUR 64:11", "QUR 2:255", "QUR 1:1-7", "QUR 112:1-4", "QUR 33:41-42",
+      "QUR 7:55", "QUR 7:205", "QUR 49:13", "QUR 103:1-3", "QUR 9:51",
+      "QUR 17:23-24", "QUR 2:201", "QUR 3:8", "QUR 25:74", "QUR 14:7",
+      "QUR 89:27-30", "QUR 6:162", "QUR 4:28", "QUR 21:83", "QUR 2:286",
+      "QUR 21:87"
+    ]
+  },
+  "hinduism": {
+    "work": "bhagavad-gita",
+    "references": [
+      { "ref": "BG 2:14", "from": "This that irks", "to": "As the wise bear." },
+      { "ref": "BG 2:15", "from": "The soul which is not moved,", "to": "Lives in the life undying!" },
+      { "ref": "BG 2:20", "from": "Never the spirit was born", "to": "dead though the house of it seems!" },
+      { "ref": "BG 2:23", "from": "I say to thee weapons reach not the Life;", "to": "Nor dry winds wither it." },
+      { "ref": "BG 2:47", "from": "Let right deeds be", "to": "not the fruit which comes from them." },
+      { "ref": "BG 2:48", "from": "And live in action!", "to": "Is Yog, is piety!" },
+      { "ref": "BG 2:55", "from": "When one, O Pritha's Son!", "to": "that man is such!" },
+      { "ref": "BG 2:70", "from": "So is the perfect one!", "to": "Taking their tribute, but remaining sea." },
+      { "ref": "BG 4:7-8", "from": "When Righteousness", "to": "And setting Virtue on her seat again." },
+      { "ref": "BG 5:10", "from": "He that acts in thought of Brahm,", "to": "enamelled lotus-leaf." },
+      { "ref": "BG 6:5-6", "from": "Let each man raise", "to": "Hates Self as not itself." },
+      { "ref": "BG 6:16-17", "from": "Religion is not his who too much fasts", "to": "Waking betimes for duty." },
+      { "ref": "BG 6:19", "from": "Steadfast a lamp burns sheltered from the wind;", "to": "burning bright to Heaven." },
+      { "ref": "BG 6:35", "from": "Hero long-armed! beyond denial, hard", "to": "By wont of self-command." },
+      { "ref": "BG 9:26", "from": "Whoso shall offer Me in faith and love", "to": "With pious will." },
+      { "ref": "BG 9:27", "from": "Whate'er thou doest, Prince!", "to": "For Me, as Mine." },
+      { "ref": "BG 10:20", "from": "I am the Spirit seated deep in every creature's heart;", "to": "at My word they depart!" },
+      { "ref": "BG 12:13-14", "from": "Who hateth nought", "to": "That man I love!" },
+      { "ref": "BG 12:15", "from": "Who troubleth not his kind,", "to": "That man I love!" },
+      { "ref": "BG 12:18-19", "from": "Who, unto friend and foe", "to": "That man I love!" },
+      { "ref": "BG 18:61-62", "from": "There lives a Master in the hearts of men", "to": "The Eternal Place!" },
+      { "ref": "BG 18:66", "from": "And let go those", "to": "Be of good cheer!" }
+    ]
+  }
+}

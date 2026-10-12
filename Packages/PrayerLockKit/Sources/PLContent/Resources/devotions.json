@@ -1,0 +1,2123 @@
+[
+  {
+    "id": "christianity.bcp.prayer-1-for-joy-in-god-s-creation",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For Joy in God’s Creation",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O heavenly Father, who hast filled the world with beauty: Open our eyes to behold thy gracious hand in all thy works; that, rejoicing in thy whole creation, we may learn to serve thee with gladness; for the sake of him through whom all things were made, thy Son Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 1"
+        }
+      }
+    ],
+    "themes": [
+      "gratitude",
+      "joy"
+    ],
+    "moods": [
+      "grateful",
+      "happy"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-3-for-the-human-family",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For the Human Family",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O God, you made us in your own image and redeemed us through Jesus your Son: Look with compassion on the whole human family; take away the arrogance and hatred which infect our hearts; break down the walls that separate us; unite us in bonds of love; and work through our struggle and confusion to accomplish your purposes on earth; that, in your good time, all nations and races may serve you in harmony around your heavenly throne; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 3"
+        }
+      }
+    ],
+    "themes": [
+      "peace",
+      "relationships"
+    ],
+    "moods": [
+      "needPeace"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-4-for-peace",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For Peace",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Eternal God, in whose perfect kingdom no sword is drawn but the sword of righteousness, no strength known but the strength of love: So mightily spread abroad your Spirit, that all peoples may be gathered under the banner of the Prince of Peace, as children of one Father; to whom be dominion and glory, now and for ever. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 4"
+        }
+      }
+    ],
+    "themes": [
+      "peace"
+    ],
+    "moods": [
+      "needPeace",
+      "anxious"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-6-for-our-enemies",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For our Enemies",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O God, the Father of all, whose Son commanded us to love our enemies: Lead them and us from prejudice to truth; deliver them and us from hatred, cruelty, and revenge; and in your good time enable us all to stand reconciled before you; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 6"
+        }
+      }
+    ],
+    "themes": [
+      "forgiveness",
+      "relationships"
+    ],
+    "moods": [
+      "angry",
+      "seekingForgiveness"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-30-for-the-unemployed",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For the Unemployed",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Heavenly Father, we remember before you those who suffer want and anxiety from lack of work. Guide the people of this land so to use our public and private wealth that all may find suitable and fulfilling employment, and receive just payment for their labor; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 30"
+        }
+      }
+    ],
+    "themes": [
+      "work",
+      "difficult-times"
+    ],
+    "moods": [
+      "stressed",
+      "anxious",
+      "needStrength"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-32-for-the-good-use-of-leisure",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For the Good Use of Leisure",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O God, in the course of this busy life, give us times of refreshment and peace; and grant that we may so use our leisure to rebuild our bodies and renew our minds, that our spirits may be opened to the goodness of your creation; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 32"
+        }
+      }
+    ],
+    "themes": [
+      "presence",
+      "self-control"
+    ],
+    "moods": [
+      "stressed",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-35-for-the-poor-and-the-neglected",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For the Poor and the Neglected",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Almighty and most merciful God, we remember before you all poor and neglected persons whom it would be easy for us to forget: the homeless and the destitute, the old and the sick, and all who have none to care for them. Help us to heal those who are broken in body or spirit, and to turn their sorrow into joy. Grant this, Father, for the love of your Son, who for our sake became poor, Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 35"
+        }
+      }
+    ],
+    "themes": [
+      "comfort"
+    ],
+    "moods": [
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-45-for-families",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For Families",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Almighty God, our heavenly Father, who settest the solitary in families: We commend to thy continual care the homes in which thy people dwell. Put far from them, we beseech thee, every root of bitterness, the desire of vainglory, and the pride of life. Fill them with faith, virtue, knowledge, temperance, patience, godliness. Knit together in constant affection those who, in holy wedlock, have been made one flesh. Turn the hearts of the parents to the children, and the hearts of the children to the parents; and so enkindle fervent charity among us all, that we may evermore be kindly affectioned one to another; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 45"
+        }
+      }
+    ],
+    "themes": [
+      "family"
+    ],
+    "moods": [
+      "grateful",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-46-for-the-care-of-children",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For the Care of Children",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Almighty God, heavenly Father, you have blessed us with the joy and care of children: Give us calm strength and patient wisdom as we bring them up, that we may teach them to love whatever is just and true and good, following the example of our Savior Jesus Christ. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 46"
+        }
+      }
+    ],
+    "themes": [
+      "family",
+      "children"
+    ],
+    "moods": [
+      "anxious",
+      "hopeful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-47-for-young-persons",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For Young Persons",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "God our Father, you see your children growing up in an unsteady and confusing world: Show them that your ways give more life than the ways of the world, and that following you is better than chasing after selfish goals. Help them to take failure, not as a measure of their worth, but as a chance for a new start. Give them strength to hold their faith in you, and to keep alive their joy in your creation; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 47"
+        }
+      }
+    ],
+    "themes": [
+      "family",
+      "guidance"
+    ],
+    "moods": [
+      "anxious",
+      "hopeful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-48-for-those-who-live-alone",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For Those Who Live Alone",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Almighty God, whose Son had nowhere to lay his head: Grant that those who live alone may not be lonely in their solitude, but that, following in his steps, they may find fulfillment in loving you and their neighbors; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 48"
+        }
+      }
+    ],
+    "themes": [
+      "comfort",
+      "presence"
+    ],
+    "moods": [
+      "lonely",
+      "sad"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-49-for-the-aged",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For the Aged",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Look with mercy, O God our Father, on all whose increasing years bring them weakness, distress, or isolation. Provide for them homes of dignity and peace; give them understanding helpers, and the willingness to accept help; and, as their strength diminishes, increase their faith and their assurance of your love. This we ask in the name of Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 49"
+        }
+      }
+    ],
+    "themes": [
+      "comfort",
+      "family"
+    ],
+    "moods": [
+      "lonely"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-50-for-a-birthday",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For a Birthday",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O God, our times are in your hand: Look with favor, we pray, on your servant N. as he begins another year. Grant that he may grow in wisdom and grace, and strengthen his trust in your goodness all the days of his life; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 50"
+        }
+      }
+    ],
+    "themes": [
+      "celebration",
+      "gratitude"
+    ],
+    "moods": [
+      "celebrating",
+      "grateful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-52-for-the-absent",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For the Absent",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O God, whose fatherly care reacheth to the uttermost parts of the earth: We humbly beseech thee graciously to behold and bless those whom we love, now absent from us. Defend them from all dangers of soul and body; and grant that both they and we, drawing nearer to thee, may be bound together by thy love in the communion of thy Holy Spirit, and in the fellowship of thy saints; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 52"
+        }
+      }
+    ],
+    "themes": [
+      "family",
+      "protection"
+    ],
+    "moods": [
+      "lonely",
+      "anxious"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-53-for-travelers",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For Travelers",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O God, our heavenly Father, whose glory fills the whole creation, and whose presence we find wherever we go: Preserve those who travel [in particular _____________]; surround them with your loving care; protect them from every danger; and bring them in safety to their journey’s end; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 53"
+        }
+      }
+    ],
+    "themes": [
+      "protection"
+    ],
+    "moods": [
+      "anxious"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-54-for-those-we-love",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For those we Love",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Almighty God, we entrust all who are dear to us to thy never-failing care and love, for this life and the life to come, knowing that thou art doing for them better things than we can desire or pray for; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 54"
+        }
+      }
+    ],
+    "themes": [
+      "family",
+      "relationships"
+    ],
+    "moods": [
+      "grateful",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-55-for-a-person-in-trouble-or-bereavement",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For a Person in Trouble or Bereavement",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O merciful Father, who hast taught us in thy holy Word that thou dost not willingly afflict or grieve the children of men: Look with pity upon the sorrows of thy servant for whom our prayers are offered. Remember him, O Lord, in mercy, nourish his soul with patience, comfort him with a sense of thy goodness, lift up thy countenance upon him, and give him peace; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 55"
+        }
+      }
+    ],
+    "themes": [
+      "comfort",
+      "difficult-times"
+    ],
+    "moods": [
+      "sad",
+      "lonely",
+      "needStrength"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-56-for-the-victims-of-addiction",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For the Victims of Addiction",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O blessed Lord, you ministered to all who came to you: Look with compassion upon all who through addiction have lost their health and freedom. Restore to them the assurance of your unfailing mercy; remove from them the fears that beset them; strengthen them in the work of their recovery; and to those who care for them, give patient understanding and persevering love. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 56"
+        }
+      }
+    ],
+    "themes": [
+      "self-control",
+      "health",
+      "hope"
+    ],
+    "moods": [
+      "needStrength",
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-57-for-guidance",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For Guidance",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Direct us, O Lord, in all our doings with thy most gracious favor, and further us with thy continual help; that in all our works begun, continued, and ended in thee, we may glorify thy holy Name, and finally, by thy mercy, obtain everlasting life; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 57"
+        }
+      }
+    ],
+    "themes": [
+      "guidance"
+    ],
+    "moods": [
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-58-for-guidance",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For Guidance",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O God, by whom the meek are guided in judgment, and light riseth up in darkness for the godly: Grant us, in all our doubts and uncertainties, the grace to ask what thou wouldest have us to do, that the Spirit of wisdom may save us from all false choices, and that in thy light we may see light, and in thy straight path may not stumble; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 58"
+        }
+      }
+    ],
+    "themes": [
+      "guidance",
+      "study"
+    ],
+    "moods": [
+      "seekingGuidance",
+      "stressed"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-59-for-quiet-confidence",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For Quiet Confidence",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O God of peace, who hast taught us that in returning and rest we shall be saved, in quietness and in confidence shall be our strength: By the might of thy Spirit lift us, we pray thee, to thy presence, where we may be still and know that thou art God; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 59"
+        }
+      }
+    ],
+    "themes": [
+      "peace",
+      "trust"
+    ],
+    "moods": [
+      "anxious",
+      "stressed",
+      "needPeace"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-60-for-protection",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For Protection",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Assist us mercifully, O Lord, in these our supplications and prayers, and dispose the way of thy servants towards the attainment of everlasting salvation; that, among all the changes and chances of this mortal life, they may ever be defended by thy gracious and ready help; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 60"
+        }
+      }
+    ],
+    "themes": [
+      "protection",
+      "trust"
+    ],
+    "moods": [
+      "anxious"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-61-a-prayer-of-self-dedication",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "A Prayer of Self-Dedication",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Almighty and eternal God, so draw our hearts to thee, so guide our minds, so fill our imaginations, so control our wills, that we may be wholly thine, utterly dedicated unto thee; and then use us, we pray thee, as thou wilt, and always to thy glory and the welfare of thy people; through our Lord and Savior Jesus Christ. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 61"
+        }
+      }
+    ],
+    "themes": [
+      "presence",
+      "guidance"
+    ],
+    "moods": [
+      "justWantToPray",
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-62-a-prayer-attributed-to-st-francis",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "A Prayer attributed to St. Francis",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Lord, make us instruments of your peace. Where there is hatred, let us sow love; where there is injury, pardon; where there is discord, union; where there is doubt, faith; where there is despair, hope; where there is darkness, light; where there is sadness, joy. Grant that we may not so much seek to be consoled as to console; to be understood as to understand; to be loved as to love. For it is in giving that we receive; it is in pardoning that we are pardoned; and it is in dying that we are born to eternal life. Amen.\n\nPrayers for Friday, Saturday, and Sunday, and for morning and evening, are on pages 56, 69, 98, and 123.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 62"
+        }
+      }
+    ],
+    "themes": [
+      "peace",
+      "relationships",
+      "forgiveness"
+    ],
+    "moods": [
+      "needPeace",
+      "angry",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-63-in-the-evening",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "In the Evening",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O Lord, support us all the day long, until the shadows lengthen, and the evening comes, and the busy world is hushed, and the fever of life is over, and our work is done. Then in thy mercy, grant us a safe lodging, and a holy rest, and peace at the last. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 63"
+        }
+      }
+    ],
+    "themes": [
+      "peace",
+      "protection"
+    ],
+    "moods": [
+      "needPeace"
+    ],
+    "timesOfDay": [
+      "evening",
+      "night"
+    ],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-65-for-the-answering-of-prayer",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "For the Answering of Prayer",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Almighty God, who hast promised to hear the petitions of those who ask in thy Son’s Name: We beseech thee mercifully to incline thine ear to us who have now made our prayers and supplications unto thee; and grant that those things which we have faithfully asked according to thy will, may effectually be obtained, to the relief of our necessity, and to the setting forth of thy glory; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 65"
+        }
+      }
+    ],
+    "themes": [
+      "trust",
+      "hope"
+    ],
+    "moods": [
+      "hopeful",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-69-on-sunday",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "On Sunday",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O God our King, by the resurrection of your Son Jesus Christ on the first day of the week, you conquered sin, put death to flight, and gave us the hope of everlasting life: Redeem all our days by this victory; forgive our sins, banish our fears, make us bold to praise you and to do your will; and steel us to wait for the consummation of your kingdom on the last great Day; through the same Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 69"
+        }
+      }
+    ],
+    "themes": [
+      "joy",
+      "presence"
+    ],
+    "moods": [
+      "grateful",
+      "happy"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.prayer-70-grace-at-meals",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "Grace at Meals",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Give us grateful hearts, our Father, for all thy mercies, and make us mindful of the needs of others; through Jesus Christ our Lord. Amen.\n\nBless, O Lord, thy gifts to our use and us to thy service; for Christ’s sake. Amen.\n\nBlessed are you, O Lord God, King of the Universe, for you give us food to sustain our lives and make our hearts glad; through Jesus Christ our Lord. Amen.\n\nFor these and all his mercies, God’s holy Name be blessed and praised; through Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Prayer 70"
+        }
+      }
+    ],
+    "themes": [
+      "gratitude"
+    ],
+    "moods": [
+      "grateful"
+    ],
+    "timesOfDay": [
+      "midday",
+      "evening"
+    ],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.thanksgiving-1-a-general-thanksgiving",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "gratitude",
+    "title": "A General Thanksgiving",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Accept, O Lord, our thanks and praise for all that you have done for us. We thank you for the splendor of the whole creation, for the beauty of this world, for the wonder of life, and for the mystery of love.\n\nWe thank you for the blessing of family and friends, and for the loving care which surrounds us on every side.\n\nWe thank you for setting us at tasks which demand our best efforts, and for leading us to accomplishments which satisfy and delight us.\n\nWe thank you also for those disappointments and failures that lead us to acknowledge our dependence on you alone.\n\nAbove all, we thank you for your Son Jesus Christ; for the truth of his Word and the example of his life; for his steadfast obedience, by which he overcame temptation; for his dying, through which he overcame death; and for his rising to life again, in which we are raised to the life of your kingdom.\n\nGrant us the gift of your Spirit, that we may know Christ and make him known; and through him, at all times and in all places, may give thanks to you in all things. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Thanksgiving 1"
+        }
+      }
+    ],
+    "themes": [
+      "gratitude"
+    ],
+    "moods": [
+      "grateful",
+      "happy",
+      "celebrating"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.thanksgiving-8-for-the-beauty-of-the-earth",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "gratitude",
+    "title": "For the Beauty of the Earth",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "We give you thanks, most gracious God, for the beauty of earth and sky and sea; for the richness of mountains, plains, and rivers; for the songs of birds and the loveliness of flowers. We praise you for these good gifts, and pray that we may safeguard them for our posterity. Grant that we may continue to grow in our grateful enjoyment of your abundant creation, to the honor and glory of your Name, now and for ever. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Thanksgiving 8"
+        }
+      }
+    ],
+    "themes": [
+      "gratitude",
+      "joy"
+    ],
+    "moods": [
+      "grateful",
+      "happy"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.thanksgiving-10-for-the-gift-of-a-child",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "gratitude",
+    "title": "For the Gift of a Child",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Heavenly Father, you sent your own Son into this world. We thank you for the life of this child, N., entrusted to our care. Help us to remember that we are all your children, and so to love and nurture him, that he may attain to that full stature intended for him in your eternal kingdom; for the sake of your dear Son, Jesus Christ our Lord. Amen.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Thanksgiving 10"
+        }
+      }
+    ],
+    "themes": [
+      "children",
+      "gratitude",
+      "family"
+    ],
+    "moods": [
+      "grateful",
+      "celebrating"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.bcp.thanksgiving-11-for-the-restoration-of-health",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "gratitude",
+    "title": "For the Restoration of Health",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Almighty God and heavenly Father, we give thee humble thanks because thou hast been graciously pleased to deliver from his sickness thy servant N., in whose behalf we bless and praise thy Name. Grant, O gracious Father, that he, through thy help, may live in this world according to thy will, and also be partaker of everlasting glory in the life to come; through Jesus Christ our Lord. Amen.\n\nThanksgivings for the departed are on pages 487-489 and 503-504.",
+        "citation": {
+          "source": "bcp-1979",
+          "edition": "bcp-1979.en",
+          "reference": "Prayers and Thanksgivings, Thanksgiving 11"
+        }
+      }
+    ],
+    "themes": [
+      "health",
+      "gratitude"
+    ],
+    "moods": [
+      "grateful",
+      "hopeful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.gayatri",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [],
+    "kind": "mantra",
+    "title": "Gayatri Mantra",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि ।\nधियो यो नः प्रचोदयात् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "tatsaviturvareṇyaṃ bhargo devasya dhīmahi |\ndhiyo yo naḥ pracodayāt ||",
+        "citation": {
+          "source": "rigveda",
+          "edition": "rigveda.sa-wikisource",
+          "reference": "3.62.10"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Rigveda 3.62.10, addressed to Savitṛ, the divine light. Traditionally recited at dawn and at the junctures of the day, asking that our understanding be inspired; it is commonly chanted after the opening syllables oṃ bhūr bhuvaḥ svaḥ.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "guidance",
+      "study",
+      "presence"
+    ],
+    "moods": [
+      "seekingGuidance",
+      "justWantToPray"
+    ],
+    "timesOfDay": [
+      "morning"
+    ],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.mahamrityunjaya",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.shiva"
+    ],
+    "kind": "mantra",
+    "title": "Mahamrityunjaya Mantra",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् ।\nउर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय मामृतात् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "tryambakaṃ yajāmahe sugandhiṃ puṣṭivardhanam |\nurvārukamiva bandhanānmṛtyormukṣīya māmṛtāt ||",
+        "citation": {
+          "source": "rigveda",
+          "edition": "rigveda.sa-wikisource",
+          "reference": "7.59.12"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Rigveda 7.59.12, to Tryambaka (Shiva). Traditionally recited for healing, protection and freedom from fear, often 108 times. It is a prayer, not a treatment — keep your doctor close.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "health",
+      "protection",
+      "comfort"
+    ],
+    "moods": [
+      "anxious",
+      "needStrength",
+      "sad"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.santana-gopala",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.krishna"
+    ],
+    "kind": "mantra",
+    "title": "Santana Gopala Mantra",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "ॐ श्रीं ह्रीं क्लीं ग्लौं देवकीसुत गोविन्द वासुदेव जगत्पते ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "oṃ śrīṃ hrīṃ klīṃ glauṃ devakīsuta govinda vāsudeva jagatpate |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Santāna Gopāla mūla mantra"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "A prayer to Krishna as the child Gopala, traditionally recited by those hoping for a child and during pregnancy for the child's well-being. It is devotion alongside medical care, never instead of it.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "children",
+      "family",
+      "hope"
+    ],
+    "moods": [
+      "hopeful",
+      "anxious"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.santana-gopala",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.krishna"
+    ],
+    "kind": "stotra",
+    "title": "Santana Gopala Stotram",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "श्रीशं कमलपत्राक्षं देवकीनन्दनं हरिम् ।\nसुतसंप्राप्तये कृष्णं नमामि मधुसूदनम् ॥१॥\nनमाम्यहं वासुदेवं सुतसंप्राप्तये हरिम् ।\nयशोदाङ्कगतं बालं गोपालं नन्दनन्दनम॥ २ ॥\nअस्माकं पुत्रलाभाय गोविन्दं मुनिवन्दितम् ।\nनमाम्यहं वासुदेवं देवकीनन्दनं सदा ॥ ३ ॥\nगोपालं डिम्भकं वन्दे कमलापतिमच्युतम् ।\nपुत्रसंप्राप्तये कृष्णं नमामि यदुपुङ्गवम् ॥ ४ ॥\nपुत्रकामेष्टिफलदं कञ्जाक्षं कमलापतिम् ।\nदेवकीनन्दनं वन्दे सुतसम्प्राप्तये मम ॥ ५ ॥\nपद्मापते पद्मनेत्रे पद्मनाभ जनार्दन ।\nदेहि मे तनयं श्रीश वासुदेव जगत्पते ॥ ६ ॥\nयशोदाङ्कगतं बालं गोविन्दं मुनिवन्दितम् ।\nअस्माकं पुत्र लाभाय नमामि श्रीशमच्युतम् ॥ ७ ॥\nश्रीपते देवदेवेश दीनार्तिर्हरणाच्युत ।\nगोविन्द मे सुतं देहि नमामि त्वां जनार्दन ॥ ८ ॥\nभक्तकामद गोविन्द भक्तं रक्ष शुभप्रद ।\nदेहि मे तनयं कृष्ण रुक्मिणीवल्लभ प्रभो ॥ ९ ॥\nरुक्मिणीनाथ सर्वेश देहि मे तनयं सदा ।\nभक्तमन्दार पद्माक्ष त्वामहं शरणं गतः ॥ १० ॥\nदेवकीसुत गोविन्द वासुदेव जगत्पते ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ११ ॥\nवासुदेव जगद्वन्द्य श्रीपते पुरुषोत्तम ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ १२ ॥\nकञ्जाक्ष कमलानाथ परकारुणिकोत्तम ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ १३ ॥\nलक्ष्मीपते पद्मनाभ मुकुन्द मुनिवन्दित ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ १४ ॥\nकार्यकारणरूपाय वासुदेवाय ते सदा ।\nनमामि पुत्रलाभार्थ सुखदाय बुधाय ते ॥ १५ ॥\nराजीवनेत्र श्रीराम रावणारे हरे कवे ।\nतुभ्यं नमामि देवेश तनयं देहि मे हरे ॥ १६ ॥\nअस्माकं पुत्रलाभाय भजामि त्वां जगत्पते ।\nदेहि मे तनयं कृष्ण वासुदेव रमापते ॥ १७ ॥\nश्रीमानिनीमानचोर गोपीवस्त्रापहारक ।\nदेहि मे तनयं कृष्ण वासुदेव जगत्पते ॥ १८ ॥\nअस्माकं पुत्रसंप्राप्तिं कुरुष्व यदुनन्दन ।\nरमापते वासुदेव मुकुन्द मुनिवन्दित ॥ १९ ॥\nवासुदेव सुतं देहि तनयं देहि माधव ।\nपुत्रं मे देहि श्रीकृष्ण वत्सं देहि महाप्रभो ॥२० ॥\nडिम्भकं देहि श्रीकृष्ण आत्मजं देहि राघव ।\nभक्तमन्दार मे देहि तनयं नन्दनन्दन ॥ २१ ॥\nनन्दनं देहि मे कृष्ण वासुदेव जगत्पते ।\nकमलनाथ गोविन्द मुकुन्द मुनिवन्दित ॥ २२ ॥\nअन्यथा शरणं नास्ति त्वमेव शरणं मम ।\nसुतं देहि श्रियं देहि श्रियं पुत्रं प्रदेहि मे ॥ २३ ॥\nयशोदास्तन्यपानज्ञं पिबन्तं यदुनन्दनं ।\nवन्देऽहं पुत्रलाभार्थं कपिलाक्षं हरिं सदा ॥ २४ ॥\nनन्दनन्दन देवेश नन्दनं देहि मे प्रभो ।\nरमापते वासुदेव श्रियं पुत्रं जगत्पते ॥ २५ ॥\nपुत्रं श्रियं श्रियं पुत्रं पुत्रं मे देहि माधव ।\nअस्माकं दीनवाक्यस्य अवधारय श्रीपते ॥ २६ ॥\nगोपाल डिम्भ गोविन्द वासुदेव रमापते ।\nअस्माकं डिम्भकं देहि श्रियं देहि जगत्पते ॥ २७ ॥\nमद्वाञ्छितफलं देहि देवकीनन्दनाच्युत ।\nमम पुत्रार्थितं धन्यं कुरुष्व यदुनन्दन ॥ २८ ॥\nयाचेऽहं त्वां श्रियं पुत्रं देहि मे पुत्रसंपदम।\nभक्तचिन्तामणे राम कल्पवृक्ष महाप्रभो ॥ २९ ॥\nआत्मजं नन्दनं पुत्रं कुमारं डिम्भकं सुतम् ।\nअर्भकं तनयं देहि सदा मे रघुनन्दन ॥ ३० ॥\nवन्दे सन्तानगोपालं माधवं भक्तकामदम् ।\nअस्माकं पुत्रसंप्राप्त्यै सदा गोविन्दमच्युतम् ॥ ३१ ॥\nॐकारयुक्तं गोपालं श्रीयुक्तं यदुनन्दनम् ।\nक्लींयुक्तं देवकीपुत्रं नमामि यदुनायकम् ॥ ३२ ॥\nवासुदेव मुकुन्देश गोविन्द माधवाच्युत ।\nदेहि मे तनयं कृष्ण रमानाथ महाप्रभो ॥ ३३ ॥\nराजीवनेत्र गोविन्द कपिलाक्ष हरे प्रभो ।\nसमस्तकाम्यवरद देहि मे तनयं सदा ॥ ३४ ॥\nअब्जपद्मनिभं पद्मवृन्दरूप जगत्पते ।\nदेहि मे वरसत्पुत्रं रमानायक माधव ॥ ३५ ॥\nनन्दपाल धरापाल गोविन्द यदुनन्दन ।\nदेहि मे तनयं कृष्ण रुक्मिणीवल्लभ प्रभो ॥ ३६ ॥\nदासमन्दार गोविन्द मुकुन्द माधवाच्युत ।\nगोपाल पुण्डरीकाक्ष देहि मे तनयं श्रियम् ॥ ३७ ॥\nयदुनायक पद्मेश नन्दगोपवधूसुत ।\nदेहि मे तनयं कृष्ण श्रीधर प्राणनायक ॥ ३८ ॥\nअस्माकं वाञ्छितं देहि देहि पुत्रं रमापते ।\nभगवन् कृष्ण सर्वेश वासुदेव जगत्पते ॥ ३९ ॥\nरमाहृदयसंभारसत्यभामामनः प्रिय ।\nदेहि मे तनयं कृष्ण रुक्मिणीवल्लभ प्रभो ॥ ४० ॥\ncअन्द्रसूर्याक्ष गोविन्द पुण्डरीकाक्ष माधव ।\nअस्माकं भाग्यसत्पुत्रं देहि देव जगत्पते ॥ ४१ ॥\nकारुण्यरूप पद्माक्ष पद्मनाभसमर्चित ।\nदेहि मे तनयं कृष्ण देवकीनन्दनन्दन ॥ ४२ ॥\nदेवकीसुत श्रीनाथ वासुदेव जगत्पते ।\nसमस्तकामफलद देहि मे तनयं सदा ॥ ४३ ॥\nभक्तमन्दार गम्भीर शङ्कराच्युत माधव ।\nदेहि मे तनयं गोपबालवत्सल श्रीपते ॥ ४४ ॥\nश्रीपते वासुदेवेश देवकीप्रियनन्दन ।\nभक्तमन्दार मे देहि तनयं जगतां प्रभो ॥४५ ॥\nजगन्नाथ रमानाथ भूमिनाथ दयानिधे ।\nवासुदेवेश सर्वेश देहि मे तनयं प्रभो ॥ ४६ ॥\nश्रीनाथ कमलपत्राक्ष वासुदेव जगत्पते ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ४७ ॥\nदासमन्दार गोविन्द भक्तचिन्तामणे प्रभो ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ४८ ॥\nगोविन्द पुण्डरीकाक्ष रमानाथ महाप्रभो ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ४९ ॥\nश्रीनाथ कमलपत्राक्ष गोविन्द मधुसूदन ।\nमत्पुत्रफलसिद्ध्यर्थं भजामि त्वां जनार्दन ॥ ५० ॥\nस्तन्यं पिबन्तं जननीमुखांबुजं विलोक्य मन्दस्मितमुज्ज्वलाङ्गम् ।\nस्पृशन्तमन्यस्तनमङ्गुलीभिर्वन्दे यशोदाङ्कगतं मुकुन्दम् ॥ ५१ ॥\nयाचेऽहं पुत्रसन्तानं भवन्तं पद्मलोचन ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ५२ ॥\nअस्माकं पुत्रसम्पत्तेश्चिन्तयामि जगत्पते ।\nशीघ्रं मे देहि दातव्यं भवता मुनिवन्दित ॥ ५३ ॥\nवासुदेव जगन्नाथ श्रीपते पुरुषोत्तम ।\nकुरु मां पुत्रदत्तं cअ कृष्ण देवेन्द्रपूजित ॥ ५४ ॥\nकुरु मां पुत्रदत्तं cअ यशोदाप्रियनन्दनम् ।\nमह्यं cअ पुत्रसन्तानं दातव्यंभवता हरे ॥ ५५ ॥\nवासुदेव जगन्नाथ गोविन्द देवकीसुत ।\nदेहि मे तनयं राम कौशल्याप्रियनन्दन ॥ ५६ ॥\nपद्मपत्राक्ष गोविन्द विष्णो वामन माधव ।\nदेहि मे तनयं सीताप्राणनायक राघव ॥ ५७ ॥\nकञ्जाक्ष कृष्ण देवेन्द्रमण्डित मुनिवन्दित ।\nलक्ष्मणाग्रज श्रीराम देहि मे तनयं सदा ॥ ५८ ॥\nदेहि मे तनयं राम दशरथप्रियनन्दन ।\nसीतानायक कञ्जाक्ष मुचुकुन्दवरप्रद ॥ ५९ ॥\nविभीषणस्य या लङ्का प्रदत्ता भवता पुरा ।\nअस्माकं तत्प्रकारेण तनयं देहि माधव ॥ ६० ॥\nभवदीयपदांभोजे चिन्तयामि निरन्तरम् ।\nदेहि मे तनयं सीताप्राणवल्लभ राघव ॥ ६१ ॥\nराम मत्काम्यवरद पुत्रोत्पत्तिफलप्रद ।\nदेहि मे तनयं श्रीश कमलासनवन्दित ॥ ६२ ॥\nराम राघव सीतेश लक्ष्मणानुज देहि मे ।\nभाग्यवत्पुत्रसन्तानं दशरथप्रियनन्दन ।\nदेहि मे तनयं राम कृष्ण गोपाल माधव ॥ ६४ ॥\nकृष्ण माधव गोविन्द वामनाच्युत शङ्कर ।\nदेहि मे तनयं श्रीश गोपबालकनायक ॥ ६५ ॥\nगोपबाल महाधन्य गोविन्दाच्युत माधव ।\nदेहि मे तनयं कृष्ण वासुदेव जगत्पते ॥ ६६ ॥\nदिशतु दिशतु पुत्रं देवकीनन्दनोऽयं\nदिशतु दिशतु शीघ्रं भाग्यवत्पुत्रलाभम् ।\nदिशतु दिशतु शीघ्रं श्रीशो राघवो रामचन्द्रो\nदिशतु दिशतु पुत्रं वंश विस्तारहेतोः ॥ ६७ ॥\nदीयतां वासुदेवेन तनयोमत्प्रियः सुतः ।\nकुमारो नन्दनः सीतानायकेन सदा मम ॥ ६८ ॥\nराम राघव गोविन्द देवकीसुत माधव ।\nदेहि मे तनयं श्रीश गोपबालकनायक ॥ ६९ ॥\nवंशविस्तारकं पुत्रं देहि मे मधुसूदन ।\nसुतं देहि सुतं देहि त्वामहं शरणं गतः ॥ ७० ॥\nममाभीष्टसुतं देहि कंसारे माधवाच्युत ।\nसुतं देहि सुतं देहि त्वामहं शरणं गतः ॥७१ ॥\ncअन्द्रार्ककल्पपर्यन्तं तनयं देहि माधव ।\nसुतं देहि सुतं देहि त्वामहं शरणं गतः ॥७२ ॥\nविद्यावन्तं बुद्धिमन्तं श्रीमन्तं तनयं सदा ।\nदेहि मे तनयं कृष्ण देवकीनन्दन प्रभो ॥ ७३ ॥\nनमामि त्वां पद्मनेत्र सुतलाभाय कामदम् ।\nमुकुन्दं पुण्डरीकाक्षं गोविन्दं मधुसूदनम् ॥ ७४ ॥\nभगवन् कृष्ण गोविन्द सर्वकामफलप्रद ।\nदेहि मे तनयं स्वामिंस्त्वामहं शरणं गतः ॥ ७५ ॥\nस्वामिंस्त्वं भगवन् राम कृष्न माधव कामद ।\nदेहि मे तनयं नित्यं त्वामहं शरणं गतः ॥ ७६ ॥\nतनयं देहिओ गोविन्द कञ्जाक्ष कमलापते ।\nसुतं देहि सुतं देहि त्वामहं शरणं गतः ॥७७ ॥\nपद्मापते पद्मनेत्र प्रद्युम्न जनक प्रभो ।\nसुतं देहि सुतं देहि त्वामहं शरणं गतः ॥ ७८ ॥\nशङ्खcअक्रगदाखड्गशार्ङ्गपाणे रमापते ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ७९ ॥\nनारायण रमानाथ राजीवपत्रलोचन ।\nसुतं मे देहि देवेश पद्मपद्मानुवन्दित ॥ ८० ॥\nराम राघव गोविन्द देवकीवरनन्दन ।\nरुक्मिणीनाथ सर्वेश नारदादिसुरार्चित ॥ ८१ ॥\nदेवकीसुत गोविन्द वासुदेव जगत्पते ।\nदेहि मे तनयं श्रीश गोपबालकनायक ॥ ८२ ॥\nमुनिवन्दित गोविन्द रुक्मिणीवल्लभ प्रभो ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ८३ ॥\nगोपिकार्जितपङ्केजमरन्दासक्तमानस ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ८४ ॥\nरमाहृदयपङ्केजलोल माधव कामद ।\nममाभीष्टसुतं देहि त्वामहं शरणं गतः ॥ ८५ ॥\nवासुदेव रमानाथ दासानां मङ्गलप्रद ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ८६ ॥\nकल्याणप्रद गोविन्द मुरारे मुनिवन्दित ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ८७ ॥\nपुत्रप्रद मुकुन्देश रुक्मिणीवल्लभ प्रभो ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ८८ ॥\nपुण्डरीकाक्ष गोविन्द वासुदेव जगत्पते ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ८९ ॥\nदयानिधे वासुदेव मुकुन्द मुनिवन्दित ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ९० ॥\nपुत्रसम्पत्प्रदातारं गोविन्दं देवपूजितम् ।\nवन्दामहे सदा कृष्णं पुत्र लाभ प्रदायिनम् ॥ ९१ ॥\nकारुण्यनिधये गोपीवल्लभाय मुरारये ।\nनमस्ते पुत्रलाभाय देहि मे तनयं विभो ॥ ९२ ॥\nनमस्तस्मै रमेशाय रुमिणीवल्लभाय ते ।\nदेहि मे तनयं श्रीश गोपबालकनायक ॥ ९३ ॥\nनमस्ते वासुदेवाय नित्यश्रीकामुकाय cअ ।\nपुत्रदाय cअ सर्पेन्द्रशायिने रङ्गशायिने ॥ ९४ ॥\nरङ्गशायिन् रमानाथ मङ्गलप्रद माधव ।\nदेहि मे तनयं श्रीश गोपबालकनायक ॥ ९५ ॥\nदासस्य मे सुतं देहि दीनमन्दार राघव ।\nसुतं देहि सुतं देहि पुत्रं देहि रमापते ॥ ९६ ॥\nयशोदातनयाभीष्टपुत्रदानरतः सदा ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥९७ ॥\nमदिष्टदेव गोविन्द वासुदेव जनार्दन ।\nदेहि मे तनयं कृष्ण त्वामहं शरणं गतः ॥ ९८ ॥\nनीतिमान् धनवान् पुत्रो विद्यावांश्cअ प्रजापते ।\nभगवंस्त्वत्कृपायाश्cअ वासुदेवेन्द्रपूजित ॥ ९९ ॥\nयःपठेत् पुत्रशतकं सोऽपि सत्पुत्रवान् भवेत ।\nश्रीवासुदेवकथितं स्तोत्ररत्नं सुखाय cअ ॥ १०० ॥\nजपकाले पठेन्नित्यं पुत्रलाभं धनं श्रियम् ।\nऐश्वर्यं राजसम्मानं सद्यो याति न संशयः ॥ १०१ ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "śrīśaṃ kamalapatrākṣaṃ devakīnandanaṃ harim |\nsutasaṃprāptaye kṛṣṇaṃ namāmi madhusūdanam ||1||\nnamāmyahaṃ vāsudevaṃ sutasaṃprāptaye harim |\nyaśodāṅkagataṃ bālaṃ gopālaṃ nandanandanama|| 2 ||\nasmākaṃ putralābhāya govindaṃ munivanditam |\nnamāmyahaṃ vāsudevaṃ devakīnandanaṃ sadā || 3 ||\ngopālaṃ ḍimbhakaṃ vande kamalāpatimacyutam |\nputrasaṃprāptaye kṛṣṇaṃ namāmi yadupuṅgavam || 4 ||\nputrakāmeṣṭiphaladaṃ kañjākṣaṃ kamalāpatim |\ndevakīnandanaṃ vande sutasamprāptaye mama || 5 ||\npadmāpate padmanetre padmanābha janārdana |\ndehi me tanayaṃ śrīśa vāsudeva jagatpate || 6 ||\nyaśodāṅkagataṃ bālaṃ govindaṃ munivanditam |\nasmākaṃ putra lābhāya namāmi śrīśamacyutam || 7 ||\nśrīpate devadeveśa dīnārtirharaṇācyuta |\ngovinda me sutaṃ dehi namāmi tvāṃ janārdana || 8 ||\nbhaktakāmada govinda bhaktaṃ rakṣa śubhaprada |\ndehi me tanayaṃ kṛṣṇa rukmiṇīvallabha prabho || 9 ||\nrukmiṇīnātha sarveśa dehi me tanayaṃ sadā |\nbhaktamandāra padmākṣa tvāmahaṃ śaraṇaṃ gataḥ || 10 ||\ndevakīsuta govinda vāsudeva jagatpate |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 11 ||\nvāsudeva jagadvandya śrīpate puruṣottama |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 12 ||\nkañjākṣa kamalānātha parakāruṇikottama |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 13 ||\nlakṣmīpate padmanābha mukunda munivandita |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 14 ||\nkāryakāraṇarūpāya vāsudevāya te sadā |\nnamāmi putralābhārtha sukhadāya budhāya te || 15 ||\nrājīvanetra śrīrāma rāvaṇāre hare kave |\ntubhyaṃ namāmi deveśa tanayaṃ dehi me hare || 16 ||\nasmākaṃ putralābhāya bhajāmi tvāṃ jagatpate |\ndehi me tanayaṃ kṛṣṇa vāsudeva ramāpate || 17 ||\nśrīmāninīmānacora gopīvastrāpahāraka |\ndehi me tanayaṃ kṛṣṇa vāsudeva jagatpate || 18 ||\nasmākaṃ putrasaṃprāptiṃ kuruṣva yadunandana |\nramāpate vāsudeva mukunda munivandita || 19 ||\nvāsudeva sutaṃ dehi tanayaṃ dehi mādhava |\nputraṃ me dehi śrīkṛṣṇa vatsaṃ dehi mahāprabho ||20 ||\nḍimbhakaṃ dehi śrīkṛṣṇa ātmajaṃ dehi rāghava |\nbhaktamandāra me dehi tanayaṃ nandanandana || 21 ||\nnandanaṃ dehi me kṛṣṇa vāsudeva jagatpate |\nkamalanātha govinda mukunda munivandita || 22 ||\nanyathā śaraṇaṃ nāsti tvameva śaraṇaṃ mama |\nsutaṃ dehi śriyaṃ dehi śriyaṃ putraṃ pradehi me || 23 ||\nyaśodāstanyapānajñaṃ pibantaṃ yadunandanaṃ |\nvande'haṃ putralābhārthaṃ kapilākṣaṃ hariṃ sadā || 24 ||\nnandanandana deveśa nandanaṃ dehi me prabho |\nramāpate vāsudeva śriyaṃ putraṃ jagatpate || 25 ||\nputraṃ śriyaṃ śriyaṃ putraṃ putraṃ me dehi mādhava |\nasmākaṃ dīnavākyasya avadhāraya śrīpate || 26 ||\ngopāla ḍimbha govinda vāsudeva ramāpate |\nasmākaṃ ḍimbhakaṃ dehi śriyaṃ dehi jagatpate || 27 ||\nmadvāñchitaphalaṃ dehi devakīnandanācyuta |\nmama putrārthitaṃ dhanyaṃ kuruṣva yadunandana || 28 ||\nyāce'haṃ tvāṃ śriyaṃ putraṃ dehi me putrasaṃpadama |\nbhaktacintāmaṇe rāma kalpavṛkṣa mahāprabho || 29 ||\nātmajaṃ nandanaṃ putraṃ kumāraṃ ḍimbhakaṃ sutam |\narbhakaṃ tanayaṃ dehi sadā me raghunandana || 30 ||\nvande santānagopālaṃ mādhavaṃ bhaktakāmadam |\nasmākaṃ putrasaṃprāptyai sadā govindamacyutam || 31 ||\noṃkārayuktaṃ gopālaṃ śrīyuktaṃ yadunandanam |\nklīṃyuktaṃ devakīputraṃ namāmi yadunāyakam || 32 ||\nvāsudeva mukundeśa govinda mādhavācyuta |\ndehi me tanayaṃ kṛṣṇa ramānātha mahāprabho || 33 ||\nrājīvanetra govinda kapilākṣa hare prabho |\nsamastakāmyavarada dehi me tanayaṃ sadā || 34 ||\nabjapadmanibhaṃ padmavṛndarūpa jagatpate |\ndehi me varasatputraṃ ramānāyaka mādhava || 35 ||\nnandapāla dharāpāla govinda yadunandana |\ndehi me tanayaṃ kṛṣṇa rukmiṇīvallabha prabho || 36 ||\ndāsamandāra govinda mukunda mādhavācyuta |\ngopāla puṇḍarīkākṣa dehi me tanayaṃ śriyam || 37 ||\nyadunāyaka padmeśa nandagopavadhūsuta |\ndehi me tanayaṃ kṛṣṇa śrīdhara prāṇanāyaka || 38 ||\nasmākaṃ vāñchitaṃ dehi dehi putraṃ ramāpate |\nbhagavan kṛṣṇa sarveśa vāsudeva jagatpate || 39 ||\nramāhṛdayasaṃbhārasatyabhāmāmanaḥ priya |\ndehi me tanayaṃ kṛṣṇa rukmiṇīvallabha prabho || 40 ||\ncandrasūryākṣa govinda puṇḍarīkākṣa mādhava |\nasmākaṃ bhāgyasatputraṃ dehi deva jagatpate || 41 ||\nkāruṇyarūpa padmākṣa padmanābhasamarcita |\ndehi me tanayaṃ kṛṣṇa devakīnandanandana || 42 ||\ndevakīsuta śrīnātha vāsudeva jagatpate |\nsamastakāmaphalada dehi me tanayaṃ sadā || 43 ||\nbhaktamandāra gambhīra śaṅkarācyuta mādhava |\ndehi me tanayaṃ gopabālavatsala śrīpate || 44 ||\nśrīpate vāsudeveśa devakīpriyanandana |\nbhaktamandāra me dehi tanayaṃ jagatāṃ prabho ||45 ||\njagannātha ramānātha bhūminātha dayānidhe |\nvāsudeveśa sarveśa dehi me tanayaṃ prabho || 46 ||\nśrīnātha kamalapatrākṣa vāsudeva jagatpate |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 47 ||\ndāsamandāra govinda bhaktacintāmaṇe prabho |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 48 ||\ngovinda puṇḍarīkākṣa ramānātha mahāprabho |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 49 ||\nśrīnātha kamalapatrākṣa govinda madhusūdana |\nmatputraphalasiddhyarthaṃ bhajāmi tvāṃ janārdana || 50 ||\nstanyaṃ pibantaṃ jananīmukhāṃbujaṃ vilokya mandasmitamujjvalāṅgam |\nspṛśantamanyastanamaṅgulībhirvande yaśodāṅkagataṃ mukundam || 51 ||\nyāce'haṃ putrasantānaṃ bhavantaṃ padmalocana |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 52 ||\nasmākaṃ putrasampatteścintayāmi jagatpate |\nśīghraṃ me dehi dātavyaṃ bhavatā munivandita || 53 ||\nvāsudeva jagannātha śrīpate puruṣottama |\nkuru māṃ putradattaṃ ca kṛṣṇa devendrapūjita || 54 ||\nkuru māṃ putradattaṃ ca yaśodāpriyanandanam |\nmahyaṃ ca putrasantānaṃ dātavyaṃbhavatā hare || 55 ||\nvāsudeva jagannātha govinda devakīsuta |\ndehi me tanayaṃ rāma kauśalyāpriyanandana || 56 ||\npadmapatrākṣa govinda viṣṇo vāmana mādhava |\ndehi me tanayaṃ sītāprāṇanāyaka rāghava || 57 ||\nkañjākṣa kṛṣṇa devendramaṇḍita munivandita |\nlakṣmaṇāgraja śrīrāma dehi me tanayaṃ sadā || 58 ||\ndehi me tanayaṃ rāma daśarathapriyanandana |\nsītānāyaka kañjākṣa mucukundavaraprada || 59 ||\nvibhīṣaṇasya yā laṅkā pradattā bhavatā purā |\nasmākaṃ tatprakāreṇa tanayaṃ dehi mādhava || 60 ||\nbhavadīyapadāṃbhoje cintayāmi nirantaram |\ndehi me tanayaṃ sītāprāṇavallabha rāghava || 61 ||\nrāma matkāmyavarada putrotpattiphalaprada |\ndehi me tanayaṃ śrīśa kamalāsanavandita || 62 ||\nrāma rāghava sīteśa lakṣmaṇānuja dehi me |\nbhāgyavatputrasantānaṃ daśarathapriyanandana |\ndehi me tanayaṃ rāma kṛṣṇa gopāla mādhava || 64 ||\nkṛṣṇa mādhava govinda vāmanācyuta śaṅkara |\ndehi me tanayaṃ śrīśa gopabālakanāyaka || 65 ||\ngopabāla mahādhanya govindācyuta mādhava |\ndehi me tanayaṃ kṛṣṇa vāsudeva jagatpate || 66 ||\ndiśatu diśatu putraṃ devakīnandano'yaṃ\ndiśatu diśatu śīghraṃ bhāgyavatputralābham |\ndiśatu diśatu śīghraṃ śrīśo rāghavo rāmacandro\ndiśatu diśatu putraṃ vaṃśa vistārahetoḥ || 67 ||\ndīyatāṃ vāsudevena tanayomatpriyaḥ sutaḥ |\nkumāro nandanaḥ sītānāyakena sadā mama || 68 ||\nrāma rāghava govinda devakīsuta mādhava |\ndehi me tanayaṃ śrīśa gopabālakanāyaka || 69 ||\nvaṃśavistārakaṃ putraṃ dehi me madhusūdana |\nsutaṃ dehi sutaṃ dehi tvāmahaṃ śaraṇaṃ gataḥ || 70 ||\nmamābhīṣṭasutaṃ dehi kaṃsāre mādhavācyuta |\nsutaṃ dehi sutaṃ dehi tvāmahaṃ śaraṇaṃ gataḥ ||71 ||\ncandrārkakalpaparyantaṃ tanayaṃ dehi mādhava |\nsutaṃ dehi sutaṃ dehi tvāmahaṃ śaraṇaṃ gataḥ ||72 ||\nvidyāvantaṃ buddhimantaṃ śrīmantaṃ tanayaṃ sadā |\ndehi me tanayaṃ kṛṣṇa devakīnandana prabho || 73 ||\nnamāmi tvāṃ padmanetra sutalābhāya kāmadam |\nmukundaṃ puṇḍarīkākṣaṃ govindaṃ madhusūdanam || 74 ||\nbhagavan kṛṣṇa govinda sarvakāmaphalaprada |\ndehi me tanayaṃ svāmiṃstvāmahaṃ śaraṇaṃ gataḥ || 75 ||\nsvāmiṃstvaṃ bhagavan rāma kṛṣna mādhava kāmada |\ndehi me tanayaṃ nityaṃ tvāmahaṃ śaraṇaṃ gataḥ || 76 ||\ntanayaṃ dehio govinda kañjākṣa kamalāpate |\nsutaṃ dehi sutaṃ dehi tvāmahaṃ śaraṇaṃ gataḥ ||77 ||\npadmāpate padmanetra pradyumna janaka prabho |\nsutaṃ dehi sutaṃ dehi tvāmahaṃ śaraṇaṃ gataḥ || 78 ||\nśaṅkhacakragadākhaḍgaśārṅgapāṇe ramāpate |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 79 ||\nnārāyaṇa ramānātha rājīvapatralocana |\nsutaṃ me dehi deveśa padmapadmānuvandita || 80 ||\nrāma rāghava govinda devakīvaranandana |\nrukmiṇīnātha sarveśa nāradādisurārcita || 81 ||\ndevakīsuta govinda vāsudeva jagatpate |\ndehi me tanayaṃ śrīśa gopabālakanāyaka || 82 ||\nmunivandita govinda rukmiṇīvallabha prabho |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 83 ||\ngopikārjitapaṅkejamarandāsaktamānasa |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 84 ||\nramāhṛdayapaṅkejalola mādhava kāmada |\nmamābhīṣṭasutaṃ dehi tvāmahaṃ śaraṇaṃ gataḥ || 85 ||\nvāsudeva ramānātha dāsānāṃ maṅgalaprada |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 86 ||\nkalyāṇaprada govinda murāre munivandita |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 87 ||\nputraprada mukundeśa rukmiṇīvallabha prabho |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 88 ||\npuṇḍarīkākṣa govinda vāsudeva jagatpate |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 89 ||\ndayānidhe vāsudeva mukunda munivandita |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 90 ||\nputrasampatpradātāraṃ govindaṃ devapūjitam |\nvandāmahe sadā kṛṣṇaṃ putra lābha pradāyinam || 91 ||\nkāruṇyanidhaye gopīvallabhāya murāraye |\nnamaste putralābhāya dehi me tanayaṃ vibho || 92 ||\nnamastasmai rameśāya rumiṇīvallabhāya te |\ndehi me tanayaṃ śrīśa gopabālakanāyaka || 93 ||\nnamaste vāsudevāya nityaśrīkāmukāya ca |\nputradāya ca sarpendraśāyine raṅgaśāyine || 94 ||\nraṅgaśāyin ramānātha maṅgalaprada mādhava |\ndehi me tanayaṃ śrīśa gopabālakanāyaka || 95 ||\ndāsasya me sutaṃ dehi dīnamandāra rāghava |\nsutaṃ dehi sutaṃ dehi putraṃ dehi ramāpate || 96 ||\nyaśodātanayābhīṣṭaputradānarataḥ sadā |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ ||97 ||\nmadiṣṭadeva govinda vāsudeva janārdana |\ndehi me tanayaṃ kṛṣṇa tvāmahaṃ śaraṇaṃ gataḥ || 98 ||\nnītimān dhanavān putro vidyāvāṃśca prajāpate |\nbhagavaṃstvatkṛpāyāśca vāsudevendrapūjita || 99 ||\nyaḥpaṭhet putraśatakaṃ so'pi satputravān bhaveta |\nśrīvāsudevakathitaṃ stotraratnaṃ sukhāya ca || 100 ||\njapakāle paṭhennityaṃ putralābhaṃ dhanaṃ śriyam |\naiśvaryaṃ rājasammānaṃ sadyo yāti na saṃśayaḥ || 101 ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Santāna Gopāla Stotram"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The full hymn to Krishna as Gopala, traditionally recited for the blessing of children and for an expecting mother and child.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "children",
+      "family"
+    ],
+    "moods": [
+      "hopeful",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "extended",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.hanuman-chalisa",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.hanuman"
+    ],
+    "kind": "stotra",
+    "title": "Hanuman Chalisa",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "श्रीगुरु चरन सरोज रज, निज मनु मुकुरु सुधारि। बरनउँ रघुबर बिमल जसु, जो दायकु फल चारि।।\nबुद्धिहीन तनु जानिके, सुमिरौं पवन-कुमार। बल बुद्धि बिद्या देहु मोहिं, हरहु कलेस बिकार।।\nजय हनुमान ज्ञान गुन सागर। जय कपीस तिहुँ लोक उजागर।।\nराम दूत अतुलित बल धामा। अंजनि-पुत्र पवनसुत नामा।।\nमहाबीर बिक्रम बजरंगी। कुमति निवार सुमति के संगी।।\nकंचन बरन बिराज सुबेसा। कानन कुंडल कुंचित केसा।।\nहाथ बज्र औ ध्वजा बिराजै। काँधे मूँज जनेऊ साजै।।\nसंकर सुवन केसरीनंदन। तेज प्रताप महा जग बन्दन।।\nविद्यावान गुनी अति चातुर। राम काज करिबे को आतुर।।\nप्रभु चरित्र सुनिबे को रसिया। राम लखन सीता मन बसिया।।\nसूक्ष्म रूप धरि सियहिं दिखावा। बिकट रूप धरि लंक जरावा।।\nभीम रूप धरि असुर सँहारे। रामचंद्र के काज सँवारे।।\nलाय सजीवन लखन जियाये। श्रीरघुबीर हरषि उर लाये।।\nरघुपति कीन्ही बहुत बड़ाई। तुम मम प्रिय भरतहि सम भाई।।\nसहस बदन तुम्हरो जस गावैं। अस कहि श्रीपति कंठ लगावैं।।\nसनकादिक ब्रह्मादि मुनीसा। नारद सारद सहित अहीसा।।\nजम कुबेर दिगपाल जहाँ ते। कबि कोबिद कहि सके कहाँ ते।।\nतुम उपकार सुग्रीवहिं कीन्हा। राम मिलाय राज पद दीन्हा।।\nतुम्हरो मंत्र बिभीषन माना। लंकेस्वर भए सब जग जाना।।\nजुग सहस्र जोजन पर भानु। लील्यो ताहि मधुर फल जानु।।\nप्रभु मुद्रिका मेलि मुख माहीं। जलधि लाँघि गये अचरज नाहीं।।\nदुर्गम काज जगत के जेते। सुगम अनुग्रह तुम्हरे तेते।।\nराम दुआरे तुम रखवारे। होत न आज्ञा बिनु पैसारे।।\nसब सुख लहै तुम्हारी सरना। तुम रक्षक काहू को डर ना।।\nआपन तेज सम्हारो आपै। तीनों लोक हाँक तें काँपै।।\nभूत पिसाच निकट नहिं आवै। महाबीर जब नाम सुनावै।।\nनासै रोग हरै सब पीरा। जपत निरंतर हनुमत बीरा।।\nसंकट तें हनुमान छुड़ावै। मन क्रम बचन ध्यान जो लावै।।\nसब पर राम तपस्वी राजा। तिन के काज सकल तुम साजा।।\nऔर मनोरथ जो कोई लावै। सोइ अमित जीवन फल पावै।।\nचारों जुग परताप तुम्हारा। है परसिद्ध जगत उजियारा।।\nसाधु-संत के तुम रखवारे। असुर निकंदन राम दुलारे।।\nअष्ट सिद्धि नौ निधि के दाता। अस बर दीन जानकी माता।।\nराम रसायन तुम्हरे पासा। सदा रहो रघुपति के दासा।।\nतुम्हरे भजन राम को पावै। जनम-जनम के दुख बिसरावै।।\nअन्त काल रघुबर पुर जाई। जहाँ जन्म हरि-भक्त कहाई।।\nऔर देवता चित्त न धरई। हनुमत सेइ सर्ब सुख करई।।\nसंकट कटै मिटै सब पीरा। जो सुमिरै हनुमत बलबीरा।।\nजै जै जै हनुमान गोसाईं। कृपा करहु गुरु देव की नाईं।।\nजो सत बार पाठ कर कोई। छूटहि बंदि महा सुख होई।।\nजो यह पढ़ै हनुमान चालीसा। होय सिद्धि साखी गौरीसा।।\nतुलसीदास सदा हरि चेरा। कीजै नाथ हृदय मँह डेरा।।\nपवन तनय संकट हरन, मंगल मूरति रूप। राम लखन सीता सहित, हृदय बसहु सुर भूप।।",
+          "language": "hi",
+          "script": "Deva"
+        },
+        "transliteration": "Shri Guru Charan Saroj Raj, Nij Manu Mukuru Sudhari. Barnau Raghuvar Bimal Jasu, Jo Dayaku Phal Chari. Budhi Heen Tanu Janike, Sumirow Pavan Kumar. Bal Buddhi Vidya Dehu Mohi, Harahu Kalesh Bikaar.\nJai Hanuman Gyan Guna Sagar. Jai Kapis Tihun Lok Ujagar. Ram Doot Atulit Bal Dhama. Anjani Putra Pavan Sut Nama.\nMahabir Vikram Bajrangi. Kumati Nivar Sumati Ke Sangi. Kanchan Baran Biraj Subesa. Kanan Kundal Kunchit Kesa.\nHath Vajra Aur Dhvaja Biraje. Kandhe Moonj Janeu Saje. Shankar Suvan Kesari Nandan. Tej Pratap Maha Jag Vandan.\nVidyavan Guni Ati Chatur. Ram Kaj Karibe Ko Aatur. Prabhu Charitra Sunibe Ko Rasiya. Ram Lakhan Sita Man Basiya.\nSukshma Roop Dhari Siyahi Dikhava. Bikat Roop Dhari Lank Jarava. Bhim Roop Dhari Asur Sanhare. Ramachandra Ke Kaj Sanvare.\nLaye Sanjivan Lakhan Jiyaye. Shri Raghubir Harashi Ur Laye. Raghupati Kinhi Bahut Badayi. Tum Mam Priya Bharat Hi Sam Bhai.\nSahas Badan Tumharo Jas Gave. As Kahi Shripati Kanth Lagave. Sankadik Brahmadi Munisa. Narad Sarad Sahit Aahisa.\nYam Kuber Digpal Jahan Te. Kavi Kovid Kahi Sake Kahan Te. Tum Upkar Sugrivahi Kinha. Ram Milay Raj Pad Dinha.\nTumharo Mantra Vibhishan Mana. Lankeshwar Bhaye Sab Jag Jana. Yug Sahastra Yojan Par Bhanu. Lilyo Tahi Madhur Phal Janu.\nPrabhu Mudrika Meli Mukh Mahi. Jaladhi Langhi Gaye Acharaj Nahi. Durgam Kaj Jagat Ke Jete. Sugam Anugraha Tumhre Tete.\nRam Duare Tum Rakhvare. Hot Na Agya Binu Paisare. Sab Sukh Lahe Tumhari Sarna. Tum Rakshak Kahu Ko Dar Na.\nAapan Tej Samharo Aape. Tino Lok Hank Te Kanpe. Bhoot Pishach Nikat Nahi Aave. Mahavir Jab Naam Sunave.\nNase Rog Hare Sab Pira. Japat Nirantar Hanumat Beera. Sankat Te Hanuman Chhudave. Man Kram Bachan Dhyan Jo Lave.\nSab Par Ram Tapasvi Raja. Tin Ke Kaj Sakal Tum Saja. Aur Manorath Jo Koi Lave. Soi Amit Jivan Phal Pave.\nCharon Yug Pratap Tumhara. Hai Parsiddh Jagat Ujiyara. Sadhu Sant Ke Tum Rakhvare. Asur Nikandan Ram Dulare.\nAshta Siddhi Nau Nidhi Ke Data. As Bar Din Janaki Mata. Ram Rasayan Tumhare Pasa. Sada Raho Raghupati Ke Dasa.\nTumhare Bhajan Ram Ko Pave. Janam Janam Ke Dukh Bisrave. Ant Kal Raghubar Pur Jayi. Jahan Janam Hari Bhakt Kahayi.\nAur Devta Chitt Na Dharayi. Hanumat Sei Sarba Sukh Karayi. Sankat Kate Mite Sab Pira. Jo Sumire Hanumat Balbira.\nJai Jai Jai Hanuman Gosai. Kripa Karahu Gurudev Ki Nai. Jo Sat Bar Path Kar Koi. Chhutahi Bandi Maha Sukh Hoi.\nJo Yeh Padhe Hanuman Chalisa. Hoye Siddhi Sakhi Gaurisa. Tulsidas Sada Hari Chera. Kije Nath Hridaye Mah Dera.\nPavan Tanay Sankat Haran, Mangal Murti Roop. Ram Lakhan Sita Sahit, Hriday Basahu Sur Bhup.",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.hi-chalisa",
+          "reference": "Hanumān Cālīsā (Tulsidas)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Forty verses by Goswami Tulsidas in praise of Hanuman. Traditionally recited for courage, protection and strength, often on Tuesdays and Saturdays.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "courage",
+      "protection",
+      "strength"
+    ],
+    "moods": [
+      "needStrength",
+      "anxious"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "extended",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.dua.quran-3-8",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "dua",
+    "title": "Keep our hearts steady",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً إِنَّكَ أَنتَ ٱلْوَهَّابُ",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "3:8"
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "Our Lord! Cause not our hearts to stray after Thou hast guided us, and bestow upon us mercy from Thy Presence. Lo! Thou, only Thou, art the Bestower.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "3:8"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "A dua of those firm in knowledge: that Allah keep our hearts from straying after guidance, and grant mercy.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "guidance",
+      "trust"
+    ],
+    "moods": [
+      "seekingGuidance",
+      "anxious"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.dua.quran-7-23",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "dua",
+    "title": "The dua of Adam",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "قَالَا رَبَّنَا ظَلَمْنَآ أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ ٱلْخَٰسِرِينَ",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "7:23"
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "They said: Our Lord! We have wronged ourselves. If thou forgive us not and have not mercy on us, surely we are of the lost!",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "7:23"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The words of repentance of Adam and Hawwa: acknowledging wrong and asking for forgiveness and mercy.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "forgiveness"
+    ],
+    "moods": [
+      "seekingForgiveness",
+      "sad"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.dua.quran-20-25-28",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "dua",
+    "title": "The dua of Musa for ease",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "رَبِّ ٱشْرَحْ لِى صَدْرِى وَيَسِّرْ لِىٓ أَمْرِى وَٱحْلُلْ عُقْدَةً مِّن لِّسَانِى يَفْقَهُوا۟ قَوْلِى",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "20:25–28",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "My Lord! relieve my mind And ease my task for me; And loose a knot from my tongue, That they may understand my saying.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "20:25–28",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Musa's prayer before a daunting task: for an open heart, an easy path and clear speech. Many recite it before exams, interviews and difficult conversations.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "strength",
+      "study",
+      "guidance"
+    ],
+    "moods": [
+      "stressed",
+      "anxious",
+      "needStrength"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.dua.quran-20-114",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "dua",
+    "title": "Increase me in knowledge",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "رَّبِّ زِدْنِى عِلْمًا",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "20:114",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "My Lord! Increase me in knowledge.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "20:114",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "A short dua for knowledge, often said before study.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "study",
+      "guidance"
+    ],
+    "moods": [
+      "seekingGuidance",
+      "stressed"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.dua.quran-21-87",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "dua",
+    "title": "The dua of Yunus",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "21:87",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "There is no Allah save Thee. Be Thou Glorified! Lo! I have been a wrong-doer.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "21:87",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The prayer of Yunus from the darkness: affirming Allah's oneness and admitting wrong. Traditionally recited in distress.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "comfort",
+      "forgiveness",
+      "difficult-times"
+    ],
+    "moods": [
+      "sad",
+      "anxious",
+      "needStrength"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.dua.quran-3-38",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "dua",
+    "title": "The dua of Zakariya for a child",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "رَبِّ هَبْ لِى مِن لَّدُنكَ ذُرِّيَّةً طَيِّبَةً إِنَّكَ سَمِيعُ ٱلدُّعَآءِ",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "3:38",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "My Lord! Bestow upon me of Thy bounty goodly offspring. Lo! Thou art the Hearer of Prayer.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "3:38",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Zakariya's prayer for righteous offspring. Many recite it when hoping for a child and during pregnancy — alongside medical care, never instead of it.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "children",
+      "family",
+      "hope"
+    ],
+    "moods": [
+      "hopeful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.dua.quran-25-74",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "dua",
+    "title": "Comfort of our eyes",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَٰجِنَا وَذُرِّيَّٰتِنَا قُرَّةَ أَعْيُنٍ وَٱجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "25:74",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "Our Lord! Vouchsafe us comfort of our wives and of our offspring, and make us patterns for (all) those who ward off (evil).",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "25:74",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "A dua for one's spouse and children to be a comfort, and to lead in goodness.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "family",
+      "children"
+    ],
+    "moods": [
+      "hopeful",
+      "grateful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.dua.quran-17-24",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "dua",
+    "title": "Mercy for my parents",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "17:24",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "My Lord! Have mercy on them both as they did care for me when I was little.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "17:24",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The dua for one's parents, asking mercy for them as they cared for us when we were small.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "family"
+    ],
+    "moods": [
+      "grateful",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.dua.quran-23-118",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "dua",
+    "title": "Forgive and have mercy",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "رَّبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "23:118",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "My Lord! Forgive and have mercy, for Thou art Best of all who show mercy.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "23:118",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "A short dua for forgiveness and mercy.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "forgiveness"
+    ],
+    "moods": [
+      "seekingForgiveness"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.dua.quran-9-129",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "dua",
+    "title": "Allah is sufficient for me",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "9:129",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "Allah sufficeth me. There is no Allah save Him. In Him have I put my trust, and He is Lord of the Tremendous Throne.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "9:129",
+          "note": "Phrase from the verse."
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Words of trust in Allah, traditionally repeated in worry.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "trust",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "needPeace"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.quran.ayat-al-kursi",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "scripture",
+    "title": "Ayat al-Kursi",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ لَا تَأْخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "2:255"
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "Allah! There is no deity save Him, the Alive, the Eternal. Neither slumber nor sleep overtaketh Him. Unto Him belongeth whatsoever is in the heavens and whatsoever is in the earth. Who is he that intercedeth with Him save by His leave? He knoweth that which is in front of them and that which is behind them, while they encompass nothing of His knowledge save what He will. His throne includeth the heavens and the earth, and He is never weary of preserving them. He is the Sublime, the Tremendous.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "2:255"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The Verse of the Throne, on Allah's majesty and care. Traditionally recited for protection, after prayers and before sleep.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "peace",
+      "trust"
+    ],
+    "moods": [
+      "anxious",
+      "needPeace"
+    ],
+    "timesOfDay": [
+      "night"
+    ],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.quran.al-ikhlas",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "scripture",
+    "title": "Surah Al-Ikhlas",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ ٱللَّهُ ٱلصَّمَدُ لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "112:1–4"
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "Say: He is Allah, the One! Allah, the eternally Besought of all! He begetteth not nor was begotten. And there is none comparable unto Him.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "112:1–4"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The surah of sincere faith in Allah's oneness.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "presence",
+      "trust"
+    ],
+    "moods": [
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.quran.al-falaq",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "scripture",
+    "title": "Surah Al-Falaq",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ مِن شَرِّ مَا خَلَقَ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "113:1–5"
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "Say: I seek refuge in the Lord of the Daybreak From the evil of that which He created; From the evil of the darkness when it is intense, And from the evil of malignant witchcraft, And from the evil of the envier when he envieth.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "113:1–5"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Seeking refuge in the Lord of the daybreak. With Al-Ikhlas and An-Nas, traditionally recited morning and evening and before sleep.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection"
+    ],
+    "moods": [
+      "anxious"
+    ],
+    "timesOfDay": [
+      "night"
+    ],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "islam.quran.an-nas",
+    "faith": "islam",
+    "traditions": [],
+    "focuses": [],
+    "kind": "scripture",
+    "title": "Surah An-Nas",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ مَلِكِ ٱلنَّاسِ إِلَٰهِ ٱلنَّاسِ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+          "language": "ar",
+          "script": "Arab"
+        },
+        "citation": {
+          "source": "quran",
+          "edition": "quran.ar",
+          "reference": "114:1–6"
+        }
+      },
+      {
+        "role": "sourceText",
+        "text": "Say: I seek refuge in the Lord of mankind, The King of mankind, The god of mankind, From the evil of the sneaking whisperer, Who whispereth in the hearts of mankind, Of the jinn and of mankind.",
+        "citation": {
+          "source": "quran",
+          "edition": "quran.en",
+          "reference": "114:1–6"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Seeking refuge in the Lord of mankind from whispered harm.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "needPeace"
+    ],
+    "timesOfDay": [
+      "night"
+    ],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  }
+]

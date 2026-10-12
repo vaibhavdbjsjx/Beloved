@@ -1,0 +1,8 @@
+{
+  "isPaywallEnabled": false,
+  "products": [
+    { "id": "beloved.premium.monthly", "plan": "monthly" },
+    { "id": "beloved.premium.annual", "plan": "annual" }
+  ],
+  "premiumFeatures": ["assistant", "fullLibrary", "extendedInsights", "journal", "multipleSchedules", "additionalLanguages"]
+}

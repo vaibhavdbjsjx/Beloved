@@ -1,0 +1,21 @@
+# Beloved companion server — Cloudflare Worker. Deploy steps: README.md.
+name = "beloved-companion"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+# Fails closed: until these are set the server answers 503 to every companion request.
+BUNDLE_ID = ""          # the app's bundle ID (Config/Identity.xcconfig PL_BUNDLE_ID_PREFIX)
+PRODUCT_IDS = "beloved.premium.monthly,beloved.premium.annual"
+ENVIRONMENTS = "Production"   # add ",Sandbox" only for TestFlight testing, then remove
+MODEL = "gemini-2.5-flash"
+MAX_TOKENS = "900"
+DAILY_LIMIT = "25"      # companion messages per subscriber per UTC day (cost control)
+
+# Per-subscription daily counters (two-day expiry). Create with:
+#   npx wrangler kv namespace create USAGE   → paste the id below.
+[[kv_namespaces]]
+binding = "USAGE"
+id = ""
+
+# Secret (never in this file or the app):  npx wrangler secret put GEMINI_API_KEY

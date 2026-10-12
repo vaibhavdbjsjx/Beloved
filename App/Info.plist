@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PLEnvironment</key>
+	<string>$(PL_ENVIRONMENT)</string>
+	<key>PLAppGroupIdentifier</key>
+	<string>$(PL_APP_GROUP_ID)</string>
+	<key>PLAssistantEndpoint</key>
+	<string>$(PL_ASSISTANT_ENDPOINT)</string>
+	<key>PLSubscriptionGroupID</key>
+	<string>$(PL_SUBSCRIPTION_GROUP_ID)</string>
+	<key>PLSupportURL</key>
+	<string>$(PL_SUPPORT_URL)</string>
+	<key>PLPrivacyPolicyURL</key>
+	<string>$(PL_PRIVACY_POLICY_URL)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+</dict>
+</plist>

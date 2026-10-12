@@ -1,0 +1,53 @@
+{
+  "retrieved": "2026-10-11",
+  "sources": {
+    "web": {
+      "url": "https://ebible.org/Scriptures/engwebp_vpl.zip",
+      "file": "engwebp_vpl.zip",
+      "member": "engwebp_vpl.txt",
+      "sha256": "552e5a3e6dec9bfda4f95c2b1e86a2add1ba50b6f727609dff925de61e36e74b"
+    },
+    "hebrew": {
+      "url": "https://ebible.org/Scriptures/hbo_vpl.zip",
+      "file": "hbo_vpl.zip",
+      "member": "hbo_vpl.txt",
+      "sha256": "70e381a744f5eb50cb4901db902b95088acfadba005aba0b8bee822e4ac34b63"
+    },
+    "greek": {
+      "url": "https://ebible.org/Scriptures/grcbyz_vpl.zip",
+      "file": "grcbyz_vpl.zip",
+      "member": "grcbyz_vpl.txt",
+      "sha256": "539e0ae1297da1310c49ad4fa60057e989c749484bf5919f64e4b1be90122af8"
+    },
+    "quranArabic": {
+      "url": "https://tanzil.net/pub/download/index.php?quranType=uthmani&outType=txt-2&agree=true",
+      "file": "quran-uthmani.txt",
+      "sha256": "bf4f57b968d03f4131c070b1e285da9be0e0a108a21c910e872801ca273312c8"
+    },
+    "quranPickthall": {
+      "url": "https://tanzil.net/trans/?transID=en.pickthall&type=txt-2",
+      "file": "en.pickthall.txt",
+      "sha256": "4aabbfa9d96796f5a6b0217d2c39dce1a3084f772bf6f2650e37082a774e3cc7"
+    },
+    "quranMetadata": {
+      "url": "https://tanzil.net/res/text/metadata/quran-data.js",
+      "file": "tanzil-quran-data.js",
+      "sha256": "9e9930c592aaa34b5c7a79ff4e99ffdc782263a266090bfe2c49e4ed4bac4ca4"
+    },
+    "gitaSanskrit": {
+      "url": "https://raw.githubusercontent.com/gita/gita/main/data/verse.json",
+      "file": "gita-verse.json",
+      "sha256": "bb599e666e552bd65080f1f8da6d488f067237f64091ab265978861cf3fadec7"
+    },
+    "gitaChapters": {
+      "url": "https://raw.githubusercontent.com/gita/gita/main/data/chapters.json",
+      "file": "gita-chapters.json",
+      "sha256": "d435d980cef34fcb5529b2fa4c3e3ff617df44080094d22481b884299cc14dc9"
+    },
+    "gitaArnold": {
+      "url": "https://www.gutenberg.org/cache/epub/2388/pg2388.txt",
+      "file": "gita-arnold-2388.txt",
+      "sha256": "85b22401a9d256179f9a2e407215eb516da9b8213f23c32e03d66709d839a9e0"
+    }
+  }
+}

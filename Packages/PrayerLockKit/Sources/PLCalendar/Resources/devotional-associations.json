@@ -1,0 +1,32 @@
+[
+  {
+    "id": "hinduism.monday.shiva", "faith": "hinduism", "traditions": [], "isoWeekday": 1,
+    "focus": "hinduism.shiva", "themes": ["peace"],
+    "explanation": "In many Hindu communities, Monday (Somavara) is associated with Shiva. Customs vary by region and tradition."
+  },
+  {
+    "id": "hinduism.tuesday.hanuman", "faith": "hinduism", "traditions": [], "isoWeekday": 2,
+    "focus": "hinduism.hanuman", "themes": ["strength", "protection"],
+    "explanation": "In many communities, especially in North India, Tuesday is associated with Hanuman; elsewhere it may be associated with Devi or Murugan."
+  },
+  {
+    "id": "hinduism.wednesday.ganesha", "faith": "hinduism", "traditions": [], "isoWeekday": 3,
+    "focus": "hinduism.ganesha", "themes": ["guidance", "study"],
+    "explanation": "In some communities, Wednesday is associated with Ganesha. Customs vary by region."
+  },
+  {
+    "id": "hinduism.thursday.vishnu", "faith": "hinduism", "traditions": [], "isoWeekday": 4,
+    "focus": "hinduism.vishnu", "themes": ["guidance"],
+    "explanation": "In many communities, Thursday (Guruvara) is associated with Vishnu and with honoring one's teachers. Customs vary by region."
+  },
+  {
+    "id": "hinduism.friday.devi", "faith": "hinduism", "traditions": [], "isoWeekday": 5,
+    "focus": "hinduism.devi", "themes": ["gratitude", "protection"],
+    "explanation": "In many communities, Friday is associated with Devi — often Lakshmi or Durga. Customs vary by region."
+  },
+  {
+    "id": "hinduism.saturday.hanuman", "faith": "hinduism", "traditions": [], "isoWeekday": 6,
+    "focus": "hinduism.hanuman", "themes": ["strength", "protection"],
+    "explanation": "In many communities, Saturday is associated with Hanuman and with Shani. Customs vary by region."
+  }
+]

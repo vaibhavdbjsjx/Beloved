@@ -1,0 +1,23 @@
+// ── Beloved identity ────────────────────────────────────────────────────────────
+// The ONE place for the app's final identifiers. Everything else derives from them:
+//
+//   App                    $(PL_BUNDLE_ID_PREFIX)
+//   Shield Configuration   $(PL_BUNDLE_ID_PREFIX).ShieldConfiguration
+//   Shield Action          $(PL_BUNDLE_ID_PREFIX).ShieldAction
+//   Activity Monitor       $(PL_BUNDLE_ID_PREFIX).ActivityMonitor
+//   UI tests               $(PL_BUNDLE_ID_PREFIX).UITests
+//   App Group              group.$(PL_BUNDLE_ID_PREFIX)
+//
+// Neither value is secret (both are visible in every signed build), so commit them once
+// chosen. Use a reverse-DNS prefix you own; never another developer's identifier.
+// Until set, unsigned/simulator compiles still work, and the "Validate
+// release readiness" build phase stops any archive (App Store / TestFlight). See
+// docs/12-signing-setup.md.
+//
+// Per-developer overrides (e.g. a personal team for device testing) can go in the
+// git-ignored Config/Secrets.xcconfig, which is included after this file.
+
+// Placeholder (not a real identifier). Replace with a reverse-DNS prefix you own,
+// e.g. com.<your-domain>.beloved — never a guess.
+PL_BUNDLE_ID_PREFIX = unconfigured.beloved
+DEVELOPMENT_TEAM =

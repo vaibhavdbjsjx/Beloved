@@ -1,0 +1,11 @@
+{
+  "_comment": "TEMPLATE ONLY. Copy to website/site.json and replace EVERY value with real information. These sample values use the reserved .example domain and the word EXAMPLE, so a production build rejects them; --preview highlights them as not configured. Set clean_urls to true when hosting on Cloudflare Pages (it serves /privacy instead of /privacy.html).",
+  "domain": "https://beloved.example",
+  "support_email": "support@beloved.example",
+  "legal_name": "EXAMPLE LEGAL NAME",
+  "terms_effective_date": "EXAMPLE DATE",
+  "contact_address": "",
+  "app_store_url": "",
+  "governing_law": "",
+  "clean_urls": false
+}

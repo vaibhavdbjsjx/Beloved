@@ -1,0 +1,27 @@
+// Shared build settings for every target (app, extensions, UI tests).
+//
+// Identity (bundle prefix, team) lives in Identity.xcconfig — see docs/12-signing-setup.md.
+// Nothing in xcconfig is secret: these values end up in Info.plist inside the app binary.
+
+#include "Identity.xcconfig"
+
+PL_APP_GROUP_ID = group.$(PL_BUNDLE_ID_PREFIX)
+PL_SUBSCRIPTION_GROUP_ID =
+PL_ASSISTANT_ENDPOINT =
+// Public web pages (App Store "Support URL" / "Privacy Policy URL"). Empty = the in-app
+// links are hidden. "//" starts an xcconfig comment, so write https:/$()/host/path.
+PL_SUPPORT_URL =
+PL_PRIVACY_POLICY_URL =
+
+MARKETING_VERSION = 1.0.0
+CURRENT_PROJECT_VERSION = 1
+
+IPHONEOS_DEPLOYMENT_TARGET = 18.0
+TARGETED_DEVICE_FAMILY = 1
+SWIFT_VERSION = 6.0
+SWIFT_EMIT_LOC_STRINGS = YES
+LOCALIZATION_PREFERS_STRING_CATALOGS = YES
+ENABLE_USER_SCRIPT_SANDBOXING = YES
+CODE_SIGN_STYLE = Automatic
+
+#include? "Secrets.xcconfig"

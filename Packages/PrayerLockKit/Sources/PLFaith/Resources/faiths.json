@@ -1,0 +1,494 @@
+[
+  {
+    "id": "christianity",
+    "name": {
+      "en": "Christianity"
+    },
+    "summary": {
+      "en": "Prayer, Scripture, and reflection in the Christian tradition."
+    },
+    "traditionLabel": {
+      "en": "Denomination"
+    },
+    "traditions": [
+      {
+        "id": "christianity.catholic",
+        "name": {
+          "en": "Catholic"
+        }
+      },
+      {
+        "id": "christianity.orthodox",
+        "name": {
+          "en": "Orthodox"
+        }
+      },
+      {
+        "id": "christianity.protestant",
+        "name": {
+          "en": "Protestant"
+        }
+      },
+      {
+        "id": "christianity.anglican",
+        "name": {
+          "en": "Anglican / Episcopal"
+        }
+      },
+      {
+        "id": "christianity.nondenominational",
+        "name": {
+          "en": "Non-denominational"
+        }
+      }
+    ],
+    "focusLabel": null,
+    "focuses": [],
+    "practices": [
+      "prayer",
+      "scripture",
+      "reflection",
+      "gratitude",
+      "intention",
+      "silence"
+    ],
+    "sources": [
+      {
+        "id": "bible",
+        "title": {
+          "en": "The Bible"
+        },
+        "kind": "scripture",
+        "referenceScheme": "bookChapterVerse",
+        "editions": [
+          {
+            "id": "bible.web",
+            "title": {
+              "en": "World English Bible"
+            },
+            "language": "en",
+            "script": "Latn",
+            "license": {
+              "publicDomain": {
+                "note": "Dedicated to the public domain by eBible.org (2020 stable text, engwebp). Bundled verbatim; checksum pinned in scripts/scripture/sources.json. “World English Bible” is a trademark: the text must not be changed while carrying that name."
+              }
+            },
+            "attribution": "World English Bible (WEB), 2020 stable text edition. Public domain. “World English Bible” is a trademark of eBible.org."
+          },
+          {
+            "id": "bible.hbo",
+            "title": {
+              "en": "Hebrew Old Testament (Masoretic Text)"
+            },
+            "language": "hbo",
+            "script": "Hebr",
+            "license": {
+              "publicDomain": {
+                "note": "Westminster Leningrad Codex (Masoretic Text) via eBible.org (hbo), marked Public Domain. Bundled verbatim."
+              }
+            },
+            "attribution": "The Old Testament in ancient Hebrew, following the Masoretic Text (Westminster Leningrad Codex), via eBible.org. Public domain."
+          },
+          {
+            "id": "bible.grc",
+            "title": {
+              "en": "Greek New Testament (Patriarchal Text, 1904)"
+            },
+            "language": "grc",
+            "script": "Grek",
+            "license": {
+              "publicDomain": {
+                "note": "1904 Patriarchal Text via eBible.org (grcbyz), marked Public Domain. Bundled verbatim."
+              }
+            },
+            "attribution": "1904 Patriarchal Greek New Testament, via eBible.org. Public domain."
+          }
+        ]
+      },
+      {
+        "id": "bcp-1979",
+        "title": {
+          "en": "The Book of Common Prayer (1979)"
+        },
+        "kind": "liturgy",
+        "referenceScheme": "freeform",
+        "editions": [
+          {
+            "id": "bcp-1979.en",
+            "title": {
+              "en": "The Book of Common Prayer (1979), The Episcopal Church"
+            },
+            "language": "en",
+            "script": "Latn",
+            "license": {
+              "publicDomain": {
+                "note": "The 1979 Book of Common Prayer of The Episcopal Church is not under copyright. Text from English Wikisource page transcriptions, pinned by revision (scripts/devotions/sources.json)."
+              }
+            },
+            "attribution": "The Book of Common Prayer (1979), The Episcopal Church. Public domain. Text via English Wikisource."
+          }
+        ]
+      }
+    ],
+    "reviewNotes": "Taxonomy drafted by engineering. Requires review by Christian content advisors across Catholic, Orthodox, and Protestant traditions. Orthodox calendar differs (Julian computus) — see observances.json."
+  },
+  {
+    "id": "islam",
+    "name": {
+      "en": "Islam"
+    },
+    "summary": {
+      "en": "Dua, dhikr, and reflection on the Quran."
+    },
+    "traditionLabel": {
+      "en": "Tradition"
+    },
+    "traditions": [
+      {
+        "id": "islam.sunni",
+        "name": {
+          "en": "Sunni"
+        }
+      },
+      {
+        "id": "islam.shia",
+        "name": {
+          "en": "Shia"
+        }
+      }
+    ],
+    "focusLabel": null,
+    "focuses": [],
+    "practices": [
+      "dua",
+      "dhikr",
+      "scripture",
+      "reflection",
+      "gratitude",
+      "intention"
+    ],
+    "sources": [
+      {
+        "id": "quran",
+        "title": {
+          "en": "The Quran"
+        },
+        "kind": "scripture",
+        "referenceScheme": "surahAyah",
+        "editions": [
+          {
+            "id": "quran.ar",
+            "title": {
+              "en": "Tanzil Quran Text (Uthmani)"
+            },
+            "language": "ar",
+            "script": "Arab",
+            "license": {
+              "creativeCommons": {
+                "license": "CC BY 3.0",
+                "conditions": "Tanzil terms: verbatim copies only (changing the text is not allowed); clearly indicate the source (Tanzil Project) and link to tanzil.net; include the Tanzil copyright notice. Beloved shows the attribution, link and full notice in the reader."
+              }
+            },
+            "attribution": "Tanzil Quran Text (Uthmani, Version 1.1). Copyright © 2007–2026 Tanzil Project. License: Creative Commons Attribution 3.0."
+          },
+          {
+            "id": "quran.en",
+            "title": {
+              "en": "The Meaning of the Glorious Koran — Pickthall"
+            },
+            "language": "en",
+            "script": "Latn",
+            "license": {
+              "publicDomain": {
+                "note": "M. M. Pickthall's translation (1930; translator died 1936) is public domain. Digital text from Tanzil.net, whose translation page asks for non-commercial use — Beloved is free; re-check before any paid offering."
+              }
+            },
+            "attribution": "English translation of the meanings by Mohammed Marmaduke Pickthall (1930). Public domain. Digital text from Tanzil.net."
+          }
+        ]
+      }
+    ],
+    "reviewNotes": "No deity/focus concept by design (tawhid) — do not add focuses. Salah is not replaced by this app; content is dua/dhikr/reflection. Requires review by qualified Islamic content advisors (Sunni and Shia)."
+  },
+  {
+    "id": "hinduism",
+    "name": {
+      "en": "Hinduism"
+    },
+    "summary": {
+      "en": "Mantra, stotra, prayer, and scripture across Hindu traditions."
+    },
+    "traditionLabel": {
+      "en": "Tradition (sampradaya)"
+    },
+    "traditions": [
+      {
+        "id": "hinduism.shaiva",
+        "name": {
+          "en": "Shaiva"
+        }
+      },
+      {
+        "id": "hinduism.vaishnava",
+        "name": {
+          "en": "Vaishnava"
+        }
+      },
+      {
+        "id": "hinduism.shakta",
+        "name": {
+          "en": "Shakta"
+        }
+      },
+      {
+        "id": "hinduism.smarta",
+        "name": {
+          "en": "Smarta"
+        }
+      }
+    ],
+    "focusLabel": {
+      "en": "Deity or devotional focus"
+    },
+    "focuses": [
+      {
+        "id": "hinduism.ishvara",
+        "name": {
+          "en": "The Divine (no specific form)"
+        },
+        "kind": "general",
+        "alsoKnownAs": [
+          "Ishvara",
+          "Bhagavan"
+        ]
+      },
+      {
+        "id": "hinduism.shiva",
+        "name": {
+          "en": "Shiva"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Mahadeva"
+        ]
+      },
+      {
+        "id": "hinduism.vishnu",
+        "name": {
+          "en": "Vishnu"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Narayana"
+        ]
+      },
+      {
+        "id": "hinduism.krishna",
+        "name": {
+          "en": "Krishna"
+        },
+        "kind": "deity",
+        "alsoKnownAs": []
+      },
+      {
+        "id": "hinduism.rama",
+        "name": {
+          "en": "Rama"
+        },
+        "kind": "deity",
+        "alsoKnownAs": []
+      },
+      {
+        "id": "hinduism.ganesha",
+        "name": {
+          "en": "Ganesha"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Ganapati",
+          "Vinayaka"
+        ]
+      },
+      {
+        "id": "hinduism.hanuman",
+        "name": {
+          "en": "Hanuman"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Anjaneya"
+        ]
+      },
+      {
+        "id": "hinduism.devi",
+        "name": {
+          "en": "Devi"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Durga",
+          "Lakshmi",
+          "Saraswati",
+          "Parvati"
+        ]
+      }
+    ],
+    "practices": [
+      "mantra",
+      "stotra",
+      "prayer",
+      "scripture",
+      "reflection",
+      "gratitude",
+      "intention",
+      "silence"
+    ],
+    "sources": [
+      {
+        "id": "rigveda",
+        "title": {
+          "en": "Rigveda"
+        },
+        "kind": "scripture",
+        "referenceScheme": "mandalaSuktaRik",
+        "editions": [
+          {
+            "id": "rigveda.sa",
+            "title": {
+              "en": "Rigveda — Sanskrit (edition to be selected)"
+            },
+            "language": "sa",
+            "script": "Deva",
+            "license": {
+              "pendingClearance": {
+                "note": "The ancient text is public domain; a specific digital edition must be selected, verified, and attributed."
+              }
+            },
+            "attribution": "Pending edition selection."
+          },
+          {
+            "id": "rigveda.sa-wikisource",
+            "title": {
+              "en": "Rigveda — Sanskrit (Sanskrit Wikisource)"
+            },
+            "language": "sa",
+            "script": "Deva",
+            "license": {
+              "creativeCommons": {
+                "license": "CC BY-SA 4.0",
+                "conditions": "Text from Sanskrit Wikisource (pinned revision in scripts/devotions/sources.json). The ancient work is public domain; Wikisource page content is CC BY-SA 4.0 — attribute Sanskrit Wikisource contributors; share-alike applies to adaptations, and Beloved reproduces the text verbatim."
+              }
+            },
+            "attribution": "Rigveda, Sanskrit text from Sanskrit Wikisource (sa.wikisource.org), CC BY-SA 4.0."
+          }
+        ]
+      },
+      {
+        "id": "bhagavad-gita",
+        "title": {
+          "en": "Bhagavad Gita"
+        },
+        "kind": "scripture",
+        "referenceScheme": "chapterVerse",
+        "editions": [
+          {
+            "id": "bhagavad-gita.sa",
+            "title": {
+              "en": "Bhagavad Gita — Sanskrit"
+            },
+            "language": "sa",
+            "script": "Deva",
+            "license": {
+              "publicDomain": {
+                "note": "Ancient text. Digital Sanskrit from the gita/gita dataset, released under The Unlicense (public-domain dedication). Formatting-only normalisation documented in scripture-library.json."
+              }
+            },
+            "attribution": "Sanskrit text from the gita/gita open dataset (github.com/gita/gita), released under The Unlicense."
+          },
+          {
+            "id": "bhagavad-gita.sa-Latn",
+            "title": {
+              "en": "Bhagavad Gita — transliteration (IAST)"
+            },
+            "language": "sa",
+            "script": "Latn",
+            "license": {
+              "publicDomain": {
+                "note": "IAST transliteration generated by Beloved's importer from the public-domain Sanskrit text."
+              }
+            },
+            "attribution": "Transliteration generated by Beloved from the Sanskrit text (IAST)."
+          },
+          {
+            "id": "bhagavad-gita.en",
+            "title": {
+              "en": "The Song Celestial — Sir Edwin Arnold (1885)"
+            },
+            "language": "en",
+            "script": "Latn",
+            "license": {
+              "publicDomain": {
+                "note": "Sir Edwin Arnold, The Song Celestial (1885; Arnold died 1904). Public domain. Text from Project Gutenberg #2388 with the Gutenberg header and licence removed."
+              }
+            },
+            "attribution": "The Song Celestial, translated by Sir Edwin Arnold (1885). Public domain. Text from Project Gutenberg eBook #2388."
+          }
+        ]
+      },
+      {
+        "id": "hindu-traditional",
+        "title": {
+          "en": "Traditional mantras and prayers"
+        },
+        "kind": "traditionalPrayer",
+        "referenceScheme": "freeform",
+        "editions": [
+          {
+            "id": "hindu-traditional.sa-wikisource",
+            "title": {
+              "en": "Stotras — Sanskrit (Sanskrit Wikisource)"
+            },
+            "language": "sa",
+            "script": "Deva",
+            "license": {
+              "creativeCommons": {
+                "license": "CC BY-SA 4.0",
+                "conditions": "Text from Sanskrit Wikisource (pinned revision in scripts/devotions/sources.json). The ancient work is public domain; Wikisource page content is CC BY-SA 4.0 — attribute Sanskrit Wikisource contributors; share-alike applies to adaptations, and Beloved reproduces the text verbatim."
+              }
+            },
+            "attribution": "Sanskrit text from Sanskrit Wikisource (sa.wikisource.org), CC BY-SA 4.0."
+          },
+          {
+            "id": "hindu-traditional.chalisahanuman",
+            "title": {
+              "en": "Hanuman Chalisa (chalisahanuman.co.in)"
+            },
+            "language": "hi",
+            "script": "Deva",
+            "license": {
+              "publicDomain": {
+                "note": "Goswami Tulsidas, 16th century — public domain. Digital text from chalisahanuman.co.in (owner-supplied source, retrieved 2026-10-12); verify against a printed edition before approval."
+              }
+            },
+            "attribution": "Hanuman Chalisa by Goswami Tulsidas. Text via chalisahanuman.co.in."
+          },
+          {
+            "id": "hindu-traditional.hi-chalisa",
+            "title": {
+              "en": "Hanuman Chalisa — Awadhi (Goswami Tulsidas)"
+            },
+            "language": "hi",
+            "script": "Deva",
+            "license": {
+              "publicDomain": {
+                "note": "Written by Goswami Tulsidas in the 16th century; public domain. Digital text from chalisahanuman.co.in (owner-supplied source, checksum-pinned). A reviewer must verify it against a printed edition (e.g. Gita Press) before approval."
+              }
+            },
+            "attribution": "Hanuman Chalisa by Goswami Tulsidas. Text via chalisahanuman.co.in."
+          }
+        ]
+      }
+    ],
+    "reviewNotes": "Practices and deity associations vary widely by region and sampradaya. Weekday associations are opt-in customs (see devotional-associations.json), never universal rules. Some communities restrict certain mantras (e.g. Gayatri) to the initiated — content advisors must decide presentation. Requires review by qualified Hindu content advisors from multiple traditions."
+  }
+]
