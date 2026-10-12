@@ -19,5 +19,5 @@
 
 // Placeholder (not a real identifier). Replace with a reverse-DNS prefix you own,
 // e.g. com.<your-domain>.beloved — never a guess.
-PL_BUNDLE_ID_PREFIX = unconfigured.beloved
-DEVELOPMENT_TEAM =
+PL_BUNDLE_ID_PREFIX = com.vaibhavsg.beloved
+DEVELOPMENT_TEAM = LNL8GARN23

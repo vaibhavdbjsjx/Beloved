@@ -7,7 +7,7 @@
 
 PL_APP_GROUP_ID = group.$(PL_BUNDLE_ID_PREFIX)
 PL_SUBSCRIPTION_GROUP_ID =
-PL_ASSISTANT_ENDPOINT =
+PL_ASSISTANT_ENDPOINT = https:/$()/beloved-companion.beloved-app.workers.dev
 // Public web pages (App Store "Support URL" / "Privacy Policy URL"). Empty = the in-app
 // links are hidden. "//" starts an xcconfig comment, so write https:/$()/host/path.
 PL_SUPPORT_URL =
