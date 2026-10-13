@@ -70,4 +70,4 @@ If Beloved's handling of data changes — for example, if a future version adds 
 
 ## Contact
 
-You can contact the developer through the support link on Beloved's App Store page.
+You can contact the developer at support.beloved@gmail.com or through the support link on Beloved's App Store page.

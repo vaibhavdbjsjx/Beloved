@@ -67,9 +67,12 @@ None known. Re-open only if device testing finds defects.
 - Team ID: Xcode still shows no saved account (see below).
 - Final name, decided with legal advice. Then the bundle prefix (do not use "beloved" until
   the name is decided).
-- Support e-mail, domain, HTTPS host, legal name, terms effective date (`website/site.json`).
-  Optional: governing-law sentence from counsel, contact address if legally required.
-- App Review contact, copyright line, price and availability, category choice.
+- Domain and HTTPS host (`website/site.json` or Netlify environment).
+  Support e-mail confirmed: support.beloved@gmail.com.
+  Legal name confirmed: Vaibhav S G.
+  Terms effective date confirmed: 13 October 2026.
+  All three are already set in `netlify.toml`; only `BELOVED_DOMAIN` remains.
+- App Review contact, price and availability, category choice. Copyright line: `2026 Vaibhav S G`.
 - Free disk space: 5.9 GB now, target 15 GB.
 
 ## Needs Apple approval

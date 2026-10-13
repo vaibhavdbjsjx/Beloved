@@ -129,7 +129,7 @@ Explanations on Quran/Gita items are labelled "editorial summary, not a translat
 | Analytics / crash / SDKs / tracking / ads | None | Stated; Apple's opt-in diagnostics mentioned | PASS |
 | Account data | None | N/A | PASS |
 | Deletion | Settings → Delete all my data | Described | PASS (code) · UNVERIFIED (device) |
-| Contact | "support link on App Store page" | No e-mail yet | BLOCKED (real e-mail) |
+| Contact | `support.beloved@gmail.com` and support link on App Store page | E-mail confirmed; URL not hosted yet | BLOCKED (hosted support URL) |
 
 Legal pages needed: **privacy policy URL** (required), **support URL** (required). Terms: Apple's
 standard EULA is sufficient; no custom terms needed while nothing is sold. Legal review of the
@@ -183,7 +183,7 @@ motion, layout overflow, light/dark: **UNVERIFIED** (no simulator runtime, no de
 | Category | Lifestyle proposed | Yes |
 | Age rating | Not answered | Yes (no UGC/ads/purchases/AI in v1) |
 | App Privacy | "Data Not Collected" | Confirm |
-| Privacy / Support URL | Not hosted | Domain, host, e-mail |
+| Privacy / Support URL | Not hosted | Domain and host; support e-mail is support.beloved@gmail.com |
 | Marketing URL | Optional | — |
 | Review notes | Drafted docs/20 §5 | Confirm after device test |
 | Demo account | Not required (no login) | — |
@@ -214,7 +214,7 @@ Run today on unchanged code:
 2. iPhone unavailable (not connected).
 3. Family Controls distribution not requested.
 4. All content draft; Quran/Gita editions unlicensed.
-5. No support e-mail, domain or HTTPS host.
+5. No domain or HTTPS host. Support e-mail is support.beloved@gmail.com.
 6. Name not legally cleared.
 7. Disk 5.9 GB (< 15 GB).
 

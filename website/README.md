@@ -26,9 +26,9 @@ reserved `.example` domain and the word EXAMPLE, so a production build rejects t
 | Key | Required | Notes |
 |---|---|---|
 | `domain` | yes | `https://<host>`, the domain you control, no path |
-| `support_email` | yes | A mailbox you have set up and tested |
-| `legal_name` | yes | Copyright holder / provider named in the terms |
-| `terms_effective_date` | yes | e.g. "1 November 2026" |
+| `support_email` | yes | Confirmed value: `support.beloved@gmail.com` |
+| `legal_name` | yes | Copyright holder / provider named in the terms. Confirmed value: `Vaibhav S G` |
+| `terms_effective_date` | yes | Confirmed value: `13 October 2026` |
 | `contact_address` | no | Only if legally required in your jurisdiction |
 | `app_store_url` | no | Real `https://apps.apple.com/<cc>/app/<name>/id<number>` link, once live |
 | `governing_law` | no | Sentence supplied by your lawyer; the section is omitted otherwise |
@@ -63,7 +63,7 @@ from `site.json` or from environment variables, so nothing personal has to be co
 
 | Environment variable | Same as config key |
 |---|---|
-| `BELOVED_DOMAIN`, `BELOVED_SUPPORT_EMAIL`, `BELOVED_LEGAL_NAME`, `BELOVED_TERMS_EFFECTIVE_DATE` | required |
+| `BELOVED_DOMAIN`, `BELOVED_SUPPORT_EMAIL`, `BELOVED_LEGAL_NAME`, `BELOVED_TERMS_EFFECTIVE_DATE` | required. `BELOVED_SUPPORT_EMAIL`, `BELOVED_LEGAL_NAME` and `BELOVED_TERMS_EFFECTIVE_DATE` are already set in `netlify.toml`; set `BELOVED_DOMAIN` in Netlify |
 | `BELOVED_APP_STORE_URL`, `BELOVED_CONTACT_ADDRESS`, `BELOVED_GOVERNING_LAW` | optional |
 | `BELOVED_CLEAN_URLS` | `true` on Cloudflare Pages |
 

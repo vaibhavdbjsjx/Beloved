@@ -1,8 +1,8 @@
 {
-  "_comment": "TEMPLATE ONLY. Copy to website/site.json and replace EVERY value with real information. These sample values use the reserved .example domain and the word EXAMPLE, so a production build rejects them; --preview highlights them as not configured. Set clean_urls to true when hosting on Cloudflare Pages (it serves /privacy instead of /privacy.html).",
+  "_comment": "TEMPLATE ONLY. Copy to website/site.json and replace the remaining example values with real information. The reserved .example domain and EXAMPLE date make a production build reject this file; --preview highlights them as not configured. Set clean_urls to true when hosting on Cloudflare Pages (it serves /privacy instead of /privacy.html).",
   "domain": "https://beloved.example",
-  "support_email": "support@beloved.example",
-  "legal_name": "EXAMPLE LEGAL NAME",
+  "support_email": "support.beloved@gmail.com",
+  "legal_name": "Vaibhav S G",
   "terms_effective_date": "EXAMPLE DATE",
   "contact_address": "",
   "app_store_url": "",

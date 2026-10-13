@@ -73,7 +73,7 @@ Every offered faith needs at least one approved item, or the archive gate fails 
 | # | Action | Detail |
 |---|---|---|
 | 17 | Create a support mailbox and test that it receives mail | your mail provider |
-| 18 | Domain + Netlify (or Cloudflare Pages) site; set `BELOVED_DOMAIN`, `BELOVED_SUPPORT_EMAIL`, `BELOVED_LEGAL_NAME`, `BELOVED_TERMS_EFFECTIVE_DATE` (+ `BELOVED_CLEAN_URLS=true` on Cloudflare) | website/README.md |
+| 18 | Domain + Netlify (or Cloudflare Pages) site; set `BELOVED_DOMAIN` in Netlify (+ `BELOVED_CLEAN_URLS=true` on Cloudflare). `BELOVED_SUPPORT_EMAIL`, `BELOVED_LEGAL_NAME` and `BELOVED_TERMS_EFFECTIVE_DATE` are already in `netlify.toml` | website/README.md |
 | 19 | After deploy: `python3 website/verify_live.py https://<domain>` (add `--clean-urls` on Cloudflare Pages; it fails on unreachable, parked or preview sites and on missing security headers/HSTS); then Claude sets `PL_SUPPORT_URL` / `PL_PRIVACY_POLICY_URL` | — |
 
 ## Stage 7 — App Store Connect and TestFlight

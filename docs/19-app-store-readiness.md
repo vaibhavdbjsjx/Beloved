@@ -193,7 +193,7 @@ the server keeps only a 48-hour daily message count per subscription. Re-answer 
 
 **External deployment still needed:**
 - the hosted privacy policy URL;
-- the support URL, which requires the owner's support e-mail;
+- the support URL, using support.beloved@gmail.com;
 - the App Store Connect fields.
 
 ## 8. Permissions
@@ -382,7 +382,7 @@ testing: Larger Text, Dark Interface, Reduced Motion, Sufficient Contrast, Voice
 | Subscriptions | None needed for this release; create products only when premium features exist |
 | Physical iPhone | Run docs/11 (protection loop, shield hand-off, relock, restart, revocation) on iOS 18.x and 26.5+; VoiceOver and Larger Text pass |
 | Content | Faith advisors approve items; clear Quran, Gita and Rigveda edition rights; fix the Psalm 46:10 partial quote (§10) |
-| Website | Run `website/build.py` with a real support e-mail; host on HTTPS; set `PL_SUPPORT_URL` and `PL_PRIVACY_POLICY_URL` |
+| Website | Run `website/build.py` with support.beloved@gmail.com; host on HTTPS; set `PL_SUPPORT_URL` and `PL_PRIVACY_POLICY_URL` |
 | Legal | Trademark attorney on "Beloved" (Augustine Institute class 9/41 registrations); review of the privacy policy |
 | Disk space | Free several GB before archiving |
 | Screenshots | Capture from a real device once content is approved (no generated or fake screenshots) |

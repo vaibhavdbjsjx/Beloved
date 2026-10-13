@@ -15,11 +15,12 @@ it against the build you submit, and change it if the build changes.
 | Age rating | Answer the questionnaire truthfully (see §1a). Do not pre-select a rating |
 | Privacy Policy URL | `https://<your-domain>/privacy.html` (from `website/build.py`) |
 | Support URL | `https://<your-domain>/support.html` |
+| Support e-mail | `support.beloved@gmail.com` |
 | Marketing URL | Optional — `https://<your-domain>/` (home page from `website/build.py`) |
 | Terms of Use | Apple's standard EULA applies. The site also publishes `https://<your-domain>/terms.html` (needs legal review); a custom EULA in App Store Connect is not needed |
 | Promotional text (≤ 170) | **Pause before the apps you choose, and take a moment for prayer, scripture, a mantra, a dua or quiet reflection. Private by design — no account.** (143). Editable without a new build |
 | What's New | First version: not shown for 1.0. Later versions: describe only changes in that build |
-| Copyright | `2026 <legal name of the developer>` |
+| Copyright | `2026 Vaibhav S G` |
 | Export compliance | `ITSAppUsesNonExemptEncryption = NO` is already in Info.plist (the app makes no network connections and uses only iOS-provided data protection) |
 | Content rights | The app shows third-party text only from editions with cleared rights (public domain or licensed). Answer according to the editions actually shipped (docs/19 §10) |
 
@@ -41,7 +42,7 @@ it against the build you submit, and change it if the build changes.
 - [ ] First and last name of the review contact
 - [ ] Phone number reachable during review
 - [ ] E-mail address
-- [ ] Copyright holder legal name (also used on the website)
+- [x] Copyright holder legal name: Vaibhav S G (also used on the website)
 
 ## 2. Description (use only when every offered faith ships approved content)
 

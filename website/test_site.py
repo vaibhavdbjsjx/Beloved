@@ -21,8 +21,8 @@ BUILD = os.path.join(HERE, "build.py")
 EXAMPLE = os.path.join(HERE, "site.example.json")
 REAL_LOOKING = {
     "domain": "https://beloved-site.test",
-    "support_email": "help@beloved-site.test",
-    "legal_name": "Test Publisher",
+    "support_email": "support.beloved@gmail.com",
+    "legal_name": "Vaibhav S G",
     "terms_effective_date": "1 January 2027",
 }
 
@@ -77,9 +77,10 @@ class SiteTests(SiteTestCase):
         result = self.build(EXAMPLE, preview=True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         support = self.read("support.html")
-        self.assertIn('class="gap"', support)
+        self.assertIn("support.beloved@gmail.com", support)
         self.assertNotIn("support@beloved.example", support, "example e-mail must never be shown as real")
-        self.assertNotIn("mailto:", support)
+        self.assertIn("mailto:support.beloved@gmail.com", support)
+        self.assertIn('class="gap"', self.read("terms.html"))
         self.assertIn('content="noindex"', self.read("index.html"))
         self.assertIn("Disallow: /", self.read("robots.txt"))
         self.assertFalse(os.path.exists(os.path.join(self.out, "sitemap.xml")))
@@ -92,7 +93,7 @@ class SiteTests(SiteTestCase):
         self.assertIn("site check passed (production)", result.stdout)
         index = self.read("index.html")
         self.assertIn('<link rel="canonical" href="https://beloved-site.test/">', index)
-        self.assertIn('href="mailto:help@beloved-site.test"', self.read("support.html"))
+        self.assertIn('href="mailto:support.beloved@gmail.com"', self.read("support.html"))
         self.assertIn("Sitemap: https://beloved-site.test/sitemap.xml", self.read("robots.txt"))
         self.assertIn("Content-Security-Policy", self.read("_headers"))
 
@@ -146,7 +147,7 @@ class HostingTests(SiteTestCase):
         result = subprocess.run([sys.executable, BUILD, "--config-env", "--out", self.out],
                                 capture_output=True, text=True, env=env)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertIn('href="mailto:help@beloved-site.test"', self.read("support.html"))
+        self.assertIn('href="mailto:support.beloved@gmail.com"', self.read("support.html"))
 
     def test_hosted_build_fails_without_environment_values(self):
         env = {k: v for k, v in os.environ.items() if not k.startswith("BELOVED_")}

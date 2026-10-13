@@ -105,9 +105,9 @@ website values are published. Never put API keys in either.
 | `PL_ASSISTANT_ENDPOINT` | Premium Companion proxy | no, but required for cloud Companion | app | public | `https:/$()/beloved-companion.beloved-app.workers.dev` | `Shared.xcconfig` or `Secrets.xcconfig` | gate requires https when set | free library answers only |
 | `MARKETING_VERSION` / `CURRENT_PROJECT_VERSION` | 1.0.0 / 1 | yes | all targets | public | increment build per upload | `Shared.xcconfig` | Xcode | — |
 | website `domain` | Canonical URLs, sitemap | prod: yes | `build.py` | public | `https://<host>` | `website/site.json` | https host, no example | build refused |
-| website `support_email` | Support page, policy, terms | prod: yes | `build.py` | public | your real mailbox | `site.json` | e-mail format, no example | build refused |
-| website `legal_name` | Copyright, terms | prod: yes | `build.py` | public | your legal name or company | `site.json` | no example | build refused |
-| website `terms_effective_date` | Terms date | prod: yes | `build.py` | public | "1 November 2026" | `site.json` | no example | build refused |
+| website `support_email` | Support page, policy, terms | prod: yes | `build.py` | public | `support.beloved@gmail.com` | `site.json` or `BELOVED_SUPPORT_EMAIL` | e-mail format, no example | build refused |
+| website `legal_name` | Copyright, terms | prod: yes | `build.py` | public | `Vaibhav S G` | `site.json` or `BELOVED_LEGAL_NAME` | no example | build refused |
+| website `terms_effective_date` | Terms date | prod: yes | `build.py` | public | `13 October 2026` | `site.json` or `BELOVED_TERMS_EFFECTIVE_DATE` | no example | build refused |
 | website `app_store_url` | Download button | no | `build.py` | public | `https://apps.apple.com/us/app/<name>/id<n>` | `site.json` | exact App Store URL pattern | pre-launch note instead |
 | website `clean_urls` / `BELOVED_CLEAN_URLS` | Canonicals/sitemap without `.html` | Cloudflare Pages only | `build.py` | public | `true` | `site.json` or host env | boolean | `.html` URLs |
 | website `contact_address`, `governing_law` | Legal footer / terms clause | no | `build.py` | public | from your lawyer | `site.json` | no example | omitted |
