@@ -193,9 +193,8 @@ mark.gap{background:#FFE7B3;color:#4A3200;padding:0 .3em;border-radius:4px}
 /* header */
 header.site{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.86);-webkit-backdrop-filter:saturate(180%) blur(16px);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid var(--line)}
 header.site .wrap{display:flex;align-items:center;gap:.5rem 2rem;min-height:4rem;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:.6rem;font:650 1.15rem var(--display);letter-spacing:-.01em;color:var(--ink);min-height:44px}
-.brand:hover{text-decoration:none}
-.brand img{width:30px;height:30px;border-radius:8px}
+.brand{display:inline-flex;align-items:center;font:700 clamp(1.05rem,2.2vw,1.2rem)/1 var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);min-height:44px;transition:color .15s ease}
+.brand:hover{text-decoration:none;color:var(--accent-hover)}
 nav.main{margin-left:auto}
 nav.main ul{list-style:none;display:flex;gap:.1rem 1.6rem;margin:0;padding:0;flex-wrap:wrap}
 nav.main a{color:var(--ink2);font-size:.95rem;display:inline-flex;align-items:center;min-height:44px}
@@ -237,7 +236,7 @@ figure.device{margin:0;justify-self:center;text-align:center}
 .phone{width:290px;max-width:78vw;aspect-ratio:9/19.2;border-radius:48px;background:#0B0D12;padding:11px;box-shadow:0 30px 60px -20px rgba(16,24,40,.35),0 0 0 1px rgba(16,24,40,.08)}
 .screen{height:100%;border-radius:38px;background:linear-gradient(180deg,#F4F6FB 0%,#FFFFFF 55%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 1.4rem;text-align:center;position:relative}
 .screen::before{content:"";position:absolute;top:10px;left:50%;transform:translateX(-50%);width:34%;height:26px;border-radius:999px;background:#0B0D12}
-.screen img{width:68px;height:68px;border-radius:16px;margin-bottom:1.25rem;box-shadow:0 8px 20px rgba(47,74,138,.25)}
+.screen .brand{min-height:auto;margin-bottom:1.25rem;cursor:default;user-select:none}
 .screen .s-title{font:650 1.12rem/1.3 var(--display);color:var(--ink);letter-spacing:-.01em}
 .screen .s-sub{font-size:.88rem;color:var(--ink2);margin:.5rem 0 1.75rem;line-height:1.45}
 .screen .s-primary{width:100%;background:var(--accent);color:#fff;border-radius:14px;padding:.75rem;font-weight:600;font-size:.95rem}
@@ -398,7 +397,7 @@ def page(config, preview, path, title, description, body, index=True):
         f'<meta property="og:title" content="{html.escape(full_title)}">',
         f'<meta property="og:description" content="{html.escape(description)}">',
         f'<meta property="og:image" content="{image}">',
-        f'<meta property="og:image:alt" content="The {BRAND} app icon">',
+        f'<meta property="og:image:alt" content="{BRAND}">',
         '<meta name="twitter:card" content="summary">',
         f'<meta name="twitter:title" content="{html.escape(full_title)}">',
         f'<meta name="twitter:description" content="{html.escape(description)}">',
@@ -423,15 +422,13 @@ def page(config, preview, path, title, description, body, index=True):
 <title>{html.escape(full_title)}</title>
 {chr(10).join(meta)}
 <meta name="theme-color" content="#FFFFFF">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
 {banner}
 <header class="site"><div class="wrap">
-<a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" width="30" height="30">{BRAND}</a>
+<a class="brand" href="index.html">BELOVED</a>
 <nav class="main" aria-label="Main"><ul>{nav}</ul></nav>
 </div></header>
 <main id="content">
@@ -439,7 +436,7 @@ def page(config, preview, path, title, description, body, index=True):
 </main>
 <footer class="site"><div class="wrap">
 <div class="foot">
-<div><a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" width="30" height="30">{BRAND}</a><p>A pause before the scroll.<br>For iPhone.</p></div>
+<div><a class="brand" href="index.html">BELOVED</a><p>A pause before the scroll.<br>For iPhone.</p></div>
 <nav aria-labelledby="f-product"><h2 id="f-product">Product</h2><ul>
 <li><a href="index.html#how-it-works">How it works</a></li>
 <li><a href="index.html#features">Features</a></li>
@@ -495,7 +492,7 @@ def home(config, ios):
 </div>
 <figure class="device">
 <div class="phone"><div class="screen">
-<img src="assets/icon-512.png" alt="" width="68" height="68">
+<span class="brand">BELOVED</span>
 <div class="s-title">You chose to protect this app</div>
 <div class="s-sub">Take a moment to pray before opening it.</div>
 <div class="s-primary">Begin</div>
