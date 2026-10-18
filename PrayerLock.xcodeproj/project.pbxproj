@@ -666,7 +666,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = PrayerLock;
+				TEST_TARGET_NAME = Beloved;
 			};
 			name = Debug;
 		};
@@ -762,7 +762,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = PrayerLock;
+				TEST_TARGET_NAME = Beloved;
 			};
 			name = Release;
 		};

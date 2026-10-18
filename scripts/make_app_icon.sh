@@ -1,9 +1,10 @@
 #!/bin/sh
-# Builds the app icon from the same dove geometry the app and shield draw.
-#   sh scripts/make_app_icon.sh [OUT.png]
+# App icon + App Store header/search art, all from the shared dove geometry.
 set -eu
 cd "$(dirname "$0")/.."
-OUT="${1:-App/PrayerLock/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png}"
 TMP="$(mktemp -d)"; trap 'rm -rf "$TMP"' EXIT
-swiftc -O Packages/PrayerLockKit/Sources/PLBrand/DoveGeometry.swift scripts/app-icon/main.swift -o "$TMP/make-icon"
-"$TMP/make-icon" "$OUT"
+swiftc -O Packages/PrayerLockKit/Sources/PLBrand/DoveGeometry.swift scripts/app-icon/main.swift -o "$TMP/art"
+"$TMP/art" icon App/PrayerLock/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png
+mkdir -p docs/brand
+"$TMP/art" header docs/brand/AppStore-Header-3840x1646.png
+"$TMP/art" search docs/brand/AppStore-SearchResult-1920x1280.png
