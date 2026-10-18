@@ -302,6 +302,222 @@
           "sha256": "446fb91efc40b94d7b59aa1d5b3116dd665b79ec68044985a8953483c8721814"
         }
       ]
+    },
+    "ganesha-stotram": {
+      "site": "sa.wikisource.org",
+      "work": "गणेशस्तोत्रम्",
+      "titles": [
+        "गणेशस्तोत्रम्"
+      ],
+      "pages": [
+        {
+          "title": "गणेशस्तोत्रम्",
+          "revid": 37846,
+          "sha256": "3ba5f7d32b1996219cc087065c87cf6c1fc31803bf6dd99e0aa39207ec7b67f5"
+        }
+      ]
+    },
+    "ganapati-atharva": {
+      "site": "sa.wikisource.org",
+      "work": "गणपत्यथर्वशीर्षम्",
+      "titles": [
+        "गणपत्यथर्वशीर्षम्"
+      ],
+      "pages": [
+        {
+          "title": "गणपत्यथर्वशीर्षम्",
+          "revid": 415703,
+          "sha256": "43d5f6ca8a2ee7d7a62480a85cdbd526cee04b816db46ac7c3fd8d90757a5178"
+        }
+      ]
+    },
+    "shiva-panchakshara": {
+      "site": "sa.wikisource.org",
+      "work": "श्रीशिवपञ्चाक्षरस्तोत्रम्",
+      "titles": [
+        "श्रीशिवपञ्चाक्षरस्तोत्रम्"
+      ],
+      "pages": [
+        {
+          "title": "श्रीशिवपञ्चाक्षरस्तोत्रम्",
+          "revid": 118264,
+          "sha256": "0f2f07acb00263c0b70f3c77d25150d2b4b636792b0bf50a12afcdbd63e3d42b"
+        }
+      ]
+    },
+    "chandi-path": {
+      "site": "sa.wikisource.org",
+      "work": "चण्डीपाठः",
+      "titles": [
+        "चण्डीपाठः"
+      ],
+      "pages": [
+        {
+          "title": "चण्डीपाठः",
+          "revid": 330836,
+          "sha256": "63f19dabdd824fd56b04f8287706b6e3693b60d1cf0445c7eec6b8b1858958b0"
+        }
+      ]
+    },
+    "kanakadhara": {
+      "site": "sa.wikisource.org",
+      "work": "कनकधारास्तोत्रम्",
+      "titles": [
+        "कनकधारास्तोत्रम्"
+      ],
+      "pages": [
+        {
+          "title": "कनकधारास्तोत्रम्",
+          "revid": 399053,
+          "sha256": "19d3a57adbb0de5221b3fc7a470b839c6b2aa0bbd3de704fe0d596e3b1a3385c"
+        }
+      ]
+    },
+    "navagraha": {
+      "site": "sa.wikisource.org",
+      "work": "नवग्रहस्तोत्रम्",
+      "titles": [
+        "नवग्रहस्तोत्रम्"
+      ],
+      "pages": [
+        {
+          "title": "नवग्रहस्तोत्रम्",
+          "revid": 409357,
+          "sha256": "5cd534f2e93edd3d87b059b35ca63ca64fe32c2491578d4466a9b491aa1e374b"
+        }
+      ]
+    },
+    "aditya-hridayam": {
+      "site": "sa.wikisource.org",
+      "work": "आदित्यहृदयम्",
+      "titles": [
+        "आदित्यहृदयम्"
+      ],
+      "pages": [
+        {
+          "title": "आदित्यहृदयम्",
+          "revid": 192642,
+          "sha256": "3c4a10e375ace5d6f0ec28a3ffa7fb0a334420b094e613cf9bbcbd3a1964f30c"
+        }
+      ]
+    },
+    "krishnashtakam": {
+      "site": "sa.wikisource.org",
+      "work": "श्रीकृष्णाष्टकं",
+      "titles": [
+        "श्रीकृष्णाष्टकं"
+      ],
+      "pages": [
+        {
+          "title": "श्रीकृष्णाष्टकं",
+          "revid": 56884,
+          "sha256": "9619f5624e51141622bb7fc95dde1709e7dbc795ddb92c8871abcdb92b0ee99c"
+        }
+      ]
+    },
+    "achyutashtakam": {
+      "site": "sa.wikisource.org",
+      "work": "अच्युताष्टकम्",
+      "titles": [
+        "अच्युताष्टकम्"
+      ],
+      "pages": [
+        {
+          "title": "अच्युताष्टकम्",
+          "revid": 369168,
+          "sha256": "44b9d3624c821af8523123f24737f98bc0e7a4463f1159311ff3a69ea7b17cee"
+        }
+      ]
+    },
+    "saraswati-stotrani": {
+      "site": "sa.wikisource.org",
+      "work": "सरस्वतीस्तोत्राणि",
+      "titles": [
+        "सरस्वतीस्तोत्राणि"
+      ],
+      "pages": [
+        {
+          "title": "सरस्वतीस्तोत्राणि",
+          "revid": 311441,
+          "sha256": "960846335e255fc5769d3fa3f53cb21c7806f8c1669abb52d48985e42a97a3ed"
+        }
+      ]
+    },
+    "subrahmanya-bhujangam": {
+      "site": "sa.wikisource.org",
+      "work": "श्री सुब्रह्मण्य भुजङ्गम्",
+      "titles": [
+        "श्री सुब्रह्मण्य भुजङ्गम्"
+      ],
+      "pages": [
+        {
+          "title": "श्री सुब्रह्मण्य भुजङ्गम्",
+          "revid": 33062,
+          "sha256": "d583918b205c54d6b8732e3b23193ec8b6dcdda46a48512f74f2c10e651c23eb"
+        }
+      ]
+    },
+    "kartikeya-stotram": {
+      "site": "sa.wikisource.org",
+      "work": "कार्तिकेयस्तोत्रम्",
+      "titles": [
+        "कार्तिकेयस्तोत्रम्"
+      ],
+      "pages": [
+        {
+          "title": "कार्तिकेयस्तोत्रम्",
+          "revid": 91928,
+          "sha256": "8f450c415505940856ea5753343442ffa467d40ee9cec2fc21dc9ecb6a68ae4d"
+        }
+      ]
+    },
+    "shanti-mantra": {
+      "site": "sa.wikisource.org",
+      "work": "शान्तिमन्त्रः",
+      "titles": [
+        "शान्तिमन्त्रः"
+      ],
+      "pages": [
+        {
+          "title": "शान्तिमन्त्रः",
+          "revid": 180875,
+          "sha256": "06e975c43f3911da0c7d973c170b331547b6247172560ddf1c5b5bf273cb3ad3"
+        }
+      ]
+    },
+    "venkatesa-suprabhatam": {
+      "site": "sa.wikisource.org",
+      "work": "श्रीवेंकटेशसुप्रभातम्",
+      "titles": [
+        "श्रीवेंकटेशसुप्रभातम्"
+      ],
+      "pages": [
+        {
+          "title": "श्रीवेंकटेशसुप्रभातम्",
+          "revid": 38096,
+          "sha256": "5373f0c37397a4980654852697b17b05a35ebad9c6b7f9c18149e1a4afd156a1"
+        }
+      ]
+    },
+    "rosary-1937": {
+      "site": "en.wikisource.org",
+      "work": "How to Say the Rosary (Philadelphia, 1937; Nihil Obstat and Imprimatur) — public domain (no copyright notice)",
+      "titles": [
+        "Page:How-to-say-the-rosary.djvu/3",
+        "Page:How-to-say-the-rosary.djvu/4"
+      ],
+      "pages": [
+        {
+          "title": "Page:How-to-say-the-rosary.djvu/3",
+          "revid": 7808845,
+          "sha256": "5a56ec6da7e28515438364350c30a435aae87b98878291e4e083a7079097bcc4"
+        },
+        {
+          "title": "Page:How-to-say-the-rosary.djvu/4",
+          "revid": 7808846,
+          "sha256": "f5987497a7a65ea05ed9a27b9456a25d8d85cc1794ef521d44f90184b8cfe240"
+        }
+      ]
     }
   },
   "files": {

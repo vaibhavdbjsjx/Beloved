@@ -57,8 +57,15 @@ def sha256(text: str) -> str:
 def api(site: str, params: dict) -> dict:
     url = f"https://{site}/w/api.php?" + urllib.parse.urlencode({**params, "format": "json", "formatversion": "2"})
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=120) as response:
-        return json.loads(response.read())
+    for attempt in range(6):
+        try:
+            with urllib.request.urlopen(request, timeout=120) as response:
+                return json.loads(response.read())
+        except urllib.error.HTTPError as error:
+            if error.code != 429 or attempt == 5:
+                raise
+            import time
+            time.sleep(10 * (attempt + 1))  # Wikimedia rate limit: back off politely
 
 
 def fetch_revisions(site: str, revids: list[int]) -> dict[int, dict]:
@@ -284,26 +291,39 @@ def rigveda_verse(page_text: str, number: int) -> str:
     return "\n".join(lines) + " ॥"
 
 
-def shloka_with(page_text: str, phrase: str, verses: int = 1) -> str:
+def shloka_with(page_text: str, phrase: str, verses: int = 1, numbered: bool = False, dots: bool = False) -> str:
     """The verse(s) containing `phrase`, verbatim: from the start of the line where the phrase
     appears through the `verses`-th double danda (॥ or ।।) that follows."""
     body = poem(page_text) if "<poem>" in page_text else re.sub(r"<[^>]+>", "", page_text)
-    body = html.unescape(re.sub(r"\{\{[^{}]*\}\}", "", body)).replace("।।", "॥")
+    body = html.unescape(re.sub(r"\{\{[^{}]*\}\}", "", body))
+    # Markup only: bold quotes and <br>; some pages type dandas as | and ||.
+    body = body.replace("'''", "").replace("<br>", "")
+    body = body.replace("।।", "॥").replace("||", "॥").replace("|", "।")
+    if dots:  # pages converted from ITRANS write ॥ as ".." and । as "."
+        body = re.sub(r"\s*\.\.\s*([०-९0-9]+)", r" ॥ \1॥", body)
+        body = re.sub(r"\s*\.\.", " ॥", body)
+        body = re.sub(r"\s+\.(?=\s*$)", " ।", body, flags=re.M)
     at = body.find(phrase)
     if at < 0:
         raise ValueError(f"phrase not found: {phrase!r}")
     start = body.rfind("\n", 0, at) + 1
-    end = start
+    end = at  # a verse ends at the first ॥ after the phrase itself
+    numbered_end = re.compile(r"॥\s*[०-९0-9][०-९0-9.\-]*\s*॥?")
     for _ in range(verses):
-        end = body.find("॥", end)
+        if numbered:
+            # pages that mark every half-verse with ॥: a verse ends only at its number
+            found = numbered_end.search(body, end)
+            end = found.start() if found else -1
+        else:
+            end = body.find("॥", end)
         if end < 0:
             raise ValueError(f"no verse end after {phrase!r}")
         # include the verse number that follows the danda (॥ १ ॥)
-        closing = re.match(r"॥\s*[०-९0-9.]*\s*॥?", body[end:])
+        closing = re.match(r"॥(\s*[०-९0-9.\-]+\s*॥)?", body[end:])
         end += closing.end() if closing else 1
     lines = [re.sub(r"[ \t\u00a0]+", " ", l).strip() for l in body[start:end].split("\n")]
     text = "\n".join(l for l in lines if l)
-    text = re.sub(r"\s*॥\s*[०-९0-9.]+\s*॥\s*$", " ॥", text)  # verse number → plain end mark
+    text = re.sub(r"\s*॥\s*[०-९0-9.\-]+\s*॥\s*$", " ॥", text)  # verse number → plain end mark
     return text
 
 
@@ -353,7 +373,7 @@ def phrase_from(verse: str, marker: str) -> str:
 
 def item(id: str, faith: str, kind: str, title: str, segments: list, spec: dict, length: str = "standard") -> dict:
     return {
-        "id": id, "faith": faith, "traditions": [], "focuses": spec.get("focuses", []), "kind": kind,
+        "id": id, "faith": faith, "traditions": spec.get("traditions", []), "focuses": spec.get("focuses", []), "kind": kind,
         "title": title, "segments": segments, "themes": spec.get("themes", []), "moods": spec.get("moods", []),
         "timesOfDay": spec.get("times", []), "occasions": [], "length": spec.get("length", length),
         "isPremium": False, "review": DRAFT,
@@ -387,6 +407,24 @@ def build(sources: dict[str, list[str]]) -> list[dict]:
                                "reference": f"Prayers and Thanksgivings, {'Thanksgiving' if group == 'thanksgivings' else 'Prayer'} {entry['n']}"}}],
                 entry, length="brief" if len(text) < 420 else "standard"))
 
+    # Christianity — traditional prayers (public-domain printed sources on English Wikisource)
+    for entry in c.get("traditional", []):
+        v = entry["passage"]
+        text = tidy(strip_markup("\n".join(sources[v["page"]])))
+        start = text.find(v["start"])
+        end = text.find(v["end"], start)
+        if start < 0 or end < 0:
+            raise ValueError(f"{entry['id']}: passage not found")
+        passage = text[start:end + len(v["end"])]
+        for wrong, right in v.get("fixes", []):
+            if wrong not in passage:
+                raise ValueError(f"{entry['id']}: fix {wrong!r} no longer matches")
+            passage = passage.replace(wrong, right)
+        items.append(item(entry["id"], "christianity", entry["kind"], entry["title"],
+                          [{"role": "sourceText", "text": passage,
+                            "citation": {"source": v["source"], "edition": v["edition"], "reference": v["reference"]}},
+                           explanation(entry["explanation"])], entry, length="brief" if len(passage) < 420 else "standard"))
+
     # Hinduism — Sanskrit Wikisource
     for entry in spec["hinduism"]:
         if "chalisa" in entry:
@@ -400,7 +438,13 @@ def build(sources: dict[str, list[str]]) -> list[dict]:
             continue
         if "shloka" in entry:
             v = entry["shloka"]
-            original = shloka_with(sources[v["page"]][0], v["phrase"], v.get("verses", 1))
+            original = shloka_with(sources[v["page"]][0], v["phrase"], v.get("verses", 1), v.get("numbered", False), v.get("dots", False))
+            # Editorial corrections of obvious typos on the source page, listed in the spec
+            # for review; each must still match (so a changed source is noticed).
+            for wrong, right in v.get("fixes", []):
+                if wrong not in original:
+                    raise ValueError(f"{entry['id']}: fix {wrong!r} no longer matches")
+                original = original.replace(wrong, right)
             cite = {"source": v["source"], "edition": v["edition"], "reference": v["reference"]}
             segment = {"role": "sourceText", "original": {"text": original, "language": "sa", "script": "Deva"},
                        "transliteration": devanagari_to_iast(original), "citation": cite}

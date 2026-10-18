@@ -75,6 +75,10 @@ final class AppModel {
     private(set) var dailyVerse: DailyVerse?
     /// The scripture tab's navigation path (lets Today and notifications open a chapter).
     var scripturePath: [ScriptureRoute] = []
+    /// Prayer times, Qibla and prayer reminders (shown to Muslims).
+    let salah: SalahModel
+    /// Prayer requests and answered prayers (on this iPhone only).
+    let journal = PrayerJournal()
 
     // MARK: - Account State
     private(set) var currentUser: AuthUser?
@@ -87,6 +91,7 @@ final class AppModel {
 
     init(env: AppEnvironment) {
         self.env = env
+        salah = SalahModel(notifications: env.notifications)
         stored = env.profileStore.load()
         currentUser = env.sessionStore.loadSession()?.user
         applyTheme()

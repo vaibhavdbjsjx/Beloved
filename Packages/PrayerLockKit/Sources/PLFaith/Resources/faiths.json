@@ -128,6 +128,30 @@
             "attribution": "The Book of Common Prayer (1979), The Episcopal Church. Public domain. Text via English Wikisource."
           }
         ]
+      },
+      {
+        "id": "christian-traditional",
+        "title": {
+          "en": "Traditional Christian prayers"
+        },
+        "kind": "traditionalPrayer",
+        "referenceScheme": "freeform",
+        "editions": [
+          {
+            "id": "christian-traditional.rosary-1937",
+            "title": {
+              "en": "How to Say the Rosary (Philadelphia, 1937)"
+            },
+            "language": "en",
+            "script": "Latn",
+            "license": {
+              "publicDomain": {
+                "note": "Pamphlet printed in 1937 (Nihil Obstat and Imprimatur, Archdiocese of Philadelphia) without a copyright notice — public domain in the United States. Text from English Wikisource page transcriptions, pinned by revision (scripts/devotions/sources.json)."
+              }
+            },
+            "attribution": "How to Say the Rosary (1937). Public domain. Text via English Wikisource."
+          }
+        ]
       }
     ],
     "reviewNotes": "Taxonomy drafted by engineering. Requires review by Christian content advisors across Catholic, Orthodox, and Protestant traditions. Orthodox calendar differs (Julian computus) — see observances.json."
@@ -258,6 +282,18 @@
         ]
       },
       {
+        "id": "hinduism.venkateswara",
+        "name": {
+          "en": "Venkateswara (Balaji)"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Balaji",
+          "Srinivasa",
+          "Govinda"
+        ]
+      },
+      {
         "id": "hinduism.krishna",
         "name": {
           "en": "Krishna"
@@ -348,6 +384,28 @@
           "Kartikeya",
           "Subramanya",
           "Skanda"
+        ]
+      },
+      {
+        "id": "hinduism.surya",
+        "name": {
+          "en": "Surya"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Sun God",
+          "Aditya"
+        ]
+      },
+      {
+        "id": "hinduism.navagraha",
+        "name": {
+          "en": "Navagraha (the nine planets)"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Graha shanti",
+          "Jyotish"
         ]
       }
     ],

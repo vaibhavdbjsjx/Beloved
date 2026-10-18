@@ -1119,10 +1119,310 @@
     }
   },
   {
+    "id": "christianity.traditional.sign-of-the-cross",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.anglican",
+      "christianity.orthodox"
+    ],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "The Sign of the Cross",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "In the name of the Father, and of the Son, and of the Holy Ghost. Amen.",
+        "citation": {
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "Prayers of the Rosary"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Begins and ends prayer, tracing the cross from forehead to heart and shoulder to shoulder.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "presence",
+      "new-beginnings"
+    ],
+    "moods": [
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.traditional.our-father",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "The Our Father (Lord's Prayer)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Our Father, who art in heaven, hallowed be Thy name: Thy kingdom come: Thy will be done on earth as it is in heaven. Give us this day our daily bread: and forgive us our trespasses as we forgive those who trespass against us. And lead us not into temptation; but deliver us from evil. Amen.",
+        "citation": {
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "The Our Father"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The prayer Jesus taught his disciples (Matthew 6:9–13), in its traditional English form, prayed by Christians everywhere.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "trust",
+      "forgiveness",
+      "presence"
+    ],
+    "moods": [
+      "justWantToPray",
+      "needPeace",
+      "anxious"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.traditional.apostles-creed",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "The Apostles' Creed",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "I believe in God, the Father Almighty, Creator of heaven and earth; and in Jesus Christ, His only Son, our Lord; who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified; died, and was buried. He descended into hell; the third day He arose again from the dead; He ascended into heaven, sitteth at the right hand of God the Father Almighty; from thence He shall come to judge the living and the dead. I believe in the Holy Ghost, the Holy Catholic Church, the communion of Saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.",
+        "citation": {
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "The Apostles' Creed"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The ancient summary of the Christian faith, shared across Catholic, Protestant and Anglican churches, and the first prayer of the rosary.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "trust",
+      "strength"
+    ],
+    "moods": [
+      "needStrength",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.traditional.hail-mary",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic"
+    ],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "The Hail Mary",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Hail Mary, full of grace; the Lord is with thee: blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.",
+        "citation": {
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "The Hail Mary"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The angel Gabriel's and Elizabeth's greetings to Mary (Luke 1:28, 42), with the Church's request for her prayers. Prayed ten times in each decade of the rosary.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "comfort",
+      "peace",
+      "family"
+    ],
+    "moods": [
+      "needPeace",
+      "anxious",
+      "sad",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.traditional.glory-be",
+    "faith": "christianity",
+    "traditions": [],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "Glory Be",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Glory be to the Father, and to the Son, and to the Holy Ghost; as it was in the beginning, is now, and ever shall be, world without end. Amen.",
+        "citation": {
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "The Doxology"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The short doxology praising the Trinity, prayed at the end of each decade and of the psalms.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "gratitude",
+      "joy"
+    ],
+    "moods": [
+      "grateful",
+      "happy",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.traditional.hail-holy-queen",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic"
+    ],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "Hail, Holy Queen",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "Hail, holy Queen, Mother of Mercy! our life, our sweetness, and our hope! To thee do we cry, poor banished children of Eve; to thee do we send up our sighs, mourning and weeping in this valley of tears. Turn, then, most gracious Advocate, thine eyes of mercy toward us; and after this our exile show unto us the blessed fruit of thy womb, Jesus; O clement, O loving, O sweet Virgin Mary.\n\nV. Pray for us, O holy Mother of God.\n\nR. That we may be made worthy of the promises of Christ.",
+        "citation": {
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "The Hail, Holy Queen (Salve Regina)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The Salve Regina, an 11th-century hymn to Mary, prayed at the close of the rosary and at night.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "comfort",
+      "hope",
+      "difficult-times"
+    ],
+    "moods": [
+      "sad",
+      "lonely",
+      "needStrength"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "christianity.traditional.rosary-prayer",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic"
+    ],
+    "focuses": [],
+    "kind": "prayer",
+    "title": "Prayer at the End of the Rosary",
+    "segments": [
+      {
+        "role": "sourceText",
+        "text": "O God, whose only begotten Son, by His life, death, and resurrection has purchased for us the rewards of eternal life, grant, we beseech Thee, that meditating upon these mysteries in the most holy Rosary of the Blessed Virgin Mary, we may imitate what they contain, and obtain what they promise: through the same Christ our Lord. Amen.",
+        "citation": {
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "Let Us Pray"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Asks that meditating on the mysteries of Christ's life, we may imitate what they contain.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "hope",
+      "guidance"
+    ],
+    "moods": [
+      "justWantToPray",
+      "hopeful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
     "id": "hinduism.mantra.gayatri",
     "faith": "hinduism",
     "traditions": [],
-    "focuses": [],
+    "focuses": [
+      "hinduism.ishvara",
+      "hinduism.surya"
+    ],
     "kind": "mantra",
     "title": "Gayatri Mantra",
     "segments": [
@@ -1695,6 +1995,1355 @@
     "timesOfDay": [],
     "occasions": [],
     "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.sankatanashana-ganesha",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.ganesha"
+    ],
+    "kind": "stotra",
+    "title": "Sankatanashana Ganesha Stotram",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "प्रणम्य शिरसा देवं गौरीपुत्रं विनायकम् ।\nभक्तावासं स्मरेनित्यं आयुःकामार्थसिद्धये ॥ १ ॥\nप्रथमं वक्रतुण्डं च एकदन्तं द्वितीयकम् ।\nतृतीयं कृष्णपिङ्गाक्षं गजवक्त्रं चतुर्थकम् ॥ २ ॥\nलम्बोदरं पञ्चमं च षष्ठं विकटमेव च ।\nसप्तमं विघ्नराजेन्द्रं धूम्रवर्णं तथाष्टमम् ॥ ३ ॥\nनवमं भालचन्द्रं च दशमं तु विनायकम् ।\nएकादशं गणपतिं द्वादशं तु गजाननम् ॥ ४ ॥\nद्वादशैतानि नामानि त्रिसंध्यं यः पठेन्नरः ।\nन च विघ्नभयं तस्य सर्वसिद्धिकरः प्रभुः ॥ ५ ॥\nविद्यार्थी लभते विद्यां धनार्थी लभते धनम् ।\nपुत्रार्थी लभते पुत्रान्मोक्षार्थी लभते गतिम् ॥ ६ ॥\nजपेद्गणपतिस्तोत्रं षड्भिर्मासैः फलं लभेत् ।\nसंवत्सरेण सिद्धिं च लभते नात्र संशयः ॥ ७ ॥\nअष्टेभ्यो ब्राह्मणेभ्यश्च लिखित्वा यः समर्पयेत् ।\nतस्य विद्या भवेत्सर्वा गणेशस्य प्रसादतः ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "praṇamya śirasā devaṃ gaurīputraṃ vināyakam |\nbhaktāvāsaṃ smarenityaṃ āyuḥkāmārthasiddhaye || 1 ||\nprathamaṃ vakratuṇḍaṃ ca ekadantaṃ dvitīyakam |\ntṛtīyaṃ kṛṣṇapiṅgākṣaṃ gajavaktraṃ caturthakam || 2 ||\nlambodaraṃ pañcamaṃ ca ṣaṣṭhaṃ vikaṭameva ca |\nsaptamaṃ vighnarājendraṃ dhūmravarṇaṃ tathāṣṭamam || 3 ||\nnavamaṃ bhālacandraṃ ca daśamaṃ tu vināyakam |\nekādaśaṃ gaṇapatiṃ dvādaśaṃ tu gajānanam || 4 ||\ndvādaśaitāni nāmāni trisaṃdhyaṃ yaḥ paṭhennaraḥ |\nna ca vighnabhayaṃ tasya sarvasiddhikaraḥ prabhuḥ || 5 ||\nvidyārthī labhate vidyāṃ dhanārthī labhate dhanam |\nputrārthī labhate putrānmokṣārthī labhate gatim || 6 ||\njapedgaṇapatistotraṃ ṣaḍbhirmāsaiḥ phalaṃ labhet |\nsaṃvatsareṇa siddhiṃ ca labhate nātra saṃśayaḥ || 7 ||\naṣṭebhyo brāhmaṇebhyaśca likhitvā yaḥ samarpayet |\ntasya vidyā bhavetsarvā gaṇeśasya prasādataḥ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Saṅkaṭanāśana Gaṇeśa Stotram (Nārada Purāṇa)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Ganesha's twelve names, to remove troubles (saṅkaṭa). Its closing verses say it traditionally: knowledge to the student, wealth to the one who seeks it, children to those who wish for them. Often recited on Sankashti Chaturthi.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "new-beginnings",
+      "study",
+      "prosperity",
+      "children"
+    ],
+    "moods": [
+      "stressed",
+      "seekingGuidance",
+      "hopeful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "extended",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.ganesha-gayatri",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.ganesha"
+    ],
+    "kind": "mantra",
+    "title": "Ganesha Gayatri",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "एकदन्ताय विद्महे वक्रतुण्डाय धीमहि ।\nतन्नो दन्तिः प्रचोदयात् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "ekadantāya vidmahe vakratuṇḍāya dhīmahi |\ntanno dantiḥ pracodayāt ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Gaṇapati Atharvaśīrṣa"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The Gayatri of Ganesha, from the Ganapati Atharvashirsha — chanted for clear understanding before study and new work.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "study",
+      "new-beginnings",
+      "guidance"
+    ],
+    "moods": [
+      "seekingGuidance",
+      "hopeful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.shiva-panchakshara",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.shiva"
+    ],
+    "kind": "stotra",
+    "title": "Shiva Panchakshara Stotram",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "नागेन्द्रहाराय त्रिलोचनाय\nभस्माङ्गरागाय महेश्वराय ।\nनित्याय शुद्धाय दिगम्बराय\nतस्मै नकाराय नमःशिवाय ॥ १ ॥\nमन्दाकिनीसलिलचन्दनचर्चिताय\nनन्दीश्वरप्रमथनाथमहेश्वराय ।\nमन्दारपुष्पबहुपुष्पसुपूजिताय\nतस्मै मकाराय नमःशिवाय ॥ २ ॥\nशिवाय गौरीवदनाब्जवृन्द\nसूर्याय दक्षाध्वरनाशकाय ।\nश्रीनीलकण्ठाय वृषध्वजाय\nतस्मै शिकाराय नमःशिवाय ॥ ३ ॥\nवसिष्ठकुम्भोद्भवगौतमार्य\nमुनीन्द्रदेवार्चितशेखराय ।\nचन्द्रार्कवैश्वानरलोचनाय\nतस्मै वकाराय नमःशिवाय ॥ ४ ॥\nयक्षस्वरूपाय जटाधराय\nपिनाकहस्ताय सनातनाय ।\nदिव्याय देवाय दिगम्बराय\nतस्मै यकाराय नमःशिवाय ॥ ५ ॥\nपञ्चाक्षरमिदं पुण्यं यः पठेत् शिवसन्निधौ ।\nशिवलोकमवाप्नोति शिवेन सह मोदते ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "nāgendrahārāya trilocanāya\nbhasmāṅgarāgāya maheśvarāya |\nnityāya śuddhāya digambarāya\ntasmai nakārāya namaḥśivāya || 1 ||\nmandākinīsalilacandanacarcitāya\nnandīśvarapramathanāthamaheśvarāya |\nmandārapuṣpabahupuṣpasupūjitāya\ntasmai makārāya namaḥśivāya || 2 ||\nśivāya gaurīvadanābjavṛnda\nsūryāya dakṣādhvaranāśakāya |\nśrīnīlakaṇṭhāya vṛṣadhvajāya\ntasmai śikārāya namaḥśivāya || 3 ||\nvasiṣṭhakumbhodbhavagautamārya\nmunīndradevārcitaśekharāya |\ncandrārkavaiśvānaralocanāya\ntasmai vakārāya namaḥśivāya || 4 ||\nyakṣasvarūpāya jaṭādharāya\npinākahastāya sanātanāya |\ndivyāya devāya digambarāya\ntasmai yakārāya namaḥśivāya || 5 ||\npañcākṣaramidaṃ puṇyaṃ yaḥ paṭhet śivasannidhau |\nśivalokamavāpnoti śivena saha modate ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Śiva Pañcākṣara Stotram (attributed to Ādi Śaṅkara)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Five verses, one for each syllable of na-ma-śi-vā-ya. Traditionally recited on Mondays and in the Shravan month.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "peace",
+      "presence",
+      "forgiveness"
+    ],
+    "moods": [
+      "justWantToPray",
+      "needPeace"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "extended",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.ya-devi-shakti",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.durga",
+      "hinduism.devi"
+    ],
+    "kind": "mantra",
+    "title": "Ya Devi — for strength",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "या देवी सर्वभूतेषु शक्तिरूपेण संस्थिता ।\nनमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "yā devī sarvabhūteṣu śaktirūpeṇa saṃsthitā |\nnamastasyai namastasyai namastasyai namo namaḥ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Devī Māhātmya 5 (Caṇḍī Pāṭha)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Salutation to the Goddess who dwells in all beings as power (śakti). Recited for inner strength, especially during Navaratri.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "strength",
+      "courage",
+      "protection"
+    ],
+    "moods": [
+      "needStrength",
+      "anxious"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.ya-devi-buddhi",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.durga",
+      "hinduism.devi",
+      "hinduism.saraswati"
+    ],
+    "kind": "mantra",
+    "title": "Ya Devi — for wisdom",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "या देवी सर्वभूतेषु बुद्धिरूपेण संस्थिता ।\nनमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "yā devī sarvabhūteṣu buddhirūpeṇa saṃsthitā |\nnamastasyai namastasyai namastasyai namo namaḥ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Devī Māhātmya 5 (Caṇḍī Pāṭha)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Salutation to the Goddess present in all as intelligence (buddhi) — recited before study and important decisions.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "study",
+      "guidance"
+    ],
+    "moods": [
+      "seekingGuidance",
+      "stressed"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.ya-devi-shanti",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.durga",
+      "hinduism.devi"
+    ],
+    "kind": "mantra",
+    "title": "Ya Devi — for peace",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "या देवी सर्वभूतेषु शान्तिरूपेण संस्थिता ।\nनमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "yā devī sarvabhūteṣu śāntirūpeṇa saṃsthitā |\nnamastasyai namastasyai namastasyai namo namaḥ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Devī Māhātmya 5 (Caṇḍī Pāṭha)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Salutation to the Goddess present in all as peace (śānti).",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "peace",
+      "comfort"
+    ],
+    "moods": [
+      "needPeace",
+      "anxious",
+      "sad"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.ya-devi-lakshmi",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.lakshmi",
+      "hinduism.devi"
+    ],
+    "kind": "mantra",
+    "title": "Ya Devi — for prosperity",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "या देवी सर्वभूतेषु लक्ष्मीरूपेण संस्थिता ।\nनमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "yā devī sarvabhūteṣu lakṣmīrūpeṇa saṃsthitā |\nnamastasyai namastasyai namastasyai namo namaḥ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Devī Māhātmya 5 (Caṇḍī Pāṭha)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Salutation to the Goddess present in all as fortune (lakṣmī).",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "prosperity",
+      "gratitude"
+    ],
+    "moods": [
+      "hopeful",
+      "grateful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.ya-devi-matri",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.devi",
+      "hinduism.durga"
+    ],
+    "kind": "mantra",
+    "title": "Ya Devi — the Mother",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "या देवी सर्वभूतेषु मातृरूपेण संस्थिता ।\nनमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "yā devī sarvabhūteṣu mātṛrūpeṇa saṃsthitā |\nnamastasyai namastasyai namastasyai namo namaḥ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Devī Māhātmya 5 (Caṇḍī Pāṭha)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Salutation to the Goddess present in all as mother — prayed for one's family and children.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "family",
+      "children",
+      "comfort"
+    ],
+    "moods": [
+      "lonely",
+      "grateful",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.kanakadhara",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.lakshmi"
+    ],
+    "kind": "stotra",
+    "title": "Kanakadhara Stotram",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "अङ्गं हरेः पुलकभूषणमाश्रयन्ती\nभृङ्गाङ्गनेव मुकुलाभरणं तमालम् ।\nअङ्गीकृताखिलविभूतिरपाङ्गलीला\nमाङ्गल्यदाऽस्तु मम मङ्गलदेवतायाः ॥ १ ॥\nमुग्धा मुहुर्विदधती वदने मुरारेः\nप्रेमत्रपाप्रणिहितानि गतागतानि ।\nमाला दृशोर्मधुकरीव महोत्पले या\nसा मे श्रियं दिशतु सागरसम्भवायाः ॥ २ ॥\nआमीलिताक्षमधिगम्य मुदा मुकुन्दम्–\nआनन्दकन्दमनिमेषमनङ्गतन्त्रम्।\nआकेकरस्थितकनीनिकपक्ष्मनेत्रं\nभूत्यै भवेन्मम भुजङ्गशयाङ्गनायाः ॥ ३ ॥\nबाह्वन्तरे मधुजितः श्रितकौस्तुभे या\nहारावलीव हरिनीलमयी विभाति ।\nकामप्रदा भगवतोऽपि कटाक्षमाला\nकल्याणमावहतु मे कमलालयायाः ॥ ४ ॥\nकालाम्बुदालिललितोरसि कैटाभारेर्–\nधाराधरे स्फुरति या तड़िदङ्गनेव ।\nमातुः समस्तजगतां महनीयमूर्तिर्–\nभद्राणि मे दिशतु भार्गवनन्दनायाः ॥ ५ ॥\nप्राप्तं पदं प्रथमतः खलु यत्प्रभावान्–\nमाङ्गल्यभाजि मधुमाथिनि मन्मथेन ।\nमय्यापतेत्तदिह मन्थरमीक्षणार्धं\nमन्दालसं च मकरालयकन्यकायाः ॥ ६ ॥\nविश्वामरेन्द्रपदविभ्रमदानदक्षम्–\nआनन्दहेतुरधिकं मुरविद्विषोऽपि ।\nईषन्निषीदतु मयि क्षणमीक्षणार्धम्–\nइन्दीवरोदरसहोदरमिन्दिरायाः ॥ ७ ॥\nइष्टाविशिष्टमतयोऽपि यया दयार्द्र–\nदृष्ट्या त्रिविष्टपपदं सुलभं लभन्ते ।\nदृष्टिः प्रहृष्टकमलोदरदीप्तिरिष्टां\nपुष्टिं कृषीष्ट मम पुष्करविष्टरायाः ॥ ८ ॥\nदद्याद्दयानुपवनो द्रविणाम्बुधाराम्–\nअस्मिन्नकिञ्चनविहङ्गशिशौ विषण्णे ।\nदुष्कर्मधर्ममपनीय चिराय दूरं\nनारायणप्रणयिनीनयनाम्बुवाहः ॥ ९ ॥\nगीर्देवतेति गरुड़ध्वजसुन्दरीति\nशाकम्भरीति शशिशेखरवल्लभेति ।\nसृष्टिस्थितिप्रलयकेलिषु संस्थितायै\nतस्यै नमस्त्रिभुवनैकगुरोस्तरुण्यै ॥ १० ॥\nश्रुत्यै नमोऽस्तु शुभकर्मफलप्रसूत्यै\nरत्यै नमोऽस्तु रमणीयगुणार्णवायै ।\nशक्त्यै नमोऽस्तु शतपत्रनिकेतनायै\nपुष्ट्यै नमोऽस्तु पुरुषोत्तमवल्लभायै ॥ ११ ॥\nनमोऽस्तु नालीकनिभाननायै\nनमोऽस्तु दुग्धोदधिजन्मभूत्यै ।\nनमोऽस्तु सोमामृतसोदरायै\nनमोऽस्तु नारायणवल्लभायै ॥ १२ ॥\nनमोऽस्तु हेमाम्बुजपीठिकायै\nनमोऽस्तु भूमण्डलनायिकायै ।\nनमोऽस्तु देवादिदयापरायै\nनमोऽस्तु शार्ङ्गायुधवल्लभायै ॥ १३ ॥\nनमोऽस्तु देव्यै भृगुनन्दनायै\nनमोऽस्तु विष्णोरुरसि स्थितायै ।\nनमोऽस्तु लक्ष्म्यै कमलालयायै\nनमोऽस्तु दामोदरवल्लभायै ॥ १४ ॥\nनमोऽस्तु कान्त्यै कमलेक्षणायै\nनमोऽस्तु भूत्यै भुवनप्रसूत्यै ।\nनमोऽस्तु देवादिभिरर्चितायै\nनमोऽस्तु नन्दात्मजवल्लभायै ॥ १५ ॥\nसम्पत्कराणि सकलेन्द्रियनन्दनानि\nसाम्राज्यदानविभवानि सरोरुहाक्षि ।\nत्वद्वन्दनानि दुरितोद्धरणोद्यतानि\nमामेव मातरनिशं कलयन्तु मान्ये ॥ १६ ॥\nयत्कटाक्षसमुपासनाविधिः\nसेवकस्य सकलार्थसम्पदः ।\nसन्तनोति वचनाङ्गमानसैस्–\nत्वां मुरारिहृदयेश्वरीं भजे ॥ १७ ॥\nसरसिजनिलये सरोजहस्ते\nधवलतमांशुकगन्धमाल्यशोभे ।\nभगवति हरिवल्लभे मनोज्ञे\nत्रिभुवनभूतिकरि प्रसीद मह्यम् ॥ १८ ॥\nदिग्घस्तिभिः कनककुम्भमुखावसृष्ट–\nस्वर्वाहिनीविमलचारुजलप्लुताङ्गीम् ।\nप्रातर्नमामि जगतां जननीमशेष–\nलोकाधिनाथगृहिणीममृताब्धिपुत्रीम् ॥ १९ ॥\nकमले कमलाक्षवल्लभे त्वं\nकरुणापूरतरङ्गितैरपाङ्गैः ।\nअवलोकय मामकिञ्चनानां\nप्रथमं पात्रमकृत्रिमं दयायाः ॥ २० ॥\nदेवि प्रसीद जगदीश्वरि लोकमातः\nकल्याणगात्रि कमलेक्षणजीवनाथे ।\nदारिद्र्यभीतिहृदयं शरणागतं माम्–\nआलोकय प्रतिदिनं सदयैरपाङ्गैः ॥ २१ ॥\nस्तुवन्ति ये स्तुतिभिरमूभिरन्वहं\nत्रयीमयीं त्रिभुवनमातरं रमाम् ।\nगुणाधिका गुरुतरभाग्यभागिनो\nभवन्ति ते भुवि बुधभाविताशयाः ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "aṅgaṃ hareḥ pulakabhūṣaṇamāśrayantī\nbhṛṅgāṅganeva mukulābharaṇaṃ tamālam |\naṅgīkṛtākhilavibhūtirapāṅgalīlā\nmāṅgalyadā'stu mama maṅgaladevatāyāḥ || 1 ||\nmugdhā muhurvidadhatī vadane murāreḥ\nprematrapāpraṇihitāni gatāgatāni |\nmālā dṛśormadhukarīva mahotpale yā\nsā me śriyaṃ diśatu sāgarasambhavāyāḥ || 2 ||\nāmīlitākṣamadhigamya mudā mukundam–\nānandakandamanimeṣamanaṅgatantram |\nākekarasthitakanīnikapakṣmanetraṃ\nbhūtyai bhavenmama bhujaṅgaśayāṅganāyāḥ || 3 ||\nbāhvantare madhujitaḥ śritakaustubhe yā\nhārāvalīva harinīlamayī vibhāti |\nkāmapradā bhagavato'pi kaṭākṣamālā\nkalyāṇamāvahatu me kamalālayāyāḥ || 4 ||\nkālāmbudālilalitorasi kaiṭābhārer–\ndhārādhare sphurati yā taḍidaṅganeva |\nmātuḥ samastajagatāṃ mahanīyamūrtir–\nbhadrāṇi me diśatu bhārgavanandanāyāḥ || 5 ||\nprāptaṃ padaṃ prathamataḥ khalu yatprabhāvān–\nmāṅgalyabhāji madhumāthini manmathena |\nmayyāpatettadiha mantharamīkṣaṇārdhaṃ\nmandālasaṃ ca makarālayakanyakāyāḥ || 6 ||\nviśvāmarendrapadavibhramadānadakṣam–\nānandaheturadhikaṃ muravidviṣo'pi |\nīṣanniṣīdatu mayi kṣaṇamīkṣaṇārdham–\nindīvarodarasahodaramindirāyāḥ || 7 ||\niṣṭāviśiṣṭamatayo'pi yayā dayārdra–\ndṛṣṭyā triviṣṭapapadaṃ sulabhaṃ labhante |\ndṛṣṭiḥ prahṛṣṭakamalodaradīptiriṣṭāṃ\npuṣṭiṃ kṛṣīṣṭa mama puṣkaraviṣṭarāyāḥ || 8 ||\ndadyāddayānupavano draviṇāmbudhārām–\nasminnakiñcanavihaṅgaśiśau viṣaṇṇe |\nduṣkarmadharmamapanīya cirāya dūraṃ\nnārāyaṇapraṇayinīnayanāmbuvāhaḥ || 9 ||\ngīrdevateti garuḍadhvajasundarīti\nśākambharīti śaśiśekharavallabheti |\nsṛṣṭisthitipralayakeliṣu saṃsthitāyai\ntasyai namastribhuvanaikagurostaruṇyai || 10 ||\nśrutyai namo'stu śubhakarmaphalaprasūtyai\nratyai namo'stu ramaṇīyaguṇārṇavāyai |\nśaktyai namo'stu śatapatraniketanāyai\npuṣṭyai namo'stu puruṣottamavallabhāyai || 11 ||\nnamo'stu nālīkanibhānanāyai\nnamo'stu dugdhodadhijanmabhūtyai |\nnamo'stu somāmṛtasodarāyai\nnamo'stu nārāyaṇavallabhāyai || 12 ||\nnamo'stu hemāmbujapīṭhikāyai\nnamo'stu bhūmaṇḍalanāyikāyai |\nnamo'stu devādidayāparāyai\nnamo'stu śārṅgāyudhavallabhāyai || 13 ||\nnamo'stu devyai bhṛgunandanāyai\nnamo'stu viṣṇorurasi sthitāyai |\nnamo'stu lakṣmyai kamalālayāyai\nnamo'stu dāmodaravallabhāyai || 14 ||\nnamo'stu kāntyai kamalekṣaṇāyai\nnamo'stu bhūtyai bhuvanaprasūtyai |\nnamo'stu devādibhirarcitāyai\nnamo'stu nandātmajavallabhāyai || 15 ||\nsampatkarāṇi sakalendriyanandanāni\nsāmrājyadānavibhavāni saroruhākṣi |\ntvadvandanāni duritoddharaṇodyatāni\nmāmeva mātaraniśaṃ kalayantu mānye || 16 ||\nyatkaṭākṣasamupāsanāvidhiḥ\nsevakasya sakalārthasampadaḥ |\nsantanoti vacanāṅgamānasais–\ntvāṃ murārihṛdayeśvarīṃ bhaje || 17 ||\nsarasijanilaye sarojahaste\ndhavalatamāṃśukagandhamālyaśobhe |\nbhagavati harivallabhe manojñe\ntribhuvanabhūtikari prasīda mahyam || 18 ||\ndigghastibhiḥ kanakakumbhamukhāvasṛṣṭa–\nsvarvāhinīvimalacārujalaplutāṅgīm |\nprātarnamāmi jagatāṃ jananīmaśeṣa–\nlokādhināthagṛhiṇīmamṛtābdhiputrīm || 19 ||\nkamale kamalākṣavallabhe tvaṃ\nkaruṇāpūrataraṅgitairapāṅgaiḥ |\navalokaya māmakiñcanānāṃ\nprathamaṃ pātramakṛtrimaṃ dayāyāḥ || 20 ||\ndevi prasīda jagadīśvari lokamātaḥ\nkalyāṇagātri kamalekṣaṇajīvanāthe |\ndāridryabhītihṛdayaṃ śaraṇāgataṃ mām–\nālokaya pratidinaṃ sadayairapāṅgaiḥ || 21 ||\nstuvanti ye stutibhiramūbhiranvahaṃ\ntrayīmayīṃ tribhuvanamātaraṃ ramām |\nguṇādhikā gurutarabhāgyabhāgino\nbhavanti te bhuvi budhabhāvitāśayāḥ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Kanakadhārā Stotram (attributed to Ādi Śaṅkara)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The 'stream of gold' hymn to Lakshmi, traditionally recited for prosperity and relief from financial hardship, often on Fridays.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "prosperity",
+      "work",
+      "family"
+    ],
+    "moods": [
+      "hopeful",
+      "stressed"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "extended",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.saraswati-namastubhyam",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.saraswati"
+    ],
+    "kind": "mantra",
+    "title": "Saraswati Namastubhyam",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "सरस्वति नमस्तुभ्यं वरदे कामरूपिणि।\nविद्यारम्भं करिष्यामि सिद्धिर्भवतु मे सदा ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "sarasvati namastubhyaṃ varade kāmarūpiṇi |\nvidyārambhaṃ kariṣyāmi siddhirbhavatu me sadā ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Sarasvatī Stotra"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Said by students before beginning to study: 'Saraswati, I bow to you; I begin my learning — may I always succeed.'",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "study",
+      "new-beginnings"
+    ],
+    "moods": [
+      "seekingGuidance",
+      "hopeful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.ya-kundendu",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.saraswati"
+    ],
+    "kind": "mantra",
+    "title": "Ya Kundendu Tusharahara Dhavala",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "या कुन्देन्दुतुषारहारधवला या शुभ्रवस्त्रावृता\nया वीणावरदण्डमण्डितकरा या श्वेतपद्मासना।\nया ब्रह्माच्युत शंकरप्रभृतिभिर्देवैः सदा वन्दिता\nसा मां पातु सरस्वती भगवती निःशेषजाड्यापहा ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "yā kundendutuṣārahāradhavalā yā śubhravastrāvṛtā\nyā vīṇāvaradaṇḍamaṇḍitakarā yā śvetapadmāsanā |\nyā brahmācyuta śaṃkaraprabhṛtibhirdevaiḥ sadā vanditā\nsā māṃ pātu sarasvatī bhagavatī niḥśeṣajāḍyāpahā ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Sarasvatī Stotra"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The beloved dhyana verse to Saraswati, white as jasmine and snow, holding the veena — recited before study, exams and on Vasant Panchami.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "study",
+      "guidance"
+    ],
+    "moods": [
+      "seekingGuidance",
+      "stressed"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.aditya-hridayam",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.surya"
+    ],
+    "kind": "stotra",
+    "title": "Aditya Hridayam",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "ततो युद्धपरिश्रान्तं समरे चिन्तया स्थितम्।\nरावणं चाग्रतो दृष्ट्वा युद्धाय समुपस्थितम्॥ १॥\nदैवतैश्च समागम्य द्रष्टुमभ्यागतो रणम्।\nउपागम्याब्रवीद्राममगस्त्यो भगवान् ऋषिः॥ २॥\nराम राम महाबाहो शृणु गुह्यं सनातनम्।\nयेन सर्वानरीन् वत्स समरे विजयिष्यसि॥ ३॥\nआदित्यहृदयं पुण्यं सर्वशत्रुविनाशनम्।\nजयावहं जपेन्नित्यम् अक्षय्यं परमं शिवम्॥ ४॥\nसर्वमङ्गलमाङ्गल्यं सर्वपापप्रणाशनम्।\nचिन्ताशोकप्रशमनम् आयुर्वर्धनमुत्तमम्॥ ५॥\nरश्मिमंतं समुद्यन्तं देवासुरनमस्कृतम्।\nपूजयस्व विवस्वन्तं भास्करं भुवनेश्वरम्॥ ६॥\nसर्वदेवात्मको ह्येष तेजस्वी रश्मिभावनः।\nएष देवासुरगणाँल्लोकान् पाति गभस्तिभिः॥ ७॥\nएष ब्रह्मा च विष्णुश्च शिवः स्कन्दः प्रजापतिः।\nमहेन्द्रो धनदः कालो यमः सोमो ह्यपां पतिः॥ ८॥\nपितरो वसवः साध्या ह्यश्विनौ मरुतो मनुः।\nवायुर्वह्निः प्रजाप्राण ऋतुकर्ता प्रभाकरः॥ ९॥\nआदित्यः सविता सूर्यः खगः पूषा गभस्तिमान्।\nसुवर्णसदृशो भानुर्हिरण्यरेता दिवाकरः॥ १०॥\nहरिदश्वः सहस्रार्चिः सप्तसप्तिर्मरीचिमान्।\nतिमिरोन्मथनः शम्भुस्त्वष्टा मार्ताण्ड अंशुमान्॥ ११॥\nहिरण्यगर्भः शिशिरस्तपनो भास्करो रविः।\nअग्निगर्भोऽदितेः पुत्रः शङ्खः शिशिरनाशनः॥ १२॥\nव्योमनाथस्तमोभेदी ऋग्यजुःसामपारगः।\nघनवृष्टिरपां मित्रो विन्ध्यवीथीप्लवङ्गमः॥ १३॥\nआतपी मण्डली मृत्युः पिङ्गलः सर्वतापनः।\nकविर्विश्वो महातेजाः रक्तः सर्वभवोद्भवः॥ १४\nनक्षत्रग्रहताराणामधिपो विश्वभावनः।\nतेजसामपि तेजस्वी द्वादशात्मन् नमोऽस्तु ते॥ १५॥\nनमः पूर्वाय गिरये पश्चिमायाद्रये नमः।\nज्योतिर्गणानां पतये दिनाधिपतये नमः॥ १६॥\nजयाय जयभद्राय हर्यश्वाय नमो नमः।\nनमो नमः सहस्रांशो आदित्याय नमो नमः॥ १७॥\nनम उग्राय वीराय सारङ्गाय नमो नमः।\nनमः पद्मप्रबोधाय मार्ताण्डाय नमो नमः॥ १८॥\nब्रह्मेशानाच्युतेशाय सूर्यायादित्यवर्चसे।\nभास्वते सर्वभक्षाय रौद्राय वपुषे नमः॥ १९॥\nतमोघ्नाय हिमघ्नाय शत्रुघ्नायामितात्मने।\nकृतघ्नघ्नाय देवाय ज्योतिषां पतये नमः॥ २०॥\nतप्तचामीकराभाय वह्नये विश्वकर्मणे।\nनमस्तमोऽभिनिघ्नाय रुचये लोकसाक्षिणे॥ २१॥\nनाशयत्येष वै भूतं तदेव सृजति प्रभुः।\nपायत्येष तपत्येष वर्षत्येष गभस्तिभिः॥ २२॥\nएष सुप्तेषु जागर्ति भूतेषु परिनिष्ठितः।\nएष एवाग्निहोत्रं च फलं चैवाग्निहोत्रिणाम्॥ २३॥\nवेदाश्च क्रतवश्चैव क्रतूनां फलमेव च।\nयानि कृत्यानि लोकेषु सर्व एष रविः प्रभुः॥ २४॥\n॥ फलश्रुतिः॥\nएनमापत्सु कृच्छ्रेषु कान्तारेषु भयेषु च।\nकीर्तयन् पुरुषः कश्चिन्नावसीदति राघव॥ २५॥\nपूजयस्वैनमेकाग्रो देवदेवं जगत्पतिम्।\nएतत् त्रिगुणितं जप्त्वा युद्धेषु विजयिष्यसि॥ २६॥\nअस्मिन् क्षणे महाबाहो रावणं त्वं वधिष्यसि।\nएवमुक्त्वा तदागस्त्यो जगाम च यथागतम्॥ २७॥\nएतच्छ्रुत्वा महातेजा नष्टशोकोऽभवत्तदा।\nधारयामास सुप्रीतो राघवः प्रयतात्मवान्॥ २८॥\nआदित्यं प्रेक्ष्य जप्त्वा तु परं हर्षमवाप्तवान्।\nत्रिराचम्य शुचिर्भूत्वा धनुरादाय वीर्यवान्॥ २९॥\nरावणं प्रेक्ष्य हृष्टात्मा युद्धाय समुपागमत्।\nसर्वयत्नेन महता वधे तस्य धृतोऽभवत्॥ ३०॥\nअथ रविरवदन्निरीक्ष्य रामं मुदितमनाः परमं प्रहृष्यमाणः।\nनिशिचरपतिसंक्षयं विदित्वा सुरगणमध्यगतो वचस्त्वरेति ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "tato yuddhapariśrāntaṃ samare cintayā sthitam |\nrāvaṇaṃ cāgrato dṛṣṭvā yuddhāya samupasthitam|| 1||\ndaivataiśca samāgamya draṣṭumabhyāgato raṇam |\nupāgamyābravīdrāmamagastyo bhagavān ṛṣiḥ|| 2||\nrāma rāma mahābāho śṛṇu guhyaṃ sanātanam |\nyena sarvānarīn vatsa samare vijayiṣyasi|| 3||\nādityahṛdayaṃ puṇyaṃ sarvaśatruvināśanam |\njayāvahaṃ japennityam akṣayyaṃ paramaṃ śivam|| 4||\nsarvamaṅgalamāṅgalyaṃ sarvapāpapraṇāśanam |\ncintāśokapraśamanam āyurvardhanamuttamam|| 5||\nraśmimaṃtaṃ samudyantaṃ devāsuranamaskṛtam |\npūjayasva vivasvantaṃ bhāskaraṃ bhuvaneśvaram|| 6||\nsarvadevātmako hyeṣa tejasvī raśmibhāvanaḥ |\neṣa devāsuragaṇām̐llokān pāti gabhastibhiḥ|| 7||\neṣa brahmā ca viṣṇuśca śivaḥ skandaḥ prajāpatiḥ |\nmahendro dhanadaḥ kālo yamaḥ somo hyapāṃ patiḥ|| 8||\npitaro vasavaḥ sādhyā hyaśvinau maruto manuḥ |\nvāyurvahniḥ prajāprāṇa ṛtukartā prabhākaraḥ|| 9||\nādityaḥ savitā sūryaḥ khagaḥ pūṣā gabhastimān |\nsuvarṇasadṛśo bhānurhiraṇyaretā divākaraḥ|| 10||\nharidaśvaḥ sahasrārciḥ saptasaptirmarīcimān |\ntimironmathanaḥ śambhustvaṣṭā mārtāṇḍa aṃśumān|| 11||\nhiraṇyagarbhaḥ śiśirastapano bhāskaro raviḥ |\nagnigarbho'diteḥ putraḥ śaṅkhaḥ śiśiranāśanaḥ|| 12||\nvyomanāthastamobhedī ṛgyajuḥsāmapāragaḥ |\nghanavṛṣṭirapāṃ mitro vindhyavīthīplavaṅgamaḥ|| 13||\nātapī maṇḍalī mṛtyuḥ piṅgalaḥ sarvatāpanaḥ |\nkavirviśvo mahātejāḥ raktaḥ sarvabhavodbhavaḥ|| 14\nnakṣatragrahatārāṇāmadhipo viśvabhāvanaḥ |\ntejasāmapi tejasvī dvādaśātman namo'stu te|| 15||\nnamaḥ pūrvāya giraye paścimāyādraye namaḥ |\njyotirgaṇānāṃ pataye dinādhipataye namaḥ|| 16||\njayāya jayabhadrāya haryaśvāya namo namaḥ |\nnamo namaḥ sahasrāṃśo ādityāya namo namaḥ|| 17||\nnama ugrāya vīrāya sāraṅgāya namo namaḥ |\nnamaḥ padmaprabodhāya mārtāṇḍāya namo namaḥ|| 18||\nbrahmeśānācyuteśāya sūryāyādityavarcase |\nbhāsvate sarvabhakṣāya raudrāya vapuṣe namaḥ|| 19||\ntamoghnāya himaghnāya śatrughnāyāmitātmane |\nkṛtaghnaghnāya devāya jyotiṣāṃ pataye namaḥ|| 20||\ntaptacāmīkarābhāya vahnaye viśvakarmaṇe |\nnamastamo'bhinighnāya rucaye lokasākṣiṇe|| 21||\nnāśayatyeṣa vai bhūtaṃ tadeva sṛjati prabhuḥ |\npāyatyeṣa tapatyeṣa varṣatyeṣa gabhastibhiḥ|| 22||\neṣa supteṣu jāgarti bhūteṣu pariniṣṭhitaḥ |\neṣa evāgnihotraṃ ca phalaṃ caivāgnihotriṇām|| 23||\nvedāśca kratavaścaiva kratūnāṃ phalameva ca |\nyāni kṛtyāni lokeṣu sarva eṣa raviḥ prabhuḥ|| 24||\n|| phalaśrutiḥ||\nenamāpatsu kṛcchreṣu kāntāreṣu bhayeṣu ca |\nkīrtayan puruṣaḥ kaścinnāvasīdati rāghava|| 25||\npūjayasvainamekāgro devadevaṃ jagatpatim |\netat triguṇitaṃ japtvā yuddheṣu vijayiṣyasi|| 26||\nasmin kṣaṇe mahābāho rāvaṇaṃ tvaṃ vadhiṣyasi |\nevamuktvā tadāgastyo jagāma ca yathāgatam|| 27||\netacchrutvā mahātejā naṣṭaśoko'bhavattadā |\ndhārayāmāsa suprīto rāghavaḥ prayatātmavān|| 28||\nādityaṃ prekṣya japtvā tu paraṃ harṣamavāptavān |\ntrirācamya śucirbhūtvā dhanurādāya vīryavān|| 29||\nrāvaṇaṃ prekṣya hṛṣṭātmā yuddhāya samupāgamat |\nsarvayatnena mahatā vadhe tasya dhṛto'bhavat|| 30||\natha raviravadannirīkṣya rāmaṃ muditamanāḥ paramaṃ prahṛṣyamāṇaḥ |\nniśicarapatisaṃkṣayaṃ viditvā suragaṇamadhyagato vacastvareti ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Ādityahṛdayam (Rāmāyaṇa, Yuddha Kāṇḍa)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The hymn to the Sun taught by sage Agastya to Rama before his final battle — recited for courage, energy and health, traditionally at sunrise and on Sundays.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "strength",
+      "courage",
+      "health"
+    ],
+    "moods": [
+      "needStrength",
+      "stressed"
+    ],
+    "timesOfDay": [
+      "morning"
+    ],
+    "occasions": [],
+    "length": "extended",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.krishnashtakam",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.krishna"
+    ],
+    "kind": "stotra",
+    "title": "Krishnashtakam",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "वसुदेवसुतं देवं कंसचाणूर मर्दनं ।\nदेवकीपरमानंदं कृष्णं वंदे जगद्गुरूं ॥ १ ॥\nअतसीपुष्पसंकाशं हारनूपुर शोभितं ।\nरत्नकंकण केयूरं कृष्णं वंदे जगद्गुरूं ॥ २ ॥\nकुटिलालक संयुक्तं पूर्णचंद्र निभाननं ।\nविलसत्कुंडलधरं देवं कृष्णं वंदे जगद्गुरूं ॥ ३ ॥\nमंदारगंध संयुक्तं चारुहासं चतुर्भुजं ।\nबहिर्पिंछाव चूडांगं कृष्णं वंदे जगद्गुरूं ॥ ४ ॥\nउत्फुल्लपद्म पत्राक्षं नीलजीमूत सन्निभं ।\nयादवानां शिरोरत्नं कृष्णं वंदे जगद्गुरूं ॥ ५ ॥\nरुक्मिणीकेळि संयुक्तं पीतांबरं सुशोभितं ।\nअवाप्त तुळसीगंधं कृष्णं वंदे जगद्गुरूं ॥ ६ ॥\nगोपिकानां कुचद्वंदं कुंकुमांकित वक्षसं ।\nश्रीनिकेतं महेष्वासं कृष्णं वंदे जगद्गुरूं ॥ ७ ॥\nश्रीवत्सांकं महोरस्कं वनमाला विराजितं ।\nशंखचक्रधरं देवं कृष्णं वंदे जगद्गुरूं ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "vasudevasutaṃ devaṃ kaṃsacāṇūra mardanaṃ |\ndevakīparamānaṃdaṃ kṛṣṇaṃ vaṃde jagadgurūṃ || 1 ||\natasīpuṣpasaṃkāśaṃ hāranūpura śobhitaṃ |\nratnakaṃkaṇa keyūraṃ kṛṣṇaṃ vaṃde jagadgurūṃ || 2 ||\nkuṭilālaka saṃyuktaṃ pūrṇacaṃdra nibhānanaṃ |\nvilasatkuṃḍaladharaṃ devaṃ kṛṣṇaṃ vaṃde jagadgurūṃ || 3 ||\nmaṃdāragaṃdha saṃyuktaṃ cāruhāsaṃ caturbhujaṃ |\nbahirpiṃchāva cūḍāṃgaṃ kṛṣṇaṃ vaṃde jagadgurūṃ || 4 ||\nutphullapadma patrākṣaṃ nīlajīmūta sannibhaṃ |\nyādavānāṃ śiroratnaṃ kṛṣṇaṃ vaṃde jagadgurūṃ || 5 ||\nrukmiṇīkeḷi saṃyuktaṃ pītāṃbaraṃ suśobhitaṃ |\navāpta tuḷasīgaṃdhaṃ kṛṣṇaṃ vaṃde jagadgurūṃ || 6 ||\ngopikānāṃ kucadvaṃdaṃ kuṃkumāṃkita vakṣasaṃ |\nśrīniketaṃ maheṣvāsaṃ kṛṣṇaṃ vaṃde jagadgurūṃ || 7 ||\nśrīvatsāṃkaṃ mahoraskaṃ vanamālā virājitaṃ |\nśaṃkhacakradharaṃ devaṃ kṛṣṇaṃ vaṃde jagadgurūṃ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Śrī Kṛṣṇāṣṭakam"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Eight verses ending 'I bow to Krishna, teacher of the world' — sung on Janmashtami and in daily puja.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "presence",
+      "joy",
+      "peace"
+    ],
+    "moods": [
+      "justWantToPray",
+      "happy"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "extended",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.achyutashtakam",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.vishnu",
+      "hinduism.krishna",
+      "hinduism.rama"
+    ],
+    "kind": "stotra",
+    "title": "Achyutashtakam",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "अच्युतं केशवं रामनारायणं\nकृष्णदामोदरं वासुदेवं हरिम् ॥\nश्रीधरं माधवं गोपिकावल्लभं\nजानकीनायकं रामचन्द्रं भजे ॥ १॥\nअच्युतं केशवं सत्यभामाधवं\nमाधवं श्रीधरं राधिकाराधितम् ॥\nइन्दिरामन्दिरं चेतसा सुन्दरं\nदेवकीनन्दनं नन्दनं संदधे ॥ २॥\nविष्णवे जिष्णवे शङ्खिने चक्रिणे\nरुक्मिनीरागिणे जानकीजानये ॥\nवल्लवीवल्लभायाऽर्चितायात्मने\nकंसविध्वंसिने वंशिने ते नमः ॥ ३॥\nकृष्ण गोविन्द हे राम नारायण\nश्रीपते वासुदेवाजित श्रीनिधे ॥\nअच्युतानन्त हे माधवाधोक्षज\nद्वारकानायक द्रौपदीरक्षक ॥ ४॥\nराक्षसक्षोभितः सीतया शोभितो\nदण्डकारण्यभूपुण्यताकारणः ॥\nलक्ष्मणेनान्वितो वानरैः सेवितोऽ\nगस्त्यसंपूजितो राघवः पातु माम् ॥ ५॥\nधेनुकारिष्टकोऽनिष्टकृद्द्वेषिणां\nकेशिहा कंसहृद्वंशिकावादकः ॥\nपूतनाकोपकः सूरजाखेलनो\nबालगोपालकः पातु माम् सर्वदा ॥ ६॥\nविद्युदुद्धयोतवानप्रस्फुरद्वाससं\nप्रावृडम्भोदवत्प्रोल्लसद्विग्रहम् ॥\nवन्यया मालया शोभितोरःस्थलं\nलोहितांघ्रिद्वयं वारिजाक्षं भजे ॥ ७॥\nकुञ्चितैः कुन्तलैर्भ्राजमानाननं\nरत्नमौलिं लसत् कुण्डलं गण्डयोः ॥\nहारकेयूरकं कङ्कणप्रोज्ज्वलं\nकिङ्किणीमञ्जुलं श्यामलं तं भजे ॥ ८॥\nअच्युतस्याष्टकं यः पठेदिष्टदं प्रेमतः प्रत्यहं पूरुषः सस्पृहम् ।\nवृत्ततः सुंदरं कर्तृ विश्वंभरं तस्य वश्यो हरिर्जायते सत्वरम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "acyutaṃ keśavaṃ rāmanārāyaṇaṃ\nkṛṣṇadāmodaraṃ vāsudevaṃ harim ||\nśrīdharaṃ mādhavaṃ gopikāvallabhaṃ\njānakīnāyakaṃ rāmacandraṃ bhaje || 1||\nacyutaṃ keśavaṃ satyabhāmādhavaṃ\nmādhavaṃ śrīdharaṃ rādhikārādhitam ||\nindirāmandiraṃ cetasā sundaraṃ\ndevakīnandanaṃ nandanaṃ saṃdadhe || 2||\nviṣṇave jiṣṇave śaṅkhine cakriṇe\nrukminīrāgiṇe jānakījānaye ||\nvallavīvallabhāyā'rcitāyātmane\nkaṃsavidhvaṃsine vaṃśine te namaḥ || 3||\nkṛṣṇa govinda he rāma nārāyaṇa\nśrīpate vāsudevājita śrīnidhe ||\nacyutānanta he mādhavādhokṣaja\ndvārakānāyaka draupadīrakṣaka || 4||\nrākṣasakṣobhitaḥ sītayā śobhito\ndaṇḍakāraṇyabhūpuṇyatākāraṇaḥ ||\nlakṣmaṇenānvito vānaraiḥ sevito'\ngastyasaṃpūjito rāghavaḥ pātu mām || 5||\ndhenukāriṣṭako'niṣṭakṛddveṣiṇāṃ\nkeśihā kaṃsahṛdvaṃśikāvādakaḥ ||\npūtanākopakaḥ sūrajākhelano\nbālagopālakaḥ pātu mām sarvadā || 6||\nvidyududdhayotavānaprasphuradvāsasaṃ\nprāvṛḍambhodavatprollasadvigraham ||\nvanyayā mālayā śobhitoraḥsthalaṃ\nlohitāṃghridvayaṃ vārijākṣaṃ bhaje || 7||\nkuñcitaiḥ kuntalairbhrājamānānanaṃ\nratnamauliṃ lasat kuṇḍalaṃ gaṇḍayoḥ ||\nhārakeyūrakaṃ kaṅkaṇaprojjvalaṃ\nkiṅkiṇīmañjulaṃ śyāmalaṃ taṃ bhaje || 8||\nacyutasyāṣṭakaṃ yaḥ paṭhediṣṭadaṃ premataḥ pratyahaṃ pūruṣaḥ saspṛham |\nvṛttataḥ suṃdaraṃ kartṛ viśvaṃbharaṃ tasya vaśyo harirjāyate satvaram ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Acyutāṣṭakam (attributed to Ādi Śaṅkara)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "A song of Vishnu's names — Achyuta, Keshava, Narayana, Krishna, Rama — loved for evening bhajan.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "presence",
+      "peace"
+    ],
+    "moods": [
+      "justWantToPray",
+      "needPeace"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "extended",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.navagraha.surya",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.navagraha",
+      "hinduism.surya"
+    ],
+    "kind": "mantra",
+    "title": "Navagraha — Surya (Sun)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "जपाकुसुमसङ्काशं काश्यपेयं महाद्युतिम्।\nतमोऽरिं सर्वपापघ्नं प्रणतोऽस्मि दिवाकरम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "japākusumasaṅkāśaṃ kāśyapeyaṃ mahādyutim |\ntamo'riṃ sarvapāpaghnaṃ praṇato'smi divākaram ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Navagraha Stotram (attributed to Vyāsa)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The verse to Surya (Sun) from the Navagraha Stotram. Traditionally recited on Sundays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.navagraha.soma",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.navagraha"
+    ],
+    "kind": "mantra",
+    "title": "Navagraha — Chandra (Moon)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "दधिशङ्खतुषाराभं क्षीरोदार्णवसम्भवम्।\nनमामि शशिनं सोमं शम्भोर्मुकुटभूषणम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "dadhiśaṅkhatuṣārābhaṃ kṣīrodārṇavasambhavam |\nnamāmi śaśinaṃ somaṃ śambhormukuṭabhūṣaṇam ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Navagraha Stotram (attributed to Vyāsa)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The verse to Chandra (Moon) from the Navagraha Stotram. Traditionally recited on Mondays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.navagraha.mangala",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.navagraha"
+    ],
+    "kind": "mantra",
+    "title": "Navagraha — Mangala (Mars)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "धरणीगर्भसम्भूतं विद्युत्कान्तिसमप्रभम्।\nकुमारं शक्तिहस्तं तं मङ्गलं प्रणमाम्यहम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "dharaṇīgarbhasambhūtaṃ vidyutkāntisamaprabham |\nkumāraṃ śaktihastaṃ taṃ maṅgalaṃ praṇamāmyaham ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Navagraha Stotram (attributed to Vyāsa)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The verse to Mangala (Mars) from the Navagraha Stotram. Traditionally recited on Tuesdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.navagraha.budha",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.navagraha"
+    ],
+    "kind": "mantra",
+    "title": "Navagraha — Budha (Mercury)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "प्रियङ्गुकलिकाश्यामं रूपेणाप्रतिमं बुधम्।\nसौम्यं सौम्यगुणोपेतं तं बुधं प्रणमाम्यहम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "priyaṅgukalikāśyāmaṃ rūpeṇāpratimaṃ budham |\nsaumyaṃ saumyaguṇopetaṃ taṃ budhaṃ praṇamāmyaham ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Navagraha Stotram (attributed to Vyāsa)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The verse to Budha (Mercury) from the Navagraha Stotram. Traditionally recited on Wednesdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.navagraha.guru",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.navagraha"
+    ],
+    "kind": "mantra",
+    "title": "Navagraha — Guru (Jupiter)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "देवानां च ऋषीणां च गुरुं काञ्चनसन्निभम्।\nबुद्धिभूतं त्रिलोकेशं तं नमामि बृहस्पतिम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "devānāṃ ca ṛṣīṇāṃ ca guruṃ kāñcanasannibham |\nbuddhibhūtaṃ trilokeśaṃ taṃ namāmi bṛhaspatim ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Navagraha Stotram (attributed to Vyāsa)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The verse to Guru (Jupiter) from the Navagraha Stotram. Traditionally recited on Thursdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.navagraha.shukra",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.navagraha"
+    ],
+    "kind": "mantra",
+    "title": "Navagraha — Shukra (Venus)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "हिमकुन्दमृणालाभं दैत्यानां परमं गुरुम्।\nसर्वशास्त्रप्रवक्तारं भार्गवं प्रणमाम्यहम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "himakundamṛṇālābhaṃ daityānāṃ paramaṃ gurum |\nsarvaśāstrapravaktāraṃ bhārgavaṃ praṇamāmyaham ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Navagraha Stotram (attributed to Vyāsa)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The verse to Shukra (Venus) from the Navagraha Stotram. Traditionally recited on Fridays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.navagraha.shani",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.navagraha"
+    ],
+    "kind": "mantra",
+    "title": "Navagraha — Shani (Saturn)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "नीलाञ्जनसमाभासं रविपुत्रं यमाग्रजम्।\nछायामार्तण्डसम्भूतं तं नमामि शनैश्चरम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "nīlāñjanasamābhāsaṃ raviputraṃ yamāgrajam |\nchāyāmārtaṇḍasambhūtaṃ taṃ namāmi śanaiścaram ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Navagraha Stotram (attributed to Vyāsa)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The verse to Shani (Saturn) from the Navagraha Stotram. Traditionally recited on Saturdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.navagraha.rahu",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.navagraha"
+    ],
+    "kind": "mantra",
+    "title": "Navagraha — Rahu",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "अर्धकायं महावीर्यं चन्द्रादित्यविमर्दनम्।\nसिंहिकागर्भसंभूतं तं राहुं प्रणमाम्यहम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "ardhakāyaṃ mahāvīryaṃ candrādityavimardanam |\nsiṃhikāgarbhasaṃbhūtaṃ taṃ rāhuṃ praṇamāmyaham ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Navagraha Stotram (attributed to Vyāsa)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The verse to Rahu from the Navagraha Stotram. Traditionally recited, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.navagraha.ketu",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.navagraha"
+    ],
+    "kind": "mantra",
+    "title": "Navagraha — Ketu",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "पलाशपुष्पसङ्काशं तारकाग्रहमस्तकम्।\nरौद्रं रौद्रात्मकं घोरं तं केतुं प्रणमाम्यहम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "palāśapuṣpasaṅkāśaṃ tārakāgrahamastakam |\nraudraṃ raudrātmakaṃ ghoraṃ taṃ ketuṃ praṇamāmyaham ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Navagraha Stotram (attributed to Vyāsa)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The verse to Ketu from the Navagraha Stotram. Traditionally recited, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "seekingGuidance"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.mayuradhirudham",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.kartikeya"
+    ],
+    "kind": "mantra",
+    "title": "Mayuradhirudham (Murugan Dhyana)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "मयूराधिरूढं महावाक्यगूढं मनोहारिदेहं महच्चित्तगेहम् । महीदेवदेवं महावेदभावं महादेवबालं भजे लोकपालम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "mayūrādhirūḍhaṃ mahāvākyagūḍhaṃ manohāridehaṃ mahaccittageham | mahīdevadevaṃ mahāvedabhāvaṃ mahādevabālaṃ bhaje lokapālam ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Subrahmaṇya Bhujaṅgam 3"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "A meditation on Murugan riding the peacock — 'I worship the child of Mahadeva, protector of the worlds.' Chanted daily, especially on Tuesdays and Shashti.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "guidance",
+      "courage",
+      "presence"
+    ],
+    "moods": [
+      "justWantToPray",
+      "needStrength"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.subrahmanya-bhujangam",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.kartikeya"
+    ],
+    "kind": "stotra",
+    "title": "Subrahmanya Bhujangam",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "सदा बालरूपाऽपि विघ्नाद्रिहन्त्री महादन्तिवक्त्राऽपि पञ्चास्यमान्या । विधीन्द्रादिमृग्या गणेशाभिधा मे विधत्तां श्रियं काऽपि कल्याणमूर्तिः ॥१॥\nन जानामि शब्दं न जानामि चार्थं न जानामि पद्यं न जानामि गद्यम् । चिदेका षडास्य हृदि द्योतते मे मुखान्निःसरन्ते गिरश्चापि चित्रम् ॥२॥\nमयूराधिरूढं महावाक्यगूढं मनोहारिदेहं महच्चित्तगेहम् । महीदेवदेवं महावेदभावं महादेवबालं भजे लोकपालम् ॥३॥\nयदा संनिधानं गता मानवा मे भवाम्भोधिपारं गतास्ते तदैव । इति व्यञ्जयन्सिन्धुतीरे य आस्ते तमीडे पवित्रं पराशक्तिपुत्रम् ॥४॥\nयथाब्धेस्तरङ्गा लयं यन्ति तुङ्गा- स्तथैवापदः सन्निधौ सेवतां मे । इतीवोर्मिपंक्तीर्नृणां दर्शयन्तं सदा भावये हृत्सरोजे गुहं तम् ॥५॥\nगिरौ मन्निवासे नरा येऽधिरूढा- स्तदा पर्वते राजते तेऽधिरूढाः । इतीव ब्रुवन्गन्धशैलाधिरूढः स देवो मुदे मे सदा षण्मुखोऽस्तु ॥६॥\nमहाम्भोधितीरे महापापचोरे मुनिन्द्रानुकूले सुगन्धाख्यशैले । गुहायां वसन्तं स्वभासा लसन्तं जनार्तिं हरन्तं श्रयामो गुहं तम् ॥७॥\nलसत्स्वर्णगेहे नृणां कामदोहे सुमस्तोमसंछन्नमाणिक्यमञ्चे । समुद्यत्सहस्रार्कतुल्यप्रकाशं सदा भावये कार्तिकेयं सुरेशम् ॥८॥\nरणद्धंसके मञ्जुलेऽत्यन्तशोणे मनोहारिलावण्यपीयूषपूर्णे । मनःषट्पदो मे भवक्लेशतप्तः सदा मोदतां स्कन्द ते पादपद्मे ॥९॥\nसुवर्णाभदिव्याम्बरैर्भासमानां क्वणत्किङ्किणीमेखलाशोभमानाम् । लसद्धेमपट्टेन विद्योतमानां कटिं भावये स्कन्द ते दीप्यमानाम् ॥१० ॥\nपुलिन्देशकन्याघनाभोगतुङ्ग- स्तनालिङ्गनासक्तकाश्मीररागम् । नमस्यामहं तारकारे तवोरः स्वभक्तावने सर्वदा सानुरागम् ॥११॥\nविधौ क्ळृप्तदण्डान् स्वलीलाधृताण्डा- न्निरस्तेभशुण्डान् द्विषत्कालदण्डान् । हतेन्द्रारिषण्डाञ्जगत्राणशौण्डान् सदा ते प्रचण्डान् श्रये बाहुदण्डान् ॥१२॥\nसदा शारदाः षण्मृगाङ्का यदि स्युः समुद्यन्त एव स्थिताश्चेत्समन्तात् । सदा पूर्णबिम्बाः कलङ्कैश्च हीना- स्तदा त्वन्मुखानां ब्रुवे स्कन्द साम्यम् ॥१३॥\nस्फुरन्मन्दहासैः सहंसानि चञ्च- त्कटाक्षावलीभृङ्गसंघोज्ज्वलानि । सुधास्यन्दिबिम्बाधरणीशसूनो तवालोकये षण्मुखाम्भोरुहाणि ॥१४॥\nइहायाहि वत्सेति विशालेषु कर्णान्तदीर्घेष्वजस्रं दयास्यन्दिषु द्वादशस्वीक्षणेषु । मयीषत्कटाक्षः सकृत्पातितश्चे- द्भवेत्ते दयाशील का नाम् हानिः ॥१५॥\nसुताङ्गोद्भवो मेऽसि जीवेति षड्धा जपन्मन्त्रमीशो मुदा जिघ्रते यान् । जगद्भारभृद्भ्यो जगन्नाथ तेभ्यः किरीटोज्ज्वलेभ्यो नमो मस्तकेभ्यः ॥१६॥\nस्फुरद्रत्नकेयूरहाराभिराम- श्चलत्कुण्डलश्रीलसद्गण्डभागः । कटौ पीतवासः करे चारुशक्तिः पुरस्तान्ममास्तां पुरारेस्तनूजः ॥१७॥\nहस्तान्प्रसार्या- ह्वयत्यादराच्छङ्करे मातुरङ्कात् । समुत्पत्य तातं श्रयन्तं कुमारं हराश्लिष्टगात्रं भजे बालमूर्तिम् ॥१८॥\nकुमारेशसूनो गुह स्कन्द सेना- पते शक्तिपाणे मयूराधिरूढ । पुलिन्दात्मजाकान्त भक्तार्तिहारिन् प्रभो तारकारे सदा रक्ष मां त्वम् ॥१९ ॥\nप्रशान्तेन्द्रिये नष्टसंज्ञे विचेष्टे कफोद्गारिवक्त्रे भयोत्कम्पिगात्रे । प्रयाणोन्मुखे मय्यनाथे तदानीं द्रुतं मे दयालो भवाग्रे गुह त्वम् ॥२०॥\nकृतान्तस्य दूतेषु चण्डेषु कोपा- द्दह च्छिन्द्धि भिन्द्धीति मां तर्जयत्सु । मयूरं समारुह्य मा भैरिति त्वं पुरः शक्तिपाणिर्ममायाहि शीघ्रम् ॥२१॥\nप्रणम्यासकृत्पादयोस्ते पतित्वा प्रसाद्य प्रभो प्रार्थयेऽनेकवारम् । न वक्तुं क्षमोऽहं तदानीं कृपाब्धे न कार्यान्तकाले मनागप्युपेक्षा ॥२२॥\nसहस्राण्डभोक्ता त्वया शूरनामा हतस्तारकः सिंहवक्त्रश्च दैत्यः । ममान्तर्हृदिस्थं मनःक्लेशमेकं न हंसि प्रभो किं करोमि क्व यामि ॥२३ ॥\nअहं सर्वदा दुखभारावसन्नो भवान्दीनबन्धुस्त्वदन्यं न याचे । भवद्भक्तिरोधं सदा क्ळृप्तबाधं ममाधिं द्रुतं नाशयोमासुत त्वम् ॥२४ ॥\nअपस्मारकुष्टक्षयार्शः प्रमेह- ज्वरोन्मादगुल्मादिरोगा महान्तः । पिशाचाश्च सर्वे भवत्पत्रभूतिं विलोक्य क्षणात्तारकारे द्रवन्ते ॥२५॥\nदृशि स्कन्दमूर्तिः श्रुतौ स्कन्दकीर्ति- र्मुखे मे पवित्रं सदा तच्चरित्रम् । करे तस्य कृत्यं वपुस्तस्य भृत्यं गुहे सन्तु लीना ममाशेषभावाः ॥२६॥\nमुनीनामुताहो नृणां भक्तिभाजा- मभीष्टप्रदाः सन्ति सर्वत्र देवाः । नृणामन्त्यजानामपि स्वार्थदाने गुहाद्देवमन्यं न जाने न जाने ॥२७॥\nकलत्रं सुता बन्धुवर्गः पशुर्वा नरो वाथ नारि गृहे ये मदियाः । यजन्तो नमन्तः स्तुवन्तो भवन्तं स्मरन्तश्च ते सन्तु सर्वे कुमार ॥२८॥\nमृगाः पक्षिणो दंशका ये च दुष्टा- स्तथा व्याधयो बाधका ये मदङ्गे । भवच्छक्तितीक्ष्णाग्रभिन्नाः सुदूरे विनश्यन्तु ते चूर्णितक्रौञ्जशैल ॥२९॥\nजनित्री पिता च स्वपुत्रापराधं सहेते न किं देवसेनाधिनाथ । अहं चातिबालो भवान् लोकतातः क्षमस्वापराधं समस्तं महेश ॥३०॥\nनमः केकिने शक्तये चापि तुभ्यं नमश्छाग तुभ्यं नमः कुक्कुटाय । नमः सिन्धवे सिन्धुदेशाय तुभ्यं पुनः स्कन्दमूर्ते नमस्ते नमोऽस्तु ॥३१॥\nजयानन्दभूमञ्जयापारधाम- ञ्जयामोघकीर्ते जयानन्दमूर्ते । जयानन्दसिन्धो जयाशेषबन्धो जय त्वं सदा मुक्तिदानेशसूनो ॥३२॥\nभुजङ्गाख्यवृत्तेन क्ळृप्तं स्तवं यः पठेद्भक्तियुक्तो गुहं संप्रणम्य । स पुत्रान्कलत्रं धनं दीर्घमायु- र्लभेत्स्कन्दसायुज्यमन्ते नरः सः ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "sadā bālarūpā'pi vighnādrihantrī mahādantivaktrā'pi pañcāsyamānyā | vidhīndrādimṛgyā gaṇeśābhidhā me vidhattāṃ śriyaṃ kā'pi kalyāṇamūrtiḥ ||1||\nna jānāmi śabdaṃ na jānāmi cārthaṃ na jānāmi padyaṃ na jānāmi gadyam | cidekā ṣaḍāsya hṛdi dyotate me mukhānniḥsarante giraścāpi citram ||2||\nmayūrādhirūḍhaṃ mahāvākyagūḍhaṃ manohāridehaṃ mahaccittageham | mahīdevadevaṃ mahāvedabhāvaṃ mahādevabālaṃ bhaje lokapālam ||3||\nyadā saṃnidhānaṃ gatā mānavā me bhavāmbhodhipāraṃ gatāste tadaiva | iti vyañjayansindhutīre ya āste tamīḍe pavitraṃ parāśaktiputram ||4||\nyathābdhestaraṅgā layaṃ yanti tuṅgā- stathaivāpadaḥ sannidhau sevatāṃ me | itīvormipaṃktīrnṛṇāṃ darśayantaṃ sadā bhāvaye hṛtsaroje guhaṃ tam ||5||\ngirau mannivāse narā ye'dhirūḍhā- stadā parvate rājate te'dhirūḍhāḥ | itīva bruvangandhaśailādhirūḍhaḥ sa devo mude me sadā ṣaṇmukho'stu ||6||\nmahāmbhodhitīre mahāpāpacore munindrānukūle sugandhākhyaśaile | guhāyāṃ vasantaṃ svabhāsā lasantaṃ janārtiṃ harantaṃ śrayāmo guhaṃ tam ||7||\nlasatsvarṇagehe nṛṇāṃ kāmadohe sumastomasaṃchannamāṇikyamañce | samudyatsahasrārkatulyaprakāśaṃ sadā bhāvaye kārtikeyaṃ sureśam ||8||\nraṇaddhaṃsake mañjule'tyantaśoṇe manohārilāvaṇyapīyūṣapūrṇe | manaḥṣaṭpado me bhavakleśataptaḥ sadā modatāṃ skanda te pādapadme ||9||\nsuvarṇābhadivyāmbarairbhāsamānāṃ kvaṇatkiṅkiṇīmekhalāśobhamānām | lasaddhemapaṭṭena vidyotamānāṃ kaṭiṃ bhāvaye skanda te dīpyamānām ||10 ||\npulindeśakanyāghanābhogatuṅga- stanāliṅganāsaktakāśmīrarāgam | namasyāmahaṃ tārakāre tavoraḥ svabhaktāvane sarvadā sānurāgam ||11||\nvidhau kḷṛptadaṇḍān svalīlādhṛtāṇḍā- nnirastebhaśuṇḍān dviṣatkāladaṇḍān | hatendrāriṣaṇḍāñjagatrāṇaśauṇḍān sadā te pracaṇḍān śraye bāhudaṇḍān ||12||\nsadā śāradāḥ ṣaṇmṛgāṅkā yadi syuḥ samudyanta eva sthitāścetsamantāt | sadā pūrṇabimbāḥ kalaṅkaiśca hīnā- stadā tvanmukhānāṃ bruve skanda sāmyam ||13||\nsphuranmandahāsaiḥ sahaṃsāni cañca- tkaṭākṣāvalībhṛṅgasaṃghojjvalāni | sudhāsyandibimbādharaṇīśasūno tavālokaye ṣaṇmukhāmbhoruhāṇi ||14||\nihāyāhi vatseti viśāleṣu karṇāntadīrgheṣvajasraṃ dayāsyandiṣu dvādaśasvīkṣaṇeṣu | mayīṣatkaṭākṣaḥ sakṛtpātitaśce- dbhavette dayāśīla kā nām hāniḥ ||15||\nsutāṅgodbhavo me'si jīveti ṣaḍdhā japanmantramīśo mudā jighrate yān | jagadbhārabhṛdbhyo jagannātha tebhyaḥ kirīṭojjvalebhyo namo mastakebhyaḥ ||16||\nsphuradratnakeyūrahārābhirāma- ścalatkuṇḍalaśrīlasadgaṇḍabhāgaḥ | kaṭau pītavāsaḥ kare cāruśaktiḥ purastānmamāstāṃ purārestanūjaḥ ||17||\nhastānprasāryā- hvayatyādarācchaṅkare māturaṅkāt | samutpatya tātaṃ śrayantaṃ kumāraṃ harāśliṣṭagātraṃ bhaje bālamūrtim ||18||\nkumāreśasūno guha skanda senā- pate śaktipāṇe mayūrādhirūḍha | pulindātmajākānta bhaktārtihārin prabho tārakāre sadā rakṣa māṃ tvam ||19 ||\npraśāntendriye naṣṭasaṃjñe viceṣṭe kaphodgārivaktre bhayotkampigātre | prayāṇonmukhe mayyanāthe tadānīṃ drutaṃ me dayālo bhavāgre guha tvam ||20||\nkṛtāntasya dūteṣu caṇḍeṣu kopā- ddaha cchinddhi bhinddhīti māṃ tarjayatsu | mayūraṃ samāruhya mā bhairiti tvaṃ puraḥ śaktipāṇirmamāyāhi śīghram ||21||\npraṇamyāsakṛtpādayoste patitvā prasādya prabho prārthaye'nekavāram | na vaktuṃ kṣamo'haṃ tadānīṃ kṛpābdhe na kāryāntakāle manāgapyupekṣā ||22||\nsahasrāṇḍabhoktā tvayā śūranāmā hatastārakaḥ siṃhavaktraśca daityaḥ | mamāntarhṛdisthaṃ manaḥkleśamekaṃ na haṃsi prabho kiṃ karomi kva yāmi ||23 ||\nahaṃ sarvadā dukhabhārāvasanno bhavāndīnabandhustvadanyaṃ na yāce | bhavadbhaktirodhaṃ sadā kḷṛptabādhaṃ mamādhiṃ drutaṃ nāśayomāsuta tvam ||24 ||\napasmārakuṣṭakṣayārśaḥ prameha- jvaronmādagulmādirogā mahāntaḥ | piśācāśca sarve bhavatpatrabhūtiṃ vilokya kṣaṇāttārakāre dravante ||25||\ndṛśi skandamūrtiḥ śrutau skandakīrti- rmukhe me pavitraṃ sadā taccaritram | kare tasya kṛtyaṃ vapustasya bhṛtyaṃ guhe santu līnā mamāśeṣabhāvāḥ ||26||\nmunīnāmutāho nṛṇāṃ bhaktibhājā- mabhīṣṭapradāḥ santi sarvatra devāḥ | nṛṇāmantyajānāmapi svārthadāne guhāddevamanyaṃ na jāne na jāne ||27||\nkalatraṃ sutā bandhuvargaḥ paśurvā naro vātha nāri gṛhe ye madiyāḥ | yajanto namantaḥ stuvanto bhavantaṃ smarantaśca te santu sarve kumāra ||28||\nmṛgāḥ pakṣiṇo daṃśakā ye ca duṣṭā- stathā vyādhayo bādhakā ye madaṅge | bhavacchaktitīkṣṇāgrabhinnāḥ sudūre vinaśyantu te cūrṇitakrauñjaśaila ||29||\njanitrī pitā ca svaputrāparādhaṃ sahete na kiṃ devasenādhinātha | ahaṃ cātibālo bhavān lokatātaḥ kṣamasvāparādhaṃ samastaṃ maheśa ||30||\nnamaḥ kekine śaktaye cāpi tubhyaṃ namaśchāga tubhyaṃ namaḥ kukkuṭāya | namaḥ sindhave sindhudeśāya tubhyaṃ punaḥ skandamūrte namaste namo'stu ||31||\njayānandabhūmañjayāpāradhāma- ñjayāmoghakīrte jayānandamūrte | jayānandasindho jayāśeṣabandho jaya tvaṃ sadā muktidāneśasūno ||32||\nbhujaṅgākhyavṛttena kḷṛptaṃ stavaṃ yaḥ paṭhedbhaktiyukto guhaṃ saṃpraṇamya | sa putrānkalatraṃ dhanaṃ dīrghamāyu- rlabhetskandasāyujyamante naraḥ saḥ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Śrī Subrahmaṇya Bhujaṅgam (Ādi Śaṅkara)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Adi Shankara's 33 verses to Murugan of Tiruchendur, by the sea. Traditionally recited for healing and relief from illness and suffering, and on Skanda Shashti. It is a prayer, not a treatment — keep your doctor close.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "health",
+      "protection",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "needStrength",
+      "stressed"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "extended",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.kartikeya-prajna-vivardhana",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.kartikeya"
+    ],
+    "kind": "stotra",
+    "title": "Kartikeya Stotram (Prajna Vivardhana)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "श्री स्कन्द उवाच योगीश्वरो महासेनः कार्तिकेयोऽग्निनंदनः ।\nस्कन्दः कुमारः सेनानी स्वामी शंकरसम्भवः ॥\nगांगेयस्ताम्रचूडश्च ब्रह्मचारी शिखिध्वजः ।\nतारकारिरुमापुत्रः क्रौञ्चारिश्च षडाननः ॥\nशब्दब्रह्म समुद्रश्च सिद्धः सारस्वतो गुहः ।\nसनत्कुमारो भगवान् भोग मोक्ष फलप्रदः ॥\nशरजन्मा गुणादीशः पूर्वजो मुक्ति मार्गकृत् ।\nसर्वागम प्रणेता च वाञ्छितार्थ प्रदर्शनः ॥\nअष्टाविंशति नामानि मदीयानीति यः पठेत् ।\nप्रत्यूषम् श्रद्धया युक्तो मूको वाचस्पतिर्भवेत् ॥\nमहामन्त्रमया नीति मम नामानुकीर्तनम् ।\nमहाप्रज्ञामवाप्नोति नात्र कार्या विचारणा ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "śrī skanda uvāca yogīśvaro mahāsenaḥ kārtikeyo'gninaṃdanaḥ |\nskandaḥ kumāraḥ senānī svāmī śaṃkarasambhavaḥ ||\ngāṃgeyastāmracūḍaśca brahmacārī śikhidhvajaḥ |\ntārakārirumāputraḥ krauñcāriśca ṣaḍānanaḥ ||\nśabdabrahma samudraśca siddhaḥ sārasvato guhaḥ |\nsanatkumāro bhagavān bhoga mokṣa phalapradaḥ ||\nśarajanmā guṇādīśaḥ pūrvajo mukti mārgakṛt |\nsarvāgama praṇetā ca vāñchitārtha pradarśanaḥ ||\naṣṭāviṃśati nāmāni madīyānīti yaḥ paṭhet |\npratyūṣam śraddhayā yukto mūko vācaspatirbhavet ||\nmahāmantramayā nīti mama nāmānukīrtanam |\nmahāprajñāmavāpnoti nātra kāryā vicāraṇā ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Rudrayāmala — Prajñāvivardhana Kārtikeya Stotram"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Twenty-eight names of Skanda from the Rudrayamala. Traditionally recited at dawn by students for clear thinking, memory and eloquent speech.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "study",
+      "guidance",
+      "courage"
+    ],
+    "moods": [
+      "seekingGuidance",
+      "hopeful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.saha-navavatu",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.ishvara",
+      "hinduism.saraswati"
+    ],
+    "kind": "mantra",
+    "title": "Saha Navavatu (Shanti Mantra)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "ॐ सह नाववतु। सह नौ भुनक्तु। सहवीर्यं करवावहै।\nतेजस्विनावधीतमस्तु। मा विद्विषावहै ॥\nॐ शान्तिः शान्तिः शान्तिः ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "oṃ saha nāvavatu | saha nau bhunaktu | sahavīryaṃ karavāvahai |\ntejasvināvadhītamastu | mā vidviṣāvahai ||\noṃ śāntiḥ śāntiḥ śāntiḥ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Śānti Mantra (Taittirīya and Kaṭha Upaniṣads)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The Upanishads' peace invocation, chanted by teacher and student together before study: may we be protected together, nourished together, and never quarrel. Lovely for children before school.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "study",
+      "peace",
+      "children"
+    ],
+    "moods": [
+      "seekingGuidance",
+      "needPeace"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.venkatesa-suprabhatam",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.venkateswara",
+      "hinduism.vishnu",
+      "hinduism.rama"
+    ],
+    "kind": "stotra",
+    "title": "Venkatesa Suprabhatam (opening)",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "कौसल्या सुप्रजा राम पूर्वा सन्ध्या प्रवर्तते\nउत्तिष्ठ नरशार्दूल कर्तव्यं दैवमाह्निकम् ॥ १॥\nउत्तिष्ठोत्तिष्ठ गोविन्द उत्तिष्ठ गरुडध्वज\nउत्तिष्ठ कमलाकान्त त्रैलोक्यं मङ्गलं कुरु ॥ २॥\nमातस्समस्तजगतां मधुकैटभारेः\nवक्षोविहारिणि मनोहरदिव्यमूर्ते ।\nश्रीस्वामिनि श्रितजनप्रियदानशीले\nश्रीवेङ्कटेशदयिते तव सुप्रभातम् ॥ ३॥\nतव सुप्रभातमरविन्दलोचने\nभवतु प्रसन्नमुखचन्द्रमण्डले ।\nविधिशङ्करेन्द्रवनिताभिरर्चिते\nवृषशैलनाथदयिते दयानिधे ॥ ४॥\nअत्र्यादिसप्तऋषयस्समुपास्य सन्ध्यां\nआकाशसिन्धुकमलानि मनोहराणि ।\nआदाय पादयुगमर्चयितुं प्रपन्नाः\nशेषाद्रिशेखरविभो तव सुप्रभातम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "kausalyā suprajā rāma pūrvā sandhyā pravartate\nuttiṣṭha naraśārdūla kartavyaṃ daivamāhnikam || 1||\nuttiṣṭhottiṣṭha govinda uttiṣṭha garuḍadhvaja\nuttiṣṭha kamalākānta trailokyaṃ maṅgalaṃ kuru || 2||\nmātassamastajagatāṃ madhukaiṭabhāreḥ\nvakṣovihāriṇi manoharadivyamūrte |\nśrīsvāmini śritajanapriyadānaśīle\nśrīveṅkaṭeśadayite tava suprabhātam || 3||\ntava suprabhātamaravindalocane\nbhavatu prasannamukhacandramaṇḍale |\nvidhiśaṅkarendravanitābhirarcite\nvṛṣaśailanāthadayite dayānidhe || 4||\natryādisaptaṛṣayassamupāsya sandhyāṃ\nākāśasindhukamalāni manoharāṇi |\nādāya pādayugamarcayituṃ prapannāḥ\nśeṣādriśekharavibho tava suprabhātam ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Śrī Veṅkaṭeśa Suprabhātam 1–5"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The dawn hymn that wakes Lord Venkateswara at Tirumala every morning, opening with Vishvamitra's words to young Rama. Recited at sunrise to begin the day with the Lord.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "new-beginnings",
+      "presence",
+      "gratitude"
+    ],
+    "moods": [
+      "justWantToPray",
+      "hopeful",
+      "grateful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "standard",
     "isPremium": false,
     "review": {
       "status": "draft",

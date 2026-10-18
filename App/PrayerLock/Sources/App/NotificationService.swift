@@ -83,6 +83,33 @@ final class NotificationService: NSObject, UNUserNotificationCenterDelegate {
         center.removePendingNotificationRequests(withIdentifiers: pending)
     }
 
+    // MARK: - Prayer times
+
+    nonisolated static let prayerTimePrefix = "beloved.salah."
+
+    /// Replaces every scheduled prayer-time reminder. iOS keeps at most 64 pending
+    /// notifications per app, so callers schedule a few days at a time and top up on launch.
+    func schedulePrayerTimes(_ reminders: [(id: String, date: Date, title: String, body: String)]) async {
+        await removePrayerTimes()
+        for reminder in reminders where reminder.date > .now {
+            let content = UNMutableNotificationContent()
+            content.title = reminder.title
+            content.body = reminder.body
+            content.sound = .default
+            content.threadIdentifier = "salah"
+            let components = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: reminder.date)
+            let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+            try? await center.add(UNNotificationRequest(identifier: Self.prayerTimePrefix + reminder.id, content: content, trigger: trigger))
+        }
+    }
+
+    func removePrayerTimes() async {
+        let pending = await center.pendingNotificationRequests()
+            .map(\.identifier)
+            .filter { $0.hasPrefix(Self.prayerTimePrefix) }
+        center.removePendingNotificationRequests(withIdentifiers: pending)
+    }
+
     // MARK: - Delegate
 
     nonisolated func userNotificationCenter(

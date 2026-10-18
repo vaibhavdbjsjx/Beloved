@@ -87,6 +87,14 @@
     {
       "id": "courage",
       "name": "Courage"
+    },
+    {
+      "id": "prosperity",
+      "name": "Prosperity"
+    },
+    {
+      "id": "new-beginnings",
+      "name": "New beginnings"
     }
   ],
   "moodThemes": {

@@ -1,3 +1,4 @@
+import CoreLocation
 import XCTest
 
 /// The companion in this build answers from the verified library (no server configured),
@@ -49,14 +50,68 @@ final class CompanionUITests: XCTestCase {
         let app = onboard(faith: "hinduism")
         tap(app.buttons["today.deity.hinduism.ganesha"])
         XCTAssertTrue(app.buttons["today.deity.change"].waitForExistence(timeout: 10))
-        XCTAssertTrue(app.staticTexts["Vakratunda Mahakaya"].waitForExistence(timeout: 10))
+        let vakratunda = app.buttons["today.mantra.hinduism.mantra.vakratunda"]
+        XCTAssertTrue(vakratunda.waitForExistence(timeout: 10), "Ganesha's mantras are listed")
+        XCTAssertTrue(app.buttons["today.mantra.hinduism.stotra.sankatanashana-ganesha"].exists)
         shot(app, "today-ganesha")
+        tap(vakratunda)
+        tap(app.buttons["mantra.count"])
+        let count = app.descendants(matching: .any)["counter.count"].firstMatch
+        XCTAssertTrue(count.waitForExistence(timeout: 10))
+        for _ in 0..<3 { app.tap() }
+        XCTAssertEqual(count.label, "3 of 108")
+        shot(app, "mala-counter")
+        tap(app.buttons["counter.done"])
+        tap(app.buttons["mantra.done"])
         tap(app.tabBars.buttons["Companion"])
         type(app, "Who killed Bhishma in the Mahabharata?")
         let reply = app.staticTexts["Companion · AI"]
         XCTAssertTrue(reply.waitForExistence(timeout: 60), "The live companion answers")
         sleep(12)
         shot(app, "companion-bhishma")
+    }
+
+    func testMuslimPrayerTimesAndQibla() {
+        XCUIDevice.shared.location = XCUILocation(location: CLLocation(latitude: 51.5074, longitude: -0.1278))
+        let app = onboard(faith: "islam")
+        tap(app.buttons["salah.locate"])
+        let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+        for label in ["Allow While Using App", "Allow Once"] where springboard.buttons[label].waitForExistence(timeout: 5) {
+            springboard.buttons[label].tap()
+            break
+        }
+        let appeared = app.staticTexts["salah.next"].waitForExistence(timeout: 30)
+        if !appeared, let dir = ProcessInfo.processInfo.environment["BELOVED_DEBUG_DIR"] {
+            try? app.screenshot().pngRepresentation.write(to: URL(fileURLWithPath: dir + "/salah-fail.png"))
+            try? app.debugDescription.write(toFile: dir + "/salah-fail.txt", atomically: true, encoding: .utf8)
+        }
+        XCTAssertTrue(appeared, "Prayer times appear")
+        shot(app, "salah-card")
+        tap(app.buttons["salah.qibla"])
+        XCTAssertTrue(app.staticTexts["qibla.bearing"].waitForExistence(timeout: 10))
+        shot(app, "qibla")
+        tap(app.buttons["Done"].firstMatch)
+        tap(app.buttons["today.journal"])
+        tap(app.buttons["journal.add"])
+        let field = app.textViews["journal.text"].exists ? app.textViews["journal.text"] : app.textFields["journal.text"]
+        tap(field)
+        field.typeText("Health for my mother")
+        tap(app.buttons["journal.save"])
+        XCTAssertTrue(app.staticTexts["Health for my mother"].waitForExistence(timeout: 10))
+        shot(app, "dua-list")
+    }
+
+    func testCatholicRosary() {
+        let app = onboard(faith: "christianity")
+        tap(app.buttons["today.rosary"])
+        XCTAssertTrue(app.staticTexts["rosary.prayer"].waitForExistence(timeout: 10))
+        shot(app, "rosary-start")
+        // Sign of the Cross, Creed, Our Father, then three Hail Marys and the Glory Be.
+        for _ in 0..<7 { tap(app.buttons["rosary.next"]) }
+        XCTAssertTrue(app.staticTexts["rosary.mystery"].waitForExistence(timeout: 10), "The first mystery is announced")
+        shot(app, "rosary-mystery")
+        tap(app.buttons["rosary.done"])
+        XCTAssertTrue(app.buttons["today.journal"].waitForExistence(timeout: 10))
     }
 
     private func shot(_ app: XCUIApplication, _ name: String) {

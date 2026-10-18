@@ -18,6 +18,8 @@
 	<string>$(PL_GOOGLE_CLIENT_ID)</string>
 	<key>GIDClientID</key>
 	<string>$(PL_GOOGLE_CLIENT_ID)</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Beloved uses your approximate location to calculate prayer times and the Qibla direction on your iPhone. It is never sent anywhere.</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>CFBundleURLTypes</key>

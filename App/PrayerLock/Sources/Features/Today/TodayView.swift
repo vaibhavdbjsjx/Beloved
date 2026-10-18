@@ -13,6 +13,9 @@ struct TodayView: View {
     @State private var showingMood = false
     @State private var showingIntentions = false
     @State private var showingJourney = false
+    @State private var showingCounter = false
+    @State private var showingJournal = false
+    @State private var showingRosary = false
 
     var body: some View {
         NavigationStack {
@@ -26,6 +29,10 @@ struct TodayView: View {
                     }
                     DailyFocusCard()
                         .plStaggered(1)
+                    if model.profile.faithID?.rawValue == "islam" {
+                        SalahCard()
+                            .plStaggered(1)
+                    }
                     momentCard
                         .plStaggered(1)
                     if let verse = model.dailyVerse {
@@ -57,12 +64,22 @@ struct TodayView: View {
             .sheet(isPresented: $showingIntentions) {
                 IntentionsSheet()
             }
+            .fullScreenCover(isPresented: $showingRosary) {
+                RosaryView()
+            }
+            .sheet(isPresented: $showingJournal) {
+                PrayerJournalView()
+            }
+            .fullScreenCover(isPresented: $showingCounter) {
+                PrayerCounterView(title: counter.title, target: counter.targets[0], targets: counter.targets)
+            }
             .navigationDestination(isPresented: $showingJourney) {
                 JourneyView()
             }
             .task {
                 await model.refreshHabits()
                 await model.refreshDailyVerse()
+                await model.salah.refreshReminders()
             }
         }
     }
@@ -72,8 +89,9 @@ struct TodayView: View {
     private var header: some View {
         HStack(alignment: .top, spacing: PLSpacing.m) {
             VStack(alignment: .leading, spacing: PLSpacing.s) {
-                Text(Date.now.formatted(.dateTime.weekday(.wide).day().month(.wide)))
+                Text(dateLine)
                     .plEyebrow()
+                    .accessibilityIdentifier("today.date")
                 Text(Greeting.text(name: model.profile.displayName, date: .now, calendar: model.env.calendar))
                     .plHero()
                     .accessibilityAddTraits(.isHeader)
@@ -81,6 +99,16 @@ struct TodayView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding(.top, PLSpacing.l)
+    }
+
+    /// The date — with the Hijri date for Muslims (Umm al-Qura calendar; local moon sighting
+    /// can differ by a day).
+    private var dateLine: String {
+        let gregorian = Date.now.formatted(.dateTime.weekday(.wide).day().month(.wide))
+        guard model.profile.faithID?.rawValue == "islam" else { return gregorian }
+        var style = Date.FormatStyle(date: .omitted, time: .omitted).day().month(.wide).year()
+        style.calendar = Calendar(identifier: .islamicUmmAlQura)
+        return "\(gregorian) · \(Date.now.formatted(style))"
     }
 
     private var welcomeBack: some View {
@@ -147,9 +175,8 @@ struct TodayView: View {
     }
 
     private func preview(for item: ContentItem?) -> String {
-        let text = item?.segments
-            .first { $0.role != .explanation }?
-            .text?.resolved(for: model.profile.languages)
+        let segment = item?.segments.first { $0.role != .explanation }
+        let text = segment?.text?.resolved(for: model.profile.languages) ?? segment?.transliteration ?? segment?.original?.text
         return text ?? String(localized: "Sit with your breath for a few moments. No words are needed.")
     }
 
@@ -214,6 +241,32 @@ struct TodayView: View {
             ) { showingMood = true }
             .accessibilityIdentifier("today.mood")
             PLHairline().padding(.leading, PLSpacing.xxxl)
+            if offersRosary {
+                LedgerRow(
+                    label: String(localized: "Rosary"),
+                    systemImage: "circle.dotted",
+                    value: String(localized: "Pray the rosary"),
+                    detail: String(localized: "Today: \(RosaryMysteries.forDay(.now).name)")
+                ) { showingRosary = true }
+                .accessibilityIdentifier("today.rosary")
+            } else {
+                LedgerRow(
+                    label: counter.label,
+                    systemImage: "circle.dotted",
+                    value: counter.title,
+                    detail: counter.detail
+                ) { showingCounter = true }
+                .accessibilityIdentifier("today.counter")
+            }
+            PLHairline().padding(.leading, PLSpacing.xxxl)
+            LedgerRow(
+                label: JournalWording.forFaith(model.profile.faithID?.rawValue).title,
+                systemImage: "book.closed",
+                value: journalSummary,
+                isPlaceholder: model.journal.requests.isEmpty
+            ) { showingJournal = true }
+            .accessibilityIdentifier("today.journal")
+            PLHairline().padding(.leading, PLSpacing.xxxl)
             LedgerRow(
                 label: String(localized: "Protection"),
                 systemImage: "shield.lefthalf.filled",
@@ -241,6 +294,34 @@ struct TodayView: View {
         return summary.daysPracticedLast7 == 1
             ? String(localized: "Paused on 1 of the last 7 days")
             : String(localized: "Paused on \(summary.daysPracticedLast7) of the last 7 days")
+    }
+
+    /// The guided rosary for Catholics (and Christians who haven't chosen a tradition).
+    private var offersRosary: Bool {
+        guard model.profile.faithID?.rawValue == "christianity" else { return false }
+        let tradition = model.profile.traditionID?.rawValue
+        return (tradition == nil || tradition == "christianity.catholic") && RosaryView.isAvailable(model)
+    }
+
+    /// Repeated prayer in each faith's own form: a 108-bead mala, a 33-bead tasbih, the rosary.
+    private var counter: (label: String, title: String, detail: String, targets: [Int]) {
+        switch model.profile.faithID?.rawValue {
+        case "hinduism":
+            (String(localized: "Japa"), String(localized: "Chant on a mala"), String(localized: "108 beads, with a soft tap on each"), [108, 54, 27, 11])
+        case "islam":
+            (String(localized: "Dhikr"), String(localized: "Tasbih counter"), String(localized: "SubhanAllah, Alhamdulillah, Allahu Akbar — 33 each"), [33, 99, 100, 11])
+        case "christianity":
+            (String(localized: "Prayer beads"), String(localized: "Pray the rosary or a chaplet"), String(localized: "A decade of ten, or the full fifty"), [10, 50, 33, 100])
+        default:
+            (String(localized: "Counting"), String(localized: "Count your breaths"), String(localized: "One tap for each slow breath"), [10, 21, 27, 108])
+        }
+    }
+
+    private var journalSummary: String {
+        let open = model.journal.open.count, answered = model.journal.answered.count
+        if open == 0 && answered == 0 { return String(localized: "Keep the people and hopes you're praying for") }
+        let praying = open == 1 ? String(localized: "1 you're praying for") : String(localized: "\(open) you're praying for")
+        return answered == 0 ? praying : praying + " · " + String(localized: "\(answered) answered")
     }
 
     /// One intention per day, rotating through the user's list.

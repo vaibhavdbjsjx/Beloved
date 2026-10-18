@@ -359,6 +359,219 @@
           "hopeful"
         ]
       }
+    ],
+    "traditional": [
+      {
+        "id": "christianity.traditional.sign-of-the-cross",
+        "title": "The Sign of the Cross",
+        "kind": "prayer",
+        "themes": [
+          "presence",
+          "new-beginnings"
+        ],
+        "moods": [
+          "justWantToPray"
+        ],
+        "traditions": [
+          "christianity.catholic",
+          "christianity.anglican",
+          "christianity.orthodox"
+        ],
+        "passage": {
+          "page": "rosary-1937",
+          "start": "IN the name of the Father",
+          "end": "Amen.",
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "Prayers of the Rosary",
+          "fixes": [
+            [
+              "IN the name",
+              "In the name"
+            ],
+            [
+              "† ",
+              ""
+            ]
+          ]
+        },
+        "explanation": "Begins and ends prayer, tracing the cross from forehead to heart and shoulder to shoulder."
+      },
+      {
+        "id": "christianity.traditional.our-father",
+        "title": "The Our Father (Lord's Prayer)",
+        "kind": "prayer",
+        "themes": [
+          "trust",
+          "forgiveness",
+          "presence"
+        ],
+        "moods": [
+          "justWantToPray",
+          "needPeace",
+          "anxious"
+        ],
+        "passage": {
+          "page": "rosary-1937",
+          "start": "OUR FATHER, who art in heaven",
+          "end": "deliver us from evil. Amen.",
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "The Our Father",
+          "fixes": [
+            [
+              "OUR FATHER",
+              "Our Father"
+            ]
+          ]
+        },
+        "explanation": "The prayer Jesus taught his disciples (Matthew 6:9–13), in its traditional English form, prayed by Christians everywhere."
+      },
+      {
+        "id": "christianity.traditional.apostles-creed",
+        "title": "The Apostles' Creed",
+        "kind": "prayer",
+        "themes": [
+          "trust",
+          "strength"
+        ],
+        "moods": [
+          "needStrength",
+          "justWantToPray"
+        ],
+        "passage": {
+          "page": "rosary-1937",
+          "start": "I BELIEVE in God",
+          "end": "life everlasting. Amen.",
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "The Apostles' Creed",
+          "fixes": [
+            [
+              "I BELIEVE",
+              "I believe"
+            ]
+          ]
+        },
+        "explanation": "The ancient summary of the Christian faith, shared across Catholic, Protestant and Anglican churches, and the first prayer of the rosary."
+      },
+      {
+        "id": "christianity.traditional.hail-mary",
+        "title": "The Hail Mary",
+        "kind": "prayer",
+        "themes": [
+          "comfort",
+          "peace",
+          "family"
+        ],
+        "moods": [
+          "needPeace",
+          "anxious",
+          "sad",
+          "justWantToPray"
+        ],
+        "traditions": [
+          "christianity.catholic"
+        ],
+        "passage": {
+          "page": "rosary-1937",
+          "start": "HAIL, MARY, full of grace",
+          "end": "at the hour of our death. Amen.",
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "The Hail Mary",
+          "fixes": [
+            [
+              "HAIL, MARY",
+              "Hail Mary"
+            ]
+          ]
+        },
+        "explanation": "The angel Gabriel's and Elizabeth's greetings to Mary (Luke 1:28, 42), with the Church's request for her prayers. Prayed ten times in each decade of the rosary."
+      },
+      {
+        "id": "christianity.traditional.glory-be",
+        "title": "Glory Be",
+        "kind": "prayer",
+        "themes": [
+          "gratitude",
+          "joy"
+        ],
+        "moods": [
+          "grateful",
+          "happy",
+          "justWantToPray"
+        ],
+        "passage": {
+          "page": "rosary-1937",
+          "start": "Glory be to the Father",
+          "end": "world without end. Amen.",
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "The Doxology",
+          "fixes": []
+        },
+        "explanation": "The short doxology praising the Trinity, prayed at the end of each decade and of the psalms."
+      },
+      {
+        "id": "christianity.traditional.hail-holy-queen",
+        "title": "Hail, Holy Queen",
+        "kind": "prayer",
+        "themes": [
+          "comfort",
+          "hope",
+          "difficult-times"
+        ],
+        "moods": [
+          "sad",
+          "lonely",
+          "needStrength"
+        ],
+        "traditions": [
+          "christianity.catholic"
+        ],
+        "passage": {
+          "page": "rosary-1937",
+          "start": "Hail, holy Queen, Mother of Mercy",
+          "end": "the promises of Christ.",
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "The Hail, Holy Queen (Salve Regina)",
+          "fixes": [
+            [
+              "valley, of tears",
+              "valley of tears"
+            ]
+          ]
+        },
+        "explanation": "The Salve Regina, an 11th-century hymn to Mary, prayed at the close of the rosary and at night."
+      },
+      {
+        "id": "christianity.traditional.rosary-prayer",
+        "title": "Prayer at the End of the Rosary",
+        "kind": "prayer",
+        "themes": [
+          "hope",
+          "guidance"
+        ],
+        "moods": [
+          "justWantToPray",
+          "hopeful"
+        ],
+        "traditions": [
+          "christianity.catholic"
+        ],
+        "passage": {
+          "page": "rosary-1937",
+          "start": "O God, whose only begotten Son",
+          "end": "through the same Christ our Lord. Amen.",
+          "source": "christian-traditional",
+          "edition": "christian-traditional.rosary-1937",
+          "reference": "Let Us Pray",
+          "fixes": []
+        },
+        "explanation": "Asks that meditating on the mysteries of Christ's life, we may imitate what they contain."
+      }
     ]
   },
   "hinduism": [
@@ -366,7 +579,10 @@
       "id": "hinduism.mantra.gayatri",
       "title": "Gayatri Mantra",
       "kind": "mantra",
-      "focuses": [],
+      "focuses": [
+        "hinduism.ishvara",
+        "hinduism.surya"
+      ],
       "themes": [
         "guidance",
         "study",
@@ -686,6 +902,791 @@
         "reference": "Devī Māhātmya 11 (Mārkaṇḍeya Purāṇa 91)"
       },
       "explanation": "The salutation to the Goddess as Narayani, auspiciousness of all that is auspicious, refuge of all. Recited to Durga for protection and blessing, especially during Navaratri."
+    },
+    {
+      "id": "hinduism.stotra.sankatanashana-ganesha",
+      "title": "Sankatanashana Ganesha Stotram",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.ganesha"
+      ],
+      "themes": [
+        "new-beginnings",
+        "study",
+        "prosperity",
+        "children"
+      ],
+      "moods": [
+        "stressed",
+        "seekingGuidance",
+        "hopeful"
+      ],
+      "length": "extended",
+      "shloka": {
+        "page": "ganesha-stotram",
+        "phrase": "प्रणम्य शिरसा देवं",
+        "verses": 8,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Saṅkaṭanāśana Gaṇeśa Stotram (Nārada Purāṇa)"
+      },
+      "explanation": "Ganesha's twelve names, to remove troubles (saṅkaṭa). Its closing verses say it traditionally: knowledge to the student, wealth to the one who seeks it, children to those who wish for them. Often recited on Sankashti Chaturthi."
+    },
+    {
+      "id": "hinduism.mantra.ganesha-gayatri",
+      "title": "Ganesha Gayatri",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.ganesha"
+      ],
+      "themes": [
+        "study",
+        "new-beginnings",
+        "guidance"
+      ],
+      "moods": [
+        "seekingGuidance",
+        "hopeful"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "ganapati-atharva",
+        "phrase": "एकदन्ताय विद्महे",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Gaṇapati Atharvaśīrṣa"
+      },
+      "explanation": "The Gayatri of Ganesha, from the Ganapati Atharvashirsha — chanted for clear understanding before study and new work."
+    },
+    {
+      "id": "hinduism.stotra.shiva-panchakshara",
+      "title": "Shiva Panchakshara Stotram",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.shiva"
+      ],
+      "themes": [
+        "peace",
+        "presence",
+        "forgiveness"
+      ],
+      "moods": [
+        "justWantToPray",
+        "needPeace"
+      ],
+      "length": "extended",
+      "shloka": {
+        "page": "shiva-panchakshara",
+        "phrase": "नागेन्द्रहाराय",
+        "verses": 6,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Śiva Pañcākṣara Stotram (attributed to Ādi Śaṅkara)",
+        "fixes": [
+          [
+            "भस्माङरागाय",
+            "भस्माङ्गरागाय"
+          ],
+          [
+            "मन्दारपुष्प्बहुपुष्प",
+            "मन्दारपुष्पबहुपुष्प"
+          ],
+          [
+            "यक्षस्वरुपाय",
+            "यक्षस्वरूपाय"
+          ]
+        ]
+      },
+      "explanation": "Five verses, one for each syllable of na-ma-śi-vā-ya. Traditionally recited on Mondays and in the Shravan month."
+    },
+    {
+      "id": "hinduism.mantra.ya-devi-shakti",
+      "title": "Ya Devi — for strength",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.durga",
+        "hinduism.devi"
+      ],
+      "themes": [
+        "strength",
+        "courage",
+        "protection"
+      ],
+      "moods": [
+        "needStrength",
+        "anxious"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "chandi-path",
+        "phrase": "शक्तिरूपेण संस्थिता",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Devī Māhātmya 5 (Caṇḍī Pāṭha)"
+      },
+      "explanation": "Salutation to the Goddess who dwells in all beings as power (śakti). Recited for inner strength, especially during Navaratri."
+    },
+    {
+      "id": "hinduism.mantra.ya-devi-buddhi",
+      "title": "Ya Devi — for wisdom",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.durga",
+        "hinduism.devi",
+        "hinduism.saraswati"
+      ],
+      "themes": [
+        "study",
+        "guidance"
+      ],
+      "moods": [
+        "seekingGuidance",
+        "stressed"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "chandi-path",
+        "phrase": "बुद्धिरूपेण संस्थिता",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Devī Māhātmya 5 (Caṇḍī Pāṭha)"
+      },
+      "explanation": "Salutation to the Goddess present in all as intelligence (buddhi) — recited before study and important decisions."
+    },
+    {
+      "id": "hinduism.mantra.ya-devi-shanti",
+      "title": "Ya Devi — for peace",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.durga",
+        "hinduism.devi"
+      ],
+      "themes": [
+        "peace",
+        "comfort"
+      ],
+      "moods": [
+        "needPeace",
+        "anxious",
+        "sad"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "chandi-path",
+        "phrase": "शान्तिरूपेण संस्थिता",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Devī Māhātmya 5 (Caṇḍī Pāṭha)"
+      },
+      "explanation": "Salutation to the Goddess present in all as peace (śānti)."
+    },
+    {
+      "id": "hinduism.mantra.ya-devi-lakshmi",
+      "title": "Ya Devi — for prosperity",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.lakshmi",
+        "hinduism.devi"
+      ],
+      "themes": [
+        "prosperity",
+        "gratitude"
+      ],
+      "moods": [
+        "hopeful",
+        "grateful"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "chandi-path",
+        "phrase": "लक्ष्मीरूपेण संस्थिता",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Devī Māhātmya 5 (Caṇḍī Pāṭha)"
+      },
+      "explanation": "Salutation to the Goddess present in all as fortune (lakṣmī)."
+    },
+    {
+      "id": "hinduism.mantra.ya-devi-matri",
+      "title": "Ya Devi — the Mother",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.devi",
+        "hinduism.durga"
+      ],
+      "themes": [
+        "family",
+        "children",
+        "comfort"
+      ],
+      "moods": [
+        "lonely",
+        "grateful",
+        "justWantToPray"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "chandi-path",
+        "phrase": "मातृरूपेण संस्थिता",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Devī Māhātmya 5 (Caṇḍī Pāṭha)"
+      },
+      "explanation": "Salutation to the Goddess present in all as mother — prayed for one's family and children."
+    },
+    {
+      "id": "hinduism.stotra.kanakadhara",
+      "title": "Kanakadhara Stotram",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.lakshmi"
+      ],
+      "themes": [
+        "prosperity",
+        "work",
+        "family"
+      ],
+      "moods": [
+        "hopeful",
+        "stressed"
+      ],
+      "length": "extended",
+      "shloka": {
+        "page": "kanakadhara",
+        "phrase": "अङ्गं हरेः",
+        "verses": 22,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Kanakadhārā Stotram (attributed to Ādi Śaṅkara)"
+      },
+      "explanation": "The 'stream of gold' hymn to Lakshmi, traditionally recited for prosperity and relief from financial hardship, often on Fridays."
+    },
+    {
+      "id": "hinduism.mantra.saraswati-namastubhyam",
+      "title": "Saraswati Namastubhyam",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.saraswati"
+      ],
+      "themes": [
+        "study",
+        "new-beginnings"
+      ],
+      "moods": [
+        "seekingGuidance",
+        "hopeful"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "saraswati-stotrani",
+        "phrase": "सरस्वति नमस्तुभ्यं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Sarasvatī Stotra"
+      },
+      "explanation": "Said by students before beginning to study: 'Saraswati, I bow to you; I begin my learning — may I always succeed.'"
+    },
+    {
+      "id": "hinduism.mantra.ya-kundendu",
+      "title": "Ya Kundendu Tusharahara Dhavala",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.saraswati"
+      ],
+      "themes": [
+        "study",
+        "guidance"
+      ],
+      "moods": [
+        "seekingGuidance",
+        "stressed"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "saraswati-stotrani",
+        "phrase": "या कुन्देन्दु",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Sarasvatī Stotra"
+      },
+      "explanation": "The beloved dhyana verse to Saraswati, white as jasmine and snow, holding the veena — recited before study, exams and on Vasant Panchami."
+    },
+    {
+      "id": "hinduism.stotra.aditya-hridayam",
+      "title": "Aditya Hridayam",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.surya"
+      ],
+      "themes": [
+        "strength",
+        "courage",
+        "health"
+      ],
+      "moods": [
+        "needStrength",
+        "stressed"
+      ],
+      "length": "extended",
+      "shloka": {
+        "page": "aditya-hridayam",
+        "phrase": "ततो युद्धपरिश्रान्तं",
+        "verses": 31,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Ādityahṛdayam (Rāmāyaṇa, Yuddha Kāṇḍa)",
+        "numbered": true
+      },
+      "explanation": "The hymn to the Sun taught by sage Agastya to Rama before his final battle — recited for courage, energy and health, traditionally at sunrise and on Sundays.",
+      "times": [
+        "morning"
+      ]
+    },
+    {
+      "id": "hinduism.stotra.krishnashtakam",
+      "title": "Krishnashtakam",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.krishna"
+      ],
+      "themes": [
+        "presence",
+        "joy",
+        "peace"
+      ],
+      "moods": [
+        "justWantToPray",
+        "happy"
+      ],
+      "length": "extended",
+      "shloka": {
+        "page": "krishnashtakam",
+        "phrase": "वसुदेवसुतं",
+        "verses": 8,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Śrī Kṛṣṇāṣṭakam"
+      },
+      "explanation": "Eight verses ending 'I bow to Krishna, teacher of the world' — sung on Janmashtami and in daily puja."
+    },
+    {
+      "id": "hinduism.stotra.achyutashtakam",
+      "title": "Achyutashtakam",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.vishnu",
+        "hinduism.krishna",
+        "hinduism.rama"
+      ],
+      "themes": [
+        "presence",
+        "peace"
+      ],
+      "moods": [
+        "justWantToPray",
+        "needPeace"
+      ],
+      "length": "extended",
+      "shloka": {
+        "page": "achyutashtakam",
+        "phrase": "अच्युतं केशवं रामनारायणं",
+        "verses": 9,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Acyutāṣṭakam (attributed to Ādi Śaṅkara)",
+        "numbered": true
+      },
+      "explanation": "A song of Vishnu's names — Achyuta, Keshava, Narayana, Krishna, Rama — loved for evening bhajan."
+    },
+    {
+      "id": "hinduism.navagraha.surya",
+      "title": "Navagraha — Surya (Sun)",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.navagraha",
+        "hinduism.surya"
+      ],
+      "themes": [
+        "protection",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "seekingGuidance"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "navagraha",
+        "phrase": "जपाकुसुमसङ्काशं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Navagraha Stotram (attributed to Vyāsa)"
+      },
+      "explanation": "The verse to Surya (Sun) from the Navagraha Stotram. Traditionally recited on Sundays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear."
+    },
+    {
+      "id": "hinduism.navagraha.soma",
+      "title": "Navagraha — Chandra (Moon)",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.navagraha"
+      ],
+      "themes": [
+        "protection",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "seekingGuidance"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "navagraha",
+        "phrase": "दधिशङ्खतुषाराभं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Navagraha Stotram (attributed to Vyāsa)"
+      },
+      "explanation": "The verse to Chandra (Moon) from the Navagraha Stotram. Traditionally recited on Mondays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear."
+    },
+    {
+      "id": "hinduism.navagraha.mangala",
+      "title": "Navagraha — Mangala (Mars)",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.navagraha"
+      ],
+      "themes": [
+        "protection",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "seekingGuidance"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "navagraha",
+        "phrase": "धरणीगर्भसम्भूतं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Navagraha Stotram (attributed to Vyāsa)"
+      },
+      "explanation": "The verse to Mangala (Mars) from the Navagraha Stotram. Traditionally recited on Tuesdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear."
+    },
+    {
+      "id": "hinduism.navagraha.budha",
+      "title": "Navagraha — Budha (Mercury)",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.navagraha"
+      ],
+      "themes": [
+        "protection",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "seekingGuidance"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "navagraha",
+        "phrase": "प्रियङ्गुकलिकाश्यामं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Navagraha Stotram (attributed to Vyāsa)"
+      },
+      "explanation": "The verse to Budha (Mercury) from the Navagraha Stotram. Traditionally recited on Wednesdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear."
+    },
+    {
+      "id": "hinduism.navagraha.guru",
+      "title": "Navagraha — Guru (Jupiter)",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.navagraha"
+      ],
+      "themes": [
+        "protection",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "seekingGuidance"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "navagraha",
+        "phrase": "देवानां च ऋषीणां च",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Navagraha Stotram (attributed to Vyāsa)"
+      },
+      "explanation": "The verse to Guru (Jupiter) from the Navagraha Stotram. Traditionally recited on Thursdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear."
+    },
+    {
+      "id": "hinduism.navagraha.shukra",
+      "title": "Navagraha — Shukra (Venus)",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.navagraha"
+      ],
+      "themes": [
+        "protection",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "seekingGuidance"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "navagraha",
+        "phrase": "हिमकुन्दमृणालाभं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Navagraha Stotram (attributed to Vyāsa)"
+      },
+      "explanation": "The verse to Shukra (Venus) from the Navagraha Stotram. Traditionally recited on Fridays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear."
+    },
+    {
+      "id": "hinduism.navagraha.shani",
+      "title": "Navagraha — Shani (Saturn)",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.navagraha"
+      ],
+      "themes": [
+        "protection",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "seekingGuidance"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "navagraha",
+        "phrase": "नीलाञ्जनसमाभासं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Navagraha Stotram (attributed to Vyāsa)"
+      },
+      "explanation": "The verse to Shani (Saturn) from the Navagraha Stotram. Traditionally recited on Saturdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear."
+    },
+    {
+      "id": "hinduism.navagraha.rahu",
+      "title": "Navagraha — Rahu",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.navagraha"
+      ],
+      "themes": [
+        "protection",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "seekingGuidance"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "navagraha",
+        "phrase": "अर्धकायं महावीर्यं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Navagraha Stotram (attributed to Vyāsa)"
+      },
+      "explanation": "The verse to Rahu from the Navagraha Stotram. Traditionally recited, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear."
+    },
+    {
+      "id": "hinduism.navagraha.ketu",
+      "title": "Navagraha — Ketu",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.navagraha"
+      ],
+      "themes": [
+        "protection",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "seekingGuidance"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "navagraha",
+        "phrase": "पलाशपुष्पसङ्काशं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Navagraha Stotram (attributed to Vyāsa)"
+      },
+      "explanation": "The verse to Ketu from the Navagraha Stotram. Traditionally recited, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear."
+    },
+    {
+      "id": "hinduism.mantra.mayuradhirudham",
+      "title": "Mayuradhirudham (Murugan Dhyana)",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.kartikeya"
+      ],
+      "themes": [
+        "guidance",
+        "courage",
+        "presence"
+      ],
+      "moods": [
+        "justWantToPray",
+        "needStrength"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "subrahmanya-bhujangam",
+        "phrase": "मयूराधिरूढं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Subrahmaṇya Bhujaṅgam 3"
+      },
+      "explanation": "A meditation on Murugan riding the peacock — 'I worship the child of Mahadeva, protector of the worlds.' Chanted daily, especially on Tuesdays and Shashti."
+    },
+    {
+      "id": "hinduism.stotra.subrahmanya-bhujangam",
+      "title": "Subrahmanya Bhujangam",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.kartikeya"
+      ],
+      "themes": [
+        "health",
+        "protection",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "needStrength",
+        "stressed"
+      ],
+      "length": "extended",
+      "shloka": {
+        "page": "subrahmanya-bhujangam",
+        "phrase": "सदा बालरूपाऽपि",
+        "verses": 33,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Śrī Subrahmaṇya Bhujaṅgam (Ādi Śaṅkara)"
+      },
+      "explanation": "Adi Shankara's 33 verses to Murugan of Tiruchendur, by the sea. Traditionally recited for healing and relief from illness and suffering, and on Skanda Shashti. It is a prayer, not a treatment — keep your doctor close."
+    },
+    {
+      "id": "hinduism.stotra.kartikeya-prajna-vivardhana",
+      "title": "Kartikeya Stotram (Prajna Vivardhana)",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.kartikeya"
+      ],
+      "themes": [
+        "study",
+        "guidance",
+        "courage"
+      ],
+      "moods": [
+        "seekingGuidance",
+        "hopeful"
+      ],
+      "length": "standard",
+      "shloka": {
+        "page": "kartikeya-stotram",
+        "phrase": "योगीश्वरो महासेनः",
+        "verses": 6,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Rudrayāmala — Prajñāvivardhana Kārtikeya Stotram"
+      },
+      "explanation": "Twenty-eight names of Skanda from the Rudrayamala. Traditionally recited at dawn by students for clear thinking, memory and eloquent speech."
+    },
+    {
+      "id": "hinduism.mantra.saha-navavatu",
+      "title": "Saha Navavatu (Shanti Mantra)",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.ishvara",
+        "hinduism.saraswati"
+      ],
+      "themes": [
+        "study",
+        "peace",
+        "children"
+      ],
+      "moods": [
+        "seekingGuidance",
+        "needPeace"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "shanti-mantra",
+        "phrase": "ॐ सह नाववतु",
+        "verses": 2,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Śānti Mantra (Taittirīya and Kaṭha Upaniṣads)",
+        "fixes": [
+          [
+            "शान्ति:",
+            "शान्तिः"
+          ]
+        ]
+      },
+      "explanation": "The Upanishads' peace invocation, chanted by teacher and student together before study: may we be protected together, nourished together, and never quarrel. Lovely for children before school."
+    },
+    {
+      "id": "hinduism.stotra.venkatesa-suprabhatam",
+      "title": "Venkatesa Suprabhatam (opening)",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.venkateswara",
+        "hinduism.vishnu",
+        "hinduism.rama"
+      ],
+      "themes": [
+        "new-beginnings",
+        "presence",
+        "gratitude"
+      ],
+      "moods": [
+        "justWantToPray",
+        "hopeful",
+        "grateful"
+      ],
+      "length": "standard",
+      "shloka": {
+        "page": "venkatesa-suprabhatam",
+        "phrase": "कौसल्या सुप्रजा राम",
+        "verses": 5,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Śrī Veṅkaṭeśa Suprabhātam 1–5",
+        "dots": true
+      },
+      "explanation": "The dawn hymn that wakes Lord Venkateswara at Tirumala every morning, opening with Vishvamitra's words to young Rama. Recited at sunrise to begin the day with the Lord."
     }
   ],
   "islam": [
