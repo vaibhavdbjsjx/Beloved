@@ -24,6 +24,8 @@ struct TodayView: View {
                         welcomeBack
                             .plStaggered(1)
                     }
+                    DailyFocusCard()
+                        .plStaggered(1)
                     momentCard
                         .plStaggered(1)
                     if let verse = model.dailyVerse {

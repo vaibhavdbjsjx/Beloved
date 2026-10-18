@@ -76,6 +76,8 @@ def fetch_revisions(site: str, revids: list[int]) -> dict[int, dict]:
 def pin(manifest: dict) -> None:
     """Resolve the current revision of every listed title and record revid + checksum."""
     for key, source in manifest["sources"].items():
+        if source.get("pages"):
+            continue  # already pinned; re-pin deliberately by deleting "pages"
         titles = source["titles"]
         pins = []
         for start in range(0, len(titles), 40):
@@ -282,6 +284,29 @@ def rigveda_verse(page_text: str, number: int) -> str:
     return "\n".join(lines) + " ॥"
 
 
+def shloka_with(page_text: str, phrase: str, verses: int = 1) -> str:
+    """The verse(s) containing `phrase`, verbatim: from the start of the line where the phrase
+    appears through the `verses`-th double danda (॥ or ।।) that follows."""
+    body = poem(page_text) if "<poem>" in page_text else re.sub(r"<[^>]+>", "", page_text)
+    body = html.unescape(re.sub(r"\{\{[^{}]*\}\}", "", body)).replace("।।", "॥")
+    at = body.find(phrase)
+    if at < 0:
+        raise ValueError(f"phrase not found: {phrase!r}")
+    start = body.rfind("\n", 0, at) + 1
+    end = start
+    for _ in range(verses):
+        end = body.find("॥", end)
+        if end < 0:
+            raise ValueError(f"no verse end after {phrase!r}")
+        # include the verse number that follows the danda (॥ १ ॥)
+        closing = re.match(r"॥\s*[०-९0-9.]*\s*॥?", body[end:])
+        end += closing.end() if closing else 1
+    lines = [re.sub(r"[ \t\u00a0]+", " ", l).strip() for l in body[start:end].split("\n")]
+    text = "\n".join(l for l in lines if l)
+    text = re.sub(r"\s*॥\s*[०-९0-9.]+\s*॥\s*$", " ॥", text)  # verse number → plain end mark
+    return text
+
+
 def santana_gopala(page_text: str, part: str) -> str:
     body = poem(page_text)
     lines = [re.sub(r"[ \t]+", " ", l).strip() for l in body.split("\n")]
@@ -370,6 +395,15 @@ def build(sources: dict[str, list[str]]) -> list[dict]:
             segment = {"role": "sourceText", "original": {"text": original, "language": "hi", "script": "Deva"},
                        "transliteration": roman,
                        "citation": {"source": c["source"], "edition": c["edition"], "reference": c["reference"]}}
+            items.append(item(entry["id"], "hinduism", entry["kind"], entry["title"],
+                              [segment, explanation(entry["explanation"])], entry))
+            continue
+        if "shloka" in entry:
+            v = entry["shloka"]
+            original = shloka_with(sources[v["page"]][0], v["phrase"], v.get("verses", 1))
+            cite = {"source": v["source"], "edition": v["edition"], "reference": v["reference"]}
+            segment = {"role": "sourceText", "original": {"text": original, "language": "sa", "script": "Deva"},
+                       "transliteration": devanagari_to_iast(original), "citation": cite}
             items.append(item(entry["id"], "hinduism", entry["kind"], entry["title"],
                               [segment, explanation(entry["explanation"])], entry))
             continue

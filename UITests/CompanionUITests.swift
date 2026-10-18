@@ -43,6 +43,26 @@ final class CompanionUITests: XCTestCase {
         XCTAssertTrue(app.buttons.matching(identifier: "companion.suggestion").firstMatch.waitForExistence(timeout: 10))
     }
 
+    /// Hindu: choose today's deity, see its verified mantra, then ask the companion a story
+    /// question (live server). Screenshots attached for review.
+    func testHinduDeityTodayAndRealCompanion() {
+        let app = onboard(faith: "hinduism")
+        tap(app.buttons["today.deity.hinduism.ganesha"])
+        XCTAssertTrue(app.buttons["today.deity.change"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.staticTexts["Vakratunda Mahakaya"].waitForExistence(timeout: 10))
+        shot(app, "today-ganesha")
+        tap(app.tabBars.buttons["Companion"])
+        type(app, "Who killed Bhishma in the Mahabharata?")
+        let reply = app.staticTexts["Companion · AI"]
+        XCTAssertTrue(reply.waitForExistence(timeout: 60), "The live companion answers")
+        sleep(12)
+        shot(app, "companion-bhishma")
+    }
+
+    private func shot(_ app: XCUIApplication, _ name: String) {
+        let a = XCTAttachment(screenshot: app.screenshot()); a.name = name; a.lifetime = .keepAlways; add(a)
+    }
+
     // MARK: - Helpers
 
     private func type(_ app: XCUIApplication, _ text: String) {

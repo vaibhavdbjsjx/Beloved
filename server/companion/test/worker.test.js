@@ -131,8 +131,19 @@ test("a subscriber's message streams back as app events", async () => {
   ]);
 });
 
-test("no subscription, no answer; the daily allowance is enforced", async () => {
-  assert.equal((await handle(await request("nope"), fakeEnv(), {}, deps)).status, 402);
+test("free users get a small allowance; Premium a larger one", async () => {
+  const freeStore = new Map();
+  const free = () => new Request("https://companion.example/v1/companion", {
+    method: "POST", headers: { "x-beloved-install": "6f9619ff-8b86-d011-b42d-00c04fc964ff", "content-type": "application/json" },
+    body: JSON.stringify({ messages: [{ role: "user", text: "Who killed Bhishma?" }], context: { faith: "hinduism" } }),
+  });
+  const freeEnv = { ...fakeEnv(freeStore), FREE_DAILY_LIMIT: "1" };
+  const first = await handle(free(), freeEnv, { waitUntil() {} }, deps);
+  assert.equal(first.status, 200);
+  await first.text();
+  assert.equal((await handle(free(), freeEnv, {}, deps)).status, 429);
+  // No subscription and no install id: refused.
+  assert.equal((await handle(await request("nope"), fakeEnv(), {}, deps)).status, 400);
   const store = new Map();
   const jws = await sign(PAYLOAD);
   for (let i = 0; i < 2; i++) {

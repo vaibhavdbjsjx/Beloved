@@ -78,9 +78,11 @@ final class AppEnvironment {
             contextResolver: FaithContextResolver(calendar: religiousCalendar, associations: devotionalAssociations),
             retriever: CatalogSourceRetriever(selector: selector)
         )
-        if let endpoint = configuration.assistantEndpoint, monetization.isPaywallEnabled {
+        if let endpoint = configuration.assistantEndpoint {
             let purchases = purchases
-            companionTransport = CloudCompanionTransport(endpoint: endpoint) { await purchases.subscriptionProof() }
+            companionTransport = CloudCompanionTransport(endpoint: endpoint, installID: Self.companionInstallID()) {
+                await purchases.subscriptionProof()
+            }
         } else {
             companionTransport = UnavailableCompanionTransport()
         }
@@ -89,6 +91,16 @@ final class AppEnvironment {
             catalog: catalog, contentPolicy: contentPolicy, registry: registry
         )
         companionStore = CodableFileStore(url: locations.privateFile("companion.json"), protection: .complete)
+    }
+
+    /// A random per-install identifier for the companion's free allowance (not personal data;
+    /// reset by deleting the app).
+    private static func companionInstallID() -> String {
+        let key = "pl.companionInstallID"
+        if let existing = UserDefaults.standard.string(forKey: key) { return existing }
+        let id = UUID().uuidString.lowercased()
+        UserDefaults.standard.set(id, forKey: key)
+        return id
     }
 
     /// Whether the cloud companion can be used in this build at all (server + subscriptions).

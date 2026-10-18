@@ -5,6 +5,12 @@ import PLFaith
 import PLScripture
 import os
 
+/// The deity a Hindu user chose to pray to today ("Who will you pray to today?").
+struct DailyFocus: Codable, Equatable {
+    var date: CivilDate
+    var focus: FocusID
+}
+
 /// Today's optional check-in answer.
 struct CheckIn: Codable, Equatable {
     var date: CivilDate
@@ -17,6 +23,8 @@ struct StoredProfile: Codable, Equatable {
     var onboardingCompleted = false
     /// Persisted only when `profile.rememberCheckIns` is on.
     var checkIn: CheckIn?
+    /// Today's chosen deity (Hindu); ignored once the day has passed.
+    var dailyFocus: DailyFocus?
     /// Recently shown content (avoids repeats). Most recent first.
     var recentlyShown: [ContentItemID] = []
     /// Unfinished onboarding, so closing the app mid-setup doesn't lose answers.
@@ -34,6 +42,7 @@ struct StoredProfile: Codable, Equatable {
         profile = try container.decodeIfPresent(SpiritualProfile.self, forKey: .profile) ?? SpiritualProfile()
         onboardingCompleted = try container.decodeIfPresent(Bool.self, forKey: .onboardingCompleted) ?? false
         checkIn = try container.decodeIfPresent(CheckIn.self, forKey: .checkIn)
+        dailyFocus = (try? container.decodeIfPresent(DailyFocus.self, forKey: .dailyFocus)) ?? nil
         recentlyShown = try container.decodeIfPresent([ContentItemID].self, forKey: .recentlyShown) ?? []
         // Unreadable progress only restarts onboarding; it never discards the profile.
         onboardingProgress = (try? container.decodeIfPresent(OnboardingProgress.self, forKey: .onboardingProgress)) ?? nil

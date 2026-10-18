@@ -1,7 +1,8 @@
 // Beloved companion server (Cloudflare Worker).
 //
 //   POST /v1/companion   { messages: [{role, text}], context: {...} }
-//        Header X-Beloved-Subscription: StoreKit 2 signed transaction (JWS)
+//        Header X-Beloved-Subscription: StoreKit 2 signed transaction (JWS) → Premium allowance
+//        Header X-Beloved-Install: random per-install UUID → free allowance
 //        → text/event-stream: data: {"type":"delta","text":"…"} … data: {"type":"done"}
 //   GET  /health
 //
@@ -93,33 +94,43 @@ export async function handle(request, env, ctx, deps = {}) {
   const valid = validateRequest(body);
   if (!valid) return json(400, { error: "bad_request" });
 
-  // Subscription: Apple-signed, active, ours.
-  let subscription;
-  try {
-    subscription = await verifySubscription(request.headers.get("x-beloved-subscription") ?? "", {
-      rootFingerprints: [APPLE_ROOT_CA_G3_SHA256, ...(deps.extraRootFingerprints ?? [])],
-      bundleId: env.BUNDLE_ID,
-      productIds: env.PRODUCT_IDS.split(",").map((s) => s.trim()).filter(Boolean),
-      environments: (env.ENVIRONMENTS ?? "Production").split(",").map((s) => s.trim()),
-      now,
-      requireAppleExtensions: deps.requireAppleExtensions ?? true,
-    });
-  } catch (error) {
-    if (error instanceof VerificationError) return json(402, { error: "subscription" });
-    throw error;
+  // Premium: an Apple-signed, active subscription of ours. Anyone else is a free user with
+  // a smaller daily allowance, counted per install and per network address.
+  let subscription = null;
+  const proof = request.headers.get("x-beloved-subscription");
+  if (proof) {
+    try {
+      subscription = await verifySubscription(proof, {
+        rootFingerprints: [APPLE_ROOT_CA_G3_SHA256, ...(deps.extraRootFingerprints ?? [])],
+        bundleId: env.BUNDLE_ID,
+        productIds: env.PRODUCT_IDS.split(",").map((s) => s.trim()).filter(Boolean),
+        environments: (env.ENVIRONMENTS ?? "Production").split(",").map((s) => s.trim()),
+        now,
+        requireAppleExtensions: deps.requireAppleExtensions ?? true,
+      });
+    } catch (error) {
+      if (!(error instanceof VerificationError)) throw error;
+    }
   }
+  const install = request.headers.get("x-beloved-install") ?? "";
+  if (!subscription && !/^[0-9a-fA-F-]{36}$/.test(install)) return json(400, { error: "bad_request" });
 
-  // Fair use: a daily allowance per subscription, so one account can't run up unbounded cost.
-  const limit = Number(env.DAILY_LIMIT ?? 60);
   if (env.USAGE) {
-    const key = `u:${subscription.originalTransactionId}:${utcDay(now)}`;
-    const used = Number((await env.USAGE.get(key)) ?? 0);
-    if (used >= limit) return json(429, { error: "limit" });
-    await env.USAGE.put(key, String(used + 1), { expirationTtl: 60 * 60 * 48 });
+    const day = utcDay(now);
+    const counters = subscription
+      ? [[`u:${subscription.originalTransactionId}:${day}`, Number(env.DAILY_LIMIT ?? 100)]]
+      : [[`f:${install.toLowerCase()}:${day}`, Number(env.FREE_DAILY_LIMIT ?? 10)],
+         [`ip:${request.headers.get("cf-connecting-ip") ?? "unknown"}:${day}`, Number(env.FREE_IP_LIMIT ?? 40)]];
+    const used = await Promise.all(counters.map(([key]) => env.USAGE.get(key).then((v) => Number(v ?? 0))));
+    if (counters.some(([, limit], i) => used[i] >= limit)) {
+      return json(429, { error: subscription ? "limit" : "free_limit" });
+    }
+    await Promise.all(counters.map(([key], i) => env.USAGE.put(key, String(used[i] + 1), { expirationTtl: 60 * 60 * 48 })));
   }
 
-  const model = env.MODEL ?? "gemini-2.5-flash";
-  const upstream = await upstreamFetch(
+  const model = env.MODEL ?? "gemini-flash-latest";
+  // Gemini's free tier is sometimes briefly busy (500/503): retry twice before giving up.
+  const callModel = () => upstreamFetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${model}:streamGenerateContent?alt=sse`,
     {
       method: "POST",
@@ -131,7 +142,16 @@ export async function handle(request, env, ctx, deps = {}) {
       }),
     },
   );
-  if (!upstream.ok || !upstream.body) return json(503, { error: "unavailable" });
+  let upstream = await callModel();
+  for (let attempt = 1; attempt <= 2 && (upstream.status === 500 || upstream.status === 503); attempt++) {
+    await new Promise((resolve) => setTimeout(resolve, (deps.retryDelayMs ?? 1200) * attempt));
+    upstream = await callModel();
+  }
+  if (!upstream.ok || !upstream.body) {
+    const detail = await upstream.text().catch(() => "");
+    console.log(`upstream ${upstream.status}: ${detail.slice(0, 300)}`);
+    return json(upstream.status === 429 ? 429 : 503, { error: upstream.status === 429 ? "busy" : "unavailable", upstream: upstream.status });
+  }
 
   const { readable, writable } = new TransformStream();
   const pump = relay(upstream.body, writable);

@@ -1359,6 +1359,349 @@
     }
   },
   {
+    "id": "hinduism.mantra.vakratunda",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.ganesha"
+    ],
+    "kind": "mantra",
+    "title": "Vakratunda Mahakaya",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "वक्रतुण्ड महाकाय सूर्यकोटिसमप्रभ ।\nनिर्विघ्नं कुरू मे देव सर्वकार्येषु सर्वदा ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "vakratuṇḍa mahākāya sūryakoṭisamaprabha |\nnirvighnaṃ kurū me deva sarvakāryeṣu sarvadā ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Vakratuṇḍa śloka"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Prayed to Ganesha before beginning anything — a journey, an exam, a new job — asking that obstacles be removed.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "guidance",
+      "strength",
+      "study"
+    ],
+    "moods": [
+      "seekingGuidance",
+      "stressed",
+      "hopeful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.shantakaram",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.vishnu"
+    ],
+    "kind": "mantra",
+    "title": "Shantakaram Bhujagashayanam",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "ॐ शान्ताकारं भुजगशयनं पद्मनाभं सुरेशं\nविश्वाधारं गगनसदृशं मेघवर्णं शुभाङ्गम्।\nलक्ष्मीकान्तं कमलनयनं योगिभिर्ध्यानगम्यं\nवन्दे विष्णुं भवभयहरं सर्वलोकैकनाथम् ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "oṃ śāntākāraṃ bhujagaśayanaṃ padmanābhaṃ sureśaṃ\nviśvādhāraṃ gaganasadṛśaṃ meghavarṇaṃ śubhāṅgam |\nlakṣmīkāntaṃ kamalanayanaṃ yogibhirdhyānagamyaṃ\nvande viṣṇuṃ bhavabhayaharaṃ sarvalokaikanātham ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Viṣṇu Sahasranāma, dhyāna śloka"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The meditation verse on Vishnu resting on the serpent — peaceful, all-pervading, lotus-eyed — traditionally recited before the Vishnu Sahasranama and in the morning for calm.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "peace",
+      "presence",
+      "trust"
+    ],
+    "moods": [
+      "needPeace",
+      "anxious",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.hare-krishna",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.krishna",
+      "hinduism.rama"
+    ],
+    "kind": "mantra",
+    "title": "Hare Krishna Mahamantra",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "हरे राम हरे राम राम राम हरे हरे ।\nहरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "hare rāma hare rāma rāma rāma hare hare |\nhare kṛṣṇa hare kṛṣṇa kṛṣṇa kṛṣṇa hare hare ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Kalisantaraṇa Upaniṣad"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The great mantra of the holy names, given in the Kali-Santarana Upanishad; chanted on a mala or sung in kirtan.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "presence",
+      "joy",
+      "peace"
+    ],
+    "moods": [
+      "justWantToPray",
+      "happy",
+      "needPeace"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.ramaya-ramabhadraya",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.rama"
+    ],
+    "kind": "mantra",
+    "title": "Ramaya Ramabhadraya",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "रामाय रामभद्राय रामचन्द्राय वेधसे ।\nरघुनाथाय नाथाय सीतायाः पतये नमः ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "rāmāya rāmabhadrāya rāmacandrāya vedhase |\nraghunāthāya nāthāya sītāyāḥ pataye namaḥ ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Rāmarakṣā Stotram"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "From the Rama Raksha Stotram: salutations to Rama, the auspicious, the moon of the Raghu line. Traditionally recited for protection and peace.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "trust",
+      "peace"
+    ],
+    "moods": [
+      "anxious",
+      "needStrength",
+      "justWantToPray"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.manojavam",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.hanuman"
+    ],
+    "kind": "mantra",
+    "title": "Manojavam Marutatulyavegam",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "मनोजवं मारुततुल्यवेगं जितेन्द्रियं बुद्धिमतां वरिष्ठम् ।\nवातात्मजं वानरयूथमुख्यं श्रीरामदूतं शरणं प्रपद्ये ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "manojavaṃ mārutatulyavegaṃ jitendriyaṃ buddhimatāṃ variṣṭham |\nvātātmajaṃ vānarayūthamukhyaṃ śrīrāmadūtaṃ śaraṇaṃ prapadye ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Rāmarakṣā Stotram (Hanumān dhyāna)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Taking refuge in Hanuman — swift as the mind, fast as the wind, master of the senses. Traditionally recited for courage before a difficult task.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "courage",
+      "strength",
+      "protection"
+    ],
+    "moods": [
+      "needStrength",
+      "anxious"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.stotra.mahalakshmi-ashtakam",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.lakshmi"
+    ],
+    "kind": "stotra",
+    "title": "Mahalakshmi Ashtakam",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "नमस्तेऽस्तु महामाये श्रीपीठे सुरपूजिते । शंखचक्र गदाहस्ते महालक्ष्मि नमोऽस्तुते ॥१॥\nनमस्ते गरुडारुढे कोलासुर भयंकरी । सर्वपापहरे देवी महालक्ष्मि नमोऽस्तुते ॥२॥\nसर्वज्ञे सर्ववरदे सर्वसुष्टभयंकरी । सर्वदु:खहरे देवी महालक्ष्मि नमोऽस्तुते ॥३॥\nसिद्धिबुद्धिप्रदे देवी भुक्तिमुक्तिप्रदायिनि । मंत्रमूर्ते सदा देवी महालक्ष्मि नमोऽस्तुते ॥४॥\nआद्यंतरहिते देवी आद्यशक्ति महेश्वरि । योगजे योगसंभूते महालक्ष्मि नमोऽस्तुते ॥५॥\nशूल सूक्ष्ममहारौद्रे महाशक्ति महोदरे । महापापहरे देवी महालक्ष्मि नमोऽस्तुते ॥६॥\nपद्मासनस्थिते देवी परब्रह्मस्वरुपिणि । परमेशि जगन्मातार्महालक्ष्मि नमोऽस्तुते ॥७॥\nश्वेतांबरधरे देवी नानालंकार भूषिते । जगत्स्थिते जगन्मातार्महालक्ष्मि नमोऽस्तुते ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "namaste'stu mahāmāye śrīpīṭhe surapūjite | śaṃkhacakra gadāhaste mahālakṣmi namo'stute ||1||\nnamaste garuḍāruḍhe kolāsura bhayaṃkarī | sarvapāpahare devī mahālakṣmi namo'stute ||2||\nsarvajñe sarvavarade sarvasuṣṭabhayaṃkarī | sarvadu:khahare devī mahālakṣmi namo'stute ||3||\nsiddhibuddhiprade devī bhuktimuktipradāyini | maṃtramūrte sadā devī mahālakṣmi namo'stute ||4||\nādyaṃtarahite devī ādyaśakti maheśvari | yogaje yogasaṃbhūte mahālakṣmi namo'stute ||5||\nśūla sūkṣmamahāraudre mahāśakti mahodare | mahāpāpahare devī mahālakṣmi namo'stute ||6||\npadmāsanasthite devī parabrahmasvarupiṇi | parameśi jaganmātārmahālakṣmi namo'stute ||7||\nśvetāṃbaradhare devī nānālaṃkāra bhūṣite | jagatsthite jaganmātārmahālakṣmi namo'stute ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Mahālakṣmyaṣṭakam"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "Eight verses to Mahalakshmi, giver of prosperity and well-being; often recited on Fridays and at Diwali.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "gratitude",
+      "family",
+      "work"
+    ],
+    "moods": [
+      "grateful",
+      "hopeful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "extended",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
+    "id": "hinduism.mantra.sarva-mangala",
+    "faith": "hinduism",
+    "traditions": [],
+    "focuses": [
+      "hinduism.durga",
+      "hinduism.devi"
+    ],
+    "kind": "mantra",
+    "title": "Sarva Mangala Mangalye",
+    "segments": [
+      {
+        "role": "sourceText",
+        "original": {
+          "text": "सर्वमङ्गलमाङ्गल्ये शिवे सर्वार्थसाधिके ।\nशरण्ये त्र्यम्बके गौरि नारायणि नमोऽस्तु ते ॥",
+          "language": "sa",
+          "script": "Deva"
+        },
+        "transliteration": "sarvamaṅgalamāṅgalye śive sarvārthasādhike |\nśaraṇye tryambake gauri nārāyaṇi namo'stu te ||",
+        "citation": {
+          "source": "hindu-traditional",
+          "edition": "hindu-traditional.sa-wikisource",
+          "reference": "Devī Māhātmya 11 (Mārkaṇḍeya Purāṇa 91)"
+        }
+      },
+      {
+        "role": "explanation",
+        "text": "The salutation to the Goddess as Narayani, auspiciousness of all that is auspicious, refuge of all. Recited to Durga for protection and blessing, especially during Navaratri.",
+        "author": "Beloved editorial (draft)"
+      }
+    ],
+    "themes": [
+      "protection",
+      "strength",
+      "family"
+    ],
+    "moods": [
+      "needStrength",
+      "anxious",
+      "grateful"
+    ],
+    "timesOfDay": [],
+    "occasions": [],
+    "length": "brief",
+    "isPremium": false,
+    "review": {
+      "status": "draft",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+    }
+  },
+  {
     "id": "islam.dua.quran-3-8",
     "faith": "islam",
     "traditions": [],

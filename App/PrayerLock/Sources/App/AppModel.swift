@@ -307,6 +307,33 @@ final class AppModel {
         env.devotionalAssociations.associations(on: today, profile: profile)
     }
 
+    /// The deity chosen for today, if the user chose one today.
+    var todaysFocus: FocusID? {
+        guard let daily = stored.dailyFocus, daily.date == today else { return nil }
+        return daily.focus
+    }
+
+    /// Deities offered for "Who will you pray to today?" — the faith's focuses, the user's own
+    /// first.
+    var dailyFocusChoices: [SpiritualFocus] {
+        guard let faith, faith.usesSpiritualFocus else { return [] }
+        let mine = Set(profile.focusIDs)
+        return faith.focuses.filter { mine.contains($0.id) } + faith.focuses.filter { !mine.contains($0.id) }
+    }
+
+    func chooseFocusForToday(_ focus: FocusID?) {
+        stored.dailyFocus = focus.map { DailyFocus(date: today, focus: $0) }
+        persist()
+    }
+
+    /// The library's verified prayers for today's deity (mantras first).
+    func itemsForTodaysFocus() -> [ContentItem] {
+        guard let focus = todaysFocus else { return [] }
+        return env.catalog.visibleItems(policy: env.contentPolicy, registry: env.registry)
+            .filter { $0.focuses.contains(focus) }
+            .sorted { ($0.kind == .mantra ? 0 : 1, $0.length == .extended ? 1 : 0) < ($1.kind == .mantra ? 0 : 1, $1.length == .extended ? 1 : 0) }
+    }
+
     func selectContent() -> ScoredContent? {
         env.selector.select(SelectionContext(
             profile: profile,
@@ -314,7 +341,7 @@ final class AppModel {
             date: .now,
             calendar: env.calendar,
             activeOccasions: Set(todaysObservances().map(\.occasionID)),
-            devotionalFocuses: Set(todaysAssociations().compactMap(\.focus)),
+            devotionalFocuses: Set(todaysAssociations().compactMap(\.focus)).union([todaysFocus].compactMap { $0 }),
             recentlyShown: stored.recentlyShown,
             hasPremium: accessLevel == .premium
         ))

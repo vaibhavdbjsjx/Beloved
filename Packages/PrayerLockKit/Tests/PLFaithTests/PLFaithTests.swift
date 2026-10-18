@@ -39,7 +39,7 @@ import Testing
 
     @Test func profileConsistency() {
         #expect(registry.isConsistent(SpiritualProfile()))
-        #expect(registry.isConsistent(SpiritualProfile(faithID: "hinduism", traditionID: "hinduism.shaiva", focusIDs: ["hinduism.shiva"])))
+        #expect(registry.isConsistent(SpiritualProfile(faithID: "hinduism", focusIDs: ["hinduism.shiva"])))
         #expect(!registry.isConsistent(SpiritualProfile(faithID: "islam", traditionID: "christianity.catholic")))
         #expect(!registry.isConsistent(SpiritualProfile(faithID: "islam", focusIDs: ["hinduism.shiva"])))
         #expect(!registry.isConsistent(SpiritualProfile(faithID: nil, traditionID: "islam.sunni")))

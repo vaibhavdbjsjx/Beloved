@@ -218,6 +218,90 @@
           "sha256": "cb2909c1983714d03a8680f44c6e48138d1f2e2fbf9aa2facf10e9c7d0ca9059"
         }
       ]
+    },
+    "pratah-smaranam": {
+      "site": "sa.wikisource.org",
+      "work": "प्रात:स्मरणम्",
+      "titles": [
+        "प्रात:स्मरणम्"
+      ],
+      "pages": [
+        {
+          "title": "प्रात:स्मरणम्",
+          "revid": 54854,
+          "sha256": "6549ff98bcea8ed1e816d477efa837c6df2886f319beca6acbd803a0ca7317c3"
+        }
+      ]
+    },
+    "vishnu-sahasranama": {
+      "site": "sa.wikisource.org",
+      "work": "विष्णुसहस्रनामस्तोत्रम्‌",
+      "titles": [
+        "विष्णुसहस्रनामस्तोत्रम्‌"
+      ],
+      "pages": [
+        {
+          "title": "विष्णुसहस्रनामस्तोत्रम्‌",
+          "revid": 413443,
+          "sha256": "5e785a5a420ba5ad22274687f1fc4dfbbab9caf59134bf18728f8537a08b976f"
+        }
+      ]
+    },
+    "kalisantarana": {
+      "site": "sa.wikisource.org",
+      "work": "कलिसन्तरणोपनिषत्",
+      "titles": [
+        "कलिसन्तरणोपनिषत्"
+      ],
+      "pages": [
+        {
+          "title": "कलिसन्तरणोपनिषत्",
+          "revid": 348185,
+          "sha256": "c77ecf271d366f99267df620f381c20434e7f6707459ca8781e7c4afabb3041b"
+        }
+      ]
+    },
+    "rama-raksha": {
+      "site": "sa.wikisource.org",
+      "work": "श्रीरामरक्षास्तोत्रम्",
+      "titles": [
+        "श्रीरामरक्षास्तोत्रम्"
+      ],
+      "pages": [
+        {
+          "title": "श्रीरामरक्षास्तोत्रम्",
+          "revid": 54878,
+          "sha256": "a444ec7c7b0317079d0d3cfadf9401f2ad10cae1bd2c2c6a8b56518838360786"
+        }
+      ]
+    },
+    "mahalakshmi-ashtakam": {
+      "site": "sa.wikisource.org",
+      "work": "श्रीमहालक्ष्म्यष्टकम्",
+      "titles": [
+        "श्रीमहालक्ष्म्यष्टकम्"
+      ],
+      "pages": [
+        {
+          "title": "श्रीमहालक्ष्म्यष्टकम्",
+          "revid": 54882,
+          "sha256": "4b6520b625e243ba2c1b4c8b0c6db4d245ec0f57d6a6d9f5399ed4de6aa8978d"
+        }
+      ]
+    },
+    "devi-mahatmya-91": {
+      "site": "sa.wikisource.org",
+      "work": "मार्कण्डेयपुराणम्/अध्यायः ९१-९३",
+      "titles": [
+        "मार्कण्डेयपुराणम्/अध्यायः ९१-९३"
+      ],
+      "pages": [
+        {
+          "title": "मार्कण्डेयपुराणम्/अध्यायः ९१-९३",
+          "revid": 363170,
+          "sha256": "446fb91efc40b94d7b59aa1d5b3116dd665b79ec68044985a8953483c8721814"
+        }
+      ]
     }
   },
   "files": {

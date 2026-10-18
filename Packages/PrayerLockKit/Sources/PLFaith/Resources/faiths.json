@@ -221,34 +221,9 @@
     "traditionLabel": {
       "en": "Tradition (sampradaya)"
     },
-    "traditions": [
-      {
-        "id": "hinduism.shaiva",
-        "name": {
-          "en": "Shaiva"
-        }
-      },
-      {
-        "id": "hinduism.vaishnava",
-        "name": {
-          "en": "Vaishnava"
-        }
-      },
-      {
-        "id": "hinduism.shakta",
-        "name": {
-          "en": "Shakta"
-        }
-      },
-      {
-        "id": "hinduism.smarta",
-        "name": {
-          "en": "Smarta"
-        }
-      }
-    ],
+    "traditions": [],
     "focusLabel": {
-      "en": "Deity or devotional focus"
+      "en": "Who do you pray to?"
     },
     "focuses": [
       {
@@ -322,7 +297,7 @@
       {
         "id": "hinduism.devi",
         "name": {
-          "en": "Devi"
+          "en": "Devi (the Mother)"
         },
         "kind": "deity",
         "alsoKnownAs": [
@@ -330,6 +305,49 @@
           "Lakshmi",
           "Saraswati",
           "Parvati"
+        ]
+      },
+      {
+        "id": "hinduism.durga",
+        "name": {
+          "en": "Durga"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Durga Maa",
+          "Ambe Maa"
+        ]
+      },
+      {
+        "id": "hinduism.lakshmi",
+        "name": {
+          "en": "Lakshmi"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Mahalakshmi"
+        ]
+      },
+      {
+        "id": "hinduism.saraswati",
+        "name": {
+          "en": "Saraswati"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Sharada"
+        ]
+      },
+      {
+        "id": "hinduism.kartikeya",
+        "name": {
+          "en": "Murugan"
+        },
+        "kind": "deity",
+        "alsoKnownAs": [
+          "Kartikeya",
+          "Subramanya",
+          "Skanda"
         ]
       }
     ],

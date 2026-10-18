@@ -34,7 +34,7 @@ final class CompanionModel {
     /// Premium + a configured server: the full companion. Otherwise the verified library.
     var usesCloud: Bool {
         guard let app else { return false }
-        return app.env.isCompanionCloudConfigured && app.accessLevel == .premium
+        return app.env.isCompanionCloudConfigured
     }
 
     func send(_ raw: String) {
@@ -115,7 +115,11 @@ final class CompanionModel {
             parts.append(String(localized: "Here is the passage you asked about:"))
             parts.append(marker)
         }
-        if let itemID = response.itemID {
+        // Only offer a library prayer when the question really asks for one — never attach a
+        // random prayer to "who killed Bhishma?".
+        let intent = response.intent
+        let asksForPrayer = intent.map { $0.practice != nil || $0.focus != nil || $0.mood != nil || !$0.themes.isEmpty } ?? false
+        if asksForPrayer, let itemID = response.itemID {
             parts.append(parts.isEmpty
                 ? String(localized: "From Beloved's library, chosen for what you asked:")
                 : String(localized: "And something to pray with:"))
@@ -125,7 +129,7 @@ final class CompanionModel {
             parts.append(String(localized: "Prayer goes alongside care, never instead of it — please keep your doctor close."))
         }
         if parts.isEmpty {
-            parts.append(String(localized: "I couldn't find something for that in Beloved's library yet. Try asking for a prayer, a verse, or words for how you feel — for example “a prayer for peace”."))
+            parts.append(String(localized: "I can answer questions like this when you're online. Offline, I can share prayers, mantras and verses — try “a mantra for Ganesha” or “a prayer for peace”."))
         }
         append(CompanionMessage(role: .assistant, origin: .library, text: parts.joined(separator: "\n")))
     }
@@ -138,8 +142,13 @@ final class CompanionModel {
     }
 
     private func context(_ app: AppModel) -> CompanionContext {
-        CompanionContext.make(
-            profile: app.profile,
+        // Today's chosen deity leads, so "a mantra for today" means the one they chose.
+        var profile = app.profile
+        if let today = app.todaysFocus {
+            profile.focusIDs = [today] + profile.focusIDs.filter { $0 != today }
+        }
+        return CompanionContext.make(
+            profile: profile,
             registry: app.env.registry,
             catalog: app.env.catalog,
             policy: app.env.contentPolicy,
@@ -149,6 +158,7 @@ final class CompanionModel {
 
     private func message(for error: CompanionError) -> String {
         switch error {
+        case .freeLimitReached: String(localized: "You've used today's free messages with the companion. They renew tomorrow — or go Premium for 100 a day.")
         case .dailyLimitReached: String(localized: "You've reached today's companion allowance. It renews tomorrow — the library is always here.")
         case .notSubscribed: String(localized: "The companion is part of Premium. Here's something from the library instead.")
         case .notConfigured: String(localized: "The companion isn't available in this build. Here's something from the library.")

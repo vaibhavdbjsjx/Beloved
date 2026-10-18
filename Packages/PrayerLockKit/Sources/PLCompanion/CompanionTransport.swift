@@ -7,6 +7,8 @@ public enum CompanionError: Error, Equatable, Sendable {
     case notSubscribed
     /// Today's fair-use allowance is used up (resets at midnight UTC).
     case dailyLimitReached
+    /// Today's free messages are used up; Premium has a larger allowance.
+    case freeLimitReached
     /// The server or the model provider couldn't answer right now.
     case unavailable
     case network
@@ -31,11 +33,16 @@ public struct UnavailableCompanionTransport: CompanionTransport {
 /// subscription, which the server verifies against Apple's certificate chain.
 public struct CloudCompanionTransport: CompanionTransport {
     let endpoint: URL
+    let installID: String
     let subscriptionProof: @Sendable () async -> String?
     let session: URLSession
 
-    public init(endpoint: URL, session: URLSession = .shared, subscriptionProof: @escaping @Sendable () async -> String?) {
+    /// `installID`: a random identifier for this install (not tied to the person), used only to
+    /// count the free daily allowance. `subscriptionProof` unlocks the Premium allowance.
+    public init(endpoint: URL, installID: String, session: URLSession = .shared,
+                subscriptionProof: @escaping @Sendable () async -> String?) {
         self.endpoint = endpoint
+        self.installID = installID
         self.session = session
         self.subscriptionProof = subscriptionProof
     }
@@ -44,13 +51,14 @@ public struct CloudCompanionTransport: CompanionTransport {
         AsyncThrowingStream { continuation in
             let task = Task {
                 do {
-                    guard let proof = await subscriptionProof() else { throw CompanionError.notSubscribed }
+                    let proof = await subscriptionProof()
                     var urlRequest = URLRequest(url: endpoint.appending(path: "v1/companion"))
                     urlRequest.httpMethod = "POST"
                     urlRequest.timeoutInterval = 60
                     urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
                     urlRequest.setValue("text/event-stream", forHTTPHeaderField: "Accept")
-                    urlRequest.setValue(proof, forHTTPHeaderField: "X-Beloved-Subscription")
+                    urlRequest.setValue(installID, forHTTPHeaderField: "X-Beloved-Install")
+                    if let proof { urlRequest.setValue(proof, forHTTPHeaderField: "X-Beloved-Subscription") }
                     urlRequest.httpBody = try JSONEncoder().encode(request)
 
                     let (bytes, response) = try await session.bytes(for: urlRequest)
@@ -58,7 +66,10 @@ public struct CloudCompanionTransport: CompanionTransport {
                     switch http.statusCode {
                     case 200: break
                     case 401, 402, 403: throw CompanionError.notSubscribed
-                    case 429: throw CompanionError.dailyLimitReached
+                    case 429:
+                        var body = ""
+                        for try await line in bytes.lines { body += line }
+                        throw body.contains("free_limit") ? CompanionError.freeLimitReached : CompanionError.dailyLimitReached
                     default: throw CompanionError.unavailable
                     }
                     var parser = CompanionStreamParser()

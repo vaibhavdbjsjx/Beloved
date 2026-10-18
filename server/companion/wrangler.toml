@@ -8,9 +8,11 @@ compatibility_date = "2026-09-01"
 BUNDLE_ID = "com.vaibhavsg.beloved"
 PRODUCT_IDS = "beloved.premium.monthly,beloved.premium.annual"
 ENVIRONMENTS = "Production"   # add ",Sandbox" only for TestFlight testing, then remove
-MODEL = "gemini-2.5-flash"
+MODEL = "gemini-flash-latest"
 MAX_TOKENS = "900"
-DAILY_LIMIT = "25"      # companion messages per subscriber per UTC day (cost control)
+DAILY_LIMIT = "100"     # Premium messages per subscriber per UTC day
+FREE_DAILY_LIMIT = "10" # free messages per install per UTC day
+FREE_IP_LIMIT = "40"    # free messages per network address per UTC day (reinstall abuse)
 
 # Per-subscription daily counters (two-day expiry). Create with:
 #   npx wrangler kv namespace create USAGE   → paste the id below.

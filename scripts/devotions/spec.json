@@ -490,6 +490,202 @@
         "reference": "Hanumān Cālīsā (Tulsidas)"
       },
       "explanation": "Forty verses by Goswami Tulsidas in praise of Hanuman. Traditionally recited for courage, protection and strength, often on Tuesdays and Saturdays."
+    },
+    {
+      "id": "hinduism.mantra.vakratunda",
+      "title": "Vakratunda Mahakaya",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.ganesha"
+      ],
+      "themes": [
+        "guidance",
+        "strength",
+        "study"
+      ],
+      "moods": [
+        "seekingGuidance",
+        "stressed",
+        "hopeful"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "pratah-smaranam",
+        "phrase": "वक्रतुण्ड महाकाय",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Vakratuṇḍa śloka"
+      },
+      "explanation": "Prayed to Ganesha before beginning anything — a journey, an exam, a new job — asking that obstacles be removed."
+    },
+    {
+      "id": "hinduism.mantra.shantakaram",
+      "title": "Shantakaram Bhujagashayanam",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.vishnu"
+      ],
+      "themes": [
+        "peace",
+        "presence",
+        "trust"
+      ],
+      "moods": [
+        "needPeace",
+        "anxious",
+        "justWantToPray"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "vishnu-sahasranama",
+        "phrase": "शान्ताकारं भुजगशयनं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Viṣṇu Sahasranāma, dhyāna śloka"
+      },
+      "explanation": "The meditation verse on Vishnu resting on the serpent — peaceful, all-pervading, lotus-eyed — traditionally recited before the Vishnu Sahasranama and in the morning for calm."
+    },
+    {
+      "id": "hinduism.mantra.hare-krishna",
+      "title": "Hare Krishna Mahamantra",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.krishna",
+        "hinduism.rama"
+      ],
+      "themes": [
+        "presence",
+        "joy",
+        "peace"
+      ],
+      "moods": [
+        "justWantToPray",
+        "happy",
+        "needPeace"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "kalisantarana",
+        "phrase": "हरे राम हरे राम",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Kalisantaraṇa Upaniṣad"
+      },
+      "explanation": "The great mantra of the holy names, given in the Kali-Santarana Upanishad; chanted on a mala or sung in kirtan."
+    },
+    {
+      "id": "hinduism.mantra.ramaya-ramabhadraya",
+      "title": "Ramaya Ramabhadraya",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.rama"
+      ],
+      "themes": [
+        "protection",
+        "trust",
+        "peace"
+      ],
+      "moods": [
+        "anxious",
+        "needStrength",
+        "justWantToPray"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "rama-raksha",
+        "phrase": "रामाय रामभद्राय",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Rāmarakṣā Stotram"
+      },
+      "explanation": "From the Rama Raksha Stotram: salutations to Rama, the auspicious, the moon of the Raghu line. Traditionally recited for protection and peace."
+    },
+    {
+      "id": "hinduism.mantra.manojavam",
+      "title": "Manojavam Marutatulyavegam",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.hanuman"
+      ],
+      "themes": [
+        "courage",
+        "strength",
+        "protection"
+      ],
+      "moods": [
+        "needStrength",
+        "anxious"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "rama-raksha",
+        "phrase": "मनोजवं मारुततुल्यवेगं",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Rāmarakṣā Stotram (Hanumān dhyāna)"
+      },
+      "explanation": "Taking refuge in Hanuman — swift as the mind, fast as the wind, master of the senses. Traditionally recited for courage before a difficult task."
+    },
+    {
+      "id": "hinduism.stotra.mahalakshmi-ashtakam",
+      "title": "Mahalakshmi Ashtakam",
+      "kind": "stotra",
+      "focuses": [
+        "hinduism.lakshmi"
+      ],
+      "themes": [
+        "gratitude",
+        "family",
+        "work"
+      ],
+      "moods": [
+        "grateful",
+        "hopeful"
+      ],
+      "length": "extended",
+      "shloka": {
+        "page": "mahalakshmi-ashtakam",
+        "phrase": "नमस्तेऽस्तु महामाये",
+        "verses": 8,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Mahālakṣmyaṣṭakam"
+      },
+      "explanation": "Eight verses to Mahalakshmi, giver of prosperity and well-being; often recited on Fridays and at Diwali."
+    },
+    {
+      "id": "hinduism.mantra.sarva-mangala",
+      "title": "Sarva Mangala Mangalye",
+      "kind": "mantra",
+      "focuses": [
+        "hinduism.durga",
+        "hinduism.devi"
+      ],
+      "themes": [
+        "protection",
+        "strength",
+        "family"
+      ],
+      "moods": [
+        "needStrength",
+        "anxious",
+        "grateful"
+      ],
+      "length": "brief",
+      "shloka": {
+        "page": "devi-mahatmya-91",
+        "phrase": "सर्वमङ्गलमाङ्गल्ये",
+        "verses": 1,
+        "source": "hindu-traditional",
+        "edition": "hindu-traditional.sa-wikisource",
+        "reference": "Devī Māhātmya 11 (Mārkaṇḍeya Purāṇa 91)"
+      },
+      "explanation": "The salutation to the Goddess as Narayani, auspiciousness of all that is auspicious, refuge of all. Recited to Durga for protection and blessing, especially during Navaratri."
     }
   ],
   "islam": [
