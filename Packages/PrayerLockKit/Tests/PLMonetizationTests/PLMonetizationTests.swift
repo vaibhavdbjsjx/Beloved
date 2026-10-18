@@ -97,4 +97,148 @@ private func details(expires: TimeInterval?, grace: TimeInterval? = nil, trial: 
         await #expect(throws: PurchaseError.notConfigured) { try await service.products() }
         #expect(await service.currentState() == .notSubscribed)
     }
+
+    @Test func exactProductIDsConfigured() throws {
+        let bundled = try MonetizationConfiguration.bundled()
+        #expect(bundled.productIDs == ["beloved.premium.monthly", "beloved.premium.annual"])
+        #expect(bundled.plan(forProductID: "beloved.premium.monthly") == .monthly)
+        #expect(bundled.plan(forProductID: "beloved.premium.annual") == .annual)
+        #expect(bundled.plan(forProductID: "unknown.product") == nil)
+    }
+
+    @Test func featureGatingRespectsPremiumPolicy() throws {
+        let bundled = try MonetizationConfiguration.bundled()
+        #expect(bundled.isPremium(.assistant))
+        #expect(bundled.isPremium(.fullLibrary))
+        #expect(bundled.isPremium(.extendedInsights))
+    }
+}
+
+@Suite struct MockPurchaseServiceFlowTests {
+    final class MockService: PurchaseService, @unchecked Sendable {
+        var mockState: SubscriptionState = .notSubscribed
+        var shouldThrowOnPurchase: Error?
+        var shouldThrowOnRestore: Error?
+        var purchaseOutcome: PurchaseOutcome = .cancelled
+        var productsToReturn: [StoreProduct] = []
+
+        func products() async throws -> [StoreProduct] {
+            if let error = shouldThrowOnPurchase { throw error }
+            return productsToReturn
+        }
+
+        func purchase(productID: String) async throws -> PurchaseOutcome {
+            if let error = shouldThrowOnPurchase { throw error }
+            if case let .purchased(state) = purchaseOutcome {
+                mockState = state
+            }
+            return purchaseOutcome
+        }
+
+        func restorePurchases() async throws {
+            if let error = shouldThrowOnRestore { throw error }
+        }
+
+        func currentState() async -> SubscriptionState {
+            mockState
+        }
+
+        func stateUpdates() -> AsyncStream<SubscriptionState> {
+            AsyncStream { continuation in
+                continuation.yield(self.mockState)
+                continuation.finish()
+            }
+        }
+
+        func subscriptionProof() async -> String? {
+            if case .subscribed = mockState { return "mock.jwt.proof" }
+            return nil
+        }
+    }
+
+    @Test func successfulPurchaseUnlocksPremium() async throws {
+        let service = MockService()
+        let details = SubscriptionDetails(
+            productID: "beloved.premium.annual",
+            plan: .annual,
+            expiresAt: Date().addingTimeInterval(365 * 86400),
+            willAutoRenew: true,
+            isTrial: false
+        )
+        service.purchaseOutcome = .purchased(.subscribed(details))
+
+        let outcome = try await service.purchase(productID: "beloved.premium.annual")
+        #expect(outcome == .purchased(.subscribed(details)))
+        let state = await service.currentState()
+        #expect(EntitlementResolver.accessLevel(for: state, now: Date()) == .premium)
+    }
+
+    @Test func cancelledPurchaseLeavesAccessFree() async throws {
+        let service = MockService()
+        service.purchaseOutcome = .cancelled
+        let outcome = try await service.purchase(productID: "beloved.premium.monthly")
+        #expect(outcome == .cancelled)
+        let state = await service.currentState()
+        #expect(EntitlementResolver.accessLevel(for: state, now: Date()) == .free)
+    }
+
+    @Test func pendingPurchaseLeavesAccessFreeUntilApproved() async throws {
+        let service = MockService()
+        service.purchaseOutcome = .pending
+        let outcome = try await service.purchase(productID: "beloved.premium.monthly")
+        #expect(outcome == .pending)
+        let state = await service.currentState()
+        #expect(EntitlementResolver.accessLevel(for: state, now: Date()) == .free)
+    }
+
+    @Test func verificationFailureThrowsAndLeavesFree() async {
+        let service = MockService()
+        service.shouldThrowOnPurchase = PurchaseError.verificationFailed
+        await #expect(throws: PurchaseError.verificationFailed) {
+            try await service.purchase(productID: "beloved.premium.monthly")
+        }
+        let state = await service.currentState()
+        #expect(EntitlementResolver.accessLevel(for: state, now: Date()) == .free)
+    }
+
+    @Test func restorePurchasesSucceeds() async throws {
+        let service = MockService()
+        try await service.restorePurchases()
+        #expect(await service.currentState() == .notSubscribed)
+
+        let details = SubscriptionDetails(
+            productID: "beloved.premium.monthly",
+            plan: .monthly,
+            expiresAt: Date().addingTimeInterval(30 * 86400),
+            willAutoRenew: true,
+            isTrial: false
+        )
+        service.mockState = .subscribed(details)
+        try await service.restorePurchases()
+        let state = await service.currentState()
+        #expect(EntitlementResolver.accessLevel(for: state, now: Date()) == .premium)
+    }
+
+    @Test func restorePurchasesFailureThrows() async {
+        let service = MockService()
+        service.shouldThrowOnRestore = PurchaseError.storeUnavailable("Network offline")
+        await #expect(throws: PurchaseError.storeUnavailable("Network offline")) {
+            try await service.restorePurchases()
+        }
+    }
+
+    @Test func subscriptionProofOnlyPresentWhenSubscribed() async {
+        let service = MockService()
+        #expect(await service.subscriptionProof() == nil)
+
+        let details = SubscriptionDetails(
+            productID: "beloved.premium.annual",
+            plan: .annual,
+            expiresAt: Date().addingTimeInterval(365 * 86400),
+            willAutoRenew: true,
+            isTrial: false
+        )
+        service.mockState = .subscribed(details)
+        #expect(await service.subscriptionProof() == "mock.jwt.proof")
+    }
 }

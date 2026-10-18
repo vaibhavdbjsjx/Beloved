@@ -12,12 +12,15 @@ struct SettingsView: View {
     @Environment(\.openURL) private var openURL
     @Environment(\.scenePhase) private var scenePhase
     @State private var confirmingDeletion = false
+    @State private var showingSignOutAlert = false
+    @State private var showingDeleteAccountAlert = false
     @State private var notificationStatus: UNAuthorizationStatus?
     @AppStorage(AppearancePreference.storageKey) private var appearance: AppearancePreference = .system
 
     var body: some View {
         NavigationStack {
             Form {
+                accountSection
                 practice
                 intentionsSection
                 appearanceSection
@@ -26,6 +29,7 @@ struct SettingsView: View {
                 privacy
                 premium
                 sources
+                supportSection
                 about
             }
             .labeledContentStyle(.pl)
@@ -49,7 +53,106 @@ struct SettingsView: View {
             } message: {
                 Text("This permanently removes your profile, conversations, check-ins, and prayer history from this iPhone, and turns off protection. It can't be undone.")
             }
+            .confirmationDialog(
+                "Sign out of Beloved?",
+                isPresented: $showingSignOutAlert,
+                titleVisibility: .visible
+            ) {
+                Button("Sign Out", role: .destructive) {
+                    Task { await model.signOut() }
+                }
+            } message: {
+                Text("Signing out removes your account session from this iPhone. Your prayer history and Screen Time rules will remain on this device.")
+            }
+            .confirmationDialog(
+                "Delete your account?",
+                isPresented: $showingDeleteAccountAlert,
+                titleVisibility: .visible
+            ) {
+                Button("Delete My Account", role: .destructive) {
+                    Task { await model.deleteAccount() }
+                }
+                Button("Manage Subscriptions") {
+                    if let url = URL(string: "https://apps.apple.com/account/subscriptions") {
+                        openURL(url)
+                    }
+                }
+            } message: {
+                Text("This permanently deletes your account credentials and profile from Beloved.\n\nIMPORTANT: Deleting your Beloved account does NOT cancel an active App Store subscription. Subscriptions must be cancelled through your Apple ID settings.")
+            }
         }
+    }
+
+    private var accountSection: some View {
+        Section {
+            NavigationLink {
+                ProfileView()
+            } label: {
+                HStack(spacing: PLSpacing.s) {
+                    if let user = model.currentUser, let image = model.localAvatarImage(for: user) {
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 44, height: 44)
+                            .clipShape(Circle())
+                    } else if let user = model.currentUser, let url = user.avatarURL {
+                        AsyncImage(url: url) { phase in
+                            if let image = phase.image {
+                                image.resizable().scaledToFill()
+                            } else {
+                                Text(user.initials)
+                                    .font(.system(size: 16, weight: .semibold, design: .serif))
+                                    .foregroundStyle(Color.plAccent)
+                            }
+                        }
+                        .frame(width: 44, height: 44)
+                        .background(Color.plSurfaceRaised)
+                        .clipShape(Circle())
+                    } else {
+                        Circle()
+                            .fill(Color.plSurfaceRaised)
+                            .frame(width: 44, height: 44)
+                            .overlay(
+                                Text(model.currentUser?.initials ?? "B")
+                                    .font(.system(size: 16, weight: .semibold, design: .serif))
+                                    .foregroundStyle(Color.plAccent)
+                            )
+                    }
+
+                    VStack(alignment: .leading, spacing: 2) {
+                        HStack(spacing: PLSpacing.xs) {
+                            Text(model.currentUser?.displayTitle ?? String(localized: "Sign in or create account"))
+                                .font(.plHeadline.weight(.medium))
+                                .foregroundStyle(Color.plInk)
+                            if model.accessLevel == .premium {
+                                Text("PREMIUM")
+                                    .font(.system(size: 9, weight: .bold, design: .rounded))
+                                    .padding(.horizontal, 5)
+                                    .padding(.vertical, 1)
+                                    .background(Color.plAccentFill)
+                                    .foregroundStyle(Color.plOnAccentFill)
+                                    .clipShape(Capsule())
+                            }
+                        }
+                        if let email = model.currentUser?.email {
+                            Text(email)
+                                .font(.plCaption)
+                                .foregroundStyle(Color.plInkSecondary)
+                        } else if model.currentUser == nil {
+                            Text("Apple & Gmail Sign-In")
+                                .font(.plCaption)
+                                .foregroundStyle(Color.plInkSecondary)
+                        }
+                    }
+                }
+                .padding(.vertical, PLSpacing.xxs)
+            }
+            .accessibilityIdentifier("settings.profile")
+        } header: {
+            Text("Account")
+                .foregroundStyle(Color.plInkSecondary)
+        }
+        .listRowBackground(Color.plSurface)
     }
 
     private var practice: some View {
@@ -281,6 +384,92 @@ struct SettingsView: View {
             }
             .listRowBackground(Color.plSurface)
         }
+    }
+
+    private var supportSection: some View {
+        Section {
+            Link(destination: URL(string: "https://beloveded.netlify.app/support.html")!) {
+                HStack {
+                    Text("Help and FAQ")
+                        .foregroundStyle(Color.plInk)
+                    Spacer()
+                    Image(systemName: "arrow.up.forward.app")
+                        .font(.caption)
+                        .foregroundStyle(Color.plInkSecondary)
+                }
+            }
+            .accessibilityIdentifier("settings.helpAndFAQ")
+
+            Button {
+                if let url = URL(string: "mailto:support.beloved@gmail.com?subject=Beloved%20Support") {
+                    openURL(url)
+                }
+            } label: {
+                HStack {
+                    Text("Contact Support")
+                        .foregroundStyle(Color.plInk)
+                    Spacer()
+                    Text("support.beloved@gmail.com")
+                        .font(.plCaption)
+                        .foregroundStyle(Color.plInkSecondary)
+                }
+            }
+            .accessibilityIdentifier("settings.contactSupport")
+
+            NavigationLink("Privacy Policy") {
+                LegalDocumentView(resource: .privacyPolicy)
+            }
+            .accessibilityIdentifier("settings.privacyPolicyLink")
+
+            Link(destination: URL(string: "https://beloveded.netlify.app/terms.html")!) {
+                HStack {
+                    Text("Terms of Use")
+                        .foregroundStyle(Color.plInk)
+                    Spacer()
+                    Image(systemName: "arrow.up.forward.app")
+                        .font(.caption)
+                        .foregroundStyle(Color.plInkSecondary)
+                }
+            }
+            .accessibilityIdentifier("settings.termsLink")
+
+            if model.env.monetization.isPaywallEnabled {
+                Button("Manage Subscription") {
+                    if let url = URL(string: "https://apps.apple.com/account/subscriptions") {
+                        openURL(url)
+                    }
+                }
+                .foregroundStyle(Color.plAccent)
+                .accessibilityIdentifier("settings.manageSubscription")
+
+                Button("Restore Purchases") {
+                    Task { await model.restorePurchases() }
+                }
+                .foregroundStyle(Color.plInk)
+                .accessibilityIdentifier("settings.restorePurchasesSupport")
+            }
+
+            LabeledContent("App Version", value: versionDescription)
+                .accessibilityIdentifier("settings.appVersion")
+
+            if model.currentUser != nil {
+                Button("Sign Out") {
+                    showingSignOutAlert = true
+                }
+                .foregroundStyle(Color.plInkSecondary)
+                .accessibilityIdentifier("settings.signOut")
+
+                Button("Delete Account", role: .destructive) {
+                    showingDeleteAccountAlert = true
+                }
+                .foregroundStyle(Color.plDestructive)
+                .accessibilityIdentifier("settings.deleteAccount")
+            }
+        } header: {
+            Text("Support & Help")
+                .foregroundStyle(Color.plInkSecondary)
+        }
+        .listRowBackground(Color.plSurface)
     }
 
     private var about: some View {

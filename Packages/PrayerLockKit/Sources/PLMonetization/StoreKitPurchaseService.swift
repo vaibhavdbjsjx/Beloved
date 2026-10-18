@@ -62,7 +62,19 @@ public final class StoreKitPurchaseService: PurchaseService {
         case let .success(verification):
             guard case let .verified(transaction) = verification else { throw PurchaseError.verificationFailed }
             await transaction.finish()
-            return .purchased(await currentState())
+            let state = await currentState()
+            if case .subscribed = state {
+                return .purchased(state)
+            }
+            let details = SubscriptionDetails(
+                productID: transaction.productID,
+                plan: configuration.plan(forProductID: transaction.productID),
+                expiresAt: transaction.expirationDate,
+                willAutoRenew: true,
+                isTrial: transaction.offer?.paymentMode == .freeTrial,
+                gracePeriodExpiresAt: nil
+            )
+            return .purchased(.subscribed(details))
         case .userCancelled:
             return .cancelled
         case .pending:
@@ -81,14 +93,17 @@ public final class StoreKitPurchaseService: PurchaseService {
     }
 
     public func currentState() async -> SubscriptionState {
-        guard let subscriptionGroupID else { return await stateFromCurrentEntitlements() }
-        do {
-            let statuses = try await Product.SubscriptionInfo.status(for: subscriptionGroupID)
-            return SubscriptionStateMapper.state(from: statuses.map(Self.snapshot), configuration: configuration)
-        } catch {
-            Log.logger(.monetization).error("Subscription status unavailable: \(error.localizedDescription, privacy: .public)")
-            return .unknown
+        if let subscriptionGroupID {
+            do {
+                let statuses = try await Product.SubscriptionInfo.status(for: subscriptionGroupID)
+                if !statuses.isEmpty {
+                    return SubscriptionStateMapper.state(from: statuses.map(Self.snapshot), configuration: configuration)
+                }
+            } catch {
+                Log.logger(.monetization).error("Subscription status unavailable: \(error.localizedDescription, privacy: .public)")
+            }
         }
+        return await stateFromCurrentEntitlements()
     }
 
     public func stateUpdates() -> AsyncStream<SubscriptionState> {
@@ -122,12 +137,21 @@ public final class StoreKitPurchaseService: PurchaseService {
 
     private func stateFromCurrentEntitlements() async -> SubscriptionState {
         var snapshots: [StatusSnapshot] = []
+        let now = Date()
         for await result in Transaction.currentEntitlements {
             guard case let .verified(transaction) = result,
                   configuration.plan(forProductID: transaction.productID) != nil
             else { continue }
+            let renewal: StatusSnapshot.Renewal
+            if transaction.revocationDate != nil {
+                renewal = .revoked
+            } else if let expiresAt = transaction.expirationDate, expiresAt <= now {
+                renewal = .expired
+            } else {
+                renewal = .subscribed
+            }
             snapshots.append(StatusSnapshot(
-                renewal: transaction.revocationDate == nil ? .subscribed : .revoked,
+                renewal: renewal,
                 productID: transaction.productID,
                 expiresAt: transaction.expirationDate,
                 willAutoRenew: false, // Unknown without renewal info; UI must not claim auto-renewal.

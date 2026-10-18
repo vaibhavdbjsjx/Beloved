@@ -10,6 +10,7 @@ import PLHabits
 import PLMonetization
 import PLProtection
 import PLScripture
+import UIKit
 import os
 
 enum AppTab: Hashable {
@@ -75,6 +76,11 @@ final class AppModel {
     /// The scripture tab's navigation path (lets Today and notifications open a chapter).
     var scripturePath: [ScriptureRoute] = []
 
+    // MARK: - Account State
+    private(set) var currentUser: AuthUser?
+    private(set) var isAuthenticating: Bool = false
+    var authSheetPresented: Bool = false
+
     private let log = Log.logger(.app)
     /// Keeps the iOS 26.5+ token-expiry observation alive.
     @ObservationIgnored private var tokenExpiryObservation: Any?
@@ -82,6 +88,7 @@ final class AppModel {
     init(env: AppEnvironment) {
         self.env = env
         stored = env.profileStore.load()
+        currentUser = env.sessionStore.loadSession()?.user
         applyTheme()
         if let checkIn = stored.checkIn, checkIn.date == CivilDate(.now, calendar: env.calendar) {
             todayMood = checkIn.mood
@@ -451,6 +458,16 @@ final class AppModel {
         if let checkIn = stored.checkIn, checkIn.date != today {
             todayMood = nil
         }
+        if let user = currentUser, user.provider == .apple {
+            let state = await NativeAuthenticationService.checkAppleCredentialState(userID: user.id)
+            if state == .revoked || state == .notFound {
+                await signOut()
+                alert = AppAlert(
+                    title: String(localized: "Apple Sign-In"),
+                    message: String(localized: "Your Apple authorization for Beloved was revoked in Settings. You have been signed out.")
+                )
+            }
+        }
         await refreshHabits()
         await refreshDailyVerse()
         await rescheduleDailyVerses()
@@ -481,6 +498,12 @@ final class AppModel {
         do {
             try await env.purchases.restorePurchases()
             subscriptionState = await env.purchases.currentState()
+            if accessLevel != .premium {
+                alert = AppAlert(
+                    title: String(localized: "No Active Subscription"),
+                    message: String(localized: "No active Beloved Premium subscription was found for this Apple ID.")
+                )
+            }
         } catch {
             alert = AppAlert(
                 title: String(localized: "Couldn't restore purchases"),
@@ -513,6 +536,137 @@ final class AppModel {
         }
     }
 
+    // MARK: - Authentication & Account Management
+
+    func refreshUserSession() async {
+        if let session = try? await env.authentication.restorePreviousSignIn() {
+            currentUser = session.user
+        } else {
+            currentUser = nil
+        }
+    }
+
+    func signInWithApple(presentingWindow: UIWindow? = nil) async {
+        isAuthenticating = true
+        defer { isAuthenticating = false }
+        do {
+            if let native = env.authentication as? NativeAuthenticationService {
+                let session = try await native.performAppleSignIn(presentingWindow: presentingWindow)
+                currentUser = session.user
+                authSheetPresented = false
+            }
+        } catch let error as AuthError {
+            if error == .cancelled { return }
+            alert = AppAlert(
+                title: String(localized: "Apple Sign-In"),
+                message: error.errorDescription ?? String(localized: "Sign in with Apple could not be completed.")
+            )
+        } catch {
+            alert = AppAlert(
+                title: String(localized: "Apple Sign-In"),
+                message: error.localizedDescription
+            )
+        }
+    }
+
+    func signInWithGoogle(presentingWindow: UIWindow? = nil) async {
+        isAuthenticating = true
+        defer { isAuthenticating = false }
+        do {
+            if let native = env.authentication as? NativeAuthenticationService {
+                let session = try await native.performGoogleSignIn(presentingWindow: presentingWindow)
+                currentUser = session.user
+                authSheetPresented = false
+            }
+        } catch let error as AuthError {
+            if error == .cancelled { return }
+            alert = AppAlert(
+                title: String(localized: "Gmail Sign-In"),
+                message: error.errorDescription ?? String(localized: "Sign in with Gmail could not be completed.")
+            )
+        } catch {
+            alert = AppAlert(
+                title: String(localized: "Gmail Sign-In"),
+                message: error.localizedDescription
+            )
+        }
+    }
+
+    func signOut() async {
+        do {
+            try await env.authentication.signOut()
+            currentUser = nil
+        } catch {
+            log.error("Sign out error: \(String(describing: error), privacy: .public)")
+            currentUser = nil
+        }
+    }
+
+    func deleteAccount() async -> Bool {
+        do {
+            if let user = currentUser, let filename = user.avatarLocalFilename {
+                let url = avatarFileURL(for: filename)
+                try? FileManager.default.removeItem(at: url)
+            }
+
+            try await env.authentication.deleteAccount(appleRevocationHandler: nil)
+            currentUser = nil
+            alert = AppAlert(
+                title: String(localized: "Account Deleted"),
+                message: String(localized: "Your account credentials and profile have been permanently deleted from this device. Please note that active App Store subscriptions must be managed separately in your Apple ID settings.")
+            )
+            return true
+        } catch {
+            alert = AppAlert(
+                title: String(localized: "Deletion Failed"),
+                message: error.localizedDescription
+            )
+            return false
+        }
+    }
+
+    func updateDisplayName(_ name: String) async {
+        do {
+            let updated = try await env.authentication.updateDisplayName(name)
+            currentUser = updated
+        } catch {
+            alert = AppAlert(
+                title: String(localized: "Could not update name"),
+                message: error.localizedDescription
+            )
+        }
+    }
+
+    func updateProfileAvatar(imageData: Data) async {
+        guard let user = currentUser else { return }
+        let filename = "avatar_\(user.id).jpg"
+        let url = avatarFileURL(for: filename)
+        do {
+            let folder = url.deletingLastPathComponent()
+            try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
+            try imageData.write(to: url, options: .completeFileProtection)
+            let updated = try await env.authentication.updateAvatarLocalFilename(filename)
+            currentUser = updated
+        } catch {
+            alert = AppAlert(
+                title: String(localized: "Could not save photo"),
+                message: error.localizedDescription
+            )
+        }
+    }
+
+    func avatarFileURL(for filename: String) -> URL {
+        let appSupport = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
+        return appSupport.appendingPathComponent("avatars").appendingPathComponent(filename)
+    }
+
+    func localAvatarImage(for user: AuthUser) -> UIImage? {
+        guard let filename = user.avatarLocalFilename else { return nil }
+        let url = avatarFileURL(for: filename)
+        guard let data = try? Data(contentsOf: url) else { return nil }
+        return UIImage(data: data)
+    }
+
     // MARK: - Data
 
     /// Permanently deletes everything the app stored on this device and removes
@@ -522,6 +676,12 @@ final class AppModel {
             try await env.sessions.deleteAll()
             try env.profileStore.delete()
             try env.companionStore.delete()
+            if let user = currentUser, let filename = user.avatarLocalFilename {
+                let url = avatarFileURL(for: filename)
+                try? FileManager.default.removeItem(at: url)
+            }
+            try await env.authentication.deleteAccount(appleRevocationHandler: nil)
+            currentUser = nil
         } catch {
             log.error("Data deletion incomplete: \(String(describing: error), privacy: .public)")
             alert = AppAlert(

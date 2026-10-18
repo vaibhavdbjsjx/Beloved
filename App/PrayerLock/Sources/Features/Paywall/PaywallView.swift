@@ -140,7 +140,7 @@ struct PaywallView: View {
 
     private var disclosure: String {
         guard let product = selectedProduct else {
-            return String(localized: "Prices and trial eligibility are provided by the App Store.")
+            return String(localized: "Prices are provided by the App Store.")
         }
         var parts = [String(localized: "\(product.displayName) renews every \(product.periodDescription) at \(product.displayPrice).")]
         if let offer = product.introductoryOffer {

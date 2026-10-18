@@ -7,30 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F66DA260025FCE6E224E4DE /* PLCore in Frameworks */ = {isa = PBXBuildFile; productRef = 012D56456E24E849BBB5078D /* PLCore */; };
-		C1672DB0B11F93B5E0DA9213 /* PLFaith in Frameworks */ = {isa = PBXBuildFile; productRef = 9871B651009293486F856CFE /* PLFaith */; };
-		116066724032E10ED8BA571C /* PLContent in Frameworks */ = {isa = PBXBuildFile; productRef = 97F4259FE968777EFC3F2C76 /* PLContent */; };
-		DBC86AEA38521936A2C7BFA1 /* PLCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F861858C691EB79CE1ADE579 /* PLCalendar */; };
-		CAC8B356E452431C286D0F8B /* PLHabits in Frameworks */ = {isa = PBXBuildFile; productRef = 644BC7AF5FFB60AAFD09AEF7 /* PLHabits */; };
 		0070F57673D61A5F4FCF7440 /* PLProtection in Frameworks */ = {isa = PBXBuildFile; productRef = 869B0752920E0D9E617855F1 /* PLProtection */; };
-		9232E789EC08591453DFCD0D /* PLMonetization in Frameworks */ = {isa = PBXBuildFile; productRef = 51A6DC97011CD218076B3390 /* PLMonetization */; };
-		4E2EEF1237A9073F1C7D9F96 /* PLAssistant in Frameworks */ = {isa = PBXBuildFile; productRef = 6B2A2D84AEC733D98835AA69 /* PLAssistant */; };
-		A1B2C3D4E5F60718293A4B5C /* PLScripture in Frameworks */ = {isa = PBXBuildFile; productRef = B1C2D3E4F5A60718293A4B5D /* PLScripture */; };
-		C1D2E3F4A5B60718293A4B5E /* PLCompanion in Frameworks */ = {isa = PBXBuildFile; productRef = D1E2F3A4B5C60718293A4B5F /* PLCompanion */; };
-		754F4C7FA84988C82A1848D1 /* PLDesign in Frameworks */ = {isa = PBXBuildFile; productRef = 4D607F39999E7CFBF2193B7B /* PLDesign */; };
-		14C73194E2143C1841114173 /* PLCore in Frameworks */ = {isa = PBXBuildFile; productRef = C734C67EA17EBD2234212185 /* PLCore */; };
-		6C105CE7FCC7D40CB5124AA5 /* PLProtection in Frameworks */ = {isa = PBXBuildFile; productRef = 8267DF33F5BEDF543DDFADDB /* PLProtection */; };
-		1B7A13215C41471917D5134D /* PLBrand in Frameworks */ = {isa = PBXBuildFile; productRef = 3390B812A8219A5BD1307211 /* PLBrand */; };
 		10947CB7E4F1B08AEB609E8B /* PLCore in Frameworks */ = {isa = PBXBuildFile; productRef = A77777DD158AB9769807F77D /* PLCore */; };
-		58BCE07F3C7B0521F87B6525 /* PLProtection in Frameworks */ = {isa = PBXBuildFile; productRef = EDF713364AD92E352115AA89 /* PLProtection */; };
-		69F6FECD793941871B8390B8 /* PLCore in Frameworks */ = {isa = PBXBuildFile; productRef = 191ED33EEE25041C90E4ACAA /* PLCore */; };
+		116066724032E10ED8BA571C /* PLContent in Frameworks */ = {isa = PBXBuildFile; productRef = 97F4259FE968777EFC3F2C76 /* PLContent */; };
+		14C73194E2143C1841114173 /* PLCore in Frameworks */ = {isa = PBXBuildFile; productRef = C734C67EA17EBD2234212185 /* PLCore */; };
+		1B7A13215C41471917D5134D /* PLBrand in Frameworks */ = {isa = PBXBuildFile; productRef = 3390B812A8219A5BD1307211 /* PLBrand */; };
+		4E2EEF1237A9073F1C7D9F96 /* PLAssistant in Frameworks */ = {isa = PBXBuildFile; productRef = 6B2A2D84AEC733D98835AA69 /* PLAssistant */; };
 		4F1B7A155A3180BF86F7644B /* PLProtection in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA9896AA21FC5463D1AA170 /* PLProtection */; };
-		9310ABAA7FE73A7823D5AF4B /* ShieldConfiguration.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 76978348EC407ABC02964FC9 /* ShieldConfiguration.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		CDF15D1898072D444DE23BBE /* ShieldAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E285E57FE1F6E1BBD9EF6F17 /* ShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		58BCE07F3C7B0521F87B6525 /* PLProtection in Frameworks */ = {isa = PBXBuildFile; productRef = EDF713364AD92E352115AA89 /* PLProtection */; };
 		607EA8E62B16272771E6F66D /* ActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 15EDE9375E875060B29C64EF /* ActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69F6FECD793941871B8390B8 /* PLCore in Frameworks */ = {isa = PBXBuildFile; productRef = 191ED33EEE25041C90E4ACAA /* PLCore */; };
+		6C105CE7FCC7D40CB5124AA5 /* PLProtection in Frameworks */ = {isa = PBXBuildFile; productRef = 8267DF33F5BEDF543DDFADDB /* PLProtection */; };
+		754F4C7FA84988C82A1848D1 /* PLDesign in Frameworks */ = {isa = PBXBuildFile; productRef = 4D607F39999E7CFBF2193B7B /* PLDesign */; };
+		8F66DA260025FCE6E224E4DE /* PLCore in Frameworks */ = {isa = PBXBuildFile; productRef = 012D56456E24E849BBB5078D /* PLCore */; };
+		9232E789EC08591453DFCD0D /* PLMonetization in Frameworks */ = {isa = PBXBuildFile; productRef = 51A6DC97011CD218076B3390 /* PLMonetization */; };
+		9310ABAA7FE73A7823D5AF4B /* ShieldConfiguration.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 76978348EC407ABC02964FC9 /* ShieldConfiguration.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1B2C3D4E5F60718293A4B5C /* PLScripture in Frameworks */ = {isa = PBXBuildFile; productRef = B1C2D3E4F5A60718293A4B5D /* PLScripture */; };
+		C1672DB0B11F93B5E0DA9213 /* PLFaith in Frameworks */ = {isa = PBXBuildFile; productRef = 9871B651009293486F856CFE /* PLFaith */; };
+		C1D2E3F4A5B60718293A4B5E /* PLCompanion in Frameworks */ = {isa = PBXBuildFile; productRef = D1E2F3A4B5C60718293A4B5F /* PLCompanion */; };
+		CAC8B356E452431C286D0F8B /* PLHabits in Frameworks */ = {isa = PBXBuildFile; productRef = 644BC7AF5FFB60AAFD09AEF7 /* PLHabits */; };
+		CDF15D1898072D444DE23BBE /* ShieldAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E285E57FE1F6E1BBD9EF6F17 /* ShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DBC86AEA38521936A2C7BFA1 /* PLCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F861858C691EB79CE1ADE579 /* PLCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		39EB57E140634A434C395E76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0A7B63CAAFC20685F85F8C8;
+			remoteInfo = PrayerLock;
+		};
+		914ADC48E7E64269F1340A6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074A9D5B523269119B42EF90;
+			remoteInfo = ActivityMonitor;
+		};
 		AE52572AFDD0608BF2EC1888 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
@@ -44,20 +58,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = F0E72FFFAEB59EC12C38F3FC;
 			remoteInfo = ShieldAction;
-		};
-		914ADC48E7E64269F1340A6D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 074A9D5B523269119B42EF90;
-			remoteInfo = ActivityMonitor;
-		};
-		39EB57E140634A434C395E76 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0A7B63CAAFC20685F85F8C8;
-			remoteInfo = PrayerLock;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -78,31 +78,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DC89C08142C264EB53409761 /* PrayerLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrayerLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		76978348EC407ABC02964FC9 /* ShieldConfiguration.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldConfiguration.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		E285E57FE1F6E1BBD9EF6F17 /* ShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		15EDE9375E875060B29C64EF /* ActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		4891EA7430EBC7E757377A39 /* PrayerLockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerLockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		23AB01E1F0D58F418DF26E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A7AEF0E94B6CD8B9277328C /* PrayerLock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrayerLock.entitlements; sourceTree = "<group>"; };
-		572D6860927F4494708B698F /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
-		181DE8D8B28685A2B274B987 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		6769AF92A870BA76BAE8B2B3 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		C8F7EFD762DC8EED022D4D9F /* Secrets.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.example.xcconfig; sourceTree = "<group>"; };
 		0E7C0BD7C28B08B991190F2D /* Identity.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Identity.xcconfig; sourceTree = "<group>"; };
-		D57E203B07D36B7258593E3A /* validate-release.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = validate-release.sh; sourceTree = "<group>"; };
+		15EDE9375E875060B29C64EF /* ActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F27EB4307FAB0C007329B5 /* Beloved.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; name = Beloved.storekit; path = Config/Beloved.storekit; sourceTree = "<group>"; };
+		181DE8D8B28685A2B274B987 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		23AB01E1F0D58F418DF26E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4891EA7430EBC7E757377A39 /* PrayerLockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerLockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		572D6860927F4494708B698F /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		6769AF92A870BA76BAE8B2B3 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		6CE71656CB3C455E88245711 /* ActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActivityMonitor.entitlements; sourceTree = "<group>"; };
 		737B2CDFC79EC9CCDEC0E30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76978348EC407ABC02964FC9 /* ShieldConfiguration.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldConfiguration.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7AEF0E94B6CD8B9277328C /* PrayerLock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrayerLock.entitlements; sourceTree = "<group>"; };
 		A557EA2ABA5CAA79DF9A02A7 /* ShieldConfiguration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShieldConfiguration.entitlements; sourceTree = "<group>"; };
 		B5009AF90DC94C8F5545FA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE0C3A3F092376F5D32AB8F8 /* ShieldAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShieldAction.entitlements; sourceTree = "<group>"; };
 		BB462D7D0AB1D397E75FEC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CE71656CB3C455E88245711 /* ActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActivityMonitor.entitlements; sourceTree = "<group>"; };
+		C8F7EFD762DC8EED022D4D9F /* Secrets.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.example.xcconfig; sourceTree = "<group>"; };
+		D57E203B07D36B7258593E3A /* validate-release.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "validate-release.sh"; sourceTree = "<group>"; };
+		DC89C08142C264EB53409761 /* Beloved.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beloved.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E285E57FE1F6E1BBD9EF6F17 /* ShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0C3A3F092376F5D32AB8F8 /* ShieldAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShieldAction.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A4C81FB72A134BD95E8D3FCC /* PrayerLock */ = {
+		28804ADC6F8B80B0D6B07121 /* Sources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PrayerLock;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		81B69EBF67206CF1B331B836 /* Sources */ = {
@@ -110,9 +111,9 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		28804ADC6F8B80B0D6B07121 /* Sources */ = {
+		A4C81FB72A134BD95E8D3FCC /* PrayerLock */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Sources;
+			path = PrayerLock;
 			sourceTree = "<group>";
 		};
 		BC582C85996FC970C7E92553 /* Sources */ = {
@@ -128,6 +129,16 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		483B4C3E9E0475D720E2B58E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C73194E2143C1841114173 /* PLCore in Frameworks */,
+				6C105CE7FCC7D40CB5124AA5 /* PLProtection in Frameworks */,
+				1B7A13215C41471917D5134D /* PLBrand in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		668882E0EA4CF8FEA91E06AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,13 +157,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		483B4C3E9E0475D720E2B58E /* Frameworks */ = {
+		C8597F3D1B79BDA0CDD688E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C73194E2143C1841114173 /* PLCore in Frameworks */,
-				6C105CE7FCC7D40CB5124AA5 /* PLProtection in Frameworks */,
-				1B7A13215C41471917D5134D /* PLBrand in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,108 +182,149 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8597F3D1B79BDA0CDD688E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		71DC27D9F8E3B109C877BFC4 = {
+		113236722DEE1DC96F378B9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42006AB264CF2AB66A8087C0,
-				2A144F7B76969C5D8AF72765,
-				F08F4EC4E60FB16A497D23EE,
-				89B104369EBC5E85E7E43C6B,
-				113236722DEE1DC96F378B9D,
+				DC89C08142C264EB53409761 /* Beloved.app */,
+				76978348EC407ABC02964FC9 /* ShieldConfiguration.appex */,
+				E285E57FE1F6E1BBD9EF6F17 /* ShieldAction.appex */,
+				15EDE9375E875060B29C64EF /* ActivityMonitor.appex */,
+				4891EA7430EBC7E757377A39 /* PrayerLockUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		42006AB264CF2AB66A8087C0 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				A4C81FB72A134BD95E8D3FCC,
-				23AB01E1F0D58F418DF26E9C,
-				7A7AEF0E94B6CD8B9277328C,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		2C85BA7D62A451F63B614CD6 /* ShieldConfiguration */ = {
-			isa = PBXGroup;
-			children = (
-				81B69EBF67206CF1B331B836,
-				737B2CDFC79EC9CCDEC0E30E,
-				A557EA2ABA5CAA79DF9A02A7,
-			);
-			path = ShieldConfiguration;
-			sourceTree = "<group>";
-		};
-		D297F616CD5A51C923BAAB1C /* ShieldAction */ = {
-			isa = PBXGroup;
-			children = (
-				28804ADC6F8B80B0D6B07121,
-				B5009AF90DC94C8F5545FA39,
-				FE0C3A3F092376F5D32AB8F8,
-			);
-			path = ShieldAction;
-			sourceTree = "<group>";
-		};
-		61C77CD8F840F50AC1BB95E3 /* ActivityMonitor */ = {
-			isa = PBXGroup;
-			children = (
-				BC582C85996FC970C7E92553,
-				BB462D7D0AB1D397E75FEC30,
-				6CE71656CB3C455E88245711,
-			);
-			path = ActivityMonitor;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2A144F7B76969C5D8AF72765 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2C85BA7D62A451F63B614CD6,
-				D297F616CD5A51C923BAAB1C,
-				61C77CD8F840F50AC1BB95E3,
+				2C85BA7D62A451F63B614CD6 /* ShieldConfiguration */,
+				D297F616CD5A51C923BAAB1C /* ShieldAction */,
+				61C77CD8F840F50AC1BB95E3 /* ActivityMonitor */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C85BA7D62A451F63B614CD6 /* ShieldConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				81B69EBF67206CF1B331B836 /* Sources */,
+				737B2CDFC79EC9CCDEC0E30E /* Info.plist */,
+				A557EA2ABA5CAA79DF9A02A7 /* ShieldConfiguration.entitlements */,
+			);
+			path = ShieldConfiguration;
+			sourceTree = "<group>";
+		};
+		42006AB264CF2AB66A8087C0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A4C81FB72A134BD95E8D3FCC /* PrayerLock */,
+				23AB01E1F0D58F418DF26E9C /* Info.plist */,
+				7A7AEF0E94B6CD8B9277328C /* PrayerLock.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		61C77CD8F840F50AC1BB95E3 /* ActivityMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				BC582C85996FC970C7E92553 /* Sources */,
+				BB462D7D0AB1D397E75FEC30 /* Info.plist */,
+				6CE71656CB3C455E88245711 /* ActivityMonitor.entitlements */,
+			);
+			path = ActivityMonitor;
+			sourceTree = "<group>";
+		};
+		71DC27D9F8E3B109C877BFC4 = {
+			isa = PBXGroup;
+			children = (
+				16F27EB4307FAB0C007329B5 /* Beloved.storekit */,
+				42006AB264CF2AB66A8087C0 /* App */,
+				2A144F7B76969C5D8AF72765 /* Extensions */,
+				F08F4EC4E60FB16A497D23EE /* UITests */,
+				89B104369EBC5E85E7E43C6B /* Config */,
+				113236722DEE1DC96F378B9D /* Products */,
+			);
 			sourceTree = "<group>";
 		};
 		89B104369EBC5E85E7E43C6B /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				0E7C0BD7C28B08B991190F2D,
-				572D6860927F4494708B698F,
-				181DE8D8B28685A2B274B987,
-				6769AF92A870BA76BAE8B2B3,
-				C8F7EFD762DC8EED022D4D9F,
-				D57E203B07D36B7258593E3A,
+				0E7C0BD7C28B08B991190F2D /* Identity.xcconfig */,
+				572D6860927F4494708B698F /* Shared.xcconfig */,
+				181DE8D8B28685A2B274B987 /* Debug.xcconfig */,
+				6769AF92A870BA76BAE8B2B3 /* Release.xcconfig */,
+				C8F7EFD762DC8EED022D4D9F /* Secrets.example.xcconfig */,
+				D57E203B07D36B7258593E3A /* validate-release.sh */,
 			);
 			path = Config;
 			sourceTree = "<group>";
 		};
-		113236722DEE1DC96F378B9D /* Products */ = {
+		D297F616CD5A51C923BAAB1C /* ShieldAction */ = {
 			isa = PBXGroup;
 			children = (
-				DC89C08142C264EB53409761,
-				76978348EC407ABC02964FC9,
-				E285E57FE1F6E1BBD9EF6F17,
-				15EDE9375E875060B29C64EF,
-				4891EA7430EBC7E757377A39,
+				28804ADC6F8B80B0D6B07121 /* Sources */,
+				B5009AF90DC94C8F5545FA39 /* Info.plist */,
+				FE0C3A3F092376F5D32AB8F8 /* ShieldAction.entitlements */,
 			);
-			name = Products;
+			path = ShieldAction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0A7B63CAAFC20685F85F8C8 /* PrayerLock */ = {
+		074A9D5B523269119B42EF90 /* ActivityMonitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F63C78BF13294B0E2B9A72B /* Build configuration list for PBXNativeTarget "PrayerLock" */;
+			buildConfigurationList = 8F0B42CCE1867F1C1A40C1DB /* Build configuration list for PBXNativeTarget "ActivityMonitor" */;
+			buildPhases = (
+				D28065B00E1BA9A3E224CFC2 /* Sources */,
+				EBBC967AF960D4256A01C369 /* Frameworks */,
+				6EF98017CDB48456BF2D1FB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BC582C85996FC970C7E92553 /* Sources */,
+			);
+			name = ActivityMonitor;
+			packageProductDependencies = (
+				191ED33EEE25041C90E4ACAA /* PLCore */,
+				9DA9896AA21FC5463D1AA170 /* PLProtection */,
+			);
+			productName = ActivityMonitor;
+			productReference = 15EDE9375E875060B29C64EF /* ActivityMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		98F07086CA0D31CFA89303C2 /* PrayerLockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2B89E862BDF8A9C55138FB5 /* Build configuration list for PBXNativeTarget "PrayerLockUITests" */;
+			buildPhases = (
+				E538DD04A9D46EE15022E3F2 /* Sources */,
+				C8597F3D1B79BDA0CDD688E1 /* Frameworks */,
+				1B4F8CAA2394B77EF8E710DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E79C42045015A67016A5A5DF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F08F4EC4E60FB16A497D23EE /* UITests */,
+			);
+			name = PrayerLockUITests;
+			packageProductDependencies = (
+			);
+			productName = PrayerLockUITests;
+			productReference = 4891EA7430EBC7E757377A39 /* PrayerLockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D0A7B63CAAFC20685F85F8C8 /* Beloved */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F63C78BF13294B0E2B9A72B /* Build configuration list for PBXNativeTarget "Beloved" */;
 			buildPhases = (
 				8BDC61F5A16EC4EE1643D32C /* Validate release readiness */,
 				257DE74BE72B9128BB9FEE90 /* Sources */,
@@ -293,7 +342,7 @@
 			fileSystemSynchronizedGroups = (
 				A4C81FB72A134BD95E8D3FCC /* PrayerLock */,
 			);
-			name = PrayerLock;
+			name = Beloved;
 			packageProductDependencies = (
 				012D56456E24E849BBB5078D /* PLCore */,
 				9871B651009293486F856CFE /* PLFaith */,
@@ -308,7 +357,7 @@
 				4D607F39999E7CFBF2193B7B /* PLDesign */,
 			);
 			productName = PrayerLock;
-			productReference = DC89C08142C264EB53409761 /* PrayerLock.app */;
+			productReference = DC89C08142C264EB53409761 /* Beloved.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E27B3D0A8E55FFF331F8C1D1 /* ShieldConfiguration */ = {
@@ -360,53 +409,6 @@
 			productReference = E285E57FE1F6E1BBD9EF6F17 /* ShieldAction.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		074A9D5B523269119B42EF90 /* ActivityMonitor */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8F0B42CCE1867F1C1A40C1DB /* Build configuration list for PBXNativeTarget "ActivityMonitor" */;
-			buildPhases = (
-				D28065B00E1BA9A3E224CFC2 /* Sources */,
-				EBBC967AF960D4256A01C369 /* Frameworks */,
-				6EF98017CDB48456BF2D1FB8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				BC582C85996FC970C7E92553 /* Sources */,
-			);
-			name = ActivityMonitor;
-			packageProductDependencies = (
-				191ED33EEE25041C90E4ACAA /* PLCore */,
-				9DA9896AA21FC5463D1AA170 /* PLProtection */,
-			);
-			productName = ActivityMonitor;
-			productReference = 15EDE9375E875060B29C64EF /* ActivityMonitor.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		98F07086CA0D31CFA89303C2 /* PrayerLockUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C2B89E862BDF8A9C55138FB5 /* Build configuration list for PBXNativeTarget "PrayerLockUITests" */;
-			buildPhases = (
-				E538DD04A9D46EE15022E3F2 /* Sources */,
-				C8597F3D1B79BDA0CDD688E1 /* Frameworks */,
-				1B4F8CAA2394B77EF8E710DD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E79C42045015A67016A5A5DF /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F08F4EC4E60FB16A497D23EE /* UITests */,
-			);
-			name = PrayerLockUITests;
-			packageProductDependencies = (
-			);
-			productName = PrayerLockUITests;
-			productReference = 4891EA7430EBC7E757377A39 /* PrayerLockUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -417,6 +419,13 @@
 				LastSwiftUpdateCheck = 2700;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
+					074A9D5B523269119B42EF90 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					98F07086CA0D31CFA89303C2 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = D0A7B63CAAFC20685F85F8C8;
+					};
 					D0A7B63CAAFC20685F85F8C8 = {
 						CreatedOnToolsVersion = 27.0;
 					};
@@ -425,13 +434,6 @@
 					};
 					F0E72FFFAEB59EC12C38F3FC = {
 						CreatedOnToolsVersion = 27.0;
-					};
-					074A9D5B523269119B42EF90 = {
-						CreatedOnToolsVersion = 27.0;
-					};
-					98F07086CA0D31CFA89303C2 = {
-						CreatedOnToolsVersion = 27.0;
-						TestTargetID = D0A7B63CAAFC20685F85F8C8;
 					};
 				};
 			};
@@ -452,7 +454,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0A7B63CAAFC20685F85F8C8 /* PrayerLock */,
+				D0A7B63CAAFC20685F85F8C8 /* Beloved */,
 				E27B3D0A8E55FFF331F8C1D1 /* ShieldConfiguration */,
 				F0E72FFFAEB59EC12C38F3FC /* ShieldAction */,
 				074A9D5B523269119B42EF90 /* ActivityMonitor */,
@@ -460,6 +462,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B4F8CAA2394B77EF8E710DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3672F311689713AF3AA3B8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		452292D7DF2478AF5E624C3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EF98017CDB48456BF2D1FB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCA460C136D1719AA67DEFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		8BDC61F5A16EC4EE1643D32C /* Validate release readiness */ = {
@@ -487,46 +527,8 @@
 		};
 /* End PBXShellScriptBuildPhase section */
 
-/* Begin PBXResourcesBuildPhase section */
-		3672F311689713AF3AA3B8DB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8CCA460C136D1719AA67DEFB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		452292D7DF2478AF5E624C3B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6EF98017CDB48456BF2D1FB8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1B4F8CAA2394B77EF8E710DD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		257DE74BE72B9128BB9FEE90 /* Sources */ = {
+		0EB3970A00E5FB4F76484B51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,7 +542,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0EB3970A00E5FB4F76484B51 /* Sources */ = {
+		257DE74BE72B9128BB9FEE90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -564,11 +566,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AC209D4FCAFB3D900D82E639 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E27B3D0A8E55FFF331F8C1D1 /* ShieldConfiguration */;
-			targetProxy = AE52572AFDD0608BF2EC1888 /* PBXContainerItemProxy */;
-		};
 		4C9EC9305F79F41DB3CE7071 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F0E72FFFAEB59EC12C38F3FC /* ShieldAction */;
@@ -579,14 +576,39 @@
 			target = 074A9D5B523269119B42EF90 /* ActivityMonitor */;
 			targetProxy = 914ADC48E7E64269F1340A6D /* PBXContainerItemProxy */;
 		};
+		AC209D4FCAFB3D900D82E639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E27B3D0A8E55FFF331F8C1D1 /* ShieldConfiguration */;
+			targetProxy = AE52572AFDD0608BF2EC1888 /* PBXContainerItemProxy */;
+		};
 		E79C42045015A67016A5A5DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D0A7B63CAAFC20685F85F8C8 /* PrayerLock */;
+			target = D0A7B63CAAFC20685F85F8C8 /* Beloved */;
 			targetProxy = 39EB57E140634A434C395E76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		046F4BE95D24E17A10BF2004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6769AF92A870BA76BAE8B2B3 /* Release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Extensions/ActivityMonitor/ActivityMonitor.entitlements;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extensions/ActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ActivityMonitor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).ActivityMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		08D1B0DDBC8F69240C81E990 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 181DE8D8B28685A2B274B987 /* Debug.xcconfig */;
@@ -637,24 +659,34 @@
 			};
 			name = Release;
 		};
-		ED195326D3A718D63E91F508 /* Debug */ = {
+		58BA4359BDB31520BE4C062F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 181DE8D8B28685A2B274B987 /* Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = App/PrayerLock.entitlements;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Beloved;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PrayerLock;
+			};
+			name = Debug;
+		};
+		598FC8BC84D2052F71AF2ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181DE8D8B28685A2B274B987 /* Debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Extensions/ActivityMonitor/ActivityMonitor.entitlements;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extensions/ActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ActivityMonitor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).ActivityMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -669,31 +701,19 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Beloved;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
-		};
-		EE14CE1FDEEF5DD691B98CED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 181DE8D8B28685A2B274B987 /* Debug.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_ENTITLEMENTS = Extensions/ShieldConfiguration/ShieldConfiguration.entitlements;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Extensions/ShieldConfiguration/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ShieldConfiguration;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).ShieldConfiguration";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		98F30F1D15C7853F93AC5A13 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -704,7 +724,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Extensions/ShieldConfiguration/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShieldConfiguration;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).ShieldConfiguration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -720,69 +744,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Extensions/ShieldAction/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShieldAction;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).ShieldAction";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E1059C455256F143B10F6C5A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6769AF92A870BA76BAE8B2B3 /* Release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_ENTITLEMENTS = Extensions/ShieldAction/ShieldAction.entitlements;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Extensions/ShieldAction/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ShieldAction;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).ShieldAction";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		598FC8BC84D2052F71AF2ACA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 181DE8D8B28685A2B274B987 /* Debug.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_ENTITLEMENTS = Extensions/ActivityMonitor/ActivityMonitor.entitlements;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Extensions/ActivityMonitor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ActivityMonitor;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).ActivityMonitor";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		046F4BE95D24E17A10BF2004 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6769AF92A870BA76BAE8B2B3 /* Release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_ENTITLEMENTS = Extensions/ActivityMonitor/ActivityMonitor.entitlements;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Extensions/ActivityMonitor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ActivityMonitor;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).ActivityMonitor";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		58BA4359BDB31520BE4C062F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 181DE8D8B28685A2B274B987 /* Debug.xcconfig */;
-			buildSettings = {
-				GENERATE_INFOPLIST_FILE = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = PrayerLock;
 			};
 			name = Debug;
 		};
@@ -797,6 +766,71 @@
 			};
 			name = Release;
 		};
+		E1059C455256F143B10F6C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6769AF92A870BA76BAE8B2B3 /* Release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Extensions/ShieldAction/ShieldAction.entitlements;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extensions/ShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldAction;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).ShieldAction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		ED195326D3A718D63E91F508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181DE8D8B28685A2B274B987 /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/PrayerLock.entitlements;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Beloved;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE14CE1FDEEF5DD691B98CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181DE8D8B28685A2B274B987 /* Debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Extensions/ShieldConfiguration/ShieldConfiguration.entitlements;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extensions/ShieldConfiguration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldConfiguration;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PL_BUNDLE_ID_PREFIX).ShieldConfiguration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -805,15 +839,6 @@
 			buildConfigurations = (
 				08D1B0DDBC8F69240C81E990 /* Debug */,
 				320644C4979C1B7DC9632144 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4F63C78BF13294B0E2B9A72B /* Build configuration list for PBXNativeTarget "PrayerLock" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ED195326D3A718D63E91F508 /* Debug */,
-				7BBBC5AB2D0C258F649D8F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -827,11 +852,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C44D9B8E0E8BFA7F48E277DC /* Build configuration list for PBXNativeTarget "ShieldAction" */ = {
+		4F63C78BF13294B0E2B9A72B /* Build configuration list for PBXNativeTarget "Beloved" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A086B9D9CD69CB2917E777A3 /* Debug */,
-				E1059C455256F143B10F6C5A /* Release */,
+				ED195326D3A718D63E91F508 /* Debug */,
+				7BBBC5AB2D0C258F649D8F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -854,6 +879,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C44D9B8E0E8BFA7F48E277DC /* Build configuration list for PBXNativeTarget "ShieldAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A086B9D9CD69CB2917E777A3 /* Debug */,
+				E1059C455256F143B10F6C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
@@ -868,73 +902,73 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = PLCore;
 		};
-		9871B651009293486F856CFE /* PLFaith */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLFaith;
-		};
-		97F4259FE968777EFC3F2C76 /* PLContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLContent;
-		};
-		F861858C691EB79CE1ADE579 /* PLCalendar */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLCalendar;
-		};
-		644BC7AF5FFB60AAFD09AEF7 /* PLHabits */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLHabits;
-		};
-		869B0752920E0D9E617855F1 /* PLProtection */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLProtection;
-		};
-		51A6DC97011CD218076B3390 /* PLMonetization */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLMonetization;
-		};
-		6B2A2D84AEC733D98835AA69 /* PLAssistant */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLAssistant;
-		};
-		B1C2D3E4F5A60718293A4B5D /* PLScripture */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLScripture;
-		};
-		D1E2F3A4B5C60718293A4B5F /* PLCompanion */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLCompanion;
-		};
-		4D607F39999E7CFBF2193B7B /* PLDesign */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLDesign;
-		};
-		C734C67EA17EBD2234212185 /* PLCore */ = {
+		191ED33EEE25041C90E4ACAA /* PLCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PLCore;
-		};
-		8267DF33F5BEDF543DDFADDB /* PLProtection */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLProtection;
 		};
 		3390B812A8219A5BD1307211 /* PLBrand */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PLBrand;
 		};
+		4D607F39999E7CFBF2193B7B /* PLDesign */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLDesign;
+		};
+		51A6DC97011CD218076B3390 /* PLMonetization */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLMonetization;
+		};
+		644BC7AF5FFB60AAFD09AEF7 /* PLHabits */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLHabits;
+		};
+		6B2A2D84AEC733D98835AA69 /* PLAssistant */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLAssistant;
+		};
+		8267DF33F5BEDF543DDFADDB /* PLProtection */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLProtection;
+		};
+		869B0752920E0D9E617855F1 /* PLProtection */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLProtection;
+		};
+		97F4259FE968777EFC3F2C76 /* PLContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLContent;
+		};
+		9871B651009293486F856CFE /* PLFaith */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLFaith;
+		};
+		9DA9896AA21FC5463D1AA170 /* PLProtection */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLProtection;
+		};
 		A77777DD158AB9769807F77D /* PLCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PLCore;
+		};
+		B1C2D3E4F5A60718293A4B5D /* PLScripture */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLScripture;
+		};
+		C734C67EA17EBD2234212185 /* PLCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLCore;
+		};
+		D1E2F3A4B5C60718293A4B5F /* PLCompanion */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLCompanion;
 		};
 		EDF713364AD92E352115AA89 /* PLProtection */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PLProtection;
 		};
-		191ED33EEE25041C90E4ACAA /* PLCore */ = {
+		F861858C691EB79CE1ADE579 /* PLCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = PLCore;
-		};
-		9DA9896AA21FC5463D1AA170 /* PLProtection */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PLProtection;
+			productName = PLCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

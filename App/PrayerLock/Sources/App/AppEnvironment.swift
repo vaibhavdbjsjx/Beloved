@@ -37,6 +37,8 @@ final class AppEnvironment {
     let companionTransport: any CompanionTransport
     let companionResolver: CompanionResolver
     let companionStore: CodableFileStore<CompanionConversation>
+    let sessionStore: AccountSessionStore
+    let authentication: any AuthenticationService
 
     private init(
         configuration: AppConfiguration,
@@ -45,6 +47,11 @@ final class AppEnvironment {
     ) throws {
         self.configuration = configuration
         calendar = .autoupdatingCurrent
+        let secureStorage: any SecureStorage = ProcessInfo.processInfo.arguments.contains(LaunchArgument.uiTesting)
+            ? InMemorySecureStorage()
+            : KeychainSecureStorage(service: configuration.appGroupIdentifier ?? "com.beloved.auth")
+        sessionStore = AccountSessionStore(storage: secureStorage)
+        authentication = NativeAuthenticationService(sessionStore: sessionStore, configuration: configuration)
         registry = try FaithRegistry.bundled()
         catalog = try ContentCatalog.bundled()
         contentPolicy = configuration.isDevelopment ? .development : .release

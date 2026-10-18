@@ -6,10 +6,11 @@ Beloved helps you pause before the apps you choose and turn that moment into pra
 
 ## The short version
 
-- Beloved has no account and no sign-in.
-- Everything Beloved stores stays on your iPhone. The only exception: if you subscribe to Premium and use the Companion, your messages are sent to Beloved's server and Google Gemini to write replies.
-- Beloved contains no analytics, advertising, tracking or crash-reporting code, and no third-party software libraries.
-- You can delete everything at any time in Settings → Delete all my data, or by deleting the app.
+- Beloved supports optional sign-in with Apple and Gmail (Google) to preserve your account profile.
+- Everything Beloved stores (your prayers, reflections, check-ins, and Screen Time rules) stays strictly on your iPhone and is never linked or uploaded to an account server.
+- The only network services: (1) sign-in authentication with Apple or Gmail (Google); (2) if you subscribe to Premium and use the AI Companion, messages are processed through Beloved's server and Google Gemini; (3) in-app purchases processed directly by Apple StoreKit.
+- Beloved contains no analytics, advertising, or tracking SDKs.
+- You can delete your account and all data at any time in Settings/Profile → Delete Account or Delete all my data.
 
 ## What Beloved stores on your iPhone
 
@@ -55,8 +56,10 @@ If you have turned on "Share With App Developers" in your iPhone's analytics set
 
 Your data stays on your iPhone until you delete it.
 
-- **Delete all my data** (Settings in Beloved) permanently removes your profile, check-ins and prayer history, removes all pauses and schedules, and returns the app to its first-launch state.
+- **Delete Account** (Settings → Account/Profile → Delete Account) permanently revokes authorization where supported, wipes account credentials and session tokens from your iPhone's secure Keychain, and deletes your local profile photo.
+- **Delete all my data** (Settings in Beloved) permanently removes your profile, check-ins, companion conversations, and prayer history, deletes account credentials, removes all pauses and schedules, and returns the app to its first-launch state.
 - **Deleting the app** removes everything the app stored on your iPhone.
+- **Subscriptions:** Deleting your account or the app does not automatically cancel an active Apple App Store subscription; auto-renewable subscriptions must be managed and cancelled directly in your iPhone's Apple ID Subscriptions settings.
 
 Beloved's server does not store Companion conversations. Its daily message counts expire after 48 hours.
 

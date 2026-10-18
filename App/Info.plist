@@ -2,19 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>PLEnvironment</key>
-	<string>$(PL_ENVIRONMENT)</string>
 	<key>PLAppGroupIdentifier</key>
 	<string>$(PL_APP_GROUP_ID)</string>
 	<key>PLAssistantEndpoint</key>
 	<string>$(PL_ASSISTANT_ENDPOINT)</string>
+	<key>PLEnvironment</key>
+	<string>$(PL_ENVIRONMENT)</string>
+	<key>PLPrivacyPolicyURL</key>
+	<string>$(PL_PRIVACY_POLICY_URL)</string>
 	<key>PLSubscriptionGroupID</key>
 	<string>$(PL_SUBSCRIPTION_GROUP_ID)</string>
 	<key>PLSupportURL</key>
 	<string>$(PL_SUPPORT_URL)</string>
-	<key>PLPrivacyPolicyURL</key>
-	<string>$(PL_PRIVACY_POLICY_URL)</string>
+	<key>PLGoogleClientID</key>
+	<string>$(PL_GOOGLE_CLIENT_ID)</string>
+	<key>GIDClientID</key>
+	<string>$(PL_GOOGLE_CLIENT_ID)</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>$(PL_GOOGLE_URL_SCHEME)</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
