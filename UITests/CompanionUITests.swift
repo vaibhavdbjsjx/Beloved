@@ -1,8 +1,8 @@
 import CoreLocation
 import XCTest
 
-/// The companion in this build answers from the verified library (no server configured),
-/// so these check the safety route, verified passages and prayers, and honest labelling.
+/// The companion: the safety route, verified passages and prayers inside answers, honest
+/// labelling (AI or library), and the faith-specific tools around it.
 @MainActor
 final class CompanionUITests: XCTestCase {
     override func setUpWithError() throws { continueAfterFailure = false }
@@ -12,8 +12,9 @@ final class CompanionUITests: XCTestCase {
         tap(app.tabBars.buttons["Companion"])
         type(app, "What does Psalm 23:1-3 mean?")
         let passage = app.descendants(matching: .any)["companion.passage"]
-        XCTAssertTrue(passage.waitForExistence(timeout: 20), "The verse appears from the verified library")
-        XCTAssertTrue(app.staticTexts["From Beloved's library"].exists, "Library answers are labelled as such, not as AI")
+        XCTAssertTrue(passage.waitForExistence(timeout: 90), "The verse appears from the verified library")
+        XCTAssertTrue(app.staticTexts["From Beloved's library"].exists || app.staticTexts["Companion · AI"].exists,
+                      "Every answer says where it comes from")
         XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "The LORD is my shepherd")).firstMatch.exists)
     }
 
@@ -129,7 +130,7 @@ final class CompanionUITests: XCTestCase {
 
     private func onboard(faith: String) -> XCUIApplication {
         let app = XCUIApplication()
-        app.launchArguments = ["-PLUITesting"]
+        app.launchArguments = ["-PLUITesting", "-PLUnlockPremium"]
         app.launch()
         tap(app.buttons["onboarding.getStarted"])
         tap(app.buttons["faith.\(faith)"])

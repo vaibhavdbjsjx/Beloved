@@ -100,12 +100,21 @@ private func d(_ year: Int, _ month: Int, _ day: Int) -> CivilDate { CivilDate(y
         #expect(ids(d(2026, 10, 4), "christianity", "christianity.orthodox").contains("christianity.lords-day"))
     }
 
-    @Test func hinduFestivalsWaitForSourcedTables() {
-        // No panchang source has been selected yet, so nothing is invented.
-        let year = CivilDateRange(start: d(2026, 1, 1), end: d(2026, 12, 31))
+    @Test func hinduFestivalsComeFromPublishedTables() throws {
+        // Lunisolar dates are never computed on the device: each comes from a cited table.
+        let year = CivilDateRange(start: d(2026, 1, 1), end: d(2027, 12, 31))
         let hindu = calendar.observances(in: year, faith: "hinduism", tradition: nil)
-        #expect(hindu.isEmpty)
-        #expect(calendar.definitions.filter { $0.faith == "hinduism" }.allSatisfy { $0.precision == .sourcedTable })
+        let diwali = hindu.filter { $0.occasionID == "hinduism.diwali" }.map(\.range.start)
+        #expect(diwali == [d(2026, 11, 8), d(2027, 10, 29)])
+        let navaratri = try #require(hindu.first { $0.occasionID == "hinduism.navaratri" })
+        #expect(navaratri.range.dayCount == 9)
+        for definition in calendar.definitions where definition.faith == "hinduism" {
+            #expect(definition.precision == .sourcedTable)
+            guard case let .table(entries) = definition.schedule else { Issue.record("\(definition.id) is not a table"); continue }
+            #expect(!entries.isEmpty && entries.allSatisfy { $0.source.contains("DoPT") }, "\(definition.id)")
+        }
+        // Never shown to other faiths.
+        #expect(calendar.observances(in: year, faith: "islam", tradition: nil).allSatisfy { $0.definition.faith == "islam" })
     }
 
     @Test func sourcedTablesRespectRegion() throws {

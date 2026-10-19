@@ -37,6 +37,9 @@ final class PrayerLockUITests: XCTestCase {
     /// still fails, and testLargestTextSizeKeepsMainFlowUsable checks Settings text grows.
     private func audit(_ app: XCUIApplication, skipping skipped: XCUIAccessibilityAuditType = [],
                        allowUnattributedDynamicType: Bool = false) throws {
+        // Screens fade their content in (plStaggered); auditing mid-fade measures
+        // half-transparent text. Let the entrance finish first.
+        sleep(2)
         let tabBar = app.tabBars.firstMatch
         let tabBarFrame = tabBar.exists ? tabBar.frame : .null
         try app.performAccessibilityAudit(for: XCUIAccessibilityAuditType.all.subtracting(skipped)) { issue in
@@ -129,7 +132,7 @@ final class PrayerLockUITests: XCTestCase {
         tap(app.buttons["onboarding.notificationsLater"])
         tap(app.buttons["onboarding.finish"])
 
-        tap(app.tabBars.buttons["Settings"])
+        tap(app.tabBars.buttons["You"])
         tap(app.buttons["settings.privacyPolicy"])
         XCTAssertTrue(app.staticTexts["Beloved Privacy Policy"].waitForExistence(timeout: 15))
     }
@@ -228,7 +231,7 @@ final class PrayerLockUITests: XCTestCase {
     func testIntentionEditedInSettingsReachesToday() {
         let app = launch()
         completeFaithNeutralOnboarding(app)
-        tap(app.tabBars.buttons["Settings"])
+        tap(app.tabBars.buttons["You"])
         tap(app.buttons["settings.intentions"])
         tap(app.buttons["intentions.add"])
         let field = app.textFields.firstMatch
@@ -247,9 +250,11 @@ final class PrayerLockUITests: XCTestCase {
     func testSettingsOffersNotificationsAndShowsBuild() {
         let app = launch()
         completeFaithNeutralOnboarding(app)
-        tap(app.tabBars.buttons["Settings"])
+        tap(app.tabBars.buttons["You"])
         // A fresh simulator has never been asked, so the in-app request is offered.
-        XCTAssertTrue(app.buttons["settings.allowNotifications"].waitForExistence(timeout: 15))
+        let allow = app.buttons["settings.allowNotifications"]
+        for _ in 0..<6 where !allow.waitForExistence(timeout: 2) { app.swipeUp() }
+        XCTAssertTrue(allow.exists)
         let version = app.descendants(matching: .any)["settings.version"]
         for _ in 0..<6 where !version.exists { app.swipeUp(velocity: .fast) }
         XCTAssertTrue(version.exists, "Settings shows the version row")
@@ -262,12 +267,15 @@ final class PrayerLockUITests: XCTestCase {
         let store = UUID().uuidString
         var app = launch(store: store)
         completeFaithNeutralOnboarding(app)
-        tap(app.tabBars.buttons["Settings"])
-        XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 15))
+        tap(app.tabBars.buttons["You"])
+        XCTAssertTrue(app.navigationBars["You"].waitForExistence(timeout: 15))
         // Form rows load lazily: scroll until the row exists and can be tapped.
         let delete = app.buttons["settings.deleteAll"]
-        for _ in 0..<8 where !(delete.exists && delete.isHittable) { app.swipeUp(velocity: .fast) }
-        tap(delete)
+        // Gentle swipes: the list is long and fast swipes fling past the row.
+        for _ in 0..<16 where !(delete.exists && delete.isHittable) { app.swipeUp(velocity: .slow) }
+        for _ in 0..<16 where !(delete.exists && delete.isHittable) { app.swipeDown(velocity: .slow) }
+        XCTAssertTrue(delete.exists && delete.isHittable, "Delete all data is reachable")
+        delete.tap()
         tap(app.buttons["Delete everything"])
         XCTAssertTrue(app.buttons["onboarding.getStarted"].waitForExistence(timeout: 15))
 
@@ -294,8 +302,8 @@ final class PrayerLockUITests: XCTestCase {
     func testAccessibilityAuditSettings() throws {
         let app = launch()
         completeFaithNeutralOnboarding(app)
-        tap(app.tabBars.buttons["Settings"])
-        XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 15))
+        tap(app.tabBars.buttons["You"])
+        XCTAssertTrue(app.navigationBars["You"].waitForExistence(timeout: 15))
         try audit(app, allowUnattributedDynamicType: true)
     }
 
@@ -308,8 +316,8 @@ final class PrayerLockUITests: XCTestCase {
         completeFaithNeutralOnboarding(app)
         XCTAssertTrue(app.buttons["today.beginMoment"].waitForExistence(timeout: 15))
         try audit(app)
-        tap(app.tabBars.buttons["Settings"])
-        XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 15))
+        tap(app.tabBars.buttons["You"])
+        XCTAssertTrue(app.navigationBars["You"].waitForExistence(timeout: 15))
         try audit(app, allowUnattributedDynamicType: true)
     }
 
@@ -329,9 +337,9 @@ final class PrayerLockUITests: XCTestCase {
         for _ in 0..<8 where !begin.isHittable { app.swipeUp(velocity: .fast) }
         XCTAssertTrue(begin.isHittable, "Begin a moment is reachable at the largest text size")
 
-        tap(app.tabBars.buttons["Settings"])
+        tap(app.tabBars.buttons["You"])
         // At AX5 the list is long and rows load lazily, so wait for the screen, not a lower row.
-        XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 15))
+        XCTAssertTrue(app.navigationBars["You"].waitForExistence(timeout: 15))
         attachScreenshot(app, named: "Settings AX5 top")
         // Evidence for the one audit exclusion on this screen: the row really grows.
         let transliteration = app.descendants(matching: .any)["settings.showTransliteration"]

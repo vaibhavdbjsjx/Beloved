@@ -80,6 +80,10 @@ public struct CompanionContext: Codable, Hashable, Sendable {
     /// Scripture the app can quote: `bible`, `quran`, `bhagavad-gita`.
     public var scripture: [String]
     public var library: [LibraryEntry]
+    /// Today's date in words ("Monday, 19 October 2026"), so "today" means something.
+    public var today: String?
+    /// Holy days today and soon in their calendar ("Diwali (in 20 days, 8 November)").
+    public var observances: [String] = []
 
     public init(
         faith: String?, faithName: String?, tradition: String?, focuses: [String], language: String,
@@ -104,14 +108,16 @@ public struct CompanionContext: Codable, Hashable, Sendable {
         policy: ContentPolicy,
         scripture: [String],
         helpWith: [String] = [],
-        region: String? = Locale.current.region?.identifier
+        region: String? = Locale.current.region?.identifier,
+        today: String? = nil,
+        observances: [String] = []
     ) -> CompanionContext {
         let language = profile.languages.first ?? "en"
         let faith = profile.faithID.flatMap(registry.faith)
         let items = catalog.visibleItems(policy: policy, registry: registry)
             .filter { $0.faith == nil || $0.faith == profile.faithID }
             .filter { item in item.segments.contains { $0.role == .sourceText || $0.role == .traditionalText || $0.role == .composedPrayer } }
-        return CompanionContext(
+        var context = CompanionContext(
             faith: profile.faithID?.rawValue,
             faithName: faith?.name.resolved(for: [language]),
             tradition: profile.traditionID.flatMap(registry.tradition)?.name.resolved(for: [language]),
@@ -132,6 +138,9 @@ public struct CompanionContext: Codable, Hashable, Sendable {
                 )
             }
         )
+        context.today = today
+        context.observances = observances
+        return context
     }
 }
 

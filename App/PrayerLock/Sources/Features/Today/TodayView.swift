@@ -16,6 +16,7 @@ struct TodayView: View {
     @State private var showingCounter = false
     @State private var showingJournal = false
     @State private var showingRosary = false
+    @State private var showingProtection = false
 
     var body: some View {
         NavigationStack {
@@ -27,20 +28,35 @@ struct TodayView: View {
                         welcomeBack
                             .plStaggered(1)
                     }
-                    DailyFocusCard()
-                        .plStaggered(1)
+                    // The one thing that matters most right now, in the faith's jewel tone.
+                    if let day = model.ramadanDay {
+                        RamadanCard(day: day)
+                            .plStaggered(1)
+                    }
+                    if let festival = model.featuredFestival {
+                        FestivalBanner(observance: festival.observance, greeting: festival.greeting, daysAway: festival.daysAway)
+                            .plStaggered(1)
+                    }
                     if model.profile.faithID?.rawValue == "islam" {
                         SalahCard()
                             .plStaggered(1)
                     }
-                    momentCard
+                    DailyFocusCard()
                         .plStaggered(1)
+                    momentCard
+                        .plStaggered(2)
+                    if let plan = model.activeReadingPlan, let next = model.plans.nextDay(plan) {
+                        continueReading(plan, day: next)
+                            .plStaggered(2)
+                    }
                     if let verse = model.dailyVerse {
                         DailyVerseCard(verse: verse)
                             .plStaggered(2)
                     }
+                    quickTools
+                        .plStaggered(3)
                     observances
-                        .plStaggered(2)
+                        .plStaggered(3)
                     ledger
                         .plStaggered(3)
                 }
@@ -76,10 +92,14 @@ struct TodayView: View {
             .navigationDestination(isPresented: $showingJourney) {
                 JourneyView()
             }
+            .navigationDestination(isPresented: $showingProtection) {
+                ProtectionView(embedded: true)
+            }
             .task {
                 await model.refreshHabits()
                 await model.refreshDailyVerse()
                 await model.salah.refreshReminders()
+                await model.rescheduleFestivalGreetings()
             }
         }
     }
@@ -104,7 +124,11 @@ struct TodayView: View {
     /// The date — with the Hijri date for Muslims (Umm al-Qura calendar; local moon sighting
     /// can differ by a day).
     private var dateLine: String {
-        let gregorian = Date.now.formatted(.dateTime.weekday(.wide).day().month(.wide))
+        var gregorian = Date.now.formatted(.dateTime.weekday(.wide).day().month(.wide))
+        // The season the user is in: Advent, Lent, Ramadan, Navaratri…
+        if let season = model.todaysObservances().first(where: { $0.definition.kind == .season || $0.definition.kind == .fast || $0.range.dayCount > 2 }) {
+            gregorian += " · " + season.definition.name.resolved(for: model.profile.languages)
+        }
         guard model.profile.faithID?.rawValue == "islam" else { return gregorian }
         var style = Date.FormatStyle(date: .omitted, time: .omitted).day().month(.wide).year()
         style.calendar = Calendar(identifier: .islamicUmmAlQura)
@@ -184,7 +208,9 @@ struct TodayView: View {
 
     @ViewBuilder
     private var observances: some View {
-        let all = model.todaysObservances()
+        let featured = model.featuredFestival?.observance.occasionID
+        // Seasons appear beside the date; the featured festival has its own banner.
+        let all = model.todaysObservances().filter { $0.occasionID != featured && $0.definition.kind != .season }
         let ordered = all.filter { $0.definition.kind != .weekly } + all.filter { $0.definition.kind == .weekly }
         let customs = model.todaysAssociations()
         if !ordered.isEmpty || !customs.isEmpty {
@@ -241,39 +267,13 @@ struct TodayView: View {
             ) { showingMood = true }
             .accessibilityIdentifier("today.mood")
             PLHairline().padding(.leading, PLSpacing.xxxl)
-            if offersRosary {
-                LedgerRow(
-                    label: String(localized: "Rosary"),
-                    systemImage: "circle.dotted",
-                    value: String(localized: "Pray the rosary"),
-                    detail: String(localized: "Today: \(RosaryMysteries.forDay(.now).name)")
-                ) { showingRosary = true }
-                .accessibilityIdentifier("today.rosary")
-            } else {
-                LedgerRow(
-                    label: counter.label,
-                    systemImage: "circle.dotted",
-                    value: counter.title,
-                    detail: counter.detail
-                ) { showingCounter = true }
-                .accessibilityIdentifier("today.counter")
-            }
-            PLHairline().padding(.leading, PLSpacing.xxxl)
-            LedgerRow(
-                label: JournalWording.forFaith(model.profile.faithID?.rawValue).title,
-                systemImage: "book.closed",
-                value: journalSummary,
-                isPlaceholder: model.journal.requests.isEmpty
-            ) { showingJournal = true }
-            .accessibilityIdentifier("today.journal")
-            PLHairline().padding(.leading, PLSpacing.xxxl)
             LedgerRow(
                 label: String(localized: "Protection"),
                 systemImage: "shield.lefthalf.filled",
                 value: model.protectionStatus.title,
                 detail: model.protectionStatus.summary,
                 tone: model.protectionStatus.tone
-            ) { model.selectedTab = .protection }
+            ) { showingProtection = true }
             .accessibilityIdentifier("today.protection")
             PLHairline().padding(.leading, PLSpacing.xxxl)
             LedgerRow(
@@ -285,6 +285,47 @@ struct TodayView: View {
             .accessibilityIdentifier("today.journey")
         }
         .plPaper(padding: 0)
+    }
+
+    // MARK: - Quick tools
+
+    /// The two things people reach for most: their beads and their prayer list.
+    private var quickTools: some View {
+        PLTileGrid {
+            if offersRosary {
+                PLToolTile(String(localized: "Pray the rosary"), subtitle: RosaryMysteries.forDay(.now).name, systemName: "circle.dotted") { model.withPremium(String(localized: "Guided rosary")) { showingRosary = true } }
+                    .accessibilityIdentifier("today.rosary")
+            } else {
+                PLToolTile(counter.title, subtitle: counter.detail, systemName: "circle.dotted") { showingCounter = true }
+                    .accessibilityIdentifier("today.counter")
+            }
+            PLToolTile(JournalWording.forFaith(model.profile.faithID?.rawValue).title, subtitle: journalSummary, systemName: "book.closed") { showingJournal = true }
+                .accessibilityIdentifier("today.journal")
+        }
+    }
+
+    private func continueReading(_ plan: ReadingPlan, day: Int) -> some View {
+        Button {
+            model.read(plan, day: day)
+        } label: {
+            HStack(spacing: PLSpacing.m) {
+                PLIconBadge(plan.symbol, size: 44)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(String(localized: "\(plan.title) · day \(day + 1) of \(plan.days.count)")).plEyebrow()
+                    Text(plan.days[day].title)
+                        .font(.plTitleSmall)
+                        .foregroundStyle(Color.plInk)
+                        .multilineTextAlignment(.leading)
+                    ProgressView(value: Double(model.plans.completed(plan).count), total: Double(plan.days.count))
+                        .tint(Color.plGilt)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                Image(systemName: "chevron.right").font(.footnote.weight(.semibold)).foregroundStyle(Color.plInkSecondary)
+            }
+            .plPaper(padding: PLSpacing.m)
+        }
+        .buttonStyle(PressableStyle())
+        .accessibilityIdentifier("today.plan")
     }
 
     private var journeySummary: String {

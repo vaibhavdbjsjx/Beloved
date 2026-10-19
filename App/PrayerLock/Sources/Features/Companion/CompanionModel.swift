@@ -19,6 +19,8 @@ final class CompanionModel {
     private(set) var isResponding = false
     /// A short, honest note about the last reply (limit reached, offline…).
     private(set) var notice: String?
+    /// The last answer failed for a passing reason (busy, offline): the question can be re-sent.
+    private(set) var canRetry = false
 
     @ObservationIgnored private var app: AppModel?
     @ObservationIgnored private var task: Task<Void, Never>?
@@ -41,6 +43,7 @@ final class CompanionModel {
         let text = raw.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !text.isEmpty, !isResponding, let app else { return }
         notice = nil
+        canRetry = false
         append(CompanionMessage(role: .user, text: text))
 
         switch safety.classify(text) {
@@ -62,6 +65,20 @@ final class CompanionModel {
             } else {
                 await self.replyFromLibrary(text, app: app)
             }
+            self.isResponding = false
+            self.streamingText = nil
+        }
+    }
+
+    /// Asks the last question again after a passing failure.
+    func retry() {
+        guard canRetry, !isResponding, let app else { return }
+        canRetry = false
+        notice = nil
+        isResponding = true
+        task = Task { [weak self] in
+            guard let self else { return }
+            await self.replyFromCompanion(app: app)
             self.isResponding = false
             self.streamingText = nil
         }
@@ -96,11 +113,18 @@ final class CompanionModel {
         } catch let error as CompanionError {
             if !reply.isEmpty { append(CompanionMessage(role: .assistant, origin: .companion, text: reply)) }
             notice = message(for: error)
-            if reply.isEmpty, let last = conversation.messages.last(where: { $0.role == .user }) {
-                await replyFromLibrary(last.text, app: app)
+            switch error {
+            case .unavailable, .network:
+                // A question deserves its answer, not an unrelated prayer: offer to try again.
+                canRetry = reply.isEmpty
+            case .freeLimitReached, .dailyLimitReached, .notSubscribed, .notConfigured:
+                if reply.isEmpty, let last = conversation.messages.last(where: { $0.role == .user }) {
+                    await replyFromLibrary(last.text, app: app)
+                }
             }
         } catch {
             notice = message(for: .network)
+            canRetry = reply.isEmpty
         }
     }
 
@@ -147,22 +171,32 @@ final class CompanionModel {
         if let today = app.todaysFocus {
             profile.focusIDs = [today] + profile.focusIDs.filter { $0 != today }
         }
+        let languages = app.profile.languages
+        let observances = app.upcomingObservances(days: 45).prefix(6).map { observance -> String in
+            let name = observance.definition.name.resolved(for: languages)
+            let days = app.today.days(until: observance.range.start)
+            let when = days <= 0 ? "today" : (days == 1 ? "tomorrow, \(observance.range.start.formatted)" : "in \(days) days, \(observance.range.start.formatted)")
+            return "\(name) (\(when)\(observance.isEstimated ? ", date depends on the moon" : ""))"
+        }
         return CompanionContext.make(
             profile: profile,
             registry: app.env.registry,
             catalog: app.env.catalog,
             policy: app.env.contentPolicy,
-            scripture: app.readableWork.map { [$0.work.id.rawValue] } ?? []
+            scripture: app.readableWork.map { [$0.work.id.rawValue] } ?? [],
+            today: Date.now.formatted(.dateTime.weekday(.wide).day().month(.wide).year()),
+            observances: Array(observances)
         )
     }
 
     private func message(for error: CompanionError) -> String {
         switch error {
-        case .freeLimitReached: String(localized: "You've used today's free messages with the companion. They renew tomorrow — or go Premium for 100 a day.")
+        case .freeLimitReached: String(localized: "You've used today's 10 free questions. They renew tomorrow — Premium gives you 100 a day.")
         case .dailyLimitReached: String(localized: "You've reached today's companion allowance. It renews tomorrow — the library is always here.")
         case .notSubscribed: String(localized: "The companion is part of Premium. Here's something from the library instead.")
         case .notConfigured: String(localized: "The companion isn't available in this build. Here's something from the library.")
-        case .unavailable, .network: String(localized: "The companion couldn't answer just now. Here's something from the library instead.")
+        case .unavailable: String(localized: "The companion is busy right now — please ask again in a moment.")
+        case .network: String(localized: "You seem to be offline. Connect to the internet and ask again.")
         }
     }
 

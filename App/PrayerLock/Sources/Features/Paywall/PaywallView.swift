@@ -38,17 +38,20 @@ struct PaywallView: View {
                 .frame(maxWidth: .infinity)
             ScreenHeader(
                 eyebrow: String(localized: "Premium"),
-                title: String(localized: "Talk with a faith-aware companion."),
-                detail: String(localized: "Premium unlocks the cloud Companion. Free features stay free: Screen Time pauses, scripture, daily verse and the verified prayer library.")
+                title: String(localized: "Go deeper in your faith, every day."),
+                detail: String(localized: "Everything you need to pray stays free — the pause before apps, scripture, prayer times, the Qibla, your beads and the core prayers. Premium adds the deeper library and a companion who knows your tradition.")
             )
         }
     }
 
     private var featureList: some View {
         VStack(alignment: .leading, spacing: PLSpacing.s) {
-            PaywallFeature(icon: "sparkles", title: "AI Companion", detail: "A humble, faith-scoped conversation for prayer, scripture and the day in front of you.")
-            PaywallFeature(icon: "text.quote", title: "Verified holy text", detail: "Verses, duas, prayers and mantras are filled from Beloved's on-device library and labelled with sources.")
-            PaywallFeature(icon: "lock.shield", title: "Private by design", detail: "No API keys in the app. Premium messages go through Beloved's server only when you use Companion.")
+            PaywallFeature(icon: "sparkles", title: "100 questions a day", detail: "Stories, history and meaning; step-by-step guides for every puja, prayer and festival — answered in your tradition (free: 10 a day).")
+            PaywallFeature(icon: "books.vertical", title: "The complete library", detail: "Every stotra and long prayer — Aditya Hridayam, Kanakadhara, Subrahmanya Bhujangam and more — in the original script with transliteration and source.")
+            PaywallFeature(icon: "circle.dotted", title: "Guided rosary", detail: "The day's mysteries with their Gospel passages, bead by bead.")
+            PaywallFeature(icon: "book", title: "Every reading plan", detail: "The Gospels, Psalms, the New Testament, a Qur'an khatm in 30 days, the Gita in 18 days.")
+            PaywallFeature(icon: "book.closed", title: "Unlimited prayer journal", detail: "Everyone you're praying for, and every prayer answered (free: 3 at a time).")
+            PaywallFeature(icon: "lock.shield", title: "Private by design", detail: "Your prayers and journal stay on this iPhone. No ads, ever.")
         }
         .plPaper()
     }
@@ -258,4 +261,26 @@ private struct PaywallProductRow: View {
         }
         return String(localized: "Renews every \(product.periodDescription)")
     }
+}
+
+/// Presents the paywall from inside a sheet (a sheet can't be shown from the root while
+/// another is up). Apply to the root view of any sheet that has Premium features.
+struct PremiumPaywallPresenter: ViewModifier {
+    @Environment(AppModel.self) private var model
+
+    func body(content: Content) -> some View {
+        content.sheet(isPresented: Binding(get: { model.paywallReason != nil }, set: { if !$0 { model.paywallReason = nil } })) {
+            NavigationStack {
+                PaywallView()
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) { Button("Not now") { model.paywallReason = nil } }
+                    }
+            }
+            .environment(model)
+        }
+    }
+}
+
+extension View {
+    func presentsPaywall() -> some View { modifier(PremiumPaywallPresenter()) }
 }

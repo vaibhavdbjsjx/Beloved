@@ -1,229 +1,1763 @@
 [
   {
-    "id": "christianity.lords-day", "faith": "christianity", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "The Lord's Day", "kind": "weekly",
-    "schedule": { "weekly": { "isoWeekday": 7 } },
-    "precision": "computed", "source": "Weekly Sunday observance."
+    "id": "christianity.lords-day",
+    "faith": "christianity",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "The Lord's Day",
+    "kind": "weekly",
+    "schedule": {
+      "weekly": {
+        "isoWeekday": 7
+      }
+    },
+    "precision": "computed",
+    "source": "Weekly Sunday observance."
   },
   {
-    "id": "christianity.advent", "faith": "christianity",
-    "traditions": ["christianity.catholic", "christianity.protestant", "christianity.anglican", "christianity.nondenominational"],
+    "id": "christianity.advent",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
     "includeWhenTraditionUnspecified": true,
-    "name": "Advent", "kind": "season",
-    "schedule": { "rule": { "start": { "weekdayBefore": { "month": 12, "day": 25, "isoWeekday": 7, "occurrence": 4 } },
-                            "end": { "fixedGregorian": { "month": 12, "day": 24 } } } },
+    "name": "Advent",
+    "kind": "season",
+    "schedule": {
+      "rule": {
+        "start": {
+          "weekdayBefore": {
+            "month": 12,
+            "day": 25,
+            "isoWeekday": 7,
+            "occurrence": 4
+          }
+        },
+        "end": {
+          "fixedGregorian": {
+            "month": 12,
+            "day": 24
+          }
+        }
+      }
+    },
     "precision": "computed",
     "note": "Western churches. Orthodox churches keep the Nativity Fast on a different schedule.",
     "source": "Western liturgical calendar: begins on the fourth Sunday before Christmas."
   },
   {
-    "id": "christianity.christmas", "faith": "christianity",
-    "traditions": ["christianity.catholic", "christianity.protestant", "christianity.anglican", "christianity.nondenominational"],
+    "id": "christianity.christmas",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
     "includeWhenTraditionUnspecified": true,
-    "name": "Christmas", "kind": "feast",
-    "schedule": { "rule": { "start": { "fixedGregorian": { "month": 12, "day": 25 } } } },
-    "precision": "computed", "source": "Fixed feast, 25 December (Gregorian)."
+    "name": "Christmas",
+    "kind": "feast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "fixedGregorian": {
+            "month": 12,
+            "day": 25
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Fixed feast, 25 December (Gregorian)."
   },
   {
-    "id": "christianity.christmas-julian", "faith": "christianity",
-    "traditions": ["christianity.orthodox"], "includeWhenTraditionUnspecified": false,
-    "name": "Nativity of Christ (Julian calendar)", "kind": "feast",
-    "schedule": { "rule": { "start": { "fixedJulian": { "month": 12, "day": 25 } } } },
+    "id": "christianity.christmas-julian",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.orthodox"
+    ],
+    "includeWhenTraditionUnspecified": false,
+    "name": "Nativity of Christ (Julian calendar)",
+    "kind": "feast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "fixedJulian": {
+            "month": 12,
+            "day": 25
+          }
+        }
+      }
+    },
     "precision": "computed",
     "note": "Observed on 25 December of the Julian calendar (7 January in 1901–2099) by Julian-calendar churches. Some Orthodox churches use the Revised Julian calendar and celebrate on 25 December.",
     "source": "25 December, Julian calendar."
   },
   {
-    "id": "christianity.ash-wednesday", "faith": "christianity",
-    "traditions": ["christianity.catholic", "christianity.protestant", "christianity.anglican", "christianity.nondenominational"],
+    "id": "christianity.ash-wednesday",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
     "includeWhenTraditionUnspecified": true,
-    "name": "Ash Wednesday", "kind": "holyDay",
-    "schedule": { "rule": { "start": { "easter": { "computus": "gregorian", "offsetDays": -46 } } } },
-    "precision": "computed", "note": "Observed by Catholic, Anglican, and many Protestant churches.",
+    "name": "Ash Wednesday",
+    "kind": "holyDay",
+    "schedule": {
+      "rule": {
+        "start": {
+          "easter": {
+            "computus": "gregorian",
+            "offsetDays": -46
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "note": "Observed by Catholic, Anglican, and many Protestant churches.",
     "source": "Western computus: Easter − 46 days."
   },
   {
-    "id": "christianity.lent", "faith": "christianity",
-    "traditions": ["christianity.catholic", "christianity.protestant", "christianity.anglican", "christianity.nondenominational"],
+    "id": "christianity.lent",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
     "includeWhenTraditionUnspecified": true,
-    "name": "Lent", "kind": "season",
-    "schedule": { "rule": { "start": { "easter": { "computus": "gregorian", "offsetDays": -46 } },
-                            "end": { "easter": { "computus": "gregorian", "offsetDays": -3 } } } },
+    "name": "Lent",
+    "kind": "season",
+    "schedule": {
+      "rule": {
+        "start": {
+          "easter": {
+            "computus": "gregorian",
+            "offsetDays": -46
+          }
+        },
+        "end": {
+          "easter": {
+            "computus": "gregorian",
+            "offsetDays": -3
+          }
+        }
+      }
+    },
     "precision": "computed",
     "note": "Western reckoning: Ash Wednesday until Holy Thursday. Exact boundaries differ between churches.",
     "source": "Western computus."
   },
   {
-    "id": "christianity.palm-sunday", "faith": "christianity",
-    "traditions": ["christianity.catholic", "christianity.protestant", "christianity.anglican", "christianity.nondenominational"],
+    "id": "christianity.palm-sunday",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
     "includeWhenTraditionUnspecified": true,
-    "name": "Palm Sunday", "kind": "holyDay",
-    "schedule": { "rule": { "start": { "easter": { "computus": "gregorian", "offsetDays": -7 } } } },
-    "precision": "computed", "source": "Western computus: Easter − 7 days."
+    "name": "Palm Sunday",
+    "kind": "holyDay",
+    "schedule": {
+      "rule": {
+        "start": {
+          "easter": {
+            "computus": "gregorian",
+            "offsetDays": -7
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Western computus: Easter − 7 days."
   },
   {
-    "id": "christianity.good-friday", "faith": "christianity",
-    "traditions": ["christianity.catholic", "christianity.protestant", "christianity.anglican", "christianity.nondenominational"],
+    "id": "christianity.good-friday",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
     "includeWhenTraditionUnspecified": true,
-    "name": "Good Friday", "kind": "holyDay",
-    "schedule": { "rule": { "start": { "easter": { "computus": "gregorian", "offsetDays": -2 } } } },
-    "precision": "computed", "source": "Western computus: Easter − 2 days."
+    "name": "Good Friday",
+    "kind": "holyDay",
+    "schedule": {
+      "rule": {
+        "start": {
+          "easter": {
+            "computus": "gregorian",
+            "offsetDays": -2
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Western computus: Easter − 2 days."
   },
   {
-    "id": "christianity.easter", "faith": "christianity",
-    "traditions": ["christianity.catholic", "christianity.protestant", "christianity.anglican", "christianity.nondenominational"],
+    "id": "christianity.easter",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
     "includeWhenTraditionUnspecified": true,
-    "name": "Easter Sunday", "kind": "feast",
-    "schedule": { "rule": { "start": { "easter": { "computus": "gregorian", "offsetDays": 0 } } } },
-    "precision": "computed", "source": "Western (Gregorian) computus."
+    "name": "Easter Sunday",
+    "kind": "feast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "easter": {
+            "computus": "gregorian",
+            "offsetDays": 0
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Western (Gregorian) computus."
   },
   {
-    "id": "christianity.pentecost", "faith": "christianity",
-    "traditions": ["christianity.catholic", "christianity.protestant", "christianity.anglican", "christianity.nondenominational"],
+    "id": "christianity.pentecost",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
     "includeWhenTraditionUnspecified": true,
-    "name": "Pentecost", "kind": "feast",
-    "schedule": { "rule": { "start": { "easter": { "computus": "gregorian", "offsetDays": 49 } } } },
-    "precision": "computed", "source": "Western computus: Easter + 49 days."
+    "name": "Pentecost",
+    "kind": "feast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "easter": {
+            "computus": "gregorian",
+            "offsetDays": 49
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Western computus: Easter + 49 days."
   },
   {
-    "id": "christianity.holy-friday-orthodox", "faith": "christianity",
-    "traditions": ["christianity.orthodox"], "includeWhenTraditionUnspecified": false,
-    "name": "Great and Holy Friday", "kind": "holyDay",
-    "schedule": { "rule": { "start": { "easter": { "computus": "julian", "offsetDays": -2 } } } },
-    "precision": "computed", "source": "Julian computus: Pascha − 2 days."
+    "id": "christianity.holy-friday-orthodox",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.orthodox"
+    ],
+    "includeWhenTraditionUnspecified": false,
+    "name": "Great and Holy Friday",
+    "kind": "holyDay",
+    "schedule": {
+      "rule": {
+        "start": {
+          "easter": {
+            "computus": "julian",
+            "offsetDays": -2
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Julian computus: Pascha − 2 days."
   },
   {
-    "id": "christianity.pascha", "faith": "christianity",
-    "traditions": ["christianity.orthodox"], "includeWhenTraditionUnspecified": false,
-    "name": "Pascha (Orthodox Easter)", "kind": "feast",
-    "schedule": { "rule": { "start": { "easter": { "computus": "julian", "offsetDays": 0 } } } },
-    "precision": "computed", "source": "Julian computus, shown as a Gregorian date."
+    "id": "christianity.pascha",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.orthodox"
+    ],
+    "includeWhenTraditionUnspecified": false,
+    "name": "Pascha (Orthodox Easter)",
+    "kind": "feast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "easter": {
+            "computus": "julian",
+            "offsetDays": 0
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Julian computus, shown as a Gregorian date."
   },
   {
-    "id": "christianity.pentecost-orthodox", "faith": "christianity",
-    "traditions": ["christianity.orthodox"], "includeWhenTraditionUnspecified": false,
-    "name": "Pentecost (Orthodox)", "kind": "feast",
-    "schedule": { "rule": { "start": { "easter": { "computus": "julian", "offsetDays": 49 } } } },
-    "precision": "computed", "source": "Julian computus: Pascha + 49 days."
+    "id": "christianity.pentecost-orthodox",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.orthodox"
+    ],
+    "includeWhenTraditionUnspecified": false,
+    "name": "Pentecost (Orthodox)",
+    "kind": "feast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "easter": {
+            "computus": "julian",
+            "offsetDays": 49
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Julian computus: Pascha + 49 days."
   },
-
   {
-    "id": "islam.jumuah", "faith": "islam", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Jumu'ah (Friday)", "kind": "weekly",
-    "schedule": { "weekly": { "isoWeekday": 5 } },
-    "precision": "computed", "source": "Weekly Friday congregational prayer."
+    "id": "islam.jumuah",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Jumu'ah (Friday)",
+    "kind": "weekly",
+    "schedule": {
+      "weekly": {
+        "isoWeekday": 5
+      }
+    },
+    "precision": "computed",
+    "source": "Weekly Friday congregational prayer."
   },
   {
-    "id": "islam.muharram", "faith": "islam", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Muharram", "kind": "season",
-    "schedule": { "rule": { "start": { "hijri": { "month": 1, "day": 1 } },
-                            "end": { "offset": { "rule": { "hijri": { "month": 2, "day": 1 } }, "days": -1 } } } },
+    "id": "islam.muharram",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Muharram",
+    "kind": "season",
+    "schedule": {
+      "rule": {
+        "start": {
+          "hijri": {
+            "month": 1,
+            "day": 1
+          }
+        },
+        "end": {
+          "offset": {
+            "rule": {
+              "hijri": {
+                "month": 2,
+                "day": 1
+              }
+            },
+            "days": -1
+          }
+        }
+      }
+    },
     "precision": "estimated",
     "note": "First month of the Islamic year. Dates are estimates (Umm al-Qura); local observance may differ by a day or more.",
     "source": "Umm al-Qura calendar (Foundation)."
   },
   {
-    "id": "islam.new-year", "faith": "islam", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Islamic New Year", "kind": "commemoration",
-    "schedule": { "rule": { "start": { "hijri": { "month": 1, "day": 1 } } } },
-    "precision": "estimated", "note": "Estimated date; local observance may differ.",
+    "id": "islam.new-year",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Islamic New Year",
+    "kind": "commemoration",
+    "schedule": {
+      "rule": {
+        "start": {
+          "hijri": {
+            "month": 1,
+            "day": 1
+          }
+        }
+      }
+    },
+    "precision": "estimated",
+    "note": "Estimated date; local observance may differ.",
     "source": "Umm al-Qura calendar (Foundation)."
   },
   {
-    "id": "islam.ashura", "faith": "islam", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Ashura", "kind": "commemoration",
-    "schedule": { "rule": { "start": { "hijri": { "month": 1, "day": 10 } } } },
+    "id": "islam.ashura",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Ashura",
+    "kind": "commemoration",
+    "schedule": {
+      "rule": {
+        "start": {
+          "hijri": {
+            "month": 1,
+            "day": 10
+          }
+        }
+      }
+    },
     "precision": "estimated",
     "note": "Observed differently across traditions: for many Sunni Muslims a day of voluntary fasting; for Shia Muslims a day of mourning for Imam Husayn. Estimated date.",
     "source": "Umm al-Qura calendar (Foundation)."
   },
   {
-    "id": "islam.ramadan", "faith": "islam", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Ramadan", "kind": "fast",
-    "schedule": { "rule": { "start": { "hijri": { "month": 9, "day": 1 } },
-                            "end": { "offset": { "rule": { "hijri": { "month": 10, "day": 1 } }, "days": -1 } } } },
+    "id": "islam.ramadan",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Ramadan",
+    "kind": "fast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "hijri": {
+            "month": 9,
+            "day": 1
+          }
+        },
+        "end": {
+          "offset": {
+            "rule": {
+              "hijri": {
+                "month": 10,
+                "day": 1
+              }
+            },
+            "days": -1
+          }
+        }
+      }
+    },
     "precision": "estimated",
     "note": "Start and end depend on moon sighting and local authorities and may differ from this estimate by a day or two.",
     "source": "Umm al-Qura calendar (Foundation)."
   },
   {
-    "id": "islam.last-ten-nights", "faith": "islam", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Last ten nights of Ramadan", "kind": "season",
-    "schedule": { "rule": { "start": { "hijri": { "month": 9, "day": 21 } },
-                            "end": { "offset": { "rule": { "hijri": { "month": 10, "day": 1 } }, "days": -1 } } } },
-    "precision": "estimated", "note": "Estimated dates; local observance may differ.",
+    "id": "islam.last-ten-nights",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Last ten nights of Ramadan",
+    "kind": "season",
+    "schedule": {
+      "rule": {
+        "start": {
+          "hijri": {
+            "month": 9,
+            "day": 21
+          }
+        },
+        "end": {
+          "offset": {
+            "rule": {
+              "hijri": {
+                "month": 10,
+                "day": 1
+              }
+            },
+            "days": -1
+          }
+        }
+      }
+    },
+    "precision": "estimated",
+    "note": "Estimated dates; local observance may differ.",
     "source": "Umm al-Qura calendar (Foundation)."
   },
   {
-    "id": "islam.eid-al-fitr", "faith": "islam", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Eid al-Fitr", "kind": "festival",
-    "schedule": { "rule": { "start": { "hijri": { "month": 10, "day": 1 } } } },
-    "precision": "estimated", "note": "Expected date; depends on moon sighting and local authorities.",
+    "id": "islam.eid-al-fitr",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Eid al-Fitr",
+    "kind": "festival",
+    "schedule": {
+      "rule": {
+        "start": {
+          "hijri": {
+            "month": 10,
+            "day": 1
+          }
+        }
+      }
+    },
+    "precision": "estimated",
+    "note": "Expected date; depends on moon sighting and local authorities.",
     "source": "Umm al-Qura calendar (Foundation)."
   },
   {
-    "id": "islam.day-of-arafah", "faith": "islam", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Day of Arafah", "kind": "holyDay",
-    "schedule": { "rule": { "start": { "hijri": { "month": 12, "day": 9 } } } },
-    "precision": "estimated", "note": "Estimated date; local observance may differ.",
+    "id": "islam.day-of-arafah",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Day of Arafah",
+    "kind": "holyDay",
+    "schedule": {
+      "rule": {
+        "start": {
+          "hijri": {
+            "month": 12,
+            "day": 9
+          }
+        }
+      }
+    },
+    "precision": "estimated",
+    "note": "Estimated date; local observance may differ.",
     "source": "Umm al-Qura calendar (Foundation)."
   },
   {
-    "id": "islam.eid-al-adha", "faith": "islam", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Eid al-Adha", "kind": "festival",
-    "schedule": { "rule": { "start": { "hijri": { "month": 12, "day": 10 } } } },
-    "precision": "estimated", "note": "Expected date; local observance may differ.",
+    "id": "islam.eid-al-adha",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Eid al-Adha",
+    "kind": "festival",
+    "schedule": {
+      "rule": {
+        "start": {
+          "hijri": {
+            "month": 12,
+            "day": 10
+          }
+        }
+      }
+    },
+    "precision": "estimated",
+    "note": "Expected date; local observance may differ.",
     "source": "Umm al-Qura calendar (Foundation)."
   },
-
   {
-    "id": "hinduism.maha-shivaratri", "faith": "hinduism", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Maha Shivaratri", "kind": "festival",
-    "schedule": { "table": { "entries": [] } },
+    "id": "hinduism.maha-shivaratri",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Maha Shivaratri",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 2,
+                "day": 15
+              },
+              "end": {
+                "year": 2026,
+                "month": 2,
+                "day": 15
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 3,
+                "day": 6
+              },
+              "end": {
+                "year": 2027,
+                "month": 3,
+                "day": 6
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
     "precision": "sourcedTable",
-    "note": "Dates follow the lunisolar Hindu calendar (panchang) and can vary by region.",
-    "source": "PENDING: regional panchang data source not yet selected."
+    "note": "Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
   },
   {
-    "id": "hinduism.holi", "faith": "hinduism", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Holi", "kind": "festival",
-    "schedule": { "table": { "entries": [] } },
-    "precision": "sourcedTable", "note": "Lunisolar date; varies by region.",
-    "source": "PENDING: regional panchang data source not yet selected."
+    "id": "hinduism.holi",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Holi",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 3,
+                "day": 4
+              },
+              "end": {
+                "year": 2026,
+                "month": 3,
+                "day": 4
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 3,
+                "day": 23
+              },
+              "end": {
+                "year": 2027,
+                "month": 3,
+                "day": 23
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
   },
   {
-    "id": "hinduism.rama-navami", "faith": "hinduism", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Rama Navami", "kind": "festival",
-    "schedule": { "table": { "entries": [] } },
-    "precision": "sourcedTable", "note": "Lunisolar date; varies by region.",
-    "source": "PENDING: regional panchang data source not yet selected."
+    "id": "hinduism.rama-navami",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Rama Navami",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 3,
+                "day": 26
+              },
+              "end": {
+                "year": 2026,
+                "month": 3,
+                "day": 26
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 4,
+                "day": 15
+              },
+              "end": {
+                "year": 2027,
+                "month": 4,
+                "day": 15
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
   },
   {
-    "id": "hinduism.janmashtami", "faith": "hinduism", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Krishna Janmashtami", "kind": "festival",
-    "schedule": { "table": { "entries": [] } },
-    "precision": "sourcedTable", "note": "Lunisolar date; communities may observe on different days.",
-    "source": "PENDING: regional panchang data source not yet selected."
+    "id": "hinduism.janmashtami",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Krishna Janmashtami",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 9,
+                "day": 4
+              },
+              "end": {
+                "year": 2026,
+                "month": 9,
+                "day": 4
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 8,
+                "day": 25
+              },
+              "end": {
+                "year": 2027,
+                "month": 8,
+                "day": 25
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
   },
   {
-    "id": "hinduism.ganesh-chaturthi", "faith": "hinduism", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Ganesh Chaturthi", "kind": "festival",
-    "schedule": { "table": { "entries": [] } },
-    "precision": "sourcedTable", "note": "Lunisolar date; varies by region.",
-    "source": "PENDING: regional panchang data source not yet selected."
+    "id": "hinduism.ganesh-chaturthi",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Ganesh Chaturthi",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 9,
+                "day": 14
+              },
+              "end": {
+                "year": 2026,
+                "month": 9,
+                "day": 14
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 9,
+                "day": 4
+              },
+              "end": {
+                "year": 2027,
+                "month": 9,
+                "day": 4
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
   },
   {
-    "id": "hinduism.navaratri", "faith": "hinduism", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Navaratri", "kind": "festival",
-    "schedule": { "table": { "entries": [] } },
-    "precision": "sourcedTable", "note": "Nine nights; lunisolar dates vary by region (Sharad Navaratri shown).",
-    "source": "PENDING: regional panchang data source not yet selected."
+    "id": "hinduism.navaratri",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Navaratri",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 10,
+                "day": 12
+              },
+              "end": {
+                "year": 2026,
+                "month": 10,
+                "day": 20
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 9,
+                "day": 30
+              },
+              "end": {
+                "year": 2027,
+                "month": 10,
+                "day": 8
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Nine nights of the Goddess. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
   },
   {
-    "id": "hinduism.diwali", "faith": "hinduism", "traditions": [], "includeWhenTraditionUnspecified": true,
-    "name": "Diwali", "kind": "festival",
-    "schedule": { "table": { "entries": [] } },
-    "precision": "sourcedTable", "note": "Lunisolar date; the main day and festival length vary by region.",
-    "source": "PENDING: regional panchang data source not yet selected."
+    "id": "hinduism.diwali",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Diwali",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 11,
+                "day": 8
+              },
+              "end": {
+                "year": 2026,
+                "month": 11,
+                "day": 8
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 10,
+                "day": 29
+              },
+              "end": {
+                "year": 2027,
+                "month": 10,
+                "day": 29
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.makar-sankranti",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Makar Sankranti & Pongal",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 1,
+                "day": 14
+              },
+              "end": {
+                "year": 2026,
+                "month": 1,
+                "day": 14
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 1,
+                "day": 14
+              },
+              "end": {
+                "year": 2027,
+                "month": 1,
+                "day": 15
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "The sun enters Capricorn: harvest thanks across India — Sankranti, Pongal, Magh Bihu, Uttarayan. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.vasant-panchami",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Vasant Panchami",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 1,
+                "day": 23
+              },
+              "end": {
+                "year": 2026,
+                "month": 1,
+                "day": 23
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 2,
+                "day": 11
+              },
+              "end": {
+                "year": 2027,
+                "month": 2,
+                "day": 11
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Saraswati Puja and the first day of spring. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.holika-dahan",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Holika Dahan",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 3,
+                "day": 3
+              },
+              "end": {
+                "year": 2026,
+                "month": 3,
+                "day": 3
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 3,
+                "day": 22
+              },
+              "end": {
+                "year": 2027,
+                "month": 3,
+                "day": 22
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "The bonfire on the eve of Holi, remembering Prahlada's devotion. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.new-year",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Ugadi · Gudi Padwa · Chaitra Navratri",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 3,
+                "day": 19
+              },
+              "end": {
+                "year": 2026,
+                "month": 3,
+                "day": 19
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 4,
+                "day": 7
+              },
+              "end": {
+                "year": 2027,
+                "month": 4,
+                "day": 7
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "The lunar new year in much of India, and the first day of Chaitra Navratri. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.rath-yatra",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Rath Yatra",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 7,
+                "day": 16
+              },
+              "end": {
+                "year": 2026,
+                "month": 7,
+                "day": 16
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 7,
+                "day": 5
+              },
+              "end": {
+                "year": 2027,
+                "month": 7,
+                "day": 5
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Lord Jagannath's chariot festival. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.onam",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Onam",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 8,
+                "day": 26
+              },
+              "end": {
+                "year": 2026,
+                "month": 8,
+                "day": 26
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 9,
+                "day": 12
+              },
+              "end": {
+                "year": 2027,
+                "month": 9,
+                "day": 12
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Kerala's harvest festival, welcoming King Mahabali. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.raksha-bandhan",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Raksha Bandhan",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 8,
+                "day": 28
+              },
+              "end": {
+                "year": 2026,
+                "month": 8,
+                "day": 28
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 8,
+                "day": 17
+              },
+              "end": {
+                "year": 2027,
+                "month": 8,
+                "day": 17
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "The bond of protection between brothers and sisters. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.durga-ashtami",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Durga Ashtami",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 10,
+                "day": 19
+              },
+              "end": {
+                "year": 2026,
+                "month": 10,
+                "day": 19
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 10,
+                "day": 7
+              },
+              "end": {
+                "year": 2027,
+                "month": 10,
+                "day": 7
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Mahashtami of Durga Puja and Navaratri. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.dussehra",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Dussehra · Vijaya Dashami",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 10,
+                "day": 20
+              },
+              "end": {
+                "year": 2026,
+                "month": 10,
+                "day": 20
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 10,
+                "day": 9
+              },
+              "end": {
+                "year": 2027,
+                "month": 10,
+                "day": 9
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Victory of good over evil: Rama over Ravana, Durga over Mahishasura. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.karwa-chauth",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Karwa Chauth",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 10,
+                "day": 29
+              },
+              "end": {
+                "year": 2026,
+                "month": 10,
+                "day": 29
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 10,
+                "day": 18
+              },
+              "end": {
+                "year": 2027,
+                "month": 10,
+                "day": 18
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "A day-long fast kept for a spouse's long life, broken at moonrise. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.naraka-chaturdashi",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Naraka Chaturdashi",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 11,
+                "day": 8
+              },
+              "end": {
+                "year": 2026,
+                "month": 11,
+                "day": 8
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 10,
+                "day": 28
+              },
+              "end": {
+                "year": 2027,
+                "month": 10,
+                "day": 28
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Choti Diwali; in the South, the main day of Deepavali. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.govardhan-puja",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Govardhan Puja",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 11,
+                "day": 9
+              },
+              "end": {
+                "year": 2026,
+                "month": 11,
+                "day": 9
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 10,
+                "day": 30
+              },
+              "end": {
+                "year": 2027,
+                "month": 10,
+                "day": 30
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Krishna lifting Govardhan hill; Annakut offerings. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.bhai-dooj",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Bhai Dooj",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 11,
+                "day": 11
+              },
+              "end": {
+                "year": 2026,
+                "month": 11,
+                "day": 11
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 10,
+                "day": 31
+              },
+              "end": {
+                "year": 2027,
+                "month": 10,
+                "day": 31
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Sisters pray for their brothers' wellbeing. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "hinduism.chhath",
+    "faith": "hinduism",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Chhath Puja",
+    "kind": "festival",
+    "schedule": {
+      "table": {
+        "entries": [
+          {
+            "range": {
+              "start": {
+                "year": 2026,
+                "month": 11,
+                "day": 15
+              },
+              "end": {
+                "year": 2026,
+                "month": 11,
+                "day": 15
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 3 July 2025 (holidays 2026, Annexure I/II)"
+          },
+          {
+            "range": {
+              "start": {
+                "year": 2027,
+                "month": 11,
+                "day": 4
+              },
+              "end": {
+                "year": 2027,
+                "month": 11,
+                "day": 4
+              }
+            },
+            "source": "Government of India, DoPT O.M. F.No.12/2/2023-JCA of 16 July 2026 (holidays 2027, Annexure I/II)"
+          }
+        ]
+      }
+    },
+    "precision": "sourcedTable",
+    "note": "Worship of Surya and Chhathi Maiya at sunset and sunrise by the water. Dates follow the Government of India list; your local panchang may differ by a day.",
+    "source": "Government of India (DoPT) holiday lists for 2026 and 2027."
+  },
+  {
+    "id": "christianity.epiphany",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Epiphany",
+    "kind": "feast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "fixedGregorian": {
+            "month": 1,
+            "day": 6
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Fixed date or Western (Gregorian) computus.",
+    "note": "The Magi visit the Christ child."
+  },
+  {
+    "id": "christianity.annunciation",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.anglican",
+      "christianity.orthodox"
+    ],
+    "includeWhenTraditionUnspecified": true,
+    "name": "The Annunciation",
+    "kind": "feast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "fixedGregorian": {
+            "month": 3,
+            "day": 25
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Fixed date or Western (Gregorian) computus."
+  },
+  {
+    "id": "christianity.holy-thursday",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Holy Thursday",
+    "kind": "holyDay",
+    "schedule": {
+      "rule": {
+        "start": {
+          "easter": {
+            "computus": "gregorian",
+            "offsetDays": -3
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Fixed date or Western (Gregorian) computus.",
+    "note": "The Last Supper."
+  },
+  {
+    "id": "christianity.ascension",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Ascension Day",
+    "kind": "feast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "easter": {
+            "computus": "gregorian",
+            "offsetDays": 39
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Fixed date or Western (Gregorian) computus.",
+    "note": "Some places keep it on the following Sunday."
+  },
+  {
+    "id": "christianity.assumption",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic"
+    ],
+    "includeWhenTraditionUnspecified": true,
+    "name": "The Assumption of Mary",
+    "kind": "feast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "fixedGregorian": {
+            "month": 8,
+            "day": 15
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Fixed date or Western (Gregorian) computus."
+  },
+  {
+    "id": "christianity.all-saints",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
+    "includeWhenTraditionUnspecified": true,
+    "name": "All Saints' Day",
+    "kind": "feast",
+    "schedule": {
+      "rule": {
+        "start": {
+          "fixedGregorian": {
+            "month": 11,
+            "day": 1
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Fixed date or Western (Gregorian) computus."
+  },
+  {
+    "id": "christianity.christmas-eve",
+    "faith": "christianity",
+    "traditions": [
+      "christianity.catholic",
+      "christianity.protestant",
+      "christianity.anglican",
+      "christianity.nondenominational"
+    ],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Christmas Eve",
+    "kind": "holyDay",
+    "schedule": {
+      "rule": {
+        "start": {
+          "fixedGregorian": {
+            "month": 12,
+            "day": 24
+          }
+        }
+      }
+    },
+    "precision": "computed",
+    "source": "Fixed date or Western (Gregorian) computus."
+  },
+  {
+    "id": "islam.laylat-al-qadr",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Laylat al-Qadr (27th night)",
+    "kind": "holyDay",
+    "schedule": {
+      "rule": {
+        "start": {
+          "hijri": {
+            "month": 9,
+            "day": 27
+          }
+        }
+      }
+    },
+    "precision": "estimated",
+    "note": "Sought in the odd nights of the last ten of Ramadan; many observe the 27th. Hijri dates depend on moon sighting.",
+    "source": "Umm al-Qura calendar (Foundation)."
+  },
+  {
+    "id": "islam.isra-miraj",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Isra and Mi'raj",
+    "kind": "commemoration",
+    "schedule": {
+      "rule": {
+        "start": {
+          "hijri": {
+            "month": 7,
+            "day": 27
+          }
+        }
+      }
+    },
+    "precision": "estimated",
+    "note": "The Night Journey. Not all communities mark it.",
+    "source": "Umm al-Qura calendar (Foundation)."
+  },
+  {
+    "id": "islam.mawlid",
+    "faith": "islam",
+    "traditions": [],
+    "includeWhenTraditionUnspecified": true,
+    "name": "Mawlid an-Nabi",
+    "kind": "commemoration",
+    "schedule": {
+      "rule": {
+        "start": {
+          "hijri": {
+            "month": 3,
+            "day": 12
+          }
+        }
+      }
+    },
+    "precision": "estimated",
+    "note": "The Prophet's birthday, celebrated by many Muslims and not by others.",
+    "source": "Umm al-Qura calendar (Foundation)."
   }
 ]

@@ -9,7 +9,9 @@ BUNDLE_ID = "com.vaibhavsg.beloved"
 PRODUCT_IDS = "beloved.premium.monthly,beloved.premium.annual"
 ENVIRONMENTS = "Production"   # add ",Sandbox" only for TestFlight testing, then remove
 MODEL = "gemini-flash-latest"
-MAX_TOKENS = "900"
+MAX_TOKENS = "6000"
+THINKING_BUDGET = "512" # hidden reasoning tokens; the rest of MAX_TOKENS is the answer
+GROUNDING = "0"        # "1" = Google Search grounding (needs a paid Gemini plan; the free tier refuses it)
 DAILY_LIMIT = "100"     # Premium messages per subscriber per UTC day
 FREE_DAILY_LIMIT = "10" # free messages per install per UTC day
 FREE_IP_LIMIT = "40"    # free messages per network address per UTC day (reinstall abuse)

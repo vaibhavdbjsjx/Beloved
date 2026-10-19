@@ -82,6 +82,13 @@ final class SalahModel: NSObject {
 
     // MARK: - Settings
 
+    /// Forgets the place and choices ("Delete all data").
+    func reset() async {
+        defaults.removeObject(forKey: Self.key)
+        settings = .suggested
+        await notifications.removePrayerTimes()
+    }
+
     func setMethod(_ method: PrayerCalculationMethod) { update { $0.method = method } }
     func setAsr(_ asr: AsrSchool) { update { $0.asr = asr } }
 

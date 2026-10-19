@@ -39,6 +39,11 @@ final class AppEnvironment {
     let companionStore: CodableFileStore<CompanionConversation>
     let sessionStore: AccountSessionStore
     let authentication: any AuthenticationService
+    /// Small preferences (reading-plan progress, prayer-time settings, festival greetings).
+    /// UI tests get their own suite so they never see or touch the person's real data.
+    let preferences: UserDefaults
+    /// The prayer journal (on this iPhone only).
+    let journalURL: URL
 
     private init(
         configuration: AppConfiguration,
@@ -61,6 +66,16 @@ final class AppEnvironment {
         religiousCalendar = try ReligiousCalendar.bundled()
         devotionalAssociations = try DevotionalAssociations.bundled()
         profileStore = ProfileStore(fileURL: locations.privateFile("profile.json"))
+        journalURL = locations.privateFile("prayer-journal.json")
+        if ProcessInfo.processInfo.arguments.contains(LaunchArgument.uiTesting) {
+            let store = ProcessInfo.processInfo.environment[LaunchArgument.uiTestStoreKey]
+            let suite = "beloved.uitest.\(store ?? "fresh")"
+            let defaults = UserDefaults(suiteName: suite) ?? .standard
+            if store == nil { defaults.removePersistentDomain(forName: suite) }
+            preferences = defaults
+        } else {
+            preferences = .standard
+        }
         sessions = FileSessionRepository(fileURL: locations.privateFile("sessions.json"))
         self.protectionState = protectionState
         protection = ScreenTimeProtectionController(
@@ -128,6 +143,9 @@ enum LaunchArgument {
     static let uiTesting = "-PLUITesting"
     /// UI tests only: environment key naming a temporary store that survives relaunches.
     static let uiTestStoreKey = "PL_UI_TEST_STORE"
+    /// UI tests / design review only (development builds): `-PLPreviewFaith hinduism` skips
+    /// onboarding with that faith, so screens can be reviewed directly.
+    static let previewFaith = "-PLPreviewFaith"
 }
 
 /// Product name in one place. The home-screen name comes from

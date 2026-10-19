@@ -22,8 +22,8 @@ final class PrayerJournal {
     private(set) var requests: [PrayerRequest] = []
     @ObservationIgnored private let url: URL
 
-    init(directory: URL = URL.applicationSupportDirectory) {
-        url = directory.appending(path: "prayer-journal.json")
+    init(url: URL) {
+        self.url = url
         if let data = try? Data(contentsOf: url), let saved = try? JSONDecoder().decode([PrayerRequest].self, from: data) {
             requests = saved
         }
@@ -38,6 +38,12 @@ final class PrayerJournal {
         let who = person?.trimmingCharacters(in: .whitespacesAndNewlines)
         requests.append(PrayerRequest(text: trimmed, person: who?.isEmpty == false ? who : nil))
         save()
+    }
+
+    /// Removes every request and answered prayer ("Delete all data").
+    func deleteAll() {
+        requests = []
+        try? FileManager.default.removeItem(at: url)
     }
 
     func prayed(_ id: PrayerRequest.ID) { change(id) { $0.prayedCount += 1 } }
@@ -169,13 +175,20 @@ struct PrayerJournalView: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) { Button("Done") { dismiss() }.accessibilityIdentifier("journal.done") }
                 ToolbarItem(placement: .primaryAction) {
-                    Button { adding = true } label: { Label("Add", systemImage: "plus") }
+                    Button {
+                        if journal.open.count >= 3 {
+                            model.withPremium(String(localized: "Unlimited prayer journal")) { adding = true }
+                        } else {
+                            adding = true
+                        }
+                    } label: { Label("Add", systemImage: "plus") }
                         .accessibilityIdentifier("journal.add")
                 }
             }
             .sheet(isPresented: $adding) { AddRequestSheet(prompt: words.addPrompt) }
             .sheet(item: $answering) { request in AnsweredSheet(request: request) }
         }
+        .presentsPaywall()
         .presentationBackground(Color.plCanvas)
     }
 }

@@ -26,15 +26,16 @@ struct RootView: View {
             MomentView(request: request)
                 .environment(model)
         }
+        .presentsPaywall()
         .alert(item: $model.alert) { alert in
             Alert(title: Text(alert.title), message: Text(alert.message))
         }
     }
 }
 
-/// Today, the faith's scripture, the companion, protection and settings. Journey lives on
-/// Today, so the bar never grows past five. The prayer moment itself is not a tab: it is
-/// presented full screen from a shield hand-off or from Today.
+/// Five clear places: Today (what matters now), Pray (every prayer tool and library), the
+/// faith's own scripture, the companion, and You (protection, journey, settings). The prayer
+/// moment itself is presented full screen from a shield hand-off or from Today.
 struct MainTabView: View {
     @Environment(AppModel.self) private var model
 
@@ -44,6 +45,10 @@ struct MainTabView: View {
             Tab("Today", systemImage: "sun.horizon", value: AppTab.today) {
                 TodayView()
             }
+            Tab("Pray", systemImage: "hands.and.sparkles", value: AppTab.pray) {
+                PrayView()
+            }
+            .accessibilityIdentifier("tab.pray")
             // The faith's own scripture, by its own name. Present only when this build
             // may show some of it (release builds: reviewed, rights-cleared editions).
             if let readable = model.readableWork {
@@ -52,15 +57,13 @@ struct MainTabView: View {
                 }
                 .accessibilityIdentifier("tab.scripture")
             }
-            Tab("Protection", systemImage: "shield.lefthalf.filled", value: AppTab.protection) {
-                ProtectionView()
-            }
             Tab("Companion", systemImage: "bubble.left.and.text.bubble.right", value: AppTab.companion) {
                 CompanionView()
             }
-            Tab("Settings", systemImage: "gearshape", value: AppTab.settings) {
+            Tab("You", systemImage: "person.crop.circle", value: AppTab.settings) {
                 SettingsView()
             }
+            .accessibilityIdentifier("tab.you")
         }
     }
 }

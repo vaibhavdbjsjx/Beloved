@@ -110,6 +110,32 @@ final class NotificationService: NSObject, UNUserNotificationCenterDelegate {
         center.removePendingNotificationRequests(withIdentifiers: pending)
     }
 
+    // MARK: - Festival greetings
+
+    nonisolated static let festivalPrefix = "beloved.festival."
+
+    /// Replaces every scheduled festival greeting.
+    func scheduleFestivals(_ greetings: [(id: String, date: Date, title: String, body: String)]) async {
+        await removeFestivals()
+        for greeting in greetings where greeting.date > .now {
+            let content = UNMutableNotificationContent()
+            content.title = greeting.title
+            content.body = greeting.body
+            content.sound = .default
+            content.threadIdentifier = "festival"
+            let components = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: greeting.date)
+            let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+            try? await center.add(UNNotificationRequest(identifier: Self.festivalPrefix + greeting.id, content: content, trigger: trigger))
+        }
+    }
+
+    func removeFestivals() async {
+        let pending = await center.pendingNotificationRequests()
+            .map(\.identifier)
+            .filter { $0.hasPrefix(Self.festivalPrefix) }
+        center.removePendingNotificationRequests(withIdentifiers: pending)
+    }
+
     // MARK: - Delegate
 
     nonisolated func userNotificationCenter(

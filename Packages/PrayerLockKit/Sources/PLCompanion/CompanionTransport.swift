@@ -54,7 +54,7 @@ public struct CloudCompanionTransport: CompanionTransport {
                     let proof = await subscriptionProof()
                     var urlRequest = URLRequest(url: endpoint.appending(path: "v1/companion"))
                     urlRequest.httpMethod = "POST"
-                    urlRequest.timeoutInterval = 60
+                    urlRequest.timeoutInterval = 120
                     urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
                     urlRequest.setValue("text/event-stream", forHTTPHeaderField: "Accept")
                     urlRequest.setValue(installID, forHTTPHeaderField: "X-Beloved-Install")

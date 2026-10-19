@@ -37,11 +37,22 @@ struct CompanionView: View {
                             ThinkingDots().id("streaming")
                         }
                         if let notice = companion.notice {
-                            Text(notice)
-                                .font(.plCaption)
-                                .foregroundStyle(Color.plInkSecondary)
-                                .fixedSize(horizontal: false, vertical: true)
-                                .accessibilityIdentifier("companion.notice")
+                            VStack(alignment: .leading, spacing: PLSpacing.s) {
+                                Text(notice)
+                                    .font(.plCaption)
+                                    .foregroundStyle(Color.plInkSecondary)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .accessibilityIdentifier("companion.notice")
+                                if companion.canRetry {
+                                    Button {
+                                        companion.retry()
+                                    } label: {
+                                        Label("Try again", systemImage: "arrow.clockwise")
+                                    }
+                                    .buttonStyle(.plSecondary)
+                                    .accessibilityIdentifier("companion.retry")
+                                }
+                            }
                         }
                         Color.clear.frame(height: 1).id("bottom")
                     }
@@ -80,6 +91,13 @@ struct CompanionView: View {
             }
         }
         .onAppear { companion.attach(model) }
+        .task(id: model.pendingCompanionQuestion) {
+            // A question asked from elsewhere (a festival, a deity, a guide).
+            guard let question = model.pendingCompanionQuestion else { return }
+            companion.attach(model)
+            model.pendingCompanionQuestion = nil
+            companion.send(question)
+        }
         .sheet(isPresented: $showingPaywall) {
             NavigationStack { PaywallView() }
                 .environment(model)
@@ -94,15 +112,15 @@ struct CompanionView: View {
                 .frame(maxWidth: .infinity)
                 .padding(.top, PLSpacing.l)
             VStack(alignment: .leading, spacing: PLSpacing.xs) {
-                Text(companion.usesCloud ? String(localized: "Companion") : String(localized: "Ask Beloved"))
+                Text(model.env.isCompanionCloudConfigured ? String(localized: "Companion") : String(localized: "Ask Beloved"))
                     .plEyebrow()
                 Text(greeting)
                     .font(.plDisplay)
                     .foregroundStyle(Color.plInk)
                     .fixedSize(horizontal: false, vertical: true)
                     .accessibilityAddTraits(.isHeader)
-                Text(companion.usesCloud
-                     ? String(localized: "Talk about prayer, scripture, or whatever today holds. Premium messages are sent to Beloved's server and Google Gemini for the reply; every verse and prayer I share is quoted from a verified source.")
+                Text(model.env.isCompanionCloudConfigured
+                     ? String(localized: "Ask about stories, festivals, how to do a puja or a prayer, what a verse means — or simply what's on your heart. Replies are written by AI (Google Gemini) through Beloved's server; every verse and prayer is quoted from a verified source.")
                      : String(localized: "Ask for a prayer, a verse, or words for how you feel. Answers come from Beloved's verified library on this iPhone."))
                     .font(.plCallout)
                     .foregroundStyle(Color.plInkSecondary)
@@ -139,10 +157,10 @@ struct CompanionView: View {
                     .frame(width: 28, height: 28)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: PLSpacing.xxs) {
-                    Text("Unlock the AI Companion")
+                    Text("100 questions a day with Premium")
                         .font(.plHeadline)
                         .foregroundStyle(Color.plInk)
-                    Text("Free answers use Beloved's verified library on this iPhone. Premium adds a cloud companion for deeper conversation.")
+                    Text("Everyone gets 10 free questions a day. Premium raises it to 100, with every other Premium feature.")
                         .font(.plCaption)
                         .foregroundStyle(Color.plInkSecondary)
                         .fixedSize(horizontal: false, vertical: true)
@@ -165,24 +183,37 @@ struct CompanionView: View {
     }
 
     private var suggestions: [String] {
+        if let festival = model.featuredFestival {
+            return [festival.greeting.question] + baseSuggestions.prefix(5)
+        }
+        return Array(baseSuggestions)
+    }
+
+    private var baseSuggestions: [String] {
         switch model.profile.faithID?.rawValue {
         case "christianity": [
+            String(localized: "Tell me the parable of the Prodigal Son"),
+            String(localized: "How do I pray the rosary?"),
+            String(localized: "What is Advent and how do I keep it?"),
             String(localized: "A prayer for anxiety"),
-            String(localized: "Help me forgive someone"),
             String(localized: "What does Psalm 23 mean?"),
-            String(localized: "A blessing for my family"),
+            String(localized: "How do I start reading the Bible?"),
         ]
         case "islam": [
+            String(localized: "Tell me the story of Prophet Yunus"),
+            String(localized: "How do I pray Witr?"),
+            String(localized: "What breaks wudu?"),
+            String(localized: "What is Laylat al-Qadr?"),
             String(localized: "A dua for hard times"),
-            String(localized: "Help me focus in salah"),
             String(localized: "What does Surah Al-Inshirah teach?"),
-            String(localized: "Dhikr for a calm heart"),
         ]
         case "hinduism": [
+            String(localized: "Why did Hanuman burn Lanka?"),
+            String(localized: "How do I do a simple puja at home?"),
+            String(localized: "Who killed Bhishma, and how?"),
+            String(localized: "What is Ekadashi and how do I fast?"),
             String(localized: "A mantra for peace of mind"),
-            String(localized: "A mantra during pregnancy"),
             String(localized: "Explain Gita 2.47"),
-            String(localized: "Prayer for courage before exams"),
         ]
         default: [
             String(localized: "Help me slow down"),
@@ -207,7 +238,7 @@ struct CompanionView: View {
                 .background(Color.plSurface, in: RoundedRectangle(cornerRadius: PLRadius.control + 6, style: .continuous))
                 .overlay(alignment: .leading) {
                     if draft.isEmpty {
-                        Text(companion.usesCloud ? "Write to your companion" : "Ask for a prayer or a verse")
+                        Text(model.env.isCompanionCloudConfigured ? "Ask anything about your faith" : "Ask for a prayer or a verse")
                             .font(.plBody)
                             .foregroundStyle(Color.plInkSecondary)
                             .padding(.horizontal, PLSpacing.m)
@@ -338,23 +369,63 @@ private struct ResolvedBlockView: View {
     }
 }
 
-/// The model's own words, in the reading voice. Light Markdown (emphasis) is honoured.
+/// The model's own words, in the reading voice: paragraphs, numbered steps and bullets, with
+/// light Markdown emphasis honoured.
 private struct ProseText: View {
     let text: String
 
     var body: some View {
-        Text(attributed)
-            .font(.system(.body, design: .serif))
-            .lineSpacing(5)
-            .foregroundStyle(Color.plInk)
-            .fixedSize(horizontal: false, vertical: true)
-            .textSelection(.enabled)
+        VStack(alignment: .leading, spacing: PLSpacing.s) {
+            ForEach(Array(Self.blocks(text).enumerated()), id: \.offset) { _, block in
+                switch block {
+                case let .paragraph(line):
+                    Text(Self.inline(line))
+                        .font(.system(.body, design: .serif))
+                        .lineSpacing(5)
+                        .foregroundStyle(Color.plInk)
+                case let .item(marker, line, indent):
+                    HStack(alignment: .firstTextBaseline, spacing: PLSpacing.xs) {
+                        Text(marker)
+                            .font(.system(.body, design: .serif).weight(.semibold).monospacedDigit())
+                            .foregroundStyle(Color.plGilt)
+                            .frame(minWidth: 18, alignment: .trailing)
+                        Text(Self.inline(line))
+                            .font(.system(.body, design: .serif))
+                            .lineSpacing(4)
+                            .foregroundStyle(Color.plInk)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    .padding(.leading, CGFloat(indent) * PLSpacing.m)
+                }
+            }
+        }
+        .fixedSize(horizontal: false, vertical: true)
+        .textSelection(.enabled)
     }
 
-    private var attributed: AttributedString {
-        let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
-        return (try? AttributedString(markdown: trimmed, options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)))
-            ?? AttributedString(trimmed)
+    enum Block { case paragraph(String), item(marker: String, text: String, indent: Int) }
+
+    static func blocks(_ text: String) -> [Block] {
+        var blocks: [Block] = []
+        for raw in text.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: "\n") {
+            let indent = raw.prefix { $0 == " " }.count >= 2 ? 1 : 0
+            var line = raw.trimmingCharacters(in: .whitespaces)
+            guard !line.isEmpty else { continue }
+            line = line.replacingOccurrences(of: #"^#{1,6}\s+"#, with: "", options: .regularExpression)
+            if let match = line.range(of: #"^\d{1,2}[.)]\s+"#, options: .regularExpression) {
+                let marker = line[match].trimmingCharacters(in: .whitespaces).replacingOccurrences(of: ")", with: ".")
+                blocks.append(.item(marker: marker, text: String(line[match.upperBound...]), indent: indent))
+            } else if let match = line.range(of: #"^[-*•]\s+"#, options: .regularExpression) {
+                blocks.append(.item(marker: "•", text: String(line[match.upperBound...]), indent: indent))
+            } else {
+                blocks.append(.paragraph(line))
+            }
+        }
+        return blocks
+    }
+
+    static func inline(_ line: String) -> AttributedString {
+        (try? AttributedString(markdown: line, options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace))) ?? AttributedString(line)
     }
 }
 

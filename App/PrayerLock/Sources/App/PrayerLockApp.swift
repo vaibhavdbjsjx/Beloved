@@ -55,7 +55,9 @@ enum Bootstrap {
     @MainActor
     static func make() -> Bootstrap {
         do {
-            return .ready(AppModel(env: try AppEnvironment.live()))
+            let model = AppModel(env: try AppEnvironment.live())
+            model.applyPreviewProfileIfRequested()
+            return .ready(model)
         } catch {
             let detail = String(describing: error)
             Log.logger(.app).fault("Launch failed: \(detail, privacy: .public)")

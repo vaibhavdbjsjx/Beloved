@@ -1,14 +1,14 @@
 # Beloved Privacy Policy
 
-Last updated: 11 October 2026
+Last updated: 19 October 2026
 
 Beloved helps you pause before the apps you choose and turn that moment into prayer, a mantra, a dua or a short reflection. This policy describes the data the app handles, where it is kept, and how you can delete it. It applies to this version of the Beloved app for iPhone.
 
 ## The short version
 
 - Beloved supports optional sign-in with Apple and Gmail (Google) to preserve your account profile.
-- Everything Beloved stores (your prayers, reflections, check-ins, and Screen Time rules) stays strictly on your iPhone and is never linked or uploaded to an account server.
-- The only network services: (1) sign-in authentication with Apple or Gmail (Google); (2) if you subscribe to Premium and use the AI Companion, messages are processed through Beloved's server and Google Gemini; (3) in-app purchases processed directly by Apple StoreKit.
+- Everything Beloved stores (your prayers, prayer journal, reflections, check-ins, reading progress, prayer-time location and Screen Time rules) stays strictly on your iPhone and is never linked or uploaded to an account server.
+- The only network services: (1) sign-in authentication with Apple or Gmail (Google); (2) when you write to the AI Companion (free users up to 10 messages a day, Premium up to 100), your messages are processed through Beloved's server and Google Gemini; (3) in-app purchases processed directly by Apple StoreKit.
 - Beloved contains no analytics, advertising, or tracking SDKs.
 - You can delete your account and all data at any time in Settings/Profile → Delete Account or Delete all my data.
 
@@ -18,7 +18,13 @@ Beloved helps you pause before the apps you choose and turn that moment into pra
 
 **Your reading.** Where you left off in your scripture (book and chapter), how you like to read it (translation, original or both), and, if you turn it on, the time for the daily verse notification. The scriptures themselves are built into the app; reading them makes no network request.
 
-**Conversations with the companion.** What you ask in the Companion tab and the answers, kept on your iPhone so you can return to them. "Start over" or Delete all my data removes them. Free users get answers from Beloved's verified library on your iPhone; nothing they write is sent anywhere. For Premium subscribers, messages in the Companion tab (with your faith and tradition, but never your name, history or intentions) are sent to Beloved's server and to Google's Gemini model to write a reply. Google may use this content to improve its services under its terms. Beloved's server stores no conversations, only a daily message count per subscription, kept for 48 hours.
+**Conversations with the companion.** What you ask in the Companion tab and the answers, kept on your iPhone so you can return to them. "Start over" or Delete all my data removes them. When you send a message in the Companion tab (or tap a question such as "How to celebrate"), it is sent — with your faith, tradition, chosen deity or focus, app language, today's date and the names of upcoming holy days in your calendar, but never your name, prayer journal, history or intentions — to Beloved's server and to Google's Gemini model to write a reply. Google may use this content to improve its services under its terms. Beloved's server stores no conversations. To enforce the daily allowance it keeps only message counts — per subscription for Premium, and for free use per random install identifier (not linked to you) and per network (IP) address — each kept for 48 hours.
+
+**Prayer journal.** The people and things you add to your prayer requests, du'a list or prayers, and when you mark them prayed for or answered. Kept only on your iPhone.
+
+**Reading plans.** Which reading plan you follow and which days you've read.
+
+**Prayer times and Qibla.** If you choose "Use my location", iOS asks your permission and Beloved reads your approximate location once, rounds it to about a kilometre and keeps it on your iPhone to calculate prayer times and the Qibla direction. To show your town's name, the rounded location is looked up with Apple's geocoding service. Beloved never sends your location to its own server or to anyone else. The compass heading used by the Qibla screen is read only while that screen is open and is not stored.
 
 **Daily check-ins.** If you choose a mood, it is used to pick fitting words for that day's moments. It is saved only if "Remember daily check-ins" is turned on in Settings; otherwise it is discarded at the end of the day.
 
@@ -38,14 +44,15 @@ Beloved uses Apple's Screen Time frameworks (Family Controls, Managed Settings a
 
 ## Notifications
 
-If you allow notifications, Beloved shows a local notification when you tap Begin on a paused app, so you can go straight to your moment. If you turn on the daily verse, Beloved also schedules one notification a day containing that day's verse; like any notification, it can appear on your Lock Screen according to your iPhone's notification settings. Notifications are created on your iPhone; Beloved has no notification server.
+If you allow notifications, Beloved shows a local notification when you tap Begin on a paused app, so you can go straight to your moment. If you turn on the daily verse, Beloved also schedules one notification a day containing that day's verse; like any notification, it can appear on your Lock Screen according to your iPhone's notification settings. If you turn on prayer reminders, Beloved schedules a notification at each prayer time; and unless you turn off "Festival greetings", it schedules a greeting on the morning of your own faith's festivals and holy days. Notifications are created on your iPhone; Beloved has no notification server.
 
 ## What Beloved does not do
 
 - It does not sell personal data or use it for advertising.
 - It does not send your moods, prayer history or app choices off your iPhone.
 - It does not use advertising identifiers or track you across apps and websites.
-- It does not send anything to the AI Companion unless you subscribe to Premium and write a message in the Companion tab.
+- It does not send anything to the AI Companion unless you write or tap a message in the Companion tab.
+- It does not send your location, prayer journal or reading progress off your iPhone.
 - It does not put AI provider API keys in the app.
 
 ## Information Apple may provide to developers
@@ -57,11 +64,11 @@ If you have turned on "Share With App Developers" in your iPhone's analytics set
 Your data stays on your iPhone until you delete it.
 
 - **Delete Account** (Settings → Account/Profile → Delete Account) permanently revokes authorization where supported, wipes account credentials and session tokens from your iPhone's secure Keychain, and deletes your local profile photo.
-- **Delete all my data** (Settings in Beloved) permanently removes your profile, check-ins, companion conversations, and prayer history, deletes account credentials, removes all pauses and schedules, and returns the app to its first-launch state.
+- **Delete all my data** (Settings in Beloved) permanently removes your profile, check-ins, companion conversations, prayer journal, reading-plan progress, saved prayer-time location and settings, scheduled reminders and greetings, and prayer history, deletes account credentials, removes all pauses and schedules, and returns the app to its first-launch state.
 - **Deleting the app** removes everything the app stored on your iPhone.
 - **Subscriptions:** Deleting your account or the app does not automatically cancel an active Apple App Store subscription; auto-renewable subscriptions must be managed and cancelled directly in your iPhone's Apple ID Subscriptions settings.
 
-Beloved's server does not store Companion conversations. Its daily message counts expire after 48 hours.
+Beloved's server does not store Companion conversations. Its daily message counts (per subscription, install identifier or network address) expire after 48 hours.
 
 ## Children
 

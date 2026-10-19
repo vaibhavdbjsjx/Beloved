@@ -15,6 +15,8 @@ import os
 
 enum AppTab: Hashable {
     case today
+    /// Prayer tools and libraries: mala/tasbih/rosary, prayer times, deities, needs, holy days.
+    case pray
     /// The faith's own scripture — named "Bible", "Quran" or "Gita" in the tab bar.
     case scripture
     case companion
@@ -78,7 +80,13 @@ final class AppModel {
     /// Prayer times, Qibla and prayer reminders (shown to Muslims).
     let salah: SalahModel
     /// Prayer requests and answered prayers (on this iPhone only).
-    let journal = PrayerJournal()
+    let journal: PrayerJournal
+    /// Bible / Quran / Gita reading plans.
+    let plans: ReadingPlanStore
+    /// Why the paywall is showing (set by a Premium feature the user tried), or `nil`.
+    var paywallReason: String?
+    /// A question to put to the companion when its tab opens (festival guides, "Ask about this").
+    var pendingCompanionQuestion: String?
 
     // MARK: - Account State
     private(set) var currentUser: AuthUser?
@@ -91,7 +99,9 @@ final class AppModel {
 
     init(env: AppEnvironment) {
         self.env = env
-        salah = SalahModel(notifications: env.notifications)
+        salah = SalahModel(notifications: env.notifications, defaults: env.preferences)
+        journal = PrayerJournal(url: env.journalURL)
+        plans = ReadingPlanStore(defaults: env.preferences)
         stored = env.profileStore.load()
         currentUser = env.sessionStore.loadSession()?.user
         applyTheme()
@@ -116,6 +126,21 @@ final class AppModel {
     var profile: SpiritualProfile { stored.profile }
     var isOnboarded: Bool { stored.onboardingCompleted }
     var accessLevel: AccessLevel { EntitlementResolver.accessLevel(for: subscriptionState, now: .now) }
+
+    /// Premium features are open with a subscription, when this build has no paywall, or under
+    /// UI tests that ask for it (`-PLUnlockPremium`, development builds only).
+    var hasPremiumAccess: Bool {
+        accessLevel == .premium || !env.monetization.isPaywallEnabled
+            || (env.configuration.isDevelopment && ProcessInfo.processInfo.arguments.contains("-PLUnlockPremium"))
+    }
+
+    /// Runs `action` when Premium is open; otherwise shows the paywall, saying why.
+    func withPremium(_ reason: String, _ action: () -> Void) {
+        if hasPremiumAccess { action() } else { paywallReason = reason }
+    }
+
+    /// Long stotras are Premium; mantras, short prayers and duas are always free.
+    func isPremiumOnly(_ item: ContentItem) -> Bool { item.length == .extended }
     var today: CivilDate { CivilDate(.now, calendar: env.calendar) }
     var faith: Faith? { profile.faithID.flatMap(env.registry.faith) }
 
@@ -128,6 +153,16 @@ final class AppModel {
         persist()
         refreshShieldCopy()
         scriptureChanged()
+    }
+
+    /// Development builds under UI testing only: `-PLPreviewFaith <faith> [-PLPreviewTradition <id>]`.
+    func applyPreviewProfileIfRequested() {
+        let arguments = ProcessInfo.processInfo.arguments
+        guard env.configuration.isDevelopment, arguments.contains(LaunchArgument.uiTesting),
+              let index = arguments.firstIndex(of: LaunchArgument.previewFaith), arguments.indices.contains(index + 1) else { return }
+        let faith = FaithID(arguments[index + 1])
+        let tradition = arguments.firstIndex(of: "-PLPreviewTradition").flatMap { arguments.indices.contains($0 + 1) ? TraditionID(arguments[$0 + 1]) : nil }
+        completeOnboarding(with: SpiritualProfile(faithID: faith, traditionID: tradition, displayName: "Vaibhav"))
     }
 
     /// Saves unfinished onboarding answers (private container) without completing it.
@@ -334,9 +369,22 @@ final class AppModel {
     /// The library's verified prayers for today's deity (mantras first).
     func itemsForTodaysFocus() -> [ContentItem] {
         guard let focus = todaysFocus else { return [] }
-        return env.catalog.visibleItems(policy: env.contentPolicy, registry: env.registry)
+        return items(forFocus: focus)
+    }
+
+    /// The library's verified prayers for a deity (mantras first, long stotras last).
+    func items(forFocus focus: FocusID) -> [ContentItem] {
+        env.catalog.visibleItems(policy: env.contentPolicy, registry: env.registry)
             .filter { $0.focuses.contains(focus) }
             .sorted { ($0.kind == .mantra ? 0 : 1, $0.length == .extended ? 1 : 0) < ($1.kind == .mantra ? 0 : 1, $1.length == .extended ? 1 : 0) }
+    }
+
+    /// Every prayer this build may show for the user's faith (or faith-neutral ones).
+    var faithItems: [ContentItem] {
+        env.catalog.visibleItems(policy: env.contentPolicy, registry: env.registry)
+            .filter { $0.faith == profile.faithID && $0.segments.contains { $0.role != .explanation } }
+            .filter { item in item.traditions.isEmpty || profile.traditionID.map(item.traditions.contains) ?? false
+                || (profile.traditionID == nil && item.traditions.contains("christianity.catholic")) }
     }
 
     func selectContent() -> ScoredContent? {
@@ -723,6 +771,13 @@ final class AppModel {
         }
         env.protection.resetAll()
         await env.notifications.removeDailyVerses()
+        // Everything added since: journal, reading plans, prayer times, festival greetings.
+        journal.deleteAll()
+        plans.reset()
+        await salah.reset()
+        env.preferences.removeObject(forKey: FestivalSettings.key)
+        await env.notifications.removeFestivals()
+        pendingCompanionQuestion = nil
         stored = StoredProfile()
         applyTheme()
         dailyVerse = nil

@@ -89,7 +89,7 @@ final class ScreenshotTourTests: XCTestCase {
         app.navigationBars.buttons.firstMatch.tap(); sleep(1)
 
         // Tabs
-        tap(app.tabBars.buttons["Protection"]); sleep(1); shot("protection")
+        tap(app.tabBars.buttons["You"]); tap(app.buttons["you.protection"]); sleep(1); shot("protection"); app.navigationBars.buttons.firstMatch.tap()
         tap(app.tabBars.buttons["Today"]); tap(app.buttons["today.journey"]); sleep(1); shot("journey")
         app.swipeUp(); shot("journey-scrolled")
         let past = app.buttons.matching(NSPredicate(format: "label CONTAINS[c] %@", "ago")).firstMatch
@@ -102,7 +102,7 @@ final class ScreenshotTourTests: XCTestCase {
         let input = app.textViews["companion.input"].exists ? app.textViews["companion.input"] : app.textFields["companion.input"]
         tap(input); input.typeText("What does Psalm 23:1-3 mean?")
         tap(app.buttons["companion.send"]); sleep(2); shot("companion-answer")
-        tap(app.tabBars.buttons["Settings"]); sleep(1); shot("settings")
+        tap(app.tabBars.buttons["You"]); sleep(1); shot("settings")
         app.swipeUp(); shot("settings-scrolled")
         app.swipeUp(); shot("settings-bottom")
     }
@@ -143,7 +143,7 @@ final class ScreenshotTourTests: XCTestCase {
         app.navigationBars.buttons.firstMatch.tap(); sleep(1)
 
         // Switch to Hinduism in Settings → the tab becomes the Gita.
-        tap(app.tabBars.buttons["Settings"]); sleep(1)
+        tap(app.tabBars.buttons["You"]); sleep(1)
         tap(app.staticTexts["Faith & tradition"])
         tap(app.buttons["faith.hinduism"])
         tap(app.navigationBars.buttons["Save"]); sleep(1)

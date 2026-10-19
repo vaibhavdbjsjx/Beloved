@@ -15,12 +15,14 @@ struct SettingsView: View {
     @State private var showingSignOutAlert = false
     @State private var showingDeleteAccountAlert = false
     @State private var notificationStatus: UNAuthorizationStatus?
+    @State private var festivalGreetings = true
     @AppStorage(AppearancePreference.storageKey) private var appearance: AppearancePreference = .system
 
     var body: some View {
         NavigationStack {
             Form {
                 accountSection
+                protectionAndJourney
                 practice
                 intentionsSection
                 appearanceSection
@@ -35,9 +37,12 @@ struct SettingsView: View {
             .labeledContentStyle(.pl)
             .scrollContentBackground(.hidden)
             .background(Color.plCanvas)
-            .navigationTitle("Settings")
+            .navigationTitle("You")
             .environment(\.defaultMinListRowHeight, 52)
-            .task { await refreshNotificationStatus() }
+            .task {
+                festivalGreetings = model.festivalGreetingsEnabled
+                await refreshNotificationStatus()
+            }
             .onChange(of: scenePhase) { _, phase in
                 // Returning from the Settings app after changing notification permission.
                 if phase == .active { Task { await refreshNotificationStatus() } }
@@ -151,6 +156,39 @@ struct SettingsView: View {
         } header: {
             Text("Account")
                 .foregroundStyle(Color.plInkSecondary)
+        }
+        .listRowBackground(Color.plSurface)
+    }
+
+    /// The pause itself (Screen Time protection) and the record of pauses, first.
+    private var protectionAndJourney: some View {
+        Section {
+            NavigationLink {
+                ProtectionView(embedded: true)
+            } label: {
+                HStack(spacing: PLSpacing.m) {
+                    PLIconBadge("shield.lefthalf.filled", size: 36)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Protection").font(.plHeadline).foregroundStyle(Color.plInk)
+                        Text(model.protectionStatus.title)
+                            .font(.plCaption)
+                            .foregroundStyle(model.protectionStatus.tone == .attention ? Color.plCaution : Color.plInkSecondary)
+                    }
+                }
+            }
+            .accessibilityIdentifier("you.protection")
+            NavigationLink {
+                JourneyView()
+            } label: {
+                HStack(spacing: PLSpacing.m) {
+                    PLIconBadge("circle.grid.3x3", size: 36)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Your journey").font(.plHeadline).foregroundStyle(Color.plInk)
+                        Text("Your pauses and prayers over time").font(.plCaption).foregroundStyle(Color.plInkSecondary)
+                    }
+                }
+            }
+            .accessibilityIdentifier("you.journey")
         }
         .listRowBackground(Color.plSurface)
     }
@@ -284,6 +322,21 @@ struct SettingsView: View {
 
     @ViewBuilder
     private var notifications: some View {
+        Section {
+            Toggle("Festival greetings", isOn: Binding(
+                get: { festivalGreetings },
+                set: { value in
+                    festivalGreetings = value
+                    model.festivalGreetingsEnabled = value
+                    Task { await model.rescheduleFestivalGreetings() }
+                }
+            ))
+            .tint(.plAccent)
+            .accessibilityIdentifier("settings.festivals")
+        } footer: {
+            Text("A greeting on the morning of your own faith's festivals and holy days.")
+        }
+        .listRowBackground(Color.plSurface)
         Section {
             switch notificationStatus {
             case .authorized, .provisional, .ephemeral:

@@ -9,26 +9,34 @@ import SwiftUI
 /// doesn't allow.
 struct ProtectionView: View {
     @Environment(AppModel.self) private var model
+    /// Pushed inside another navigation stack (from You or Today) rather than standing alone.
+    var embedded = false
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: PLSpacing.xl) {
-                    ProtectionStatusHero(status: model.protectionStatus)
-                        .plStaggered(0)
-                    ProtectionSetupPanel()
-                        .plStaggered(1)
-                    limits
-                        .plStaggered(2)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, PLSpacing.page)
-                .padding(.top, PLSpacing.s)
-                .padding(.bottom, PLSpacing.xxxl)
-            }
-            .background(Color.plCanvas)
-            .navigationTitle("Protection")
+        if embedded {
+            content
+        } else {
+            NavigationStack { content }
         }
+    }
+
+    private var content: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: PLSpacing.xl) {
+                ProtectionStatusHero(status: model.protectionStatus)
+                    .plStaggered(0)
+                ProtectionSetupPanel()
+                    .plStaggered(1)
+                limits
+                    .plStaggered(2)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, PLSpacing.page)
+            .padding(.top, PLSpacing.s)
+            .padding(.bottom, PLSpacing.xxxl)
+        }
+        .background(Color.plCanvas)
+        .navigationTitle("Protection")
     }
 
     private var limits: some View {

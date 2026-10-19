@@ -64,6 +64,8 @@ export function validateRequest(body) {
     helpWith: strList(c.helpWith, 10, 60),
     scripture: strList(c.scripture, 3, 20).filter((w) => ["bible", "quran", "bhagavad-gita"].includes(w)),
     library,
+    today: str(c.today, 40),
+    observances: strList(c.observances, 8, 120),
   };
   return { messages: turns, context };
 }
@@ -129,23 +131,48 @@ export async function handle(request, env, ctx, deps = {}) {
   }
 
   const model = env.MODEL ?? "gemini-flash-latest";
-  // Gemini's free tier is sometimes briefly busy (500/503): retry twice before giving up.
+  // Thinking models spend output tokens on hidden reasoning, so the budget must leave room for
+  // the answer itself; grounding with Google Search makes stories and practices more accurate.
+  // Each optional feature falls away if the model or the free tier refuses it.
+  const features = {
+    grounding: env.GROUNDING === "1",
+    thinking: env.THINKING_BUDGET !== undefined && env.THINKING_BUDGET !== "",
+  };
   const callModel = () => upstreamFetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${model}:streamGenerateContent?alt=sse`,
     {
       method: "POST",
+      // A hung upstream must not hold the person for minutes: give up and retry.
+      signal: AbortSignal.timeout(Number(env.UPSTREAM_TIMEOUT_MS ?? 40_000)),
       headers: { "content-type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
       body: JSON.stringify({
         systemInstruction: { parts: [{ text: systemPrompt(valid.context) }] },
         contents: valid.messages.map((m) => ({ role: m.role === "assistant" ? "model" : "user", parts: [{ text: m.content }] })),
-        generationConfig: { maxOutputTokens: Number(env.MAX_TOKENS ?? 900) },
+        ...(features.grounding ? { tools: [{ google_search: {} }] } : {}),
+        generationConfig: {
+          maxOutputTokens: Number(env.MAX_TOKENS ?? 6000),
+          temperature: 0.4,
+          ...(features.thinking ? { thinkingConfig: { thinkingBudget: Number(env.THINKING_BUDGET) } } : {}),
+        },
       }),
     },
   );
-  let upstream = await callModel();
-  for (let attempt = 1; attempt <= 2 && (upstream.status === 500 || upstream.status === 503); attempt++) {
-    await new Promise((resolve) => setTimeout(resolve, (deps.retryDelayMs ?? 1200) * attempt));
-    upstream = await callModel();
+  const timedOut = () => new Response("timeout", { status: 504 });
+  let upstream = await callModel().catch(timedOut);
+  for (let attempt = 1; attempt <= 3 && !upstream.ok; attempt++) {
+    if (upstream.status === 500 || upstream.status === 503 || upstream.status === 504) {
+      // Gemini's free tier is sometimes briefly busy: wait and retry.
+      await new Promise((resolve) => setTimeout(resolve, (deps.retryDelayMs ?? 1200) * attempt));
+    } else if (upstream.status === 400 && features.thinking) {
+      features.thinking = false;
+    } else if ([400, 403, 429].includes(upstream.status) && features.grounding) {
+      features.grounding = false;
+    } else {
+      break;
+    }
+    const detail = await upstream.text().catch(() => "");
+    console.log(`retrying after upstream ${upstream.status}: ${detail.slice(0, 200)}`);
+    upstream = await callModel().catch(timedOut);
   }
   if (!upstream.ok || !upstream.body) {
     const detail = await upstream.text().catch(() => "");

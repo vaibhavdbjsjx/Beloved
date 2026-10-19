@@ -98,6 +98,32 @@ test("the system prompt is faith-scoped and forbids writing holy text", () => {
   assert.match(prompt, /⟦gita:2:47⟧/);
   assert.doesNotMatch(prompt, /⟦quran/);
   assert.match(systemPrompt({ faith: null }), /prefer not to name a faith/);
+  // Questions get answers, not breathing exercises.
+  assert.match(prompt, /answer it\s+directly in the first sentence/);
+  assert.match(systemPrompt({ faith: "islam", today: "Friday, 20 March 2026", observances: ["Eid al-Fitr (today)"] }), /Eid al-Fitr \(today\)/);
+});
+
+test("refused optional features (grounding, thinking budget) fall away instead of failing", async () => {
+  const bodies = [];
+  const fetcher = async (url, init) => {
+    const body = JSON.parse(init.body);
+    bodies.push(body);
+    if (body.generationConfig.thinkingConfig) return new Response("bad thinking", { status: 400 });
+    if (body.tools) return new Response("no grounding on this tier", { status: 429 });
+    return new Response('data: {"candidates":[{"content":{"parts":[{"text":"Hanuman"}]}}]}\n\n', { status: 200 });
+  };
+  const env = { ...fakeEnv(), GROUNDING: "1", THINKING_BUDGET: "512" };
+  const request = new Request("https://x/v1/companion", {
+    method: "POST",
+    headers: { "content-type": "application/json", "x-beloved-install": "11111111-2222-3333-4444-555555555555" },
+    body: JSON.stringify({ messages: [{ role: "user", text: "Why did Hanuman burn Lanka?" }], context: { faith: "hinduism" } }),
+  });
+  const response = await handle(request, env, {}, { fetch: fetcher, now: NOW, retryDelayMs: 0 });
+  assert.equal(response.status, 200);
+  assert.match(await response.text(), /Hanuman/);
+  assert.equal(bodies.length, 3);
+  assert.ok(bodies[0].tools && bodies[0].generationConfig.thinkingConfig);
+  assert.ok(!bodies[2].tools && !bodies[2].generationConfig.thinkingConfig);
 });
 
 function fakeEnv(store = new Map()) {
