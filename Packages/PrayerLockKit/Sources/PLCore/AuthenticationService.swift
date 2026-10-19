@@ -5,7 +5,6 @@ import Foundation
 public protocol AuthenticationService: Sendable {
     func currentSession() async -> AuthSession?
     func signInWithApple(payload: AppleCredentialPayload) async throws -> AuthSession
-    func signInWithGoogle(payload: GoogleCredentialPayload) async throws -> AuthSession
     func restorePreviousSignIn() async throws -> AuthSession?
     func signOut() async throws
     func deleteAccount(appleRevocationHandler: (@Sendable () async throws -> Void)?) async throws
@@ -106,39 +105,6 @@ public actor StandardAuthenticationService: AuthenticationService {
         return session
     }
 
-    public func signInWithGoogle(payload: GoogleCredentialPayload) async throws -> AuthSession {
-        var existingCreatedAt: Date = .now
-        var avatarFilename: String?
-
-        if let existing = cachedSession, existing.user.id == payload.userID {
-            existingCreatedAt = existing.user.createdAt
-            avatarFilename = existing.user.avatarLocalFilename
-        }
-
-        let user = AuthUser(
-            id: payload.userID,
-            provider: .google,
-            email: payload.email,
-            isPrivateEmail: false,
-            displayName: payload.displayName,
-            avatarURL: payload.avatarURL,
-            avatarLocalFilename: avatarFilename,
-            createdAt: existingCreatedAt,
-            lastSignInAt: .now
-        )
-
-        let session = AuthSession(
-            user: user,
-            idToken: payload.idToken,
-            authorizationCode: nil,
-            expiresAt: nil
-        )
-
-        try sessionStore.saveSession(session)
-        cachedSession = session
-        return session
-    }
-
     public func signOut() async throws {
         cachedSession = nil
         try sessionStore.clearSession()
@@ -152,13 +118,6 @@ public actor StandardAuthenticationService: AuthenticationService {
                     try await appleRevocationHandler()
                 } catch {
                     throw AuthError.deletionFailed("Could not revoke Apple authorization: \(error.localizedDescription)")
-                }
-            } else if session.user.provider == .google, let idToken = session.idToken {
-                // Revoke Google OAuth token using Google's official revocation endpoint
-                do {
-                    try await Self.revokeGoogleToken(token: idToken)
-                } catch {
-                    throw AuthError.deletionFailed("Remote token revocation failed: \(error.localizedDescription)")
                 }
             }
         }
@@ -189,31 +148,6 @@ public actor StandardAuthenticationService: AuthenticationService {
         try sessionStore.saveSession(session)
         cachedSession = session
         return session.user
-    }
-
-    /// Revokes an OAuth token using Google's official revocation endpoint.
-    /// Returns safely if the token was revoked (HTTP 200) or was already invalid/expired (HTTP 400).
-    /// Throws on network failure or unexpected server response so callers do not assume remote revocation succeeded.
-    public static func revokeGoogleToken(token: String) async throws {
-        guard let url = URL(string: "https://oauth2.googleapis.com/revoke") else {
-            throw AuthError.unknown("Invalid revocation endpoint.")
-        }
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        var components = URLComponents()
-        components.queryItems = [URLQueryItem(name: "token", value: token)]
-        request.httpBody = components.percentEncodedQuery?.data(using: .utf8)
-
-        let (data, response) = try await URLSession.shared.data(for: request)
-        guard let http = response as? HTTPURLResponse else {
-            throw AuthError.networkError("Invalid response from revocation endpoint.")
-        }
-        if (200...299).contains(http.statusCode) || http.statusCode == 400 {
-            return
-        }
-        let detail = String(data: data, encoding: .utf8) ?? "HTTP \(http.statusCode)"
-        throw AuthError.revocationFailed("Revocation failed: \(detail)")
     }
 
     public static func sha256(_ input: String) -> String {
@@ -271,24 +205,6 @@ public actor MockAuthenticationService: AuthenticationService {
             lastSignInAt: .now
         )
         let session = AuthSession(user: user, idToken: "mock-apple-id-token", authorizationCode: "mock-apple-auth-code")
-        stubbedSession = session
-        return session
-    }
-
-    public func signInWithGoogle(payload: GoogleCredentialPayload) async throws -> AuthSession {
-        if let error = shouldThrowError { throw error }
-        let user = AuthUser(
-            id: payload.userID,
-            provider: .google,
-            email: payload.email,
-            isPrivateEmail: false,
-            displayName: payload.displayName ?? "Google User",
-            avatarURL: payload.avatarURL,
-            avatarLocalFilename: stubbedSession?.user.avatarLocalFilename,
-            createdAt: stubbedSession?.user.createdAt ?? .now,
-            lastSignInAt: .now
-        )
-        let session = AuthSession(user: user, idToken: payload.idToken ?? "mock-google-id-token")
         stubbedSession = session
         return session
     }

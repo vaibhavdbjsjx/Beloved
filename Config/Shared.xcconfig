@@ -12,9 +12,6 @@ PL_ASSISTANT_ENDPOINT = https:/$()/beloved-companion.beloved-app.workers.dev
 // links are hidden. "//" starts an xcconfig comment, so write https:/$()/host/path.
 PL_SUPPORT_URL = https:/$()/beloveded.netlify.app/support.html
 PL_PRIVACY_POLICY_URL = https:/$()/beloveded.netlify.app/privacy.html
-// Google Sign-In Client ID (optional override in Secrets.xcconfig). Empty when unconfigured.
-PL_GOOGLE_CLIENT_ID = 
-PL_GOOGLE_URL_SCHEME = 
 
 MARKETING_VERSION = 1.0.0
 CURRENT_PROJECT_VERSION = 1

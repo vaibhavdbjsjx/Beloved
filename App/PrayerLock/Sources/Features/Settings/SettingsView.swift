@@ -16,6 +16,7 @@ struct SettingsView: View {
     @State private var showingDeleteAccountAlert = false
     @State private var notificationStatus: UNAuthorizationStatus?
     @State private var festivalGreetings = true
+    @State private var iCloudSync = true
     @AppStorage(AppearancePreference.storageKey) private var appearance: AppearancePreference = .system
 
     var body: some View {
@@ -41,6 +42,7 @@ struct SettingsView: View {
             .environment(\.defaultMinListRowHeight, 52)
             .task {
                 festivalGreetings = model.festivalGreetingsEnabled
+                iCloudSync = model.cloud.isEnabled
                 await refreshNotificationStatus()
             }
             .onChange(of: scenePhase) { _, phase in
@@ -144,7 +146,7 @@ struct SettingsView: View {
                                 .font(.plCaption)
                                 .foregroundStyle(Color.plInkSecondary)
                         } else if model.currentUser == nil {
-                            Text("Apple & Gmail Sign-In")
+                            Text("Sign in with Apple")
                                 .font(.plCaption)
                                 .foregroundStyle(Color.plInkSecondary)
                         }
@@ -189,6 +191,26 @@ struct SettingsView: View {
                 }
             }
             .accessibilityIdentifier("you.journey")
+            Toggle(isOn: Binding(
+                get: { iCloudSync },
+                set: { value in
+                    iCloudSync = value
+                    model.cloud.isEnabled = value
+                }
+            )) {
+                HStack(spacing: PLSpacing.m) {
+                    PLIconBadge("icloud", size: 36)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("iCloud sync").font(.plHeadline).foregroundStyle(Color.plInk)
+                        Text("Your faith, journal, journey and reading plans come back on a new iPhone or after reinstalling.")
+                            .font(.plCaption)
+                            .foregroundStyle(Color.plInkSecondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+            }
+            .tint(.plAccent)
+            .accessibilityIdentifier("you.icloud")
         }
         .listRowBackground(Color.plSurface)
     }
@@ -584,13 +606,13 @@ struct PrivacyDetailView: View {
     var body: some View {
         Form {
             Section("Stored on this iPhone") {
-                Text("Your faith and preferences, where you left off reading, your conversations with the companion, today's check-in (if remembered), and your prayer history. Protected by iOS Data Protection — unreadable while your iPhone is locked. Included in your own iCloud or computer backups.")
+                Text("Your faith and preferences, where you left off reading, your prayer journal, your conversations with the companion, today's check-in (if remembered), and your prayer history. Protected by iOS Data Protection — unreadable while your iPhone is locked. With iCloud sync on, a copy (not companion conversations or your location) is kept in your own iCloud so it returns on a new iPhone.")
             }
             Section("Never collected") {
                 Text("Which apps you use or for how long. Screen Time gives \(AppBrand.displayName) anonymous tokens only, and app usage data never leaves Apple's frameworks.")
             }
-            Section("Sent only when you use Premium Companion") {
-                Text("Free answers stay on this iPhone. If you subscribe and use the cloud Companion, your message and faith context are sent to Beloved's server and Google Gemini for the reply. Beloved stores only a short-lived daily message count.")
+            Section("Sent only when you use the Companion") {
+                Text("When you write to the Companion, your message and faith context are sent to Beloved's server and Google Gemini for the reply. Beloved stores no conversations — only short-lived daily message counts.")
             }
             Section("Shared with the app's own extensions") {
                 Text("To show the pause screen, the app's Screen Time extensions read your protection settings and the pause-screen text. They never read your prayer history.")

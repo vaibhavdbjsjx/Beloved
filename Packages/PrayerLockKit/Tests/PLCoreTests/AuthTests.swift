@@ -15,7 +15,7 @@ import Testing
 
         let userWithSingleName = AuthUser(
             id: "user-2",
-            provider: .google,
+            provider: .apple,
             email: "miriam@example.com",
             displayName: "Miriam"
         )
@@ -43,7 +43,7 @@ import Testing
 
     @Test func authProviderDisplayNames() {
         #expect(AuthProvider.apple.displayName == "Apple")
-        #expect(AuthProvider.google.displayName == "Gmail")
+        #expect(AuthProvider.allCases == [.apple], "Sign in with Apple is the only account option")
     }
 
     @Test func appleCredentialPayloadFormatting() {
@@ -159,38 +159,13 @@ import Testing
         #expect(secondSession.user.displayName == "Sarah Connor")
     }
 
-    @Test func googleSignInFlow() async throws {
-        let storage = InMemorySecureStorage()
-        let store = AccountSessionStore(storage: storage)
-        let service = StandardAuthenticationService(sessionStore: store)
-
-        let payload = GoogleCredentialPayload(
-            userID: "google-sub-789",
-            idToken: "google-jwt-token",
-            email: "beloved.seeker@gmail.com",
-            displayName: "Beloved Seeker",
-            avatarURL: URL(string: "https://lh3.googleusercontent.com/avatar")
-        )
-
-        let session = try await service.signInWithGoogle(payload: payload)
-        #expect(session.user.id == "google-sub-789")
-        #expect(session.user.provider == .google)
-        #expect(session.user.displayName == "Beloved Seeker")
-        #expect(session.user.email == "beloved.seeker@gmail.com")
-        #expect(session.user.isPrivateEmail == false)
-        #expect(session.user.avatarURL?.absoluteString == "https://lh3.googleusercontent.com/avatar")
-
-        let current = await service.currentSession()
-        #expect(current?.user.id == "google-sub-789")
-    }
-
     @Test func updateDisplayNameAndAvatar() async throws {
         let storage = InMemorySecureStorage()
         let store = AccountSessionStore(storage: storage)
         let service = StandardAuthenticationService(sessionStore: store)
 
-        let payload = GoogleCredentialPayload(userID: "user-edit", email: "test@example.com")
-        _ = try await service.signInWithGoogle(payload: payload)
+        let payload = AppleCredentialPayload(userIdentifier: "user-edit", email: "test@example.com")
+        _ = try await service.signInWithApple(payload: payload)
 
         let updatedUser = try await service.updateDisplayName("Pilgrim Traveler")
         #expect(updatedUser.displayName == "Pilgrim Traveler")
@@ -208,8 +183,8 @@ import Testing
         let store = AccountSessionStore(storage: storage)
         let service = StandardAuthenticationService(sessionStore: store)
 
-        let payload = GoogleCredentialPayload(userID: "user-signout", email: "signout@example.com")
-        _ = try await service.signInWithGoogle(payload: payload)
+        let payload = AppleCredentialPayload(userIdentifier: "user-signout", email: "signout@example.com")
+        _ = try await service.signInWithApple(payload: payload)
         #expect(await service.currentSession() != nil)
 
         try await service.signOut()
@@ -246,8 +221,11 @@ import Testing
 
         #expect(try await service.restorePreviousSignIn() == nil)
 
-        let payload = GoogleCredentialPayload(userID: "restore-user-123", email: "restore@example.com", displayName: "Restore User")
-        _ = try await service.signInWithGoogle(payload: payload)
+        var name = PersonNameComponents()
+        name.givenName = "Restore"
+        name.familyName = "User"
+        let payload = AppleCredentialPayload(userIdentifier: "restore-user-123", email: "restore@example.com", fullName: name)
+        _ = try await service.signInWithApple(payload: payload)
 
         let restored = try await service.restorePreviousSignIn()
         #expect(restored?.user.id == "restore-user-123")
@@ -407,9 +385,9 @@ import Testing
         }
 
         // 6. Injected Missing Configuration
-        await mock.setShouldThrowError(.missingConfiguration("Google Client ID"))
-        await #expect(throws: AuthError.missingConfiguration("Google Client ID")) {
-            _ = try await mock.signInWithGoogle(payload: GoogleCredentialPayload(userID: "x"))
+        await mock.setShouldThrowError(.missingConfiguration("Apple"))
+        await #expect(throws: AuthError.missingConfiguration("Apple")) {
+            _ = try await mock.signInWithApple(payload: AppleCredentialPayload(userIdentifier: "x"))
         }
 
         // 7. Reset Error and Sign Out
@@ -419,8 +397,8 @@ import Testing
         #expect(await mock.currentSession() == nil)
 
         // 8. Delete Account
-        let googleSession = try await mock.signInWithGoogle(payload: GoogleCredentialPayload(userID: "del-user"))
-        #expect(googleSession.user.id == "del-user")
+        let appleSession = try await mock.signInWithApple(payload: AppleCredentialPayload(userIdentifier: "del-user"))
+        #expect(appleSession.user.id == "del-user")
         try await mock.deleteAccount()
         #expect(await mock.didDeleteAccount == true)
         #expect(await mock.currentSession() == nil)

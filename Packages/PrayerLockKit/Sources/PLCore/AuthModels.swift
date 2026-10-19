@@ -3,12 +3,10 @@ import Foundation
 /// The supported authentication providers.
 public enum AuthProvider: String, Codable, Sendable, CaseIterable {
     case apple = "apple"
-    case google = "google"
 
     public var displayName: String {
         switch self {
         case .apple: "Apple"
-        case .google: "Gmail"
         }
     }
 }
@@ -180,25 +178,3 @@ public struct AppleCredentialPayload: Sendable {
     }
 }
 
-/// Raw payload from Google Sign-In.
-public struct GoogleCredentialPayload: Sendable {
-    public let userID: String
-    public let idToken: String?
-    public let email: String?
-    public let displayName: String?
-    public let avatarURL: URL?
-
-    public init(
-        userID: String,
-        idToken: String? = nil,
-        email: String? = nil,
-        displayName: String? = nil,
-        avatarURL: URL? = nil
-    ) {
-        self.userID = userID
-        self.idToken = idToken
-        self.email = email
-        self.displayName = displayName
-        self.avatarURL = avatarURL
-    }
-}

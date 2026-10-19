@@ -36,6 +36,9 @@ final class SalahModel: NSObject {
     private(set) var headingAccuracy: Double?
 
     @ObservationIgnored private let notifications: NotificationService
+    /// Called after a local change to the calculation choices (iCloud sync uploads them —
+    /// without the place, which never leaves this iPhone).
+    @ObservationIgnored var onChange: ((Settings) -> Void)?
     @ObservationIgnored private let defaults: UserDefaults
     @ObservationIgnored private let manager = CLLocationManager()
     @ObservationIgnored private var locationContinuation: CheckedContinuation<CLLocation?, Never>?
@@ -103,7 +106,22 @@ final class SalahModel: NSObject {
     }
 
     private func update(_ change: (inout Settings) -> Void) {
+        let before = settings
         change(&settings)
+        if let data = try? JSONEncoder().encode(settings) { defaults.set(data, forKey: Self.key) }
+        Task { await refreshReminders() }
+        if settings.method != before.method || settings.asr != before.asr || settings.remindersOn != before.remindersOn {
+            var shared = settings
+            shared.place = nil
+            onChange?(shared)
+        }
+    }
+
+    /// Calculation choices from iCloud; this iPhone keeps its own place.
+    func applyRemote(_ remote: Settings) {
+        settings.method = remote.method
+        settings.asr = remote.asr
+        settings.remindersOn = remote.remindersOn
         if let data = try? JSONEncoder().encode(settings) { defaults.set(data, forKey: Self.key) }
         Task { await refreshReminders() }
     }

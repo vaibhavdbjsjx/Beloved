@@ -83,6 +83,8 @@ final class AppModel {
     let journal: PrayerJournal
     /// Bible / Quran / Gita reading plans.
     let plans: ReadingPlanStore
+    /// The person's own iCloud copy of their profile, journal, journey and plans.
+    let cloud: CloudSync
     /// Why the paywall is showing (set by a Premium feature the user tried), or `nil`.
     var paywallReason: String?
     /// A question to put to the companion when its tab opens (festival guides, "Ask about this").
@@ -102,6 +104,7 @@ final class AppModel {
         salah = SalahModel(notifications: env.notifications, defaults: env.preferences)
         journal = PrayerJournal(url: env.journalURL)
         plans = ReadingPlanStore(defaults: env.preferences)
+        cloud = CloudSync(defaults: env.preferences, isActive: !ProcessInfo.processInfo.arguments.contains(LaunchArgument.uiTesting))
         stored = env.profileStore.load()
         currentUser = env.sessionStore.loadSession()?.user
         applyTheme()
@@ -116,6 +119,7 @@ final class AppModel {
             self.openScripture(location, highlight: self.dailyVerse?.location == location ? self.dailyVerse?.reference : nil)
         }
         refreshProtectionStatus()
+        startCloudSync()
         if #available(iOS 26.5, *) {
             tokenExpiryObservation = ScreenTimePlatform.observeTokenExpiry { [weak self] in
                 await self?.handleTokenExpiry()
@@ -335,6 +339,70 @@ final class AppModel {
         var copy = stored
         if !copy.profile.rememberCheckIns { copy.checkIn = nil }
         env.profileStore.save(copy)
+        if copy.onboardingCompleted, let data = try? JSONEncoder.prayerLock().encode(copy) {
+            cloud.push(.profile, data)
+        }
+    }
+
+    // MARK: - iCloud sync
+
+    private func startCloudSync() {
+        journal.onChange = { [weak self] requests in self?.cloud.push(.journal, encoding: requests) }
+        plans.onChange = { [weak self] snapshot in self?.cloud.push(.plans, encoding: snapshot) }
+        salah.onChange = { [weak self] settings in self?.cloud.push(.prayerSettings, encoding: settings) }
+        cloud.onRemoteChange = { [weak self] keys in
+            Task { await self?.applyRemote(keys) }
+        }
+        cloud.start()
+        // First run with sync: give iCloud what this iPhone already has.
+        Task {
+            if isOnboarded, !cloud.hasRemote(.profile) { persist() }
+            if !journal.requests.isEmpty, !cloud.hasRemote(.journal) { cloud.push(.journal, encoding: journal.requests) }
+            if !plans.progress.isEmpty, !cloud.hasRemote(.plans) { cloud.push(.plans, encoding: plans.snapshot) }
+            if !cloud.hasRemote(.sessions) { await pushSessions() }
+        }
+    }
+
+    private func pushSessions() async {
+        guard let sessions = try? await env.sessions.allSessions(), !sessions.isEmpty,
+              let data = try? JSONEncoder.prayerLock().encode(Array(sessions.suffix(1500))) else { return }
+        cloud.push(.sessions, data)
+    }
+
+    /// Applies what iCloud has that is newer than this iPhone's copy (another device, or the
+    /// same person after reinstalling).
+    private func applyRemote(_ keys: Set<CloudSync.Key>) async {
+        let decoder = JSONDecoder.prayerLock()
+        if keys.contains(.profile), let data = cloud.newerRemote(.profile),
+           let remote = try? decoder.decode(StoredProfile.self, from: data), remote.onboardingCompleted {
+            let previousFaith = stored.profile.faithID
+            stored = remote
+            env.profileStore.save(remote)
+            applyTheme()
+            refreshShieldCopy()
+            if remote.profile.faithID != previousFaith { scriptureChanged() }
+        }
+        if keys.contains(.journal), let data = cloud.newerRemote(.journal),
+           let remote = try? JSONDecoder().decode([PrayerRequest].self, from: data) {
+            journal.replace(with: remote)
+        }
+        if keys.contains(.plans), let data = cloud.newerRemote(.plans),
+           let remote = try? JSONDecoder().decode(ReadingPlanStore.Snapshot.self, from: data) {
+            plans.replace(with: remote)
+        }
+        if keys.contains(.prayerSettings), let data = cloud.newerRemote(.prayerSettings),
+           let remote = try? JSONDecoder().decode(SalahModel.Settings.self, from: data) {
+            salah.applyRemote(remote)
+        }
+        if keys.contains(.festivals), let data = cloud.newerRemote(.festivals),
+           let enabled = try? JSONDecoder().decode(Bool.self, from: data) {
+            env.preferences.set(enabled, forKey: FestivalSettings.key)
+        }
+        if keys.contains(.sessions), let data = cloud.newerRemote(.sessions),
+           let remote = try? decoder.decode([PrayerSession].self, from: data) {
+            try? await env.sessions.merge(remote)
+            await refreshHabits()
+        }
     }
 
     // MARK: - Content
@@ -462,6 +530,7 @@ final class AppModel {
         )
         do {
             try await env.sessions.append(session)
+            await pushSessions()
         } catch {
             log.error("Session not saved: \(String(describing: error), privacy: .public)")
         }
@@ -649,29 +718,6 @@ final class AppModel {
         }
     }
 
-    func signInWithGoogle(presentingWindow: UIWindow? = nil) async {
-        isAuthenticating = true
-        defer { isAuthenticating = false }
-        do {
-            if let native = env.authentication as? NativeAuthenticationService {
-                let session = try await native.performGoogleSignIn(presentingWindow: presentingWindow)
-                currentUser = session.user
-                authSheetPresented = false
-            }
-        } catch let error as AuthError {
-            if error == .cancelled { return }
-            alert = AppAlert(
-                title: String(localized: "Gmail Sign-In"),
-                message: error.errorDescription ?? String(localized: "Sign in with Gmail could not be completed.")
-            )
-        } catch {
-            alert = AppAlert(
-                title: String(localized: "Gmail Sign-In"),
-                message: error.localizedDescription
-            )
-        }
-    }
-
     func signOut() async {
         do {
             try await env.authentication.signOut()
@@ -777,6 +823,8 @@ final class AppModel {
         await salah.reset()
         env.preferences.removeObject(forKey: FestivalSettings.key)
         await env.notifications.removeFestivals()
+        // …and the iCloud copy, so it doesn't come back on this or any other device.
+        cloud.deleteAll()
         pendingCompanionQuestion = nil
         stored = StoredProfile()
         applyTheme()

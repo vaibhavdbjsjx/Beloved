@@ -21,6 +21,8 @@ struct PrayerRequest: Codable, Identifiable, Equatable {
 final class PrayerJournal {
     private(set) var requests: [PrayerRequest] = []
     @ObservationIgnored private let url: URL
+    /// Called after every local change (iCloud sync uploads it).
+    @ObservationIgnored var onChange: (([PrayerRequest]) -> Void)?
 
     init(url: URL) {
         self.url = url
@@ -38,6 +40,12 @@ final class PrayerJournal {
         let who = person?.trimmingCharacters(in: .whitespacesAndNewlines)
         requests.append(PrayerRequest(text: trimmed, person: who?.isEmpty == false ? who : nil))
         save()
+    }
+
+    /// Takes the journal from iCloud (another device or a reinstall); not echoed back.
+    func replace(with remote: [PrayerRequest]) {
+        requests = remote
+        write()
     }
 
     /// Removes every request and answered prayer ("Delete all data").
@@ -67,6 +75,11 @@ final class PrayerJournal {
     }
 
     private func save() {
+        write()
+        onChange?(requests)
+    }
+
+    private func write() {
         do {
             try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
             let data = try JSONEncoder().encode(requests)

@@ -82,6 +82,22 @@ final class ReadingPlanStore {
     private(set) var progress: [String: Set<Int>] = [:]
     private(set) var activePlanID: String?
     @ObservationIgnored private let defaults: UserDefaults
+    /// Called after every local change (iCloud sync uploads it).
+    @ObservationIgnored var onChange: ((Snapshot) -> Void)?
+
+    struct Snapshot: Codable {
+        var progress: [String: Set<Int>]
+        var activePlanID: String?
+    }
+
+    var snapshot: Snapshot { Snapshot(progress: progress, activePlanID: activePlanID) }
+
+    /// Takes reading progress from iCloud; not echoed back.
+    func replace(with remote: Snapshot) {
+        progress = remote.progress
+        activePlanID = remote.activePlanID
+        write()
+    }
 
     init(defaults: UserDefaults) {
         self.defaults = defaults
@@ -102,6 +118,7 @@ final class ReadingPlanStore {
     func start(_ plan: ReadingPlan) {
         activePlanID = plan.id
         defaults.set(plan.id, forKey: "pl.plans.active")
+        onChange?(snapshot)
     }
 
     func toggle(_ day: Int, in plan: ReadingPlan) {
@@ -125,7 +142,13 @@ final class ReadingPlanStore {
     }
 
     private func save() {
+        write()
+        onChange?(snapshot)
+    }
+
+    private func write() {
         if let data = try? JSONEncoder().encode(progress) { defaults.set(data, forKey: "pl.plans.progress") }
+        defaults.set(activePlanID, forKey: "pl.plans.active")
     }
 }
 

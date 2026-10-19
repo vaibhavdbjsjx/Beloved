@@ -18,7 +18,6 @@ public struct AppConfiguration: Sendable, Equatable {
         public static let subscriptionGroupID = "PLSubscriptionGroupID"
         public static let supportURL = "PLSupportURL"
         public static let privacyPolicyURL = "PLPrivacyPolicyURL"
-        public static let googleClientID = "PLGoogleClientID"
     }
 
     public var environment: Environment
@@ -35,8 +34,6 @@ public struct AppConfiguration: Sendable, Equatable {
     /// Hosted copy of the privacy policy. The full policy is also bundled in the app,
     /// so it is readable offline whether or not this is set.
     public var privacyPolicyURL: URL?
-    /// Google Sign-In OAuth client identifier (public client identifier).
-    public var googleClientID: String?
 
     public init(
         environment: Environment,
@@ -44,8 +41,7 @@ public struct AppConfiguration: Sendable, Equatable {
         assistantEndpoint: URL?,
         subscriptionGroupID: String?,
         supportURL: URL? = nil,
-        privacyPolicyURL: URL? = nil,
-        googleClientID: String? = nil
+        privacyPolicyURL: URL? = nil
     ) {
         self.environment = environment
         self.appGroupIdentifier = appGroupIdentifier
@@ -53,7 +49,6 @@ public struct AppConfiguration: Sendable, Equatable {
         self.subscriptionGroupID = subscriptionGroupID
         self.supportURL = supportURL
         self.privacyPolicyURL = privacyPolicyURL
-        self.googleClientID = googleClientID
     }
 
     public static func fromBundle(_ bundle: Bundle = .main) -> AppConfiguration {
@@ -75,8 +70,7 @@ public struct AppConfiguration: Sendable, Equatable {
             assistantEndpoint: string(InfoKey.assistantEndpoint).flatMap(URL.init(string:)),
             subscriptionGroupID: string(InfoKey.subscriptionGroupID),
             supportURL: string(InfoKey.supportURL).flatMap(secureWebURL),
-            privacyPolicyURL: string(InfoKey.privacyPolicyURL).flatMap(secureWebURL),
-            googleClientID: string(InfoKey.googleClientID)
+            privacyPolicyURL: string(InfoKey.privacyPolicyURL).flatMap(secureWebURL)
         )
     }
 

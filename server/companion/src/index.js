@@ -130,7 +130,10 @@ export async function handle(request, env, ctx, deps = {}) {
     await Promise.all(counters.map(([key], i) => env.USAGE.put(key, String(used[i] + 1), { expirationTtl: 60 * 60 * 48 })));
   }
 
-  const model = env.MODEL ?? "gemini-flash-latest";
+  // When the main model stays busy (Gemini's free tier sometimes returns 503 for minutes),
+  // answer with the lighter fallback model rather than not at all.
+  let model = env.MODEL ?? "gemini-flash-latest";
+  const fallbackModel = env.FALLBACK_MODEL;
   // Thinking models spend output tokens on hidden reasoning, so the budget must leave room for
   // the answer itself; grounding with Google Search makes stories and practices more accurate.
   // Each optional feature falls away if the model or the free tier refuses it.
@@ -172,6 +175,12 @@ export async function handle(request, env, ctx, deps = {}) {
     }
     const detail = await upstream.text().catch(() => "");
     console.log(`retrying after upstream ${upstream.status}: ${detail.slice(0, 200)}`);
+    upstream = await callModel().catch(timedOut);
+  }
+  if (!upstream.ok && fallbackModel && [429, 500, 503, 504].includes(upstream.status)) {
+    console.log(`main model unavailable (${upstream.status}); using ${fallbackModel}`);
+    model = fallbackModel;
+    features.thinking = false;
     upstream = await callModel().catch(timedOut);
   }
   if (!upstream.ok || !upstream.body) {

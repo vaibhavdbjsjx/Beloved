@@ -182,7 +182,10 @@ extension AppModel {
     /// On by default: a greeting on the morning of the user's own holy days.
     var festivalGreetingsEnabled: Bool {
         get { env.preferences.object(forKey: FestivalSettings.key) as? Bool ?? true }
-        set { env.preferences.set(newValue, forKey: FestivalSettings.key) }
+        set {
+            env.preferences.set(newValue, forKey: FestivalSettings.key)
+            cloud.push(.festivals, encoding: newValue)
+        }
     }
 }
 

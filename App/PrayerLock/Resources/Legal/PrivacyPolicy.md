@@ -1,14 +1,15 @@
 # Beloved Privacy Policy
 
-Last updated: 19 October 2026
+Last updated: 20 October 2026
 
 Beloved helps you pause before the apps you choose and turn that moment into prayer, a mantra, a dua or a short reflection. This policy describes the data the app handles, where it is kept, and how you can delete it. It applies to this version of the Beloved app for iPhone.
 
 ## The short version
 
-- Beloved supports optional sign-in with Apple and Gmail (Google) to preserve your account profile.
+- Beloved supports optional Sign in with Apple to show your name and photo. No account is needed to use the app.
+- If iCloud sync is on (it is by default), a copy of your choices, prayer journal, journey and reading progress is kept in your own private iCloud, so it returns on a new iPhone or after reinstalling. Only you can read it; Beloved has no access to it.
 - Everything Beloved stores (your prayers, prayer journal, reflections, check-ins, reading progress, prayer-time location and Screen Time rules) stays strictly on your iPhone and is never linked or uploaded to an account server.
-- The only network services: (1) sign-in authentication with Apple or Gmail (Google); (2) when you write to the AI Companion (free users up to 10 messages a day, Premium up to 100), your messages are processed through Beloved's server and Google Gemini; (3) in-app purchases processed directly by Apple StoreKit.
+- The only network services: (1) Sign in with Apple, if you choose it; (2) iCloud sync with your own Apple ID, if on; (3) when you write to the AI Companion (free users up to 10 messages a day, Premium up to 100), your messages are processed through Beloved's server and Google Gemini; (4) in-app purchases processed directly by Apple StoreKit.
 - Beloved contains no analytics, advertising, or tracking SDKs.
 - You can delete your account and all data at any time in Settings/Profile → Delete Account or Delete all my data.
 
@@ -33,6 +34,10 @@ Beloved helps you pause before the apps you choose and turn that moment into pra
 **Protection settings.** The apps, categories and websites you chose to pause before, whether protection is on, how long apps stay open after a moment, and a short log of protection events (for example "protection turned on" or "apps closed again"). This is shared only with Beloved's own Screen Time extensions, which run on your iPhone.
 
 Your choices, reading position, conversations, check-ins and prayer history are stored using iOS Data Protection, which keeps them unreadable while your iPhone is locked. Like other app data, they can be included in your own iCloud or computer backups, which are controlled by you and Apple.
+
+## iCloud sync
+
+With iCloud sync on (You → iCloud sync), Beloved keeps a copy of your faith and preferences, intentions, prayer journal, prayer history (Journey), reading-plan progress, prayer-time calculation choices and festival-greeting setting in the iCloud key-value storage of your own Apple ID. Apple stores and syncs it to your devices signed in to the same Apple ID; Beloved's developer cannot see it. Your saved prayer-time location, companion conversations and Screen Time choices are never synced. Turn sync off at any time; Delete all my data also removes the iCloud copy.
 
 ## Screen Time
 

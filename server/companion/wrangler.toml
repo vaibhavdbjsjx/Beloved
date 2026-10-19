@@ -9,6 +9,7 @@ BUNDLE_ID = "com.vaibhavsg.beloved"
 PRODUCT_IDS = "beloved.premium.monthly,beloved.premium.annual"
 ENVIRONMENTS = "Production"   # add ",Sandbox" only for TestFlight testing, then remove
 MODEL = "gemini-flash-latest"
+FALLBACK_MODEL = "gemini-flash-lite-latest" # used when the main model is busy
 MAX_TOKENS = "6000"
 THINKING_BUDGET = "512" # hidden reasoning tokens; the rest of MAX_TOKENS is the answer
 GROUNDING = "0"        # "1" = Google Search grounding (needs a paid Gemini plan; the free tier refuses it)

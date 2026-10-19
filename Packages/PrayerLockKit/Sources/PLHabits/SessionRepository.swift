@@ -8,6 +8,16 @@ public protocol SessionRepository: Sendable {
     func append(_ session: PrayerSession) async throws
     /// Permanently removes all history (user-initiated "Delete my data").
     func deleteAll() async throws
+    /// Adds sessions recorded on another device (iCloud sync); ones already here are kept.
+    func merge(_ sessions: [PrayerSession]) async throws
+}
+
+extension Array where Element == PrayerSession {
+    /// Union by id, oldest first.
+    func merged(with other: [PrayerSession]) -> [PrayerSession] {
+        let known = Set(map(\.id))
+        return (self + other.filter { !known.contains($0.id) }).sorted { $0.startedAt < $1.startedAt }
+    }
 }
 
 /// File-backed repository in the app's *private* container with `.complete` protection.
@@ -30,6 +40,10 @@ public actor FileSessionRepository: SessionRepository {
     public func deleteAll() async throws {
         try store.delete()
     }
+
+    public func merge(_ sessions: [PrayerSession]) async throws {
+        try store.update(initial: []) { $0 = $0.merged(with: sessions) }
+    }
 }
 
 /// In-memory repository for tests and previews.
@@ -45,4 +59,6 @@ public final class InMemorySessionRepository: SessionRepository {
     public func append(_ session: PrayerSession) async throws { sessions.withLock { $0.append(session) } }
 
     public func deleteAll() async throws { sessions.withLock { $0.removeAll() } }
+
+    public func merge(_ other: [PrayerSession]) async throws { sessions.withLock { $0 = $0.merged(with: other) } }
 }
