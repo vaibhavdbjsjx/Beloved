@@ -267,15 +267,17 @@ struct TodayView: View {
             ) { showingMood = true }
             .accessibilityIdentifier("today.mood")
             PLHairline().padding(.leading, PLSpacing.xxxl)
-            LedgerRow(
-                label: String(localized: "Protection"),
-                systemImage: "shield.lefthalf.filled",
-                value: model.protectionStatus.title,
-                detail: model.protectionStatus.summary,
-                tone: model.protectionStatus.tone
-            ) { showingProtection = true }
-            .accessibilityIdentifier("today.protection")
-            PLHairline().padding(.leading, PLSpacing.xxxl)
+            if model.screenTimeEnabled {
+                LedgerRow(
+                    label: String(localized: "Protection"),
+                    systemImage: "shield.lefthalf.filled",
+                    value: model.protectionStatus.title,
+                    detail: model.protectionStatus.summary,
+                    tone: model.protectionStatus.tone
+                ) { showingProtection = true }
+                .accessibilityIdentifier("today.protection")
+                PLHairline().padding(.leading, PLSpacing.xxxl)
+            }
             LedgerRow(
                 label: String(localized: "Your journey"),
                 systemImage: "circle.grid.3x3",

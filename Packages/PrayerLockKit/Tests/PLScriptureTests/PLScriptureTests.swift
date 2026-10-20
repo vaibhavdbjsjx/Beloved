@@ -14,6 +14,14 @@ private func readable(_ faith: FaithID, _ policy: ScripturePolicy = .development
     policy.readableWork(for: faith, manifest: manifest, registry: registry)
 }
 
+/// The bundled manifest with every edition put back to draft: what a build looks like before
+/// any reviewer has approved it.
+private var unapprovedManifest: ScriptureManifest {
+    var draft = manifest
+    for index in draft.editions.indices { draft.editions[index].review.status = .draft }
+    return draft
+}
+
 @Suite("Scripture manifest")
 struct ManifestTests {
     @Test func everyFaithWithScriptureHasOneWork() {
@@ -42,10 +50,14 @@ struct ManifestTests {
         }
     }
 
-    @Test func importerNeverApprovesAnything() {
-        // Approval is a reviewer's decision, recorded by hand — never generated.
-        #expect(manifest.editions.allSatisfy { $0.review.status == .draft })
-        #expect(library.daily.faiths.values.allSatisfy { $0.review.status == .draft })
+    @Test func everyApprovalNamesAReviewerAndDate() {
+        // Approval is a reviewer's decision: when one is recorded, it says whose and when.
+        for edition in manifest.editions where edition.review.status == .approved {
+            #expect(edition.review.reviewer?.isEmpty == false && edition.review.reviewedOn != nil, "\(edition.id)")
+        }
+        for (faith, list) in library.daily.faiths where list.review.status == .approved {
+            #expect(list.review.reviewer?.isEmpty == false && list.review.reviewedOn != nil, "\(faith)")
+        }
     }
 
     @Test func tanzilNoticeTravelsWithTheText() throws {
@@ -124,7 +136,13 @@ struct ChapterTests {
 struct PolicyTests {
     @Test func releaseShowsNothingUntilReviewersApprove() {
         for faith: FaithID in ["christianity", "islam", "hinduism"] {
-            #expect(readable(faith, .release) == nil)
+            #expect(ScripturePolicy.release.readableWork(for: faith, manifest: unapprovedManifest, registry: registry) == nil)
+        }
+    }
+
+    @Test func releaseShowsTheApprovedBundle() {
+        for faith: FaithID in ["christianity", "islam", "hinduism"] {
+            #expect(readable(faith, .release) != nil, "\(faith)")
         }
     }
 
@@ -137,6 +155,7 @@ struct PolicyTests {
 
     @Test func approvalAndLicenceAreBothRequired() throws {
         var edition = try #require(manifest.edition("bible.web"))
+        edition.review.status = .draft
         #expect(!ScripturePolicy.release.permits(edition, registry: registry))
         edition.review.status = .approved
         #expect(ScripturePolicy.release.permits(edition, registry: registry))
@@ -168,7 +187,7 @@ struct PolicyTests {
     }
 
     @Test func partialApprovalShowsOnlyApprovedParts() throws {
-        var approved = manifest
+        var approved = unapprovedManifest
         for index in approved.editions.indices where approved.editions[index].id == "quran.ar" {
             approved.editions[index].review.status = .approved
         }
@@ -219,8 +238,10 @@ struct DailyVerseTests {
     }
 
     @Test func releaseHasNoDailyVerseUntilApproved() async throws {
-        let verse = try await library.dailyVerse(for: "islam", on: start, policy: .release, registry: registry)
-        #expect(verse == nil)
+        var unapproved = try #require(library.daily.faiths["islam"])
+        unapproved.review.status = .draft
+        #expect(!ScripturePolicy.release.permits(unapproved))
+        #expect(ScripturePolicy.release.permits(try #require(library.daily.faiths["islam"])))
         #expect(try await library.dailyVerse(for: "buddhism", on: start, policy: .development, registry: registry) == nil)
     }
 }

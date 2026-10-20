@@ -39,7 +39,7 @@ struct PaywallView: View {
             ScreenHeader(
                 eyebrow: String(localized: "Premium"),
                 title: String(localized: "Go deeper in your faith, every day."),
-                detail: String(localized: "Everything you need to pray stays free — the pause before apps, scripture, prayer times, the Qibla, your beads and the core prayers. Premium adds the deeper library and a companion who knows your tradition.")
+                detail: String(localized: "Everything you need to pray stays free — scripture, prayer times, the Qibla, your beads and the core prayers. Premium adds the deeper library and a companion who knows your tradition.")
             )
         }
     }

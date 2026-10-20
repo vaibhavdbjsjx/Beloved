@@ -4,6 +4,8 @@
 <dict>
 	<key>PLAppGroupIdentifier</key>
 	<string>$(PL_APP_GROUP_ID)</string>
+	<key>PLScreenTimeEnabled</key>
+	<string>$(PL_SCREEN_TIME_ENABLED)</string>
 	<key>PLAssistantEndpoint</key>
 	<string>$(PL_ASSISTANT_ENDPOINT)</string>
 	<key>PLEnvironment</key>

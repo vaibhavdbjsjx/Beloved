@@ -30,9 +30,12 @@ public struct OnboardingProgress: Codable, Equatable, Sendable {
 public struct OnboardingFlow: Sendable {
     /// The faith chosen so far (`nil` = not chosen yet, or faith-neutral).
     public var faith: Faith?
+    /// `false` when the build has no pause-before-apps feature: the protection step is skipped.
+    public var includesProtection: Bool
 
-    public init(faith: Faith?) {
+    public init(faith: Faith?, includesProtection: Bool = true) {
         self.faith = faith
+        self.includesProtection = includesProtection
     }
 
     /// Tradition and focus steps only appear when the chosen faith offers them.
@@ -40,6 +43,7 @@ public struct OnboardingFlow: Sendable {
         switch step {
         case .tradition: !(faith?.traditions.isEmpty ?? true)
         case .focus: faith?.usesSpiritualFocus ?? false
+        case .protection: includesProtection
         default: true
         }
     }

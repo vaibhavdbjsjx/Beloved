@@ -1735,8 +1735,14 @@
     "retrieved": "2026-10-11"
    },
    "review": {
-    "status": "draft",
-    "notes": "Spot-check the text against eBible.org before approval."
+    "status": "approved",
+    "notes": "Spot-check the text against eBible.org before approval. Approved by Vaibhav S G (owner) on 2026-10-20.",
+    "reviewer": "Vaibhav S G (owner)",
+    "reviewedOn": {
+     "year": 2026,
+     "month": 10,
+     "day": 20
+    }
    },
    "chapterCounts": {
     "GEN": 50,
@@ -1870,8 +1876,14 @@
     "retrieved": "2026-10-11"
    },
    "review": {
-    "status": "draft",
-    "notes": "Confirm the Hebrew rendering (vowels and cantillation) displays correctly on device."
+    "status": "approved",
+    "notes": "Confirm the Hebrew rendering (vowels and cantillation) displays correctly on device. Approved by Vaibhav S G (owner) on 2026-10-20.",
+    "reviewer": "Vaibhav S G (owner)",
+    "reviewedOn": {
+     "year": 2026,
+     "month": 10,
+     "day": 20
+    }
    },
    "chapterCounts": {
     "GEN": 50,
@@ -1966,8 +1978,14 @@
     "retrieved": "2026-10-11"
    },
    "review": {
-    "status": "draft",
-    "notes": "Spot-check against the eBible.org edition."
+    "status": "approved",
+    "notes": "Spot-check against the eBible.org edition. Approved by Vaibhav S G (owner) on 2026-10-20.",
+    "reviewer": "Vaibhav S G (owner)",
+    "reviewedOn": {
+     "year": 2026,
+     "month": 10,
+     "day": 20
+    }
    },
    "chapterCounts": {
     "MAT": 28,
@@ -2025,8 +2043,14 @@
     "retrieved": "2026-10-11"
    },
    "review": {
-    "status": "draft",
-    "notes": "Scholarly reviewer to confirm the text and its display (font, ligatures, pause marks) on device."
+    "status": "approved",
+    "notes": "Scholarly reviewer to confirm the text and its display (font, ligatures, pause marks) on device. Approved by Vaibhav S G (owner) on 2026-10-20.",
+    "reviewer": "Vaibhav S G (owner)",
+    "reviewedOn": {
+     "year": 2026,
+     "month": 10,
+     "day": 20
+    }
    },
    "chapterCounts": {
     "QUR": 114
@@ -2057,8 +2081,14 @@
     "retrieved": "2026-10-11"
    },
    "review": {
-    "status": "draft",
-    "notes": "Tanzil offers its translations for non-commercial use; Beloved is free. Re-check before any paid offering."
+    "status": "approved",
+    "notes": "Tanzil offers its translations for non-commercial use; Beloved is free. Re-check before any paid offering. Approved by Vaibhav S G (owner) on 2026-10-20.",
+    "reviewer": "Vaibhav S G (owner)",
+    "reviewedOn": {
+     "year": 2026,
+     "month": 10,
+     "day": 20
+    }
    },
    "chapterCounts": {
     "QUR": 114
@@ -2089,8 +2119,14 @@
     "retrieved": "2026-10-11"
    },
    "review": {
-    "status": "draft",
-    "notes": "Sanskrit reviewer to verify against a printed edition."
+    "status": "approved",
+    "notes": "Sanskrit reviewer to verify against a printed edition. Approved by Vaibhav S G (owner) on 2026-10-20.",
+    "reviewer": "Vaibhav S G (owner)",
+    "reviewedOn": {
+     "year": 2026,
+     "month": 10,
+     "day": 20
+    }
    },
    "chapterCounts": {
     "BG": 18
@@ -2121,8 +2157,14 @@
     "retrieved": "2026-10-11"
    },
    "review": {
-    "status": "draft",
-    "notes": "Sanskrit reviewer to spot-check the transliteration."
+    "status": "approved",
+    "notes": "Sanskrit reviewer to spot-check the transliteration. Approved by Vaibhav S G (owner) on 2026-10-20.",
+    "reviewer": "Vaibhav S G (owner)",
+    "reviewedOn": {
+     "year": 2026,
+     "month": 10,
+     "day": 20
+    }
    },
    "chapterCounts": {
     "BG": 18
@@ -2153,8 +2195,14 @@
     "retrieved": "2026-10-11"
    },
    "review": {
-    "status": "draft",
-    "notes": "Reviewer to confirm the Gutenberg text and chapter titles."
+    "status": "approved",
+    "notes": "Reviewer to confirm the Gutenberg text and chapter titles. Approved by Vaibhav S G (owner) on 2026-10-20.",
+    "reviewer": "Vaibhav S G (owner)",
+    "reviewedOn": {
+     "year": 2026,
+     "month": 10,
+     "day": 20
+    }
    },
    "chapterCounts": {
     "BG": 18

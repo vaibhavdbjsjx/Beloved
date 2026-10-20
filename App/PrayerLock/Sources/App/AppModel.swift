@@ -127,6 +127,9 @@ final class AppModel {
         }
     }
 
+    /// Whether this build includes the pause-before-apps feature.
+    var screenTimeEnabled: Bool { env.configuration.screenTimeEnabled }
+
     var profile: SpiritualProfile { stored.profile }
     var isOnboarded: Bool { stored.onboardingCompleted }
     var accessLevel: AccessLevel { EntitlementResolver.accessLevel(for: subscriptionState, now: .now) }

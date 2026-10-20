@@ -30,8 +30,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -64,8 +70,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -98,8 +110,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -133,8 +151,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -169,8 +193,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -204,8 +234,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -237,8 +273,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -271,8 +313,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -306,8 +354,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -341,8 +395,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -376,8 +436,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -410,8 +476,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -445,8 +517,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -480,8 +558,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -513,8 +597,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -548,8 +638,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -584,8 +680,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -620,8 +722,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -653,8 +761,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -688,8 +802,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -724,8 +844,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -758,8 +884,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -793,8 +925,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -830,8 +968,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -867,8 +1011,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -902,8 +1052,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -937,8 +1093,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -973,8 +1135,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1008,8 +1176,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1043,8 +1217,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1079,8 +1259,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1114,8 +1300,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1142,7 +1334,7 @@
       {
         "role": "explanation",
         "text": "Begins and ends prayer, tracing the cross from forehead to heart and shoulder to shoulder.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1157,8 +1349,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1181,7 +1379,7 @@
       {
         "role": "explanation",
         "text": "The prayer Jesus taught his disciples (Matthew 6:9–13), in its traditional English form, prayed by Christians everywhere.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1199,8 +1397,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1223,7 +1427,7 @@
       {
         "role": "explanation",
         "text": "The ancient summary of the Christian faith, shared across Catholic, Protestant and Anglican churches, and the first prayer of the rosary.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1239,8 +1443,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1265,7 +1475,7 @@
       {
         "role": "explanation",
         "text": "The angel Gabriel's and Elizabeth's greetings to Mary (Luke 1:28, 42), with the Church's request for her prayers. Prayed ten times in each decade of the rosary.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1284,8 +1494,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1308,7 +1524,7 @@
       {
         "role": "explanation",
         "text": "The short doxology praising the Trinity, prayed at the end of each decade and of the psalms.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1325,8 +1541,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1351,7 +1573,7 @@
       {
         "role": "explanation",
         "text": "The Salve Regina, an 11th-century hymn to Mary, prayed at the close of the rosary and at night.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1369,8 +1591,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1395,7 +1623,7 @@
       {
         "role": "explanation",
         "text": "Asks that meditating on the mysteries of Christ's life, we may imitate what they contain.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1411,8 +1639,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1443,7 +1677,7 @@
       {
         "role": "explanation",
         "text": "Rigveda 3.62.10, addressed to Savitṛ, the divine light. Traditionally recited at dawn and at the junctures of the day, asking that our understanding be inspired; it is commonly chanted after the opening syllables oṃ bhūr bhuvaḥ svaḥ.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1462,8 +1696,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1493,7 +1733,7 @@
       {
         "role": "explanation",
         "text": "Rigveda 7.59.12, to Tryambaka (Shiva). Traditionally recited for healing, protection and freedom from fear, often 108 times. It is a prayer, not a treatment — keep your doctor close.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1511,8 +1751,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1542,7 +1788,7 @@
       {
         "role": "explanation",
         "text": "A prayer to Krishna as the child Gopala, traditionally recited by those hoping for a child and during pregnancy for the child's well-being. It is devotion alongside medical care, never instead of it.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1559,8 +1805,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1590,7 +1842,7 @@
       {
         "role": "explanation",
         "text": "The full hymn to Krishna as Gopala, traditionally recited for the blessing of children and for an expecting mother and child.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1606,8 +1858,14 @@
     "length": "extended",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1637,7 +1895,7 @@
       {
         "role": "explanation",
         "text": "Forty verses by Goswami Tulsidas in praise of Hanuman. Traditionally recited for courage, protection and strength, often on Tuesdays and Saturdays.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1654,8 +1912,14 @@
     "length": "extended",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1685,7 +1949,7 @@
       {
         "role": "explanation",
         "text": "Prayed to Ganesha before beginning anything — a journey, an exam, a new job — asking that obstacles be removed.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1703,8 +1967,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1734,7 +2004,7 @@
       {
         "role": "explanation",
         "text": "The meditation verse on Vishnu resting on the serpent — peaceful, all-pervading, lotus-eyed — traditionally recited before the Vishnu Sahasranama and in the morning for calm.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1752,8 +2022,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1784,7 +2060,7 @@
       {
         "role": "explanation",
         "text": "The great mantra of the holy names, given in the Kali-Santarana Upanishad; chanted on a mala or sung in kirtan.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1802,8 +2078,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1833,7 +2115,7 @@
       {
         "role": "explanation",
         "text": "From the Rama Raksha Stotram: salutations to Rama, the auspicious, the moon of the Raghu line. Traditionally recited for protection and peace.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1851,8 +2133,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1882,7 +2170,7 @@
       {
         "role": "explanation",
         "text": "Taking refuge in Hanuman — swift as the mind, fast as the wind, master of the senses. Traditionally recited for courage before a difficult task.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1899,8 +2187,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1930,7 +2224,7 @@
       {
         "role": "explanation",
         "text": "Eight verses to Mahalakshmi, giver of prosperity and well-being; often recited on Fridays and at Diwali.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1947,8 +2241,14 @@
     "length": "extended",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -1979,7 +2279,7 @@
       {
         "role": "explanation",
         "text": "The salutation to the Goddess as Narayani, auspiciousness of all that is auspicious, refuge of all. Recited to Durga for protection and blessing, especially during Navaratri.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -1997,8 +2297,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2028,7 +2334,7 @@
       {
         "role": "explanation",
         "text": "Ganesha's twelve names, to remove troubles (saṅkaṭa). Its closing verses say it traditionally: knowledge to the student, wealth to the one who seeks it, children to those who wish for them. Often recited on Sankashti Chaturthi.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2047,8 +2353,14 @@
     "length": "extended",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2078,7 +2390,7 @@
       {
         "role": "explanation",
         "text": "The Gayatri of Ganesha, from the Ganapati Atharvashirsha — chanted for clear understanding before study and new work.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2095,8 +2407,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2126,7 +2444,7 @@
       {
         "role": "explanation",
         "text": "Five verses, one for each syllable of na-ma-śi-vā-ya. Traditionally recited on Mondays and in the Shravan month.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2143,8 +2461,14 @@
     "length": "extended",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2175,7 +2499,7 @@
       {
         "role": "explanation",
         "text": "Salutation to the Goddess who dwells in all beings as power (śakti). Recited for inner strength, especially during Navaratri.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2192,8 +2516,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2225,7 +2555,7 @@
       {
         "role": "explanation",
         "text": "Salutation to the Goddess present in all as intelligence (buddhi) — recited before study and important decisions.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2241,8 +2571,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2273,7 +2609,7 @@
       {
         "role": "explanation",
         "text": "Salutation to the Goddess present in all as peace (śānti).",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2290,8 +2626,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2322,7 +2664,7 @@
       {
         "role": "explanation",
         "text": "Salutation to the Goddess present in all as fortune (lakṣmī).",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2338,8 +2680,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2370,7 +2718,7 @@
       {
         "role": "explanation",
         "text": "Salutation to the Goddess present in all as mother — prayed for one's family and children.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2388,8 +2736,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2419,7 +2773,7 @@
       {
         "role": "explanation",
         "text": "The 'stream of gold' hymn to Lakshmi, traditionally recited for prosperity and relief from financial hardship, often on Fridays.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2436,8 +2790,14 @@
     "length": "extended",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2467,7 +2827,7 @@
       {
         "role": "explanation",
         "text": "Said by students before beginning to study: 'Saraswati, I bow to you; I begin my learning — may I always succeed.'",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2483,8 +2843,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2514,7 +2880,7 @@
       {
         "role": "explanation",
         "text": "The beloved dhyana verse to Saraswati, white as jasmine and snow, holding the veena — recited before study, exams and on Vasant Panchami.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2530,8 +2896,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2561,7 +2933,7 @@
       {
         "role": "explanation",
         "text": "The hymn to the Sun taught by sage Agastya to Rama before his final battle — recited for courage, energy and health, traditionally at sunrise and on Sundays.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2580,8 +2952,14 @@
     "length": "extended",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2611,7 +2989,7 @@
       {
         "role": "explanation",
         "text": "Eight verses ending 'I bow to Krishna, teacher of the world' — sung on Janmashtami and in daily puja.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2628,8 +3006,14 @@
     "length": "extended",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2661,7 +3045,7 @@
       {
         "role": "explanation",
         "text": "A song of Vishnu's names — Achyuta, Keshava, Narayana, Krishna, Rama — loved for evening bhajan.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2677,8 +3061,14 @@
     "length": "extended",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2709,7 +3099,7 @@
       {
         "role": "explanation",
         "text": "The verse to Surya (Sun) from the Navagraha Stotram. Traditionally recited on Sundays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2725,8 +3115,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2756,7 +3152,7 @@
       {
         "role": "explanation",
         "text": "The verse to Chandra (Moon) from the Navagraha Stotram. Traditionally recited on Mondays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2772,8 +3168,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2803,7 +3205,7 @@
       {
         "role": "explanation",
         "text": "The verse to Mangala (Mars) from the Navagraha Stotram. Traditionally recited on Tuesdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2819,8 +3221,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2850,7 +3258,7 @@
       {
         "role": "explanation",
         "text": "The verse to Budha (Mercury) from the Navagraha Stotram. Traditionally recited on Wednesdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2866,8 +3274,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2897,7 +3311,7 @@
       {
         "role": "explanation",
         "text": "The verse to Guru (Jupiter) from the Navagraha Stotram. Traditionally recited on Thursdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2913,8 +3327,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2944,7 +3364,7 @@
       {
         "role": "explanation",
         "text": "The verse to Shukra (Venus) from the Navagraha Stotram. Traditionally recited on Fridays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -2960,8 +3380,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -2991,7 +3417,7 @@
       {
         "role": "explanation",
         "text": "The verse to Shani (Saturn) from the Navagraha Stotram. Traditionally recited on Saturdays, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3007,8 +3433,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3038,7 +3470,7 @@
       {
         "role": "explanation",
         "text": "The verse to Rahu from the Navagraha Stotram. Traditionally recited, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3054,8 +3486,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3085,7 +3523,7 @@
       {
         "role": "explanation",
         "text": "The verse to Ketu from the Navagraha Stotram. Traditionally recited, and in Jyotish when this graha's period (dasha) is difficult. Devotion, not prediction — please don't make big decisions out of fear.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3101,8 +3539,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3132,7 +3576,7 @@
       {
         "role": "explanation",
         "text": "A meditation on Murugan riding the peacock — 'I worship the child of Mahadeva, protector of the worlds.' Chanted daily, especially on Tuesdays and Shashti.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3149,8 +3593,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3180,7 +3630,7 @@
       {
         "role": "explanation",
         "text": "Adi Shankara's 33 verses to Murugan of Tiruchendur, by the sea. Traditionally recited for healing and relief from illness and suffering, and on Skanda Shashti. It is a prayer, not a treatment — keep your doctor close.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3198,8 +3648,14 @@
     "length": "extended",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3229,7 +3685,7 @@
       {
         "role": "explanation",
         "text": "Twenty-eight names of Skanda from the Rudrayamala. Traditionally recited at dawn by students for clear thinking, memory and eloquent speech.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3246,8 +3702,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3278,7 +3740,7 @@
       {
         "role": "explanation",
         "text": "The Upanishads' peace invocation, chanted by teacher and student together before study: may we be protected together, nourished together, and never quarrel. Lovely for children before school.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3295,8 +3757,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3328,7 +3796,7 @@
       {
         "role": "explanation",
         "text": "The dawn hymn that wakes Lord Venkateswara at Tirumala every morning, opening with Vishvamitra's words to young Rama. Recited at sunrise to begin the day with the Lord.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3346,8 +3814,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3383,7 +3857,7 @@
       {
         "role": "explanation",
         "text": "A dua of those firm in knowledge: that Allah keep our hearts from straying after guidance, and grant mercy.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3399,8 +3873,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3436,7 +3916,7 @@
       {
         "role": "explanation",
         "text": "The words of repentance of Adam and Hawwa: acknowledging wrong and asking for forgiveness and mercy.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3451,8 +3931,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3490,7 +3976,7 @@
       {
         "role": "explanation",
         "text": "Musa's prayer before a daunting task: for an open heart, an easy path and clear speech. Many recite it before exams, interviews and difficult conversations.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3508,8 +3994,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3547,7 +4039,7 @@
       {
         "role": "explanation",
         "text": "A short dua for knowledge, often said before study.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3563,8 +4055,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3602,7 +4100,7 @@
       {
         "role": "explanation",
         "text": "The prayer of Yunus from the darkness: affirming Allah's oneness and admitting wrong. Traditionally recited in distress.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3620,8 +4118,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3659,7 +4163,7 @@
       {
         "role": "explanation",
         "text": "Zakariya's prayer for righteous offspring. Many recite it when hoping for a child and during pregnancy — alongside medical care, never instead of it.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3675,8 +4179,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3714,7 +4224,7 @@
       {
         "role": "explanation",
         "text": "A dua for one's spouse and children to be a comfort, and to lead in goodness.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3730,8 +4240,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3769,7 +4285,7 @@
       {
         "role": "explanation",
         "text": "The dua for one's parents, asking mercy for them as they cared for us when we were small.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3784,8 +4300,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3823,7 +4345,7 @@
       {
         "role": "explanation",
         "text": "A short dua for forgiveness and mercy.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3837,8 +4359,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3876,7 +4404,7 @@
       {
         "role": "explanation",
         "text": "Words of trust in Allah, traditionally repeated in worry.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3892,8 +4420,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3929,7 +4463,7 @@
       {
         "role": "explanation",
         "text": "The Verse of the Throne, on Allah's majesty and care. Traditionally recited for protection, after prayers and before sleep.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -3948,8 +4482,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -3985,7 +4525,7 @@
       {
         "role": "explanation",
         "text": "The surah of sincere faith in Allah's oneness.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -4000,8 +4540,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -4037,7 +4583,7 @@
       {
         "role": "explanation",
         "text": "Seeking refuge in the Lord of the daybreak. With Al-Ikhlas and An-Nas, traditionally recited morning and evening and before sleep.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -4053,8 +4599,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -4090,7 +4642,7 @@
       {
         "role": "explanation",
         "text": "Seeking refuge in the Lord of mankind from whispered harm.",
-        "author": "Beloved editorial (draft)"
+        "author": "Beloved editorial"
       }
     ],
     "themes": [
@@ -4108,8 +4660,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation."
+      "status": "approved",
+      "notes": "Imported verbatim from a pinned source (scripts/import_devotions.py). Needs a faith reviewer: text, title, tags and any explanation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   }
 ]

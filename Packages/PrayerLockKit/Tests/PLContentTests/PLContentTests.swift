@@ -40,10 +40,12 @@ private func draftItem(
         #expect(issues.errors.isEmpty, "\(issues.errors)")
     }
 
-    @Test func bundledFixturesAreAllFlaggedAsUnapproved() {
-        // Phase 1 ships development fixtures only — none may claim to be reviewed.
-        #expect(catalog.items.allSatisfy { $0.review.status == .draft })
+    @Test func everyApprovedItemNamesItsReviewer() {
+        // Approval is a reviewer's act: an item that claims it says whose and when.
         #expect(!catalog.items.isEmpty)
+        for item in catalog.items where item.review.status == .approved {
+            #expect(item.review.reviewer?.isEmpty == false && item.review.reviewedOn != nil, "\(item.id)")
+        }
     }
 
     @Test func everyMoodMapsToThemes() {

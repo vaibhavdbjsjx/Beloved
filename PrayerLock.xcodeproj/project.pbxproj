@@ -68,9 +68,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9310ABAA7FE73A7823D5AF4B /* ShieldConfiguration.appex in Embed Foundation Extensions */,
-				CDF15D1898072D444DE23BBE /* ShieldAction.appex in Embed Foundation Extensions */,
-				607EA8E62B16272771E6F66D /* ActivityMonitor.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,9 +332,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				AC209D4FCAFB3D900D82E639 /* PBXTargetDependency */,
-				4C9EC9305F79F41DB3CE7071 /* PBXTargetDependency */,
-				89A538D0F731A16AF80F38AE /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A4C81FB72A134BD95E8D3FCC /* PrayerLock */,

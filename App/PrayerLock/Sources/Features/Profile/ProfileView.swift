@@ -50,7 +50,7 @@ public struct ProfileView: View {
                 Task { await model.signOut() }
             }
         } message: {
-            Text("Signing out removes your account session from this iPhone. Your on-device prayer history and Screen Time rules will be preserved.")
+            Text("Signing out removes your account session from this iPhone. Your on-device prayer history will be preserved.")
         }
         .confirmationDialog(
             "Delete your account?",

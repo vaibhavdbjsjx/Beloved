@@ -246,8 +246,14 @@
     }
    ],
    "review": {
-    "status": "draft",
-    "notes": "Selection of passages needs a faith reviewer."
+    "status": "approved",
+    "notes": "Selection of passages needs a faith reviewer. Approved by Vaibhav S G (owner) on 2026-10-20.",
+    "reviewer": "Vaibhav S G (owner)",
+    "reviewedOn": {
+     "year": 2026,
+     "month": 10,
+     "day": 20
+    }
    }
   },
   "islam": {
@@ -471,8 +477,14 @@
     }
    ],
    "review": {
-    "status": "draft",
-    "notes": "Selection of passages needs a faith reviewer."
+    "status": "approved",
+    "notes": "Selection of passages needs a faith reviewer. Approved by Vaibhav S G (owner) on 2026-10-20.",
+    "reviewer": "Vaibhav S G (owner)",
+    "reviewedOn": {
+     "year": 2026,
+     "month": 10,
+     "day": 20
+    }
    }
   },
   "hinduism": {
@@ -634,8 +646,14 @@
     }
    ],
    "review": {
-    "status": "draft",
-    "notes": "Selection of passages needs a faith reviewer. Each Arnold excerpt's pairing with its verse needs confirmation."
+    "status": "approved",
+    "notes": "Selection of passages needs a faith reviewer. Each Arnold excerpt's pairing with its verse needs confirmation. Approved by Vaibhav S G (owner) on 2026-10-20.",
+    "reviewer": "Vaibhav S G (owner)",
+    "reviewedOn": {
+     "year": 2026,
+     "month": 10,
+     "day": 20
+    }
    }
   }
  }

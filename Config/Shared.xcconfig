@@ -7,6 +7,8 @@
 
 PL_APP_GROUP_ID = group.$(PL_BUNDLE_ID_PREFIX)
 PL_SUBSCRIPTION_GROUP_ID = 22466898
+// Pause-before-apps (Screen Time). NO until Apple approves the Family Controls distribution entitlement.
+PL_SCREEN_TIME_ENABLED = NO
 PL_ASSISTANT_ENDPOINT = https:/$()/beloved-companion.beloved-app.workers.dev
 // Public web pages (App Store "Support URL" / "Privacy Policy URL"). Empty = the in-app
 // links are hidden. "//" starts an xcconfig comment, so write https:/$()/host/path.

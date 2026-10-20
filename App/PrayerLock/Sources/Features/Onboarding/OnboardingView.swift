@@ -64,7 +64,7 @@ struct OnboardingView: View {
         guard let progress = model.stored.onboardingProgress else { return }
         draft = model.profile
         hasChosenFaith = progress.hasChosenFaith
-        step = OnboardingFlow(faith: draft.faithID.flatMap(model.env.registry.faith)).resumeStep(for: progress)
+        step = OnboardingFlow(faith: draft.faithID.flatMap(model.env.registry.faith), includesProtection: model.screenTimeEnabled).resumeStep(for: progress)
     }
 
     private func saveProgress() {
@@ -74,7 +74,7 @@ struct OnboardingView: View {
 
     // MARK: - Navigation
 
-    private var flow: OnboardingFlow { OnboardingFlow(faith: faith) }
+    private var flow: OnboardingFlow { OnboardingFlow(faith: faith, includesProtection: model.screenTimeEnabled) }
 
     private func move(by offset: Int) {
         nameFocused = false
@@ -245,8 +245,10 @@ struct OnboardingView: View {
                         PLHairline().padding(.leading, PLSpacing.xxxl)
                         privacyRow("person.crop.circle.badge.xmark", "No account. No ads. Your spiritual data is never sold.")
                         PLHairline().padding(.leading, PLSpacing.xxxl)
-                        privacyRow("eye.slash", "Screen Time gives \(AppBrand.displayName) anonymous tokens — never which apps you use or for how long.")
-                        PLHairline().padding(.leading, PLSpacing.xxxl)
+                        if model.screenTimeEnabled {
+                            privacyRow("eye.slash", "Screen Time gives \(AppBrand.displayName) anonymous tokens — never which apps you use or for how long.")
+                            PLHairline().padding(.leading, PLSpacing.xxxl)
+                        }
                         privacyRow("trash", "Delete everything at any time in Settings.")
                     }
                     .plPaper(padding: 0)
@@ -301,8 +303,10 @@ struct OnboardingView: View {
                             summaryRow("Intention", value: "“\(intention)”", systemImage: "sparkle")
                         }
                         PLHairline().padding(.leading, PLSpacing.xxxl)
-                        summaryRow("Protection", value: protectionSummary, systemImage: "shield.lefthalf.filled")
-                        PLHairline().padding(.leading, PLSpacing.xxxl)
+                        if model.screenTimeEnabled {
+                            summaryRow("Protection", value: protectionSummary, systemImage: "shield.lefthalf.filled")
+                            PLHairline().padding(.leading, PLSpacing.xxxl)
+                        }
                         summaryRow("Notifications", value: notificationSummary, systemImage: "bell")
                     }
                     .plPaper(padding: 0)
@@ -329,10 +333,12 @@ struct OnboardingView: View {
                             Text(AppBrand.displayName)
                                 .plEyebrow()
                         }
-                        Text("A pause before the scroll.")
+                        Text(model.screenTimeEnabled ? "A pause before the scroll." : "A moment for what matters.")
                             .plHero()
                             .accessibilityAddTraits(.isHeader)
-                        Text("When you reach for a distracting app, \(AppBrand.displayName) offers a moment of prayer or stillness first — then you continue, on purpose.")
+                        Text(model.screenTimeEnabled
+                             ? "When you reach for a distracting app, \(AppBrand.displayName) offers a moment of prayer or stillness first — then you continue, on purpose."
+                             : "Prayers, mantras, duas and scripture for your faith — with your festivals, prayer times and a companion who knows your tradition.")
                             .font(.plCallout)
                             .foregroundStyle(Color.plInkSecondary)
                             .fixedSize(horizontal: false, vertical: true)
@@ -423,7 +429,10 @@ struct OnboardingView: View {
     }
 
     private var nextStepSummary: String {
-        hasProtection
+        if !model.screenTimeEnabled {
+            return String(localized: "Open Today for a moment whenever you like, and explore prayers, festivals and your companion in the Pray tab.")
+        }
+        return hasProtection
             ? String(localized: "Next time you open a chosen app, a pause appears first. Tap Begin for your moment, then continue with intention.")
             : String(localized: "Open Today for a moment whenever you like. Set up protection in the Protection tab when you're ready.")
     }

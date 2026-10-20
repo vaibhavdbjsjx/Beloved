@@ -28,6 +28,9 @@ public struct AppConfiguration: Sendable, Equatable {
     public var assistantEndpoint: URL?
     /// App Store Connect subscription group identifier.
     public var subscriptionGroupID: String?
+    /// Whether the pause-before-apps (Screen Time) feature is part of this build. Off for a
+    /// release that ships before Apple approves the Family Controls distribution entitlement.
+    public var screenTimeEnabled: Bool = true
     /// Public support page (the App Store "Support URL"). `nil` hides the in-app link,
     /// so the app never shows a link to a page that doesn't exist yet.
     public var supportURL: URL?
@@ -62,7 +65,7 @@ public struct AppConfiguration: Sendable, Equatable {
             // Unresolved build settings ("$(FOO)") or empty values mean "not configured".
             return trimmed.isEmpty || trimmed.hasPrefix("$(") ? nil : trimmed
         }
-        return AppConfiguration(
+        var configuration = AppConfiguration(
             // Fail closed: a missing or unknown value must never expose draft content or
             // diagnostics, so it means production. Debug builds set "development" explicitly.
             environment: string(InfoKey.environment).flatMap(Environment.init(rawValue:)) ?? .production,
@@ -72,6 +75,9 @@ public struct AppConfiguration: Sendable, Equatable {
             supportURL: string(InfoKey.supportURL).flatMap(secureWebURL),
             privacyPolicyURL: string(InfoKey.privacyPolicyURL).flatMap(secureWebURL)
         )
+        // Only an explicit NO turns Screen Time off.
+        configuration.screenTimeEnabled = string("PLScreenTimeEnabled")?.uppercased() != "NO"
+        return configuration
     }
 
     /// Only absolute `https` URLs with a host are accepted for user-facing links.

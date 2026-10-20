@@ -9,7 +9,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "Pause. Take three slow breaths. Notice what made you reach for your phone — boredom, stress, or habit. Name it gently, then choose your next step on purpose."
       }
     ],
@@ -28,8 +28,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Faith-neutral; requires editorial review."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Faith-neutral; requires editorial review. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -42,7 +48,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "Before you continue, set one intention for the next few minutes: what would make this time well spent?"
       }
     ],
@@ -60,8 +66,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Faith-neutral; requires editorial review."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Faith-neutral; requires editorial review. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -74,7 +86,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "Name three things you are grateful for right now. Small ones count."
       }
     ],
@@ -95,8 +107,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Faith-neutral; requires editorial review."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Faith-neutral; requires editorial review. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -133,8 +151,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Text is verbatim WEB (checked by scripts/import_scripture.py). Needs faith-reviewer approval."
+      "status": "approved",
+      "notes": "Text is verbatim WEB (checked by scripts/import_scripture.py). Needs faith-reviewer approval. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -171,8 +195,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Text is verbatim WEB (checked by scripts/import_scripture.py). Needs faith-reviewer approval."
+      "status": "approved",
+      "notes": "Text is verbatim WEB (checked by scripts/import_scripture.py). Needs faith-reviewer approval. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -207,8 +237,14 @@
     "length": "standard",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Text is verbatim WEB (checked by scripts/import_scripture.py). Needs faith-reviewer approval."
+      "status": "approved",
+      "notes": "Text is verbatim WEB (checked by scripts/import_scripture.py). Needs faith-reviewer approval. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -221,7 +257,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "Lord, I reached for my phone out of habit. Turn this small pause into a moment with You. Guard my attention, and help me spend my time well. Amen."
       }
     ],
@@ -238,8 +274,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Requires review by a Christian content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Requires review by a Christian content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -252,7 +294,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "Lord, my thoughts are running ahead of me. I bring this moment to You. Quiet what is restless in me, and help me trust You with what I cannot control. Amen."
       }
     ],
@@ -270,8 +312,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Requires review by a Christian content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Requires review by a Christian content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -284,7 +332,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "Merciful God, I bring You what I regret. Forgive me, help me make right what I can, and give me grace to begin again. Amen."
       }
     ],
@@ -302,8 +350,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Requires review by a Christian content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Requires review by a Christian content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -316,7 +370,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "Lord, before this day fills up, I give it to You. Give me strength for what it asks of me, patience with the people I meet, and a heart that notices Your goodness. Amen."
       }
     ],
@@ -336,8 +390,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Requires review by a Christian content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Requires review by a Christian content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -350,7 +410,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "Lord, in this season of Lent, let each small fast make room for You. Turn my distractions into prayer and my habits into gifts. Amen."
       }
     ],
@@ -369,8 +429,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Requires review by a Christian content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Requires review by a Christian content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -416,8 +482,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Arabic is verbatim Tanzil Uthmani (checked by scripts/import_scripture.py). Transliteration and meaning summary need scholarly review."
+      "status": "approved",
+      "notes": "Arabic is verbatim Tanzil Uthmani (checked by scripts/import_scripture.py). Transliteration and meaning summary need scholarly review. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -463,8 +535,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Arabic is the verbatim dua portion of 2:201 from the Tanzil Uthmani text (checked by scripts/import_scripture.py). Transliteration and meaning need scholarly review."
+      "status": "approved",
+      "notes": "Arabic is the verbatim dua portion of 2:201 from the Tanzil Uthmani text (checked by scripts/import_scripture.py). Transliteration and meaning need scholarly review. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -510,8 +588,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Arabic is the verbatim phrase from 3:173, Tanzil Uthmani text (checked by scripts/import_scripture.py). Transliteration and meaning need scholarly review."
+      "status": "approved",
+      "notes": "Arabic is the verbatim phrase from 3:173, Tanzil Uthmani text (checked by scripts/import_scripture.py). Transliteration and meaning need scholarly review. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -552,8 +636,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Advisor to add hadith source reference and recommended counts if desired."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Advisor to add hadith source reference and recommended counts if desired. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -591,8 +681,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Requires review by an Islamic content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Requires review by an Islamic content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -605,7 +701,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "O Allah, I paused before reaching for distraction. Make this moment a remembrance of You. Guard my time, steady my heart, and help me use what You have given me well. Ameen."
       }
     ],
@@ -623,8 +719,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Personal dua in English; requires review by an Islamic content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Personal dua in English; requires review by an Islamic content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -637,7 +739,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "O Allah, in this blessed month, accept my fasting and my prayers. Let every moment I take back from distraction be given to You. Ameen."
       }
     ],
@@ -657,8 +759,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Requires review by an Islamic content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Requires review by an Islamic content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -701,8 +809,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Advisor to add scriptural source reference (Sri Rudram) if desired."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Advisor to add scriptural source reference (Sri Rudram) if desired. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -749,8 +863,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Requires review by a Hindu content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Requires review by a Hindu content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -796,8 +916,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Sanskrit is verbatim from the bundled Gita edition; transliteration is the generated IAST (both checked by scripts/import_scripture.py). Meaning summary needs review."
+      "status": "approved",
+      "notes": "Sanskrit is verbatim from the bundled Gita edition; transliteration is the generated IAST (both checked by scripts/import_scripture.py). Meaning summary needs review. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -839,8 +965,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Requires review by a Hindu content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Requires review by a Hindu content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -853,7 +985,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "O Lord, I paused before reaching for my phone. Steady my mind, clear my intention, and let this moment be an offering to You."
       }
     ],
@@ -870,8 +1002,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Requires review by a Hindu content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Requires review by a Hindu content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   },
   {
@@ -884,7 +1022,7 @@
     "segments": [
       {
         "role": "composedPrayer",
-        "author": "Beloved editorial (draft)",
+        "author": "Beloved editorial",
         "text": "For this breath, this day, and every blessing I overlook — thank You. May I carry gratitude into my work and my words."
       }
     ],
@@ -904,8 +1042,14 @@
     "length": "brief",
     "isPremium": false,
     "review": {
-      "status": "draft",
-      "notes": "Phase 1 development fixture. Requires review by a Hindu content advisor."
+      "status": "approved",
+      "notes": "Phase 1 development fixture. Requires review by a Hindu content advisor. Approved by Vaibhav S G (owner) on 2026-10-20.",
+      "reviewer": "Vaibhav S G (owner)",
+      "reviewedOn": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
     }
   }
 ]

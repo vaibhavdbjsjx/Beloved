@@ -69,7 +69,7 @@ struct SettingsView: View {
                     Task { await model.signOut() }
                 }
             } message: {
-                Text("Signing out removes your account session from this iPhone. Your prayer history and Screen Time rules will remain on this device.")
+                Text("Signing out removes your account session from this iPhone. Your prayer history will remain on this device.")
             }
             .confirmationDialog(
                 "Delete your account?",
@@ -165,6 +165,7 @@ struct SettingsView: View {
     /// The pause itself (Screen Time protection) and the record of pauses, first.
     private var protectionAndJourney: some View {
         Section {
+            if model.screenTimeEnabled {
             NavigationLink {
                 ProtectionView(embedded: true)
             } label: {
@@ -179,6 +180,7 @@ struct SettingsView: View {
                 }
             }
             .accessibilityIdentifier("you.protection")
+            }
             NavigationLink {
                 JourneyView()
             } label: {
@@ -449,7 +451,7 @@ struct SettingsView: View {
                 .foregroundStyle(Color.plInkSecondary)
         }
         .listRowBackground(Color.plSurface)
-        if model.env.configuration.isDevelopment {
+        if model.env.configuration.isDevelopment && model.screenTimeEnabled {
             Section {
                 NavigationLink("Protection diagnostics") { ProtectionDiagnosticsView() }
                     .accessibilityIdentifier("settings.diagnostics")
@@ -608,14 +610,18 @@ struct PrivacyDetailView: View {
             Section("Stored on this iPhone") {
                 Text("Your faith and preferences, where you left off reading, your prayer journal, your conversations with the companion, today's check-in (if remembered), and your prayer history. Protected by iOS Data Protection — unreadable while your iPhone is locked. With iCloud sync on, a copy (not companion conversations or your location) is kept in your own iCloud so it returns on a new iPhone.")
             }
-            Section("Never collected") {
-                Text("Which apps you use or for how long. Screen Time gives \(AppBrand.displayName) anonymous tokens only, and app usage data never leaves Apple's frameworks.")
+            if model.screenTimeEnabled {
+                Section("Never collected") {
+                    Text("Which apps you use or for how long. Screen Time gives \(AppBrand.displayName) anonymous tokens only, and app usage data never leaves Apple's frameworks.")
+                }
             }
             Section("Sent only when you use the Companion") {
                 Text("When you write to the Companion, your message and faith context are sent to Beloved's server and Google Gemini for the reply. Beloved stores no conversations — only short-lived daily message counts.")
             }
-            Section("Shared with the app's own extensions") {
-                Text("To show the pause screen, the app's Screen Time extensions read your protection settings and the pause-screen text. They never read your prayer history.")
+            if model.screenTimeEnabled {
+                Section("Shared with the app's own extensions") {
+                    Text("To show the pause screen, the app's Screen Time extensions read your protection settings and the pause-screen text. They never read your prayer history.")
+                }
             }
         }
         .scrollContentBackground(.hidden)

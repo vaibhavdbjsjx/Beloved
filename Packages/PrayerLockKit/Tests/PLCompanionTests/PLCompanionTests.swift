@@ -75,10 +75,11 @@ struct ResolverTests {
         #expect(await resolver().resolve(CompanionMarker(raw: "hadith:bukhari 1")) == .reference("hadith:bukhari 1"))
     }
 
-    @Test func releaseBuildsQuoteOnlyApprovedTexts() async {
+    @Test func releaseBuildsQuoteTheApprovedTexts() async {
         let release = resolver(.release, content: .release)
-        #expect(await release.resolve(CompanionMarker(raw: "bible:PSA 46:10")) == .reference("PSA 46:10"))
-        #expect(await release.resolve(CompanionMarker(raw: "prayer:hinduism.mantra.gayatri")) == .reference("Gayatri Mantra"))
+        if case .passage = await release.resolve(CompanionMarker(raw: "bible:PSA 46:10")) {} else { Issue.record("approved scripture should be quoted") }
+        if case .prayer = await release.resolve(CompanionMarker(raw: "prayer:hinduism.mantra.gayatri")) {} else { Issue.record("approved prayer should be quoted") }
+        #expect(await release.resolve(CompanionMarker(raw: "prayer:made.up")) == .reference("made.up"))
     }
 
     @Test func wholeAnswersResolveInOrder() async {
