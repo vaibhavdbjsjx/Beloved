@@ -605,6 +605,8 @@ struct FaithSettingsView: View {
 }
 
 struct PrivacyDetailView: View {
+    @Environment(AppModel.self) private var model
+
     var body: some View {
         Form {
             Section("Stored on this iPhone") {

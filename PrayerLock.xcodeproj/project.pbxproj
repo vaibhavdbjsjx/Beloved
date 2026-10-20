@@ -508,7 +508,10 @@
 				"$(SRCROOT)/Config/validate-release.sh",
 				"$(SRCROOT)/Config/release-content-report.py",
 				"$(SRCROOT)/Packages/PrayerLockKit/Sources/PLContent/Resources/content-fixtures.json",
+				"$(SRCROOT)/Packages/PrayerLockKit/Sources/PLContent/Resources/devotions.json",
 				"$(SRCROOT)/Packages/PrayerLockKit/Sources/PLFaith/Resources/faiths.json",
+				"$(SRCROOT)/Packages/PrayerLockKit/Sources/PLScripture/Resources/scripture-library.json",
+				"$(SRCROOT)/Packages/PrayerLockKit/Sources/PLScripture/Resources/daily-verses.json",
 			);
 			name = "Validate release readiness";
 			outputFileListPaths = (
