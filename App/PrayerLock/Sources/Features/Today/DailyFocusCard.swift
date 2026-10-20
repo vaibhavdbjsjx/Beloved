@@ -102,7 +102,12 @@ struct DeityMedallion: View {
 
     /// "Venkateswara (Balaji)" → "Venkateswara"; "The Divine (no specific form)" → "The Divine".
     private var shortName: String {
-        name.components(separatedBy: " (").first ?? name
+        let main = name.components(separatedBy: " (").first ?? name
+        // "Venkateswara (Balaji)" is too long for a medallion: use the familiar short name.
+        if main.count > 10, let open = name.firstIndex(of: "("), let close = name.firstIndex(of: ")"), open < close {
+            return String(name[name.index(after: open)..<close])
+        }
+        return main
     }
 
     var body: some View {

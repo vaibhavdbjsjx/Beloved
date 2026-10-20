@@ -83,9 +83,13 @@ final class AppEnvironment {
             state: protectionState
         )
         monetization = try MonetizationConfiguration.bundled()
-        purchases = monetization.isPaywallEnabled
-            ? StoreKitPurchaseService(configuration: monetization, subscriptionGroupID: configuration.subscriptionGroupID)
-            : UnavailablePurchaseService()
+        if ProcessInfo.processInfo.arguments.contains(LaunchArgument.previewPaywall) && configuration.isDevelopment {
+            purchases = PreviewPurchaseService()
+        } else if monetization.isPaywallEnabled {
+            purchases = StoreKitPurchaseService(configuration: monetization, subscriptionGroupID: configuration.subscriptionGroupID)
+        } else {
+            purchases = UnavailablePurchaseService()
+        }
         notifications = NotificationService()
         notifications.activate()
         assistant = AssistantPipeline(
@@ -146,6 +150,9 @@ enum LaunchArgument {
     /// UI tests / design review only (development builds): `-PLPreviewFaith hinduism` skips
     /// onboarding with that faith, so screens can be reviewed directly.
     static let previewFaith = "-PLPreviewFaith"
+    /// Development builds: shows the real paywall with the real plans and prices (for the
+    /// App Store Connect review screenshots) instead of asking the App Store.
+    static let previewPaywall = "-PLPreviewPaywall"
 }
 
 /// Product name in one place. The home-screen name comes from

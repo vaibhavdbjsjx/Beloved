@@ -434,7 +434,8 @@ public struct ReviewBadge: View {
     public init(status: ReviewInfo.Status) { self.status = status }
 
     public var body: some View {
-        if status != .approved {
+        // Hidden when photographing App Store screenshots (development builds only show it).
+        if status != .approved && !ProcessInfo.processInfo.arguments.contains("-PLStoreScreenshots") {
             Label(String(localized: "Unreviewed draft", bundle: .module), systemImage: "exclamationmark.triangle")
                 .font(.plLabel)
                 .foregroundStyle(Color.plCaution)

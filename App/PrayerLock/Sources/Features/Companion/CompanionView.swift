@@ -23,7 +23,7 @@ struct CompanionView: View {
                         if companion.conversation.messages.isEmpty {
                             welcome
                         }
-                        if model.env.monetization.isPaywallEnabled && model.accessLevel != .premium {
+                        if model.env.monetization.isPaywallEnabled && !model.hasPremiumAccess {
                             premiumPrompt
                         }
                         ForEach(companion.conversation.messages) { message in

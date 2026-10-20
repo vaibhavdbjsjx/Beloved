@@ -23,6 +23,12 @@ public struct StoreProduct: Identifiable, Hashable, Sendable {
         public var paymentMode: PaymentMode
         public var periodDescription: String
         public var displayPrice: String
+
+        public init(paymentMode: PaymentMode, periodDescription: String, displayPrice: String) {
+            self.paymentMode = paymentMode
+            self.periodDescription = periodDescription
+            self.displayPrice = displayPrice
+        }
     }
 
     public var id: String
@@ -32,6 +38,16 @@ public struct StoreProduct: Identifiable, Hashable, Sendable {
     public var periodDescription: String
     /// `nil` when there is no offer or the user is not eligible.
     public var introductoryOffer: IntroductoryOffer?
+
+    public init(id: String, plan: SubscriptionPlan, displayName: String, displayPrice: String,
+                periodDescription: String, introductoryOffer: IntroductoryOffer? = nil) {
+        self.id = id
+        self.plan = plan
+        self.displayName = displayName
+        self.displayPrice = displayPrice
+        self.periodDescription = periodDescription
+        self.introductoryOffer = introductoryOffer
+    }
 }
 
 /// Abstraction over the App Store so UI and tests don't depend on StoreKit.

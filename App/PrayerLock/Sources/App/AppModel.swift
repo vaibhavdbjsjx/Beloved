@@ -167,6 +167,7 @@ final class AppModel {
         let faith = FaithID(arguments[index + 1])
         let tradition = arguments.firstIndex(of: "-PLPreviewTradition").flatMap { arguments.indices.contains($0 + 1) ? TraditionID(arguments[$0 + 1]) : nil }
         completeOnboarding(with: SpiritualProfile(faithID: faith, traditionID: tradition, displayName: "Vaibhav"))
+        if arguments.contains(LaunchArgument.previewPaywall) { paywallReason = "Review screenshot" }
     }
 
     /// Saves unfinished onboarding answers (private container) without completing it.
